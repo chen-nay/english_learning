@@ -1,0 +1,57 @@
+[
+    {
+        "id": 1,
+        "term": "touch base",
+        "phonetic": "/tʌtʃ beɪs/",
+        "category": "phrase",
+        "definition": "联系；碰头（了解情况）",
+        "synonyms": "catch up, contact",
+        "exampleEn": "Let's touch base later this week to discuss the progress.",
+        "exampleCn": "我们但这周晚些时候碰个头，讨论一下进度。",
+        "status": 2
+    },
+    {
+        "id": 2,
+        "term": "ETA",
+        "phonetic": "/ˌiː tiː ˈeɪ/",
+        "category": "word",
+        "definition": "预计到达时间 (Estimated Time of Arrival)",
+        "synonyms": "expected time",
+        "exampleEn": "What's the ETA on the bug fix?",
+        "exampleCn": "这个 Bug 修复预计什么时候能好？",
+        "status": 0
+    },
+    {
+        "id": 3,
+        "term": "heads up",
+        "phonetic": "/hedz ʌp/",
+        "category": "phrase",
+        "definition": "提前告知；预警",
+        "synonyms": "advance notice, warning",
+        "exampleEn": "Just a heads up, the server will restart in 10 minutes.",
+        "exampleCn": "提个醒，服务器将在10分钟后重启。",
+        "status": 1
+    },
+    {
+        "id": 4,
+        "term": "pain point",
+        "phonetic": "/peɪn pɔɪnt/",
+        "category": "phrase",
+        "definition": "痛点",
+        "synonyms": "problem, difficulty",
+        "exampleEn": "Slow deployment is a major pain point for our team.",
+        "exampleCn": "部署缓慢是我们团队的一个主要痛点。",
+        "status": 1
+    },
+    {
+        "id": 5,
+        "term": "agenda",
+        "phonetic": "/əˈdʒendə/",
+        "category": "word",
+        "definition": "议程；待办事项",
+        "synonyms": "schedule, plan",
+        "exampleEn": "Please send out the meeting agenda beforehand.",
+        "exampleCn": "请提前发送会议议程。",
+        "status": 0
+    }
+]

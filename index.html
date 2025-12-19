@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevEnglish - 程序员单词本</title>
+    <style>
+        :root { --primary-blue: #3b82f6; --bg-color: #f3f4f6; --text-main: #1f2937; --text-sub: #6b7280; --border-color: #e5e7eb; --success-color: #10b981; --danger-color: #ef4444; }
+        body { margin: 0; font-family: 'Segoe UI', sans-serif; background-color: var(--bg-color); display: flex; height: 100vh; overflow: hidden; }
+        .sidebar { width: 220px; background-color: white; border-right: 1px solid var(--border-color); padding: 20px; display: flex; flex-direction: column; }
+        .logo { font-size: 18px; font-weight: bold; color: var(--text-main); margin-bottom: 25px; display: flex; align-items: center; gap: 8px; padding-bottom: 15px; border-bottom: 1px solid #f3f4f6; }
+        .book-list { display: flex; flex-direction: column; gap: 8px; }
+        .book-item { padding: 12px 15px; border-radius: 8px; cursor: pointer; color: var(--text-main); font-weight: 500; display: flex; align-items: center; justify-content: space-between; transition: all 0.2s; }
+        .book-item:hover { background-color: #f9fafb; }
+        .book-item.active { background-color: #eff6ff; color: var(--primary-blue); font-weight: 600; }
+        .loading-mask { display: none; position: fixed; top: 0; right: 0; bottom: 0; left: 260px; background: rgba(255,255,255,0.8); z-index: 10; align-items: center; justify-content: center; font-size: 14px; color: var(--text-sub); }
+        .main-content { flex: 1; display: flex; flex-direction: column; overflow: hidden; position: relative; }
+        .header { background-color: white; border-bottom: 1px solid var(--border-color); padding: 15px 30px; }
+        .type-tabs { display: flex; gap: 15px; margin-bottom: 15px; }
+        .type-tab { padding: 6px 18px; border-radius: 6px; cursor: pointer; font-weight: 500; background: #f3f4f6; color: var(--text-sub); font-size: 14px; }
+        .type-tab.active { background-color: var(--primary-blue); color: white; }
+        .status-tabs { display: flex; gap: 10px; }
+        .status-pill { padding: 5px 14px; border-radius: 20px; font-size: 13px; cursor: pointer; border: 1px solid var(--border-color); background: white; color: var(--text-sub); }
+        .status-pill.active { background-color: #eff6ff; border-color: var(--primary-blue); color: var(--primary-blue); font-weight: bold; }
+        .content-area { flex: 1; padding: 30px; overflow-y: auto; }
+        .card-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 20px; }
+        .card { background: white; border-radius: 12px; padding: 24px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); position: relative; transition: all 0.2s; }
+        .card:hover { box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1); transform: translateY(-2px); }
+        .card-actions { position: absolute; top: 20px; right: 20px; display: flex; gap: 8px; opacity: 0; transition: opacity 0.2s; }
+        .card:hover .card-actions { opacity: 1; }
+        .btn-action { padding: 4px 10px; border-radius: 4px; font-size: 12px; cursor: pointer; background: white; border: 1px solid; }
+        .btn-known { color: var(--success-color); border-color: var(--success-color); }
+        .btn-known:hover { background: #ecfdf5; }
+        .btn-unknown { color: var(--danger-color); border-color: var(--danger-color); }
+        .btn-unknown:hover { background: #fef2f2; }
+        .line-1-term { font-size: 22px; font-weight: 700; color: var(--text-main); margin-bottom: 8px; }
+        .line-2-audio { display: flex; align-items: center; gap: 8px; color: var(--text-sub); font-family: 'Lucida Sans Unicode', sans-serif; margin-bottom: 16px; font-size: 14px; }
+        .audio-icon { cursor: pointer; width: 22px; height: 22px; background-color: #f3f4f6; border-radius: 50%; display: flex; align-items: center; justify-content: center; transition: background 0.2s;}
+        .audio-icon:hover { background-color: #dbeafe; color: var(--primary-blue); }
+        .line-3-meaning { font-size: 16px; font-weight: 600; color: var(--text-main); margin-bottom: 12px; padding-bottom: 12px; border-bottom: 1px solid #f3f4f6; }
+        .line-4-synonyms { font-size: 13px; color: var(--text-sub); margin-bottom: 12px; }
+        .line-5-example { background-color: #f8fafc; padding: 10px; border-radius: 6px; border-left: 3px solid var(--primary-blue); font-size: 13px; color: #475569; font-style: italic; }
+        .example-cn { margin-top: 4px; font-style: normal; color: #94a3b8; font-size: 12px; }
+        .empty-state { text-align: center; color: var(--text-sub); margin-top: 50px; font-size: 14px;}
+    </style>
+</head>
+<body>
+
+    <div class="sidebar">
+        <div class="logo">
+            <span>💻</span> DevEnglish
+        </div>
+        <div class="book-list" id="sidebarBookList">
+            </div>
+    </div>
+
+    <div class="loading-mask" id="loadingMask">加载中...</div>
+
+    <div class="main-content">
+        <div class="header">
+            <div class="type-tabs">
+                <div class="type-tab active" onclick="switchType('word')">单词 Word</div>
+                <div class="type-tab" onclick="switchType('phrase')">短语 Phrase</div>
+            </div>
+            <div class="status-tabs">
+                <div class="status-pill active" onclick="switchStatus('all')">全部 <span id="count-all">0</span></div>
+                <div class="status-pill" onclick="switchStatus(0)">未标记 <span id="count-0">0</span></div>
+                <div class="status-pill" onclick="switchStatus(1)">认识 <span id="count-1">0</span></div>
+                <div class="status-pill" onclick="switchStatus(2)">不认识 <span id="count-2">0</span></div>
+            </div>
+        </div>
+
+        <div class="content-area">
+            <div class="card-grid" id="cardContainer"></div>
+        </div>
+    </div>
+
+    <script>
+        let books = [];
+        let currentBookFile = null;
+        let currentData = [];
+        let currentType = 'word';
+        let currentStatus = 'all';
+
+        document.addEventListener('DOMContentLoaded', () => {
+            loadMenu();
+        });
+
+        // 1. 加载目录清单 (menu.json)
+        async function loadMenu() {
+            try {
+                const response = await fetch('menu.json?t=' + new Date().getTime());
+                if(!response.ok) throw new Error("无法加载 menu.json");
+
+                const fileList = await response.json();
+
+                books = fileList.map(fileName => {
+                    // *** 优化点 1: 移除大小写转换，直接使用文件名（去掉后缀） ***
+                    let displayName = fileName.replace('.json', '');
+
+                    return {
+                        id: fileName,
+                        name: displayName,
+                        file: fileName
+                    };
+                });
+
+                renderSidebar();
+
+                if(books.length > 0) {
+                    loadBook(books[0].id);
+                }
+            } catch (error) {
+                console.error(error);
+                document.getElementById('sidebarBookList').innerHTML =
+                    `<div style="padding:10px; color:red; font-size:12px;">❌ 加载 menu.json 失败<br>请确保文件存在</div>`;
+            }
+        }
+
+        // 2. 渲染侧边栏
+        function renderSidebar() {
+            const container = document.getElementById('sidebarBookList');
+            container.innerHTML = books.map(book => `
+                <div class="book-item" id="book-nav-${CSS.escape(book.id)}" onclick="loadBook('${book.id}')">
+                    <span>${book.name}</span>
+                    <span style="font-size:12px; opacity:0.5">📂</span>
+                </div>
+            `).join('');
+        }
+
+        // 3. 加载具体的单词本
+        async function loadBook(bookId) {
+            // UI 高亮更新
+            if (currentBookFile) {
+                const prevNav = document.getElementById(`book-nav-${CSS.escape(currentBookFile)}`);
+                if(prevNav) prevNav.classList.remove('active');
+            }
+            currentBookFile = bookId;
+            const nav = document.getElementById(`book-nav-${CSS.escape(bookId)}`);
+            if(nav) nav.classList.add('active');
+
+            const bookConfig = books.find(b => b.id === bookId);
+            const mask = document.getElementById('loadingMask');
+
+            try {
+                mask.style.display = 'flex';
+                const response = await fetch(bookConfig.file + '?t=' + new Date().getTime());
+                if (!response.ok) throw new Error("File not found");
+                currentData = await response.json();
+
+                // Initialize status to 0 if not present
+                currentData.forEach(item => {
+                    if (item.status === undefined) {
+                        item.status = 0;
+                    }
+                });
+
+                renderContent();
+
+            } catch (error) {
+                console.error(error);
+                document.getElementById('cardContainer').innerHTML =
+                    `<div class="empty-state">无法加载 ${bookConfig.file}</div>`;
+            } finally {
+                mask.style.display = 'none';
+            }
+        }
+
+        // 4. 渲染内容 (核心逻辑不变)
+        function renderContent() {
+            const container = document.getElementById('cardContainer');
+            container.innerHTML = '';
+
+            const filtered = currentData.filter(item => {
+                const typeMatch = item.category === currentType;
+                const statusMatch = currentStatus === 'all' ? true : item.status === currentStatus;
+                return typeMatch && statusMatch;
+            });
+
+            updateCounts();
+
+            if (filtered.length === 0) {
+                container.innerHTML = '<div class="empty-state">没有符合条件的单词</div>';
+                return;
+            }
+
+            filtered.forEach(item => {
+                const card = document.createElement('div');
+                card.className = 'card';
+                card.innerHTML = `
+                    <div class="card-actions">
+                        <button class="btn-action btn-known" onclick="markStatus(${item.id}, 1)">认识</button>
+                        <button class="btn-action btn-unknown" onclick="markStatus(${item.id}, 2)">不认识</button>
+                    </div>
+                    <div class="line-1-term">${item.term}</div>
+                    <div class="line-2-audio">
+                        ${item.phonetic}
+                        <div class="audio-icon" onclick="speak('${item.term.replace(/'/g, "\\'")}')">🔊</div>
+                    </div>
+                    <div class="line-3-meaning">${item.definition}</div>
+                    <div class="line-4-synonyms">同义: ${item.synonyms}</div>
+                    <div class="line-5-example">
+                        "${item.exampleEn}"
+                        <div class="example-cn">${item.exampleCn}</div>
+                    </div>
+                `;
+                container.appendChild(card);
+            });
+
+            updateTabStyles();
+        }
+
+        // 5. 操作逻辑 (保持不变)
+        function switchType(type) { currentType = type; renderContent(); }
+        function switchStatus(status) { currentStatus = status; renderContent(); }
+
+        function markStatus(id, newStatus) {
+            const item = currentData.find(i => i.id === id);
+            if (item) {
+                item.status = newStatus;
+
+                fetch('/v1/modify_status', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        json_name: currentBookFile,
+                        id: id,
+                        status: newStatus
+                    }),
+                })
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    return response.text();
+                })
+                .then(data => {
+                    console.log(data);
+                    renderContent();
+                })
+                .catch(error => {
+                    console.error('There has been a problem with your fetch operation:', error);
+                    // If the request fails, revert the status change in the UI
+                    item.status = item.originalStatus || 0;
+                    renderContent();
+                });
+            }
+        }
+
+        function speak(text) {
+            const u = new SpeechSynthesisUtterance(text);
+            u.lang = 'en-US'; u.rate = 0.9;
+            window.speechSynthesis.speak(u);
+        }
+
+        function updateCounts() {
+            const typeData = currentData.filter(i => i.category === currentType);
+            document.getElementById('count-all').innerText = typeData.length;
+            document.getElementById('count-0').innerText = typeData.filter(i => i.status === 0).length;
+            document.getElementById('count-1').innerText = typeData.filter(i => i.status === 1).length;
+            document.getElementById('count-2').innerText = typeData.filter(i => i.status === 2).length;
+        }
+
+        function updateTabStyles() {
+            const typeTabs = document.querySelectorAll('.type-tab');
+            typeTabs.forEach(t => t.classList.remove('active'));
+            typeTabs[currentType === 'word' ? 0 : 1].classList.add('active');
+
+            const statusPills = document.querySelectorAll('.status-pill');
+            statusPills.forEach(p => p.classList.remove('active'));
+            const map = {'all':0, 0:1, 1:2, 2:3};
+            if(map[currentStatus] !== undefined) statusPills[map[currentStatus]].classList.add('active');
+        }
+    </script>
+</body>
+</html>
