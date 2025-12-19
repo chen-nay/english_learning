@@ -15,13 +15,26 @@
         .book-item.active { background-color: #eff6ff; color: var(--primary-blue); font-weight: 600; }
         .loading-mask { display: none; position: fixed; top: 0; right: 0; bottom: 0; left: 260px; background: rgba(255,255,255,0.8); z-index: 10; align-items: center; justify-content: center; font-size: 14px; color: var(--text-sub); }
         .main-content { flex: 1; display: flex; flex-direction: column; overflow: hidden; position: relative; }
-        .header { background-color: white; border-bottom: 1px solid var(--border-color); padding: 15px 30px; }
+        .header { background-color: white; border-bottom: 1px solid var(--border-color); padding: 15px 30px; display: flex; justify-content: space-between; align-items: center; }
         .type-tabs { display: flex; gap: 15px; margin-bottom: 15px; }
         .type-tab { padding: 6px 18px; border-radius: 6px; cursor: pointer; font-weight: 500; background: #f3f4f6; color: var(--text-sub); font-size: 14px; }
         .type-tab.active { background-color: var(--primary-blue); color: white; }
         .status-tabs { display: flex; gap: 10px; }
         .status-pill { padding: 5px 14px; border-radius: 20px; font-size: 13px; cursor: pointer; border: 1px solid var(--border-color); background: white; color: var(--text-sub); }
         .status-pill.active { background-color: #eff6ff; border-color: var(--primary-blue); color: var(--primary-blue); font-weight: bold; }
+        
+        /* Visibility Toggle Styles */
+        .btn-toggle-view { cursor: pointer; padding: 8px; border-radius: 50%; color: var(--text-sub); transition: all 0.2s; display: flex; align-items: center; justify-content: center; }
+        .btn-toggle-view:hover { background-color: #f3f4f6; color: var(--primary-blue); }
+        
+        /* Hidden Mode Styles */
+        .mode-hidden .line-2-audio, 
+        .mode-hidden .line-3-meaning, 
+        .mode-hidden .line-4-synonyms, 
+        .mode-hidden .line-5-example {
+            display: none;
+        }
+        
         .content-area { flex: 1; padding: 30px; overflow-y: auto; }
         .card-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 20px; }
         .card { background: white; border-radius: 12px; padding: 24px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); position: relative; transition: all 0.2s; }
@@ -42,6 +55,29 @@
         .line-5-example { background-color: #f8fafc; padding: 10px; border-radius: 6px; border-left: 3px solid var(--primary-blue); font-size: 13px; color: #475569; font-style: italic; }
         .example-cn { margin-top: 4px; font-style: normal; color: #94a3b8; font-size: 12px; }
         .empty-state { text-align: center; color: var(--text-sub); margin-top: 50px; font-size: 14px;}
+
+        /* Individual Card Reveal Button */
+        .btn-reveal-details {
+            display: none; /* Hidden by default */
+            color: var(--primary-blue);
+            border-color: var(--primary-blue);
+            background: rgba(var(--primary-blue-rgb), 0.1); /* Subtle background */
+        }
+        .mode-hidden .card .btn-reveal-details {
+            display: block; /* Show when in hidden mode */
+        }
+        .btn-reveal-details:hover {
+            background: #e0f2fe;
+        }
+
+        /* Override hidden mode for individually revealed cards */
+        .mode-hidden .card.card-revealed .line-2-audio,
+        .mode-hidden .card.card-revealed .line-3-meaning,
+        .mode-hidden .card.card-revealed .line-4-synonyms,
+        .mode-hidden .card.card-revealed .line-5-example {
+            display: flex; /* For audio line */
+            display: block; /* For others */
+        }
     </style>
 </head>
 <body>
@@ -64,6 +100,10 @@
                 <div class="status-pill" onclick="switchStatus(1)">认识 <span id="count-1">0</span></div>
                 <div class="status-pill" onclick="switchStatus(2)">不认识 <span id="count-2">0</span></div>
             </div>
+            <div class="btn-toggle-view" onclick="toggleMode()" title="切换显示/隐藏详情">
+                <!-- Default Open Eye SVG -->
+                <svg id="icon-eye" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+            </div>
         </div>
 
         <div class="content-area">
@@ -76,10 +116,48 @@
         let currentBookFile = null;
         let currentData = [];
         let currentStatus = 'all';
+        let isModeHidden = false; // New state variable
+        let revealedCards = new Set(); // New: to track individually revealed cards
 
         document.addEventListener('DOMContentLoaded', () => {
             loadMenu();
         });
+
+        // Toggle View Mode Function
+        function toggleMode() {
+            isModeHidden = !isModeHidden;
+            const container = document.getElementById('cardContainer');
+            const btn = document.querySelector('.btn-toggle-view');
+            
+            if (isModeHidden) {
+                container.classList.add('mode-hidden');
+                // Change icon to Closed Eye (Slash)
+                btn.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"></path><line x1="1" y1="1" x2="23" y2="23"></line></svg>`;
+            } else {
+                container.classList.remove('mode-hidden');
+                // When exiting hidden mode, clear individually revealed cards
+                revealedCards.clear();
+                // Change icon back to Open Eye
+                btn.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>`;
+            }
+            // Re-render content to apply/remove .card-revealed classes if isModeHidden state changes
+            renderContent();
+        }
+
+        // Toggle individual card details function
+        function toggleCardDetails(id) {
+            const cardElement = document.getElementById(`card-${id}`);
+            if (cardElement) {
+                cardElement.classList.toggle('card-revealed');
+                if (cardElement.classList.contains('card-revealed')) {
+                    revealedCards.add(id);
+                } else {
+                    revealedCards.delete(id);
+                }
+            }
+        }
+
+
 
         // 1. 加载目录清单 (动态获取)
         async function loadMenu() {
@@ -181,11 +259,18 @@
 
             filtered.forEach(item => {
                 const card = document.createElement('div');
+                card.id = `card-${item.id}`; // Add unique ID to each card
                 card.className = 'card';
+                // If in hidden mode and this card was individually revealed, add the class
+                if (isModeHidden && revealedCards.has(item.id)) {
+                    card.classList.add('card-revealed');
+                }
+
                 card.innerHTML = `
                     <div class="card-actions">
                         <button class="btn-action btn-known" onclick="markStatus(${item.id}, 1)">认识</button>
                         <button class="btn-action btn-unknown" onclick="markStatus(${item.id}, 2)">不认识</button>
+                        <button class="btn-action btn-reveal-details" onclick="toggleCardDetails(${item.id})" title="显示/隐藏详情">👁️</button>
                     </div>
                     <div class="line-1-term">${item.term}</div>
                     <div class="line-2-audio">
