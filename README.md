@@ -4,9 +4,10 @@ This is a simple web application designed to help you learn vocabulary. It consi
 
 ## Features
 
-- Display words and their definitions.
-- Mark words as "known" or "unknown".
-- Persist word statuses in JSON files on the server-side.
+- **Vocabulary Browsing**: View words, phonetic symbols, definitions, synonyms, and example sentences.
+- **Track Progress**: Mark words as "known" (认识) or "unknown" (不认识). Statuses are saved directly to JSON files on the server.
+- **Dynamic Wordbooks**: Automatically loads any `.json` vocabulary files placed in the `wordbook/` directory.
+- **Focus Mode**: Toggle between detailed view and a "Focus Mode" (eye icon) that hides details to test your memory. Individual cards can be revealed by clicking their specific eye icon.
 
 ## How to Run
 
@@ -20,18 +21,24 @@ Navigate to the project's root directory in your terminal and run the Python ser
 python3 server.py
 ```
 
-This will start a local HTTP server on port 8000 (or the port specified in `server.py`). You should see a message like "serving at port 8000". Keep this terminal window open as long as you are using the application.
+This will start a local HTTP server on port **9001**. You should see a message like:
+`serving at port 9001`
+
+Keep this terminal window open as long as you are using the application.
 
 ### 2. Open the Frontend
 
-After starting the backend server, open your web browser and navigate to the `index.html` file.
+After starting the backend server, open your web browser and navigate to the `index.html` file using the following URL:
 
-You can usually do this by typing `http://localhost:8000/index.html` in your browser's address bar, assuming the server is running on port 8000 and `index.html` is in the root directory.
+http://localhost:9001
 
 ### 3. Usage
 
--   Select a vocabulary list from the sidebar.
--   Browse through the words.
--   Click "认识" (known) or "不认识" (unknown) to update the status of each word. The status will be saved to the corresponding JSON file.
+-   **Select a Wordbook**: Choose a vocabulary list from the sidebar. (To add new books, simply drop a `.json` file into the `wordbook/` folder).
+-   **Review Words**:
+    -   Click **认识 (Known)** or **不认识 (Unknown)** to update your progress.
+    -   Click the **Eye Icon** (👁️) in the top right to toggle "Focus Mode".
+    -   In Focus Mode, click the small eye icon on a card to peek at its details.
+-   **Audio**: Click the speaker icon to hear the pronunciation.
 
 Enjoy learning!
