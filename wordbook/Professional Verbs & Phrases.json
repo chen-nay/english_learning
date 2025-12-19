@@ -1,0 +1,752 @@
+[
+    {
+        "id": 1,
+        "term": "Sync up",
+        "phonetic": "/sɪŋk ʌp/",
+        "definition": "同步（信息、进度或观点）",
+        "synonyms": "align, harmonize",
+        "exampleEn": "Let's sync up for ten minutes to discuss the API changes.",
+        "exampleCn": "我们同步 10 分钟，讨论一下 API 的改动。",
+        "status": 0
+    },
+    {
+        "id": 2,
+        "term": "Touch base",
+        "phonetic": "/tʌtʃ beɪs/",
+        "definition": "联系；碰头（了解最新情况）",
+        "synonyms": "catch up, contact",
+        "exampleEn": "I'll touch base with the product manager regarding the new requirements.",
+        "exampleCn": "我会和产品经理碰个头，沟通一下新需求。",
+        "status": 0
+    },
+    {
+        "id": 3,
+        "term": "Deep dive",
+        "phonetic": "/diːp daɪv/",
+        "definition": "深入探讨/研究（某个复杂问题）",
+        "synonyms": "thorough investigation",
+        "exampleEn": "We need to do a deep dive into the performance issues of the database.",
+        "exampleCn": "我们需要深入研究一下数据库的性能问题。",
+        "status": 0
+    },
+    {
+        "id": 4,
+        "term": "Pick up",
+        "phonetic": "/pɪk ʌp/",
+        "definition": "接手/开始处理（某个任务或工单）",
+        "synonyms": "start working on, take on",
+        "exampleEn": "I can pick up the high-priority bug after I finish this feature.",
+        "exampleCn": "我完成这个功能后可以接手处理那个高优先级的 Bug。",
+        "status": 0
+    },
+    {
+        "id": 5,
+        "term": "Take it offline",
+        "phonetic": "/teɪk ɪt ˌɔːfˈlaɪn/",
+        "definition": "私下讨论（通常指会议中为了不浪费大家时间而会后讨论）",
+        "synonyms": "discuss privately",
+        "exampleEn": "This is a very specific technical detail; let's take it offline.",
+        "exampleCn": "这是个非常具体的技术细节；我们之后私下讨论吧。",
+        "status": 0
+    },
+    {
+        "id": 6,
+        "term": "Keep someone in the loop",
+        "phonetic": "/kiːp ˈsʌmwʌn ɪn ðə luːp/",
+        "definition": "让某人了解知情/保持同步",
+        "synonyms": "keep informed",
+        "exampleEn": "Please keep me in the loop on the progress of the deployment.",
+        "exampleCn": "部署的进度请随时让我知晓。",
+        "status": 0
+    },
+    {
+        "id": 7,
+        "term": "Follow up",
+        "phonetic": "/ˈfɑːloʊ ʌp/",
+        "definition": "后续跟进",
+        "synonyms": "check back",
+        "exampleEn": "I will follow up with the DevOps team about the server access.",
+        "exampleCn": "我会跟进 DevOps 团队关于服务器访问权限的事宜。",
+        "status": 0
+    },
+    {
+        "id": 8,
+        "term": "Reach out to",
+        "phonetic": "/riːtʃ aʊt tuː/",
+        "definition": "联系/寻求帮助",
+        "synonyms": "contact, approach",
+        "exampleEn": "You should reach out to the security team for a formal review.",
+        "exampleCn": "你应该联系安全团队进行正式评审。",
+        "status": 0
+    },
+    {
+        "id": 9,
+        "term": "On the same page",
+        "phonetic": "/ɑːn ðə seɪm peɪdʒ/",
+        "definition": "达成共识/想法一致",
+        "synonyms": "in agreement, aligned",
+        "exampleEn": "I want to make sure we are all on the same page before we start coding.",
+        "exampleCn": "我想确保我们在开始写代码之前已经达成共识。",
+        "status": 0
+    },
+    {
+        "id": 10,
+        "term": "Chime in",
+        "phonetic": "/tʃaɪm ɪn/",
+        "definition": "插话/补充意见",
+        "synonyms": "interrupt, contribute",
+        "exampleEn": "Feel free to chime in if you have any suggestions on the architecture.",
+        "exampleCn": "如果你对架构有任何建议，随时欢迎补充。",
+        "status": 0
+    },
+    {
+        "id": 11,
+        "term": "Triage",
+        "phonetic": "/triˈɑːʒ/",
+        "definition": "分拣/确认优先级（通常指处理 Bug 列表）",
+        "synonyms": "sort, prioritize",
+        "exampleEn": "We meet every morning to triage new bugs reported by users.",
+        "exampleCn": "我们每天早上开会来分拣用户报告的新 Bug 并定级。",
+        "status": 0
+    },
+    {
+        "id": 12,
+        "term": "Mitigate",
+        "phonetic": "/ˈmɪtɪɡeɪt/",
+        "definition": "缓解/减轻（如缓解线上事故的影响）",
+        "synonyms": "lessen, reduce",
+        "exampleEn": "We implemented a temporary fix to mitigate the impact of the outage.",
+        "exampleCn": "我们实施了一个临时修复方案来缓解停机带来的影响。",
+        "status": 0
+    },
+    {
+        "id": 13,
+        "term": "Ramp up",
+        "phonetic": "/ræmp ʌp/",
+        "definition": "快速上手/准备阶段",
+        "synonyms": "get up to speed",
+        "exampleEn": "It took the new engineer two weeks to ramp up on the codebase.",
+        "exampleCn": "新工程师花了两周时间才熟悉代码库并上手。",
+        "status": 0
+    },
+    {
+        "id": 14,
+        "term": "Deprecate",
+        "phonetic": "/ˈdeprəkeɪt/",
+        "definition": "弃用（指旧的接口或功能不再推荐使用）",
+        "synonyms": "phase out",
+        "exampleEn": "We will deprecate the version 1 API by the end of this year.",
+        "exampleCn": "我们将在今年年底前弃用第一版 API。",
+        "status": 0
+    },
+    {
+        "id": 15,
+        "term": "Ship",
+        "phonetic": "/ʃɪp/",
+        "definition": "交付/发布（上线）",
+        "synonyms": "deliver, release",
+        "exampleEn": "We are on track to ship the new version next Monday.",
+        "exampleCn": "我们正按计划在下周一发布新版本。",
+        "status": 0
+    },
+    {
+        "id": 16,
+        "term": "Bandwidth",
+        "phonetic": "/ˈbændwɪdθ/",
+        "definition": "精力/时间（是否有空处理额外任务）",
+        "synonyms": "capacity",
+        "exampleEn": "Do you have the bandwidth to review this PR today?",
+        "exampleCn": "你今天有精力审这个 PR 吗？",
+        "status": 0
+    },
+    {
+        "id": 17,
+        "term": "Trade-off",
+        "phonetic": "/ˈtreɪd ɔːf/",
+        "definition": "权衡/取舍",
+        "synonyms": "compromise",
+        "exampleEn": "There is always a trade-off between development speed and code quality.",
+        "exampleCn": "在开发速度和代码质量之间总是存在权衡。",
+        "status": 0
+    },
+    {
+        "id": 18,
+        "term": "Blocker",
+        "phonetic": "/ˈblɑːkər/",
+        "definition": "阻碍因素（导致工作无法继续的事情）",
+        "synonyms": "impediment, obstacle",
+        "exampleEn": "The missing documentation is a major blocker for our integration.",
+        "exampleCn": "缺失的文档是我们集成的最大阻碍。",
+        "status": 0
+    },
+    {
+        "id": 19,
+        "term": "Workaround",
+        "phonetic": "/ˈwɜːrkəraʊnd/",
+        "definition": "替代方案（临时解决问题的办法）",
+        "synonyms": "bypass, temporary fix",
+        "exampleEn": "As a workaround, we can manually trigger the cache refresh.",
+        "exampleCn": "作为替代方案，我们可以手动触发缓存刷新。",
+        "status": 0
+    },
+    {
+        "id": 20,
+        "term": "Walk through",
+        "phonetic": "/wɔːk θruː/",
+        "definition": "演示/详细讲解",
+        "synonyms": "demonstrate, explain",
+        "exampleEn": "Could you walk us through the new authentication logic?",
+        "exampleCn": "你能带我们详细过一遍新的认证逻辑吗？",
+        "status": 0
+    },
+    {
+        "id": 21,
+        "term": "Refactor",
+        "phonetic": "/ˌriːˈfæktər/",
+        "definition": "重构",
+        "synonyms": "restructure",
+        "exampleEn": "We need to refactor this module to make it more testable.",
+        "exampleCn": "我们需要重构这个模块，使其更具可测试性。",
+        "status": 0
+    },
+    {
+        "id": 22,
+        "term": "Cut a release",
+        "phonetic": "/kʌt ə rɪˈliːs/",
+        "definition": "切版本/打发布包",
+        "synonyms": "tag a version",
+        "exampleEn": "We are going to cut a release tonight for the hotfix.",
+        "exampleCn": "我们今晚将为该热修复打一个发布包。",
+        "status": 0
+    },
+    {
+        "id": 23,
+        "term": "Circle back",
+        "phonetic": "/ˈsɜːrkl bæk/",
+        "definition": "回头再议（等有了更多信息后再讨论）",
+        "synonyms": "revisit later",
+        "exampleEn": "Let's circle back to this point after we see the data from the load test.",
+        "exampleCn": "等我们看到压力测试的数据后，再回头讨论这一点。",
+        "status": 0
+    },
+    {
+        "id": 24,
+        "term": "Dive into",
+        "phonetic": "/daɪv ˈɪntuː/",
+        "definition": "钻研/开始深入做某事",
+        "synonyms": "plunge into",
+        "exampleEn": "I'm going to dive into the logs to find out why the job failed.",
+        "exampleCn": "我打算去钻研一下日志，查出任务失败的原因。",
+        "status": 0
+    },
+    {
+        "id": 25,
+        "term": "Bump up",
+        "phonetic": "/bʌmp ʌp/",
+        "definition": "提高/调高（版本号、优先级或资源限制）",
+        "synonyms": "increase",
+        "exampleEn": "We need to bump up the memory limit for the worker containers.",
+        "exampleCn": "我们需要调高工作容器的内存限制。",
+        "status": 0
+    },
+    {
+        "id": 26,
+        "term": "Point person",
+        "phonetic": "/pɔɪnt ˈpɜːrsn/",
+        "definition": "主要负责人/对接人",
+        "synonyms": "key contact",
+        "exampleEn": "Who is the point person for this project on the frontend team?",
+        "exampleCn": "前端团队中这个项目的对接人是谁？",
+        "status": 0
+    },
+    {
+        "id": 27,
+        "term": "On hold",
+        "phonetic": "/ɑːn hoʊld/",
+        "definition": "挂起/暂停",
+        "synonyms": "suspended, paused",
+        "exampleEn": "This task is on hold until we get approval from the legal department.",
+        "exampleCn": "这个任务目前被挂起，直到我们获得法务部门的批准。",
+        "status": 0
+    },
+    {
+        "id": 28,
+        "term": "Drill down",
+        "phonetic": "/drɪl daʊn/",
+        "definition": "下钻/查看更细的数据",
+        "synonyms": "explore details",
+        "exampleEn": "We can drill down into the metrics to see which endpoint is slow.",
+        "exampleCn": "我们可以下钻查看指标，看具体哪个端点慢。",
+        "status": 0
+    },
+    {
+        "id": 29,
+        "term": "Look into",
+        "phonetic": "/lʊk ˈɪntuː/",
+        "definition": "调查/查看",
+        "synonyms": "examine, investigate",
+        "exampleEn": "I'll look into the error reports and give you an update.",
+        "exampleCn": "我会去查看错误报告，然后给你回复。",
+        "status": 0
+    },
+    {
+        "id": 30,
+        "term": "Double check",
+        "phonetic": "/ˈdʌbl tʃek/",
+        "definition": "复核/再次确认",
+        "synonyms": "verify again",
+        "exampleEn": "Please double check the configuration before pushing to production.",
+        "exampleCn": "推送到生产环境之前，请再次核对配置。",
+        "status": 0
+    },
+    {
+        "id": 31,
+        "term": "Sanity check",
+        "phonetic": "/ˈsænəti tʃek/",
+        "definition": "常识检查/初步验证",
+        "synonyms": "quick check",
+        "exampleEn": "Just as a sanity check, are we sure this API is still active?",
+        "exampleCn": "做个初步验证，我们确定这个 API 还在运行吗？",
+        "status": 0
+    },
+    {
+        "id": 32,
+        "term": "Push back",
+        "phonetic": "/pʊʃ bæk/",
+        "definition": "推迟/回绝（要求或最后期限）",
+        "synonyms": "postpone, reject",
+        "exampleEn": "We might need to push back the deadline due to unforeseen technical issues.",
+        "exampleCn": "由于不可预见的技术问题，我们可能需要推迟截止日期。",
+        "status": 0
+    },
+    {
+        "id": 33,
+        "term": "Leverage",
+        "phonetic": "/ˈlevərɪdʒ/",
+        "definition": "利用/杠杆利用（已有的资源或技术）",
+        "synonyms": "utilize, make use of",
+        "exampleEn": "We can leverage our existing caching infrastructure to solve this.",
+        "exampleCn": "我们可以利用现有的缓存基础设施来解决这个问题。",
+        "status": 0
+    },
+    {
+        "id": 34,
+        "term": "Standardize",
+        "phonetic": "/ˈstændərdaɪz/",
+        "definition": "标准化",
+        "synonyms": "normalize",
+        "exampleEn": "We should standardize the error response format across all services.",
+        "exampleCn": "我们应该统一所有服务的错误响应格式。",
+        "status": 0
+    },
+    {
+        "id": 35,
+        "term": "Scale up/out",
+        "phonetic": "/skeɪl ʌp/ aʊt/",
+        "definition": "垂直/水平扩展",
+        "synonyms": "expand capacity",
+        "exampleEn": "We need to scale out the web servers to handle the holiday traffic.",
+        "exampleCn": "我们需要水平扩展 Web 服务器以应对假日流量。",
+        "status": 0
+    },
+    {
+        "id": 36,
+        "term": "Check in",
+        "phonetic": "/tʃek ɪn/",
+        "definition": "定期同步进度/签到式沟通",
+        "synonyms": "update status",
+        "exampleEn": "I just wanted to check in and see how the UI refactoring is going.",
+        "exampleCn": "我只是想来看看 UI 重构进展得怎么样了。",
+        "status": 0
+    },
+    {
+        "id": 37,
+        "term": "Sign off",
+        "phonetic": "/saɪn ɔːf/",
+        "definition": "签字批准/最终认可",
+        "synonyms": "approve, authorize",
+        "exampleEn": "The CTO gave the final sign off on the new architecture.",
+        "exampleCn": "CTO 对新架构给出了最终批准。",
+        "status": 0
+    },
+    {
+        "id": 38,
+        "term": "Onboard",
+        "phonetic": "/ˈɑːnbɔːrd/",
+        "definition": "入职引导/让某人熟悉项目",
+        "synonyms": "orient, introduce",
+        "exampleEn": "I will help onboard the new developers starting next week.",
+        "exampleCn": "我会帮助下周入职的新开发人员熟悉环境。",
+        "status": 0
+    },
+    {
+        "id": 39,
+        "term": "Roll out",
+        "phonetic": "/ˈroʊlaʊt/",
+        "definition": "逐步推出/部署",
+        "synonyms": "launch gradually",
+        "exampleEn": "We will roll out the feature to 10% of users first.",
+        "exampleCn": "我们将先向 10% 的用户推出该功能。",
+        "status": 0
+    },
+    {
+        "id": 40,
+        "term": "Spin up",
+        "phonetic": "/spɪn ʌp/",
+        "definition": "快速启动（如启动虚拟机或容器实例）",
+        "synonyms": "initialize, launch",
+        "exampleEn": "It only takes a few seconds to spin up a new container.",
+        "exampleCn": "启动一个新容器只需要几秒钟。",
+        "status": 0
+    },
+    {
+        "id": 41,
+        "term": "Troubleshoot",
+        "phonetic": "/ˈtrʌblʃuːt/",
+        "definition": "排障/故障排除",
+        "synonyms": "debug, solve problems",
+        "exampleEn": "The senior engineer is troubleshooting the network connectivity issue.",
+        "exampleCn": "高级工程师正在排查网络连接问题。",
+        "status": 0
+    },
+    {
+        "id": 42,
+        "term": "Wrap up",
+        "phonetic": "/ræp ʌp/",
+        "definition": "结束/收尾",
+        "synonyms": "finish, conclude",
+        "exampleEn": "I should be able to wrap up the documentation by tomorrow.",
+        "exampleCn": "我明天应该能完成文档的收尾工作。",
+        "status": 0
+    },
+    {
+        "id": 43,
+        "term": "Hand over",
+        "phonetic": "/hænd ˈoʊvər/",
+        "definition": "移交/交接",
+        "synonyms": "transfer responsibility",
+        "exampleEn": "I need to hand over my tasks to you before I go on vacation.",
+        "exampleCn": "在我休假之前，我需要把我的任务移交给过你。",
+        "status": 0
+    },
+    {
+        "id": 44,
+        "term": "Keep track of",
+        "phonetic": "/kiːp træk əv/",
+        "definition": "追踪/记录",
+        "synonyms": "monitor, log",
+        "exampleEn": "Use Jira to keep track of all the feature requests.",
+        "exampleCn": "使用 Jira 来记录所有的功能请求。",
+        "status": 0
+    },
+    {
+        "id": 45,
+        "term": "Up to speed",
+        "phonetic": "/ʌp tuː spiːd/",
+        "definition": "跟上进度/了解最新动态",
+        "synonyms": "fully informed",
+        "exampleEn": "Let's spend 30 minutes getting the new team member up to speed.",
+        "exampleCn": "让我们花 30 分钟让新团队成员跟上我们的进度。",
+        "status": 0
+    },
+    {
+        "id": 46,
+        "term": "Take ownership of",
+        "phonetic": "/teɪk ˈoʊnərʃɪp əv/",
+        "definition": "对...负责/主导",
+        "synonyms": "be responsible for",
+        "exampleEn": "I'll take ownership of the database migration project.",
+        "exampleCn": "我将主导这个数据库迁移项目。",
+        "status": 0
+    },
+    {
+        "id": 47,
+        "term": "Get around to",
+        "phonetic": "/ɡet əˈraʊnd tuː/",
+        "definition": "抽出时间做某事（通常指拖了很久的事）",
+        "synonyms": "finally find time for",
+        "exampleEn": "I finally got around to fixing that small UI bug.",
+        "exampleCn": "我终于抽出时间把那个 UI 小 Bug 给修了。",
+        "status": 0
+    },
+    {
+        "id": 48,
+        "term": "Opt for",
+        "phonetic": "/ɑːpt fɔːr/",
+        "definition": "选择",
+        "synonyms": "choose, select",
+        "exampleEn": "We decided to opt for a NoSQL database due to the flexible schema requirements.",
+        "exampleCn": "由于需求中有灵活的模式要求，我们决定选择 NoSQL 数据库。",
+        "status": 0
+    },
+    {
+        "id": 49,
+        "term": "Stand up",
+        "phonetic": "/stænd ʌp/",
+        "definition": "搭建/建立（如搭建一套新环境）",
+        "synonyms": "set up, establish",
+        "exampleEn": "We need to stand up a new staging environment for testing.",
+        "exampleCn": "我们需要为测试搭建一套新的预发布环境。",
+        "status": 0
+    },
+    {
+        "id": 50,
+        "term": "Fall back on",
+        "phonetic": "/fɔːl bæk ɑːn/",
+        "definition": "退而求其次/使用备选方案",
+        "synonyms": "revert to a backup",
+        "exampleEn": "If the primary server fails, we will fall back on the backup node.",
+        "exampleCn": "如果主服务器故障，我们将切换到备份节点。",
+        "status": 0
+    },
+    {
+        "id": 51,
+        "term": "Narrow down",
+        "phonetic": "/ˈnæroʊ daʊn/",
+        "definition": "缩小范围",
+        "synonyms": "limit, zoom in",
+        "exampleEn": "We've narrowed down the bug to a single function in the helper class.",
+        "exampleCn": "我们已经将 Bug 的范围缩小到了工具类中的一个函数内。",
+        "status": 0
+    },
+    {
+        "id": 52,
+        "term": "Account for",
+        "phonetic": "/əˈkaʊnt fɔːr/",
+        "definition": "考虑到/占比",
+        "synonyms": "explain, consider",
+        "exampleEn": "Does the new design account for slow network conditions?",
+        "exampleCn": "新设计考虑到网络慢的情况了吗？",
+        "status": 0
+    },
+    {
+        "id": 53,
+        "term": "Break down",
+        "phonetic": "/breɪk daʊn/",
+        "definition": "拆解（将复杂任务拆解成小块）",
+        "synonyms": "decompose",
+        "exampleEn": "Let's break down this epic into smaller user stories.",
+        "exampleCn": "让我们把这个史诗任务拆解成更小的用户故事。",
+        "status": 0
+    },
+    {
+        "id": 54,
+        "term": "Bring up",
+        "phonetic": "/brɪŋ ʌp/",
+        "definition": "提出（话题、问题）",
+        "synonyms": "mention, raise",
+        "exampleEn": "I'll bring up the security concerns in the next sprint planning.",
+        "exampleCn": "我会在下次冲刺规划中提出安全方面的顾虑。",
+        "status": 0
+    },
+    {
+        "id": 55,
+        "term": "Figure out",
+        "phonetic": "/ˈfɪɡjər aʊt/",
+        "definition": "想清楚/弄明白",
+        "synonyms": "understand, discover",
+        "exampleEn": "We need to figure out why the background job is timing out.",
+        "exampleCn": "我们需要弄明白为什么后台任务会超时。",
+        "status": 0
+    },
+    {
+        "id": 56,
+        "term": "Carry out",
+        "phonetic": "/ˈkæri aʊt/",
+        "definition": "执行",
+        "synonyms": "execute, perform",
+        "exampleEn": "We will carry out a thorough audit of all the system logs.",
+        "exampleCn": "我们将对所有系统日志进行彻底的审计。",
+        "status": 0
+    },
+    {
+        "id": 57,
+        "term": "Go over",
+        "phonetic": "/ɡoʊ ˈoʊvər/",
+        "definition": "仔细检查/过一遍",
+        "synonyms": "examine, review",
+        "exampleEn": "Let's go over the code review comments one by one.",
+        "exampleCn": "让我们把代码审查的意见一条条过一遍。",
+        "status": 0
+    },
+    {
+        "id": 58,
+        "term": "Hold off on",
+        "phonetic": "/hoʊld ɔːf ɑːn/",
+        "definition": "推迟做某事",
+        "synonyms": "delay, wait",
+        "exampleEn": "Let's hold off on deploying until the tests are fully passed.",
+        "exampleCn": "在测试完全通过之前，我们先推迟部署。",
+        "status": 0
+    },
+    {
+        "id": 59,
+        "term": "Point out",
+        "phonetic": "/pɔɪnt aʊt/",
+        "definition": "指出",
+        "synonyms": "identify, indicate",
+        "exampleEn": "The senior developer pointed out a potential race condition in my code.",
+        "exampleCn": "资深开发人员指出了我代码中一个潜在的竞态条件。",
+        "status": 0
+    },
+    {
+        "id": 60,
+        "term": "Put off",
+        "phonetic": "/pʊt ɔːf/",
+        "definition": "延期",
+        "synonyms": "postpone",
+        "exampleEn": "We cannot put off the security update any longer.",
+        "exampleCn": "我们不能再延期安全更新了。",
+        "status": 0
+    },
+    {
+        "id": 61,
+        "term": "Refer to",
+        "phonetic": "/rɪˈfɜːr tuː/",
+        "definition": "查阅/参考",
+        "synonyms": "consult",
+        "exampleEn": "Please refer to the documentation for the API parameter list.",
+        "exampleCn": "请查阅文档获取 API 参数列表。",
+        "status": 0
+    },
+    {
+        "id": 62,
+        "term": "Set aside",
+        "phonetic": "/set əˈsaɪd/",
+        "definition": "预留（时间、资源）",
+        "synonyms": "reserve, allocate",
+        "exampleEn": "We should set aside some time for refactoring next sprint.",
+        "exampleCn": "我们下个冲刺应该预留一些时间用于重构。",
+        "status": 0
+    },
+    {
+        "id": 63,
+        "term": "Settle on",
+        "phonetic": "/ˈsetl ɑːn/",
+        "definition": "决定/选定",
+        "synonyms": "decide on",
+        "exampleEn": "After much discussion, we settled on the microservices approach.",
+        "exampleCn": "经过大量讨论，我们选定了微服务方案。",
+        "status": 0
+    },
+    {
+        "id": 64,
+        "term": "Step through",
+        "phonetic": "/step θruː/",
+        "definition": "逐步执行（通常指调试代码）",
+        "synonyms": "execute step-by-step",
+        "exampleEn": "I'm stepping through the code to see where the variable changes.",
+        "exampleCn": "我正在逐步执行代码，看变量在何处发生了变化。",
+        "status": 0
+    },
+    {
+        "id": 65,
+        "term": "Stick to",
+        "phonetic": "/stɪk tuː/",
+        "definition": "坚持/遵循（计划、标准）",
+        "synonyms": "adhere to",
+        "exampleEn": "We must stick to the original project scope to avoid delays.",
+        "exampleCn": "我们必须坚持原始项目范围以避免延误。",
+        "status": 0
+    },
+    {
+        "id": 66,
+        "term": "Talk through",
+        "phonetic": "/tɔːk θruː/",
+        "definition": "详细讨论（方案、逻辑）",
+        "synonyms": "discuss in detail",
+        "exampleEn": "Let's talk through the logic of this function together.",
+        "exampleCn": "让我们一起详细讨论一下这个函数的逻辑。",
+        "status": 0
+    },
+    {
+        "id": 67,
+        "term": "Team up with",
+        "phonetic": "/tiːm ʌp wɪð/",
+        "definition": "与...合作",
+        "synonyms": "collaborate with",
+        "exampleEn": "The frontend team is teaming up with the designers to improve UX.",
+        "exampleCn": "前端团队正与设计师合作以改进用户体验。",
+        "status": 0
+    },
+    {
+        "id": 68,
+        "term": "Think through",
+        "phonetic": "/θɪŋk θruː/",
+        "definition": "想透彻/通盘考虑",
+        "synonyms": "consider fully",
+        "exampleEn": "We need to think through the implications of this database change.",
+        "exampleCn": "我们需要透彻考虑这次数据库变更的影响。",
+        "status": 0
+    },
+    {
+        "id": 69,
+        "term": "Turn on/off",
+        "phonetic": "/tɜːrn ɑːn / ɔːf/",
+        "definition": "开启/关闭（功能开关、配置）",
+        "synonyms": "enable/disable",
+        "exampleEn": "We can turn on the feature flag for internal testing.",
+        "exampleCn": "我们可以开启功能开关来进行内部测试。",
+        "status": 0
+    },
+    {
+        "id": 70,
+        "term": "Work out",
+        "phonetic": "/wɜːrk aʊt/",
+        "definition": "计算出/想出解决办法",
+        "synonyms": "calculate, solve",
+        "exampleEn": "The engineering team is working out a way to optimize the legacy code.",
+        "exampleCn": "工程团队正在想办法优化遗留代码。",
+        "status": 0
+    },
+    {
+        "id": 71,
+        "term": "Write up",
+        "phonetic": "/raɪt ʌp/",
+        "definition": "写成文档/总结记录",
+        "synonyms": "document, record",
+        "exampleEn": "Could you write up the minutes of today's technical meeting?",
+        "exampleCn": "你能把今天技术会议的会议纪要写出来吗？",
+        "status": 0
+    },
+    {
+        "id": 72,
+        "term": "Scale down",
+        "phonetic": "/skeɪl daʊn/",
+        "definition": "缩减规模",
+        "synonyms": "reduce capacity",
+        "exampleEn": "We can scale down the testing cluster after the release is done.",
+        "exampleCn": "发布完成后，我们可以缩减测试集群的规模。",
+        "status": 0
+    },
+    {
+        "id": 73,
+        "term": "Zero in on",
+        "phonetic": "/ˈzɪroʊ ɪn ɑːn/",
+        "definition": "锁定/集中注意力于（特定的错误或原因）",
+        "synonyms": "focus on",
+        "exampleEn": "The monitoring data helped us zero in on the memory leak.",
+        "exampleCn": "监控数据帮助我们锁定了内存泄漏的位置。",
+        "status": 0
+    },
+    {
+        "id": 74,
+        "term": "Clean up",
+        "phonetic": "/kliːn ʌp/",
+        "definition": "清理（冗余代码、过期配置、临时文件）",
+        "synonyms": "tidy up",
+        "exampleEn": "I'll clean up the unused imports and dead code after refactoring.",
+        "exampleCn": "重构完成后，我会清理掉没用的引用和废弃代码。",
+        "status": 0
+    },
+    {
+        "id": 75,
+        "term": "Align with",
+        "phonetic": "/əˈlaɪn wɪð/",
+        "definition": "与...保持一致/对齐",
+        "synonyms": "match, coordinate",
+        "exampleEn": "Our team goals need to align with the company's annual strategy.",
+        "exampleCn": "我们的团队目标需要与公司的年度战略对齐。",
+        "status": 0
+    }
+]

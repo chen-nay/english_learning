@@ -1,0 +1,802 @@
+[
+    {
+        "id": 1,
+        "term": "Database Schema",
+        "phonetic": "/ˈdeɪtəbeɪs ˈskiːmə/",
+        "definition": "数据库模式/结构（定义数据的组织方式）",
+        "synonyms": "database structure",
+        "exampleEn": "We need to update the database schema to support the new multi-tenancy feature.",
+        "exampleCn": "我们需要更新数据库模式以支持新的多租户功能。",
+        "status": 1
+    },
+    {
+        "id": 2,
+        "term": "Indexing",
+        "phonetic": "/ˈɪndeksɪŋ/",
+        "definition": "索引（优化查询速度的技术）",
+        "synonyms": "database lookup optimization",
+        "exampleEn": "Proper indexing can significantly reduce the execution time of complex queries.",
+        "exampleCn": "合理的索引可以显著缩短复杂查询的执行时间。",
+        "status": 0
+    },
+    {
+        "id": 3,
+        "term": "Transaction",
+        "phonetic": "/trænˈzækʃn/",
+        "definition": "事务（一组原子性的数据库操作）",
+        "synonyms": "atomic operation",
+        "exampleEn": "If any part of the transaction fails, the entire set of changes is rolled back.",
+        "exampleCn": "如果事务的任何部分失败，整个改动集都将回滚。",
+        "status": 0
+    },
+    {
+        "id": 4,
+        "term": "ACID Properties",
+        "phonetic": "/ˈæsɪd ˈprɑːpərtiz/",
+        "definition": "ACID 特性（原子性、一致性、隔离性、持久性）",
+        "synonyms": "transactional integrity",
+        "exampleEn": "Relational databases are designed to strictly follow ACID properties.",
+        "exampleCn": "关系型数据库旨在严格遵循 ACID 特性。",
+        "status": 0
+    },
+    {
+        "id": 5,
+        "term": "ORM (Object-Relational Mapping)",
+        "phonetic": "/ˌoʊ ɑːr ˈem/",
+        "definition": "对象关系映射（将数据库表映射为代码中的对象）",
+        "synonyms": "database wrapper",
+        "exampleEn": "Using an ORM like Hibernate or TypeORM can speed up development but may hide performance issues.",
+        "exampleCn": "使用像 Hibernate 或 TypeORM 这样的 ORM 可以加快开发速度，但可能会隐藏性能问题。",
+        "status": 0
+    },
+    {
+        "id": 6,
+        "term": "Migration",
+        "phonetic": "/maɪˈɡreɪʃn/",
+        "definition": "迁移（通常指数据库表结构的版本变更）",
+        "synonyms": "schema update",
+        "exampleEn": "Make sure to run the database migration script before starting the server.",
+        "exampleCn": "确保在启动服务器之前运行数据库迁移脚本。",
+        "status": 0
+    },
+    {
+        "id": 7,
+        "term": "Sharding",
+        "phonetic": "/ˈʃɑːrdɪŋ/",
+        "definition": "分片（将数据水平切分到多个数据库实例中）",
+        "synonyms": "horizontal partitioning",
+        "exampleEn": "We implemented sharding to handle the massive increase in user data.",
+        "exampleCn": "我们通过实施分片来处理用户数据的海量增长。",
+        "status": 0
+    },
+    {
+        "id": 8,
+        "term": "Replication",
+        "phonetic": "/ˌreplɪˈkeɪʃn/",
+        "definition": "复制（如主从复制，用于高可用和读写分离）",
+        "synonyms": "mirroring, copying",
+        "exampleEn": "Read-heavy applications often use database replication to balance the load.",
+        "exampleCn": "读密集型应用通常使用数据库复制来平衡负载。",
+        "status": 0
+    },
+    {
+        "id": 9,
+        "term": "Connection Pooling",
+        "phonetic": "/kəˈnekʃn ˈpuːlɪŋ/",
+        "definition": "连接池（复用数据库连接以提高性能）",
+        "synonyms": "resource pooling",
+        "exampleEn": "Adjusting the connection pooling size helped resolve the 'too many connections' error.",
+        "exampleCn": "调整连接池大小有助于解决“连接数过多”的错误。",
+        "status": 0
+    },
+    {
+        "id": 10,
+        "term": "Normalization",
+        "phonetic": "/ˌnɔːrmələˈzeɪʃn/",
+        "definition": "规范化（减少数据库冗余的设计过程）",
+        "synonyms": "data standardization",
+        "exampleEn": "Third normal form (3NF) is a standard level of normalization for most relational databases.",
+        "exampleCn": "第三范式（3NF）是大多数关系型数据库的标准规范化级别。",
+        "status": 0
+    },
+    {
+        "id": 11,
+        "term": "Denormalization",
+        "phonetic": "/ˌdiːnɔːrmələˈzeɪʃn/",
+        "definition": "反规范化（为了查询性能特意增加数据冗余）",
+        "synonyms": "performance redundancy",
+        "exampleEn": "We chose denormalization for our analytics dashboard to avoid complex joins.",
+        "exampleCn": "我们为分析仪表盘选择了反规范化，以避免复杂的连接查询。",
+        "status": 0
+    },
+    {
+        "id": 12,
+        "term": "Persistence Layer",
+        "phonetic": "/pərˈsɪstəns ˈleɪər/",
+        "definition": "持久化层（处理数据存取的代码层）",
+        "synonyms": "data access layer (DAL)",
+        "exampleEn": "The persistence layer should be decoupled from the business logic.",
+        "exampleCn": "持久化层应该与业务逻辑解耦。",
+        "status": 0
+    },
+    {
+        "id": 13,
+        "term": "Caching Strategy",
+        "phonetic": "/ˈkæʃɪŋ ˈstrætədʒi/",
+        "definition": "缓存策略（如 Cache-aside, Write-through）",
+        "synonyms": "buffer strategy",
+        "exampleEn": "We are using a cache-aside strategy with Redis to reduce database load.",
+        "exampleCn": "我们正在配合 Redis 使用旁路缓存策略（cache-aside），以减轻数据库负载。",
+        "status": 0
+    },
+    {
+        "id": 14,
+        "term": "Middleware",
+        "phonetic": "/ˈmɪdlwer/",
+        "definition": "中间件（处理请求/响应的插件式代码）",
+        "synonyms": "interceptor",
+        "exampleEn": "This middleware logs the execution time of every HTTP request.",
+        "exampleCn": "这个中间件记录每个 HTTP 请求的执行时间。",
+        "status": 0
+    },
+    {
+        "id": 15,
+        "term": "Authentication (AuthN)",
+        "phonetic": "/ɔːˌθentɪˈkeɪʃn/",
+        "definition": "身份验证（验证“你是谁”）",
+        "synonyms": "identity verification",
+        "exampleEn": "The system uses JWT for stateless authentication.",
+        "exampleCn": "系统使用 JWT 进行无状态身份验证。",
+        "status": 0
+    },
+    {
+        "id": 16,
+        "term": "Authorization (AuthZ)",
+        "phonetic": "/ˌɔːθərəˈzeɪʃn/",
+        "definition": "授权（验证“你能做什么”）",
+        "synonyms": "permission control, RBAC",
+        "exampleEn": "Role-based authorization ensures only admins can delete users.",
+        "exampleCn": "基于角色的授权确保只有管理员可以删除用户。",
+        "status": 0
+    },
+    {
+        "id": 17,
+        "term": "Payload",
+        "phonetic": "/ˈpeɪloʊd/",
+        "definition": "有效载荷（请求或响应中的实际数据部分）",
+        "synonyms": "data body",
+        "exampleEn": "The API response payload is too large, we should implement pagination.",
+        "exampleCn": "API 响应的数据量太大，我们应该实现分页。",
+        "status": 0
+    },
+    {
+        "id": 18,
+        "term": "Rate Limiting",
+        "phonetic": "/reɪt ˈlɪmɪtɪŋ/",
+        "definition": "限流（限制 API 的调用频率）",
+        "synonyms": "throttling",
+        "exampleEn": "We applied rate limiting to prevent brute-force attacks on the login endpoint.",
+        "exampleCn": "我们实施了限流，以防止对登录端点的暴力破解攻击。",
+        "status": 0
+    },
+    {
+        "id": 19,
+        "term": "Message Broker",
+        "phonetic": "/ˈmesɪdʒ ˈbroʊkər/",
+        "definition": "消息代理（如 Kafka, RabbitMQ）",
+        "synonyms": "message queue (MQ)",
+        "exampleEn": "The message broker handles the asynchronous communication between services.",
+        "exampleCn": "消息代理处理服务之间的异步通信。",
+        "status": 0
+    },
+    {
+        "id": 20,
+        "term": "CI/CD Pipeline",
+        "phonetic": "/ˌsiː ˈaɪ ˌsiː ˈdiː ˈpaɪplaɪn/",
+        "definition": "持续集成/持续部署流水线",
+        "synonyms": "automated deployment flow",
+        "exampleEn": "The CI/CD pipeline automatically runs tests and deploys the code to staging.",
+        "exampleCn": "CI/CD 流水线自动运行测试并将代码部署到预发布环境。",
+        "status": 0
+    },
+    {
+        "id": 21,
+        "term": "Artifact",
+        "phonetic": "/ˈɑːrtɪfækt/",
+        "definition": "制品（编译产生的可部署文件，如 JAR, Docker Image）",
+        "synonyms": "build output",
+        "exampleEn": "The build process generates a Docker image as the primary artifact.",
+        "exampleCn": "构建过程生成一个 Docker 镜像作为主要的制品。",
+        "status": 0
+    },
+    {
+        "id": 22,
+        "term": "Infrastructure as Code (IaC)",
+        "phonetic": "/ˈɪnfrəstrʌktʃər æz koʊd/",
+        "definition": "基础设施即代码（如 Terraform, CloudFormation）",
+        "synonyms": "programmable infrastructure",
+        "exampleEn": "IaC allows us to version control our server configurations.",
+        "exampleCn": "基础设施即代码允许我们对服务器配置进行版本控制。",
+        "status": 0
+    },
+    {
+        "id": 23,
+        "term": "Containerization",
+        "phonetic": "/kənˌteɪnərəˈzeɪʃn/",
+        "definition": "容器化（如 Docker）",
+        "synonyms": "sandboxing",
+        "exampleEn": "Containerization ensures the application runs consistently across different environments.",
+        "exampleCn": "容器化确保应用程序在不同环境中运行一致。",
+        "status": 0
+    },
+    {
+        "id": 24,
+        "term": "Orchestration",
+        "phonetic": "/ˌɔːrkɪˈstreɪʃn/",
+        "definition": "编排（如 Kubernetes 对容器的管理）",
+        "synonyms": "cluster management",
+        "exampleEn": "Kubernetes provides powerful orchestration for scaling microservices.",
+        "exampleCn": "Kubernetes 为扩展微服务提供了强大的编排能力。",
+        "status": 0
+    },
+    {
+        "id": 25,
+        "term": "Deployment",
+        "phonetic": "/dɪˈplɔɪmənt/",
+        "definition": "部署",
+        "synonyms": "rollout, release",
+        "exampleEn": "The deployment failed due to a missing environment variable.",
+        "exampleCn": "由于缺少环境变量，部署失败了。",
+        "status": 0
+    },
+    {
+        "id": 26,
+        "term": "Rollback",
+        "phonetic": "/ˈroʊlbæk/",
+        "definition": "回滚（将系统还原到之前的稳定版本）",
+        "synonyms": "revert deployment",
+        "exampleEn": "If the health check fails after deployment, the system triggers an automatic rollback.",
+        "exampleCn": "如果部署后健康检查失败，系统将触发自动回滚。",
+        "status": 0
+    },
+    {
+        "id": 27,
+        "term": "Provisioning",
+        "phonetic": "/prəˈvɪʒənɪŋ/",
+        "definition": "置备/供应（准备服务器、网络等资源的过程）",
+        "synonyms": "resource allocation",
+        "exampleEn": "The automated provisioning of cloud resources takes less than five minutes.",
+        "exampleCn": "云资源的自动置备耗时不到五分钟。",
+        "status": 0
+    },
+    {
+        "id": 28,
+        "term": "Service Discovery",
+        "phonetic": "/ˈsɜːrvɪs dɪˈskʌvəri/",
+        "definition": "服务发现（微服务自动寻找彼此地址的机制）",
+        "synonyms": "dynamic lookup",
+        "exampleEn": "We use Consul for service discovery in our microservices architecture.",
+        "exampleCn": "我们在微服务架构中使用 Consul 进行服务发现。",
+        "status": 0
+    },
+    {
+        "id": 29,
+        "term": "Environment Variable",
+        "phonetic": "/ɪnˈvaɪrənmənt ˈveriəbl/",
+        "definition": "环境变量",
+        "synonyms": "config variable",
+        "exampleEn": "Never store sensitive API keys in the code; use environment variables instead.",
+        "exampleCn": "永远不要在代码中存储敏感的 API 密钥；请改用环境变量。",
+        "status": 0
+    },
+    {
+        "id": 30,
+        "term": "Blue-Green Deployment",
+        "phonetic": "/bluː ɡriːn dɪˈplɔɪmənt/",
+        "definition": "蓝绿部署（零停机切换流量的部署方式）",
+        "synonyms": "seamless rollout",
+        "exampleEn": "Blue-green deployment reduces risk by keeping the old version running until the new one is verified.",
+        "exampleCn": "蓝绿部署通过在验证新版本前保持旧版本运行来降低风险。",
+        "status": 0
+    },
+    {
+        "id": 31,
+        "term": "Canary Release",
+        "phonetic": "/kəˈneri rɪˈliːs/",
+        "definition": "金丝雀发布（灰度发布，先推给小部分用户）",
+        "synonyms": "staged rollout",
+        "exampleEn": "We are doing a canary release to 5% of our users to monitor for errors.",
+        "exampleCn": "我们正向 5% 的用户进行金丝雀发布，以监控错误。",
+        "status": 0
+    },
+    {
+        "id": 32,
+        "term": "Hotfix",
+        "phonetic": "/ˈhɑːtfɪks/",
+        "definition": "热修复（紧急生产环境补丁）",
+        "synonyms": "emergency patch",
+        "exampleEn": "The team applied a hotfix to resolve the critical security vulnerability.",
+        "exampleCn": "团队应用了一个热修复补丁来解决关键安全漏洞。",
+        "status": 0
+    },
+    {
+        "id": 33,
+        "term": "Log Aggregation",
+        "phonetic": "/lɔːɡ ˌæɡrɪˈɡeɪʃn/",
+        "definition": "日志聚合（集中管理分布式系统的日志）",
+        "synonyms": "centralized logging",
+        "exampleEn": "Log aggregation tools like ELK stack help in searching logs across multiple servers.",
+        "exampleCn": "像 ELK 栈这样的日志聚合工具有助于在多个服务器上搜索日志。",
+        "status": 0
+    },
+    {
+        "id": 34,
+        "term": "Metric",
+        "phonetic": "/ˈmetrɪk/",
+        "definition": "指标（可度量的数据点，如吞吐量、延迟）",
+        "synonyms": "measurement",
+        "exampleEn": "We track business metrics like conversion rate alongside system metrics.",
+        "exampleCn": "我们在追踪系统指标的同时，也追踪转化率等业务指标。",
+        "status": 0
+    },
+    {
+        "id": 35,
+        "term": "Latency",
+        "phonetic": "/ˈleɪtənsi/",
+        "definition": "延迟（通常指 API 响应时间）",
+        "synonyms": "response time, lag",
+        "exampleEn": "The high database latency is caused by a missing index on the user table.",
+        "exampleCn": "数据库高延迟是由用户表缺少索引引起的。",
+        "status": 0
+    },
+    {
+        "id": 36,
+        "term": "Scalability",
+        "phonetic": "/ˌskeɪləˈbɪləti/",
+        "definition": "可扩展性",
+        "synonyms": "capacity expansion",
+        "exampleEn": "Horizontal scalability is achieved by adding more nodes to the cluster.",
+        "exampleCn": "水平可扩展性是通过向集群添加更多节点来实现的。",
+        "status": 0
+    },
+    {
+        "id": 37,
+        "term": "Availability",
+        "phonetic": "/əˌveɪləˈbɪləti/",
+        "definition": "可用性（系统正常运行时间的比例）",
+        "synonyms": "uptime ratio",
+        "exampleEn": "Our goal is to achieve five nines (99.999%) availability for the core services.",
+        "exampleCn": "我们的目标是核心服务达到 5 个 9（99.999%）的可用性。",
+        "status": 0
+    },
+    {
+        "id": 38,
+        "term": "Fault Tolerance",
+        "phonetic": "/fɔːlt ˈtɑːlərəns/",
+        "definition": "容错性（系统在部分失效时仍能运行的能力）",
+        "synonyms": "resilience",
+        "exampleEn": "The system's fault tolerance was tested by manually shutting down one of the data centers.",
+        "exampleCn": "通过手动关闭一个数据中心，测试了系统的容错性。",
+        "status": 0
+    },
+    {
+        "id": 39,
+        "term": "Stateless",
+        "phonetic": "/ˈsteɪtləs/",
+        "definition": "无状态（请求不依赖服务器存储的上下文）",
+        "synonyms": "sessionless",
+        "exampleEn": "Stateless architectures make it much easier to scale the application horizontally.",
+        "exampleCn": "无状态架构使得应用程序的水平扩展变得容易得多。",
+        "status": 0
+    },
+    {
+        "id": 40,
+        "term": "Stateful",
+        "phonetic": "/ˈsteɪtfl/",
+        "definition": "有状态（请求依赖于服务器存储的数据）",
+        "synonyms": "session-based",
+        "exampleEn": "Managing stateful applications in Kubernetes requires the use of StatefulSets.",
+        "exampleCn": "在 Kubernetes 中管理有状态应用需要使用 StatefulSets。",
+        "status": 0
+    },
+    {
+        "id": 41,
+        "term": "Idempotency",
+        "phonetic": "/ˌaɪdemˈpoʊtənsi/",
+        "definition": "幂等性（多次相同操作结果一致）",
+        "synonyms": "repeatability",
+        "exampleEn": "The retry logic requires the payment API to be idempotent to avoid double charging.",
+        "exampleCn": "重试逻辑要求支付 API 具备幂等性，以避免重复收费。",
+        "status": 0
+    },
+    {
+        "id": 42,
+        "term": "Service Level Agreement (SLA)",
+        "phonetic": "/ˌes el ˈeɪ/",
+        "definition": "服务等级协议",
+        "synonyms": "service contract",
+        "exampleEn": "The cloud provider failed to meet the SLA during the recent outage.",
+        "exampleCn": "云供应商在最近的停机期间未能履行 SLA。",
+        "status": 0
+    },
+    {
+        "id": 43,
+        "term": "Throughput",
+        "phonetic": "/ˈθruːpʊt/",
+        "definition": "吞吐量（单位时间内处理的请求数）",
+        "synonyms": "processing capacity",
+        "exampleEn": "We need to optimize the code to handle higher throughput during peak hours.",
+        "exampleCn": "我们需要优化代码，以处理高峰时段更高的吞吐量。",
+        "status": 0
+    },
+    {
+        "id": 44,
+        "term": "Provisioning",
+        "phonetic": "/prəˈvɪʒənɪŋ/",
+        "definition": "置备（准备服务器、网络等资源）",
+        "synonyms": "setup, allocation",
+        "exampleEn": "Auto-provisioning allows us to spin up new servers based on demand.",
+        "exampleCn": "自动置备允许我们根据需求启动新服务器。",
+        "status": 0
+    },
+    {
+        "id": 45,
+        "term": "Artifact Registry",
+        "phonetic": "/ˈɑːrtɪfækt ˈredʒɪstri/",
+        "definition": "制品库（存储镜像、包的地方）",
+        "synonyms": "package repository",
+        "exampleEn": "The CI pipeline pushes the successfully built image to the private artifact registry.",
+        "exampleCn": "CI 流水线将构建成功的镜像推送到私有制品库。",
+        "status": 0
+    },
+    {
+        "id": 46,
+        "term": "Payload",
+        "phonetic": "/ˈpeɪloʊd/",
+        "definition": "有效载荷（请求/响应的主体数据）",
+        "synonyms": "message body",
+        "exampleEn": "The webhook payload contains information about the triggered event.",
+        "exampleCn": "Webhook 的有效载荷包含有关触发事件的信息。",
+        "status": 0
+    },
+    {
+        "id": 47,
+        "term": "NoSQL",
+        "phonetic": "/ˌnoʊ ˌes ˌkjuː ˈel/",
+        "definition": "非关系型数据库",
+        "synonyms": "non-relational DB",
+        "exampleEn": "NoSQL databases are often used for storing unstructured data like logs.",
+        "exampleCn": "NoSQL 数据库通常用于存储像日志这样的非结构化数据。",
+        "status": 0
+    },
+    {
+        "id": 48,
+        "term": "Read Replica",
+        "phonetic": "/riːd ˈreplɪkə/",
+        "definition": "只读副本",
+        "synonyms": "secondary DB instance",
+        "exampleEn": "We offloaded the heavy reporting queries to the read replica.",
+        "exampleCn": "我们将沉重的报表查询卸载到了只读副本上。",
+        "status": 0
+    },
+    {
+        "id": 49,
+        "term": "Deadlock",
+        "phonetic": "/ˈdedlɑːk/",
+        "definition": "死锁（两个事务互相等待对方释放锁）",
+        "synonyms": "mutual block",
+        "exampleEn": "Database deadlock issues are often hard to reproduce in the staging environment.",
+        "exampleCn": "数据库死锁问题通常很难在预发布环境中复现。",
+        "status": 0
+    },
+    {
+        "id": 50,
+        "term": "Relational Database",
+        "phonetic": "/rɪˈleɪʃənl ˈdeɪtəbeɪs/",
+        "definition": "关系型数据库",
+        "synonyms": "RDBMS, SQL database",
+        "exampleEn": "PostgreSQL is a powerful open-source relational database.",
+        "exampleCn": "PostgreSQL 是一个功能强大的开源关系型数据库。",
+        "status": 0
+    },
+    {
+        "id": 51,
+        "term": "Stored Procedure",
+        "phonetic": "/stɔːrd prəˈsiːdʒər/",
+        "definition": "存储过程",
+        "synonyms": "DB function",
+        "exampleEn": "We moved some business logic into stored procedures for better performance.",
+        "exampleCn": "为了获得更好的性能，我们将部分业务逻辑移入了存储过程。",
+        "status": 0
+    },
+    {
+        "id": 52,
+        "term": "Foreign Key",
+        "phonetic": "/ˈfɔːrən kiː/",
+        "definition": "外键",
+        "synonyms": "reference key",
+        "exampleEn": "A foreign key constraint ensures data consistency between the orders and users tables.",
+        "exampleCn": "外键约束确保了订单表和用户表之间的数据一致性。",
+        "status": 0
+    },
+    {
+        "id": 53,
+        "term": "Primary Key",
+        "phonetic": "/ˈpraɪmeri kiː/",
+        "definition": "主键",
+        "synonyms": "unique identifier",
+        "exampleEn": "Every row in the database table must have a unique primary key.",
+        "exampleCn": "数据库表中的每一行都必须有一个唯一的主键。",
+        "status": 0
+    },
+    {
+        "id": 54,
+        "term": "Load Balancer",
+        "phonetic": "/loʊd ˈbælənsər/",
+        "definition": "负载均衡器",
+        "synonyms": "traffic manager",
+        "exampleEn": "The load balancer ensures that no single server is overwhelmed by requests.",
+        "exampleCn": "负载均衡器确保没有一台服务器会因为请求过多而崩溃。",
+        "status": 0
+    },
+    {
+        "id": 55,
+        "term": "Reverse Proxy",
+        "phonetic": "/rɪˈvɜːrs ˈprɑːksi/",
+        "definition": "反向代理（如 Nginx）",
+        "synonyms": "gateway proxy",
+        "exampleEn": "Nginx can act as a reverse proxy and handle SSL termination.",
+        "exampleCn": "Nginx 可以充当反向代理并处理 SSL 卸载。",
+        "status": 0
+    },
+    {
+        "id": 56,
+        "term": "Webhook",
+        "phonetic": "/ˈwebhʊk/",
+        "definition": "网络钩子（由事件触发的 HTTP 回调）",
+        "synonyms": "HTTP push",
+        "exampleEn": "GitHub sends a webhook notification whenever someone pushes code.",
+        "exampleCn": "每当有人推送代码时，GitHub 都会发送 Webhook 通知。",
+        "status": 0
+    },
+    {
+        "id": 57,
+        "term": "Endpoint",
+        "phonetic": "/ˈendpɔɪnt/",
+        "definition": "端点（API 暴露的 URL）",
+        "synonyms": "API resource",
+        "exampleEn": "The login endpoint only accepts POST requests.",
+        "exampleCn": "登录端点仅接受 POST 请求。",
+        "status": 0
+    },
+    {
+        "id": 58,
+        "term": "Health Check",
+        "phonetic": "/helθ tʃek/",
+        "definition": "健康检查",
+        "synonyms": "liveness probe",
+        "exampleEn": "Kubernetes uses health checks to determine if a pod should be restarted.",
+        "exampleCn": "Kubernetes 使用健康检查来确定是否应该重启一个 Pod。",
+        "status": 0
+    },
+    {
+        "id": 59,
+        "term": "Cron Job",
+        "phonetic": "/krɑːn dʒɑːb/",
+        "definition": "定时任务",
+        "synonyms": "scheduled task",
+        "exampleEn": "We set up a cron job to clean up temporary files every midnight.",
+        "exampleCn": "我们设置了一个定时任务，在每天午夜清理临时文件。",
+        "status": 0
+    },
+    {
+        "id": 60,
+        "term": "Infrastructure",
+        "phonetic": "/ˈɪnfrəstrʌktʃər/",
+        "definition": "基础设施",
+        "synonyms": "platform, foundation",
+        "exampleEn": "Cloud infrastructure allows for rapid scaling of computing resources.",
+        "exampleCn": "云基础设施允许计算资源快速扩展。",
+        "status": 0
+    },
+    {
+        "id": 61,
+        "term": "Registry",
+        "phonetic": "/ˈredʒɪstri/",
+        "definition": "注册表/镜像仓库",
+        "synonyms": "repository store",
+        "exampleEn": "Docker Hub is a public registry for container images.",
+        "exampleCn": "Docker Hub 是一个容器镜像的公共仓库。",
+        "status": 0
+    },
+    {
+        "id": 62,
+        "term": "Orchestration",
+        "phonetic": "/ˌɔːrkɪˈstreɪʃn/",
+        "definition": "编排",
+        "synonyms": "automated coordination",
+        "exampleEn": "Kubernetes is the industry standard for container orchestration.",
+        "exampleCn": "Kubernetes 是容器编排的行业标准。",
+        "status": 0
+    },
+    {
+        "id": 63,
+        "term": "Cluster",
+        "phonetic": "/ˈklʌstər/",
+        "definition": "集群",
+        "synonyms": "group of nodes",
+        "exampleEn": "The production cluster consists of twenty high-performance nodes.",
+        "exampleCn": "生产集群由 20 个高性能节点组成。",
+        "status": 0
+    },
+    {
+        "id": 64,
+        "term": "Node",
+        "phonetic": "/noʊd/",
+        "definition": "节点（集群中的单台服务器）",
+        "synonyms": "instance, server unit",
+        "exampleEn": "One of the nodes in the cluster went offline due to a hardware failure.",
+        "exampleCn": "由于硬件故障，集群中的一个节点下线了。",
+        "status": 0
+    },
+    {
+        "id": 65,
+        "term": "Autoscaling",
+        "phonetic": "/ˌɔːtoʊˈskeɪlɪŋ/",
+        "definition": "自动伸缩",
+        "synonyms": "elastic scaling",
+        "exampleEn": "Autoscaling triggered the creation of new instances when CPU usage hit 80%.",
+        "exampleCn": "当 CPU 使用率达到 80% 时，自动伸缩触发了新实例的创建。",
+        "status": 0
+    },
+    {
+        "id": 66,
+        "term": "Service Mesh",
+        "phonetic": "/ˈsɜːrvɪs meʃ/",
+        "definition": "服务网格（管理服务间通讯的层，如 Istio）",
+        "synonyms": "service layer",
+        "exampleEn": "A service mesh provides observability and security for microservices communication.",
+        "exampleCn": "服务网格为微服务通信提供可观测性和安全性。",
+        "status": 0
+    },
+    {
+        "id": 67,
+        "term": "Middleware",
+        "phonetic": "/ˈmɪdlwer/",
+        "definition": "中间件",
+        "synonyms": "request handler",
+        "exampleEn": "Authentication middleware is executed before every API call.",
+        "exampleCn": "认证中间件在每次 API 调用前执行。",
+        "status": 0
+    },
+    {
+        "id": 68,
+        "term": "Eventual Consistency",
+        "phonetic": "/ɪˈventʃuəl kənˈsɪstənsi/",
+        "definition": "最终一致性（数据最终会达到一致，但不保证实时一致）",
+        "synonyms": "weak consistency",
+        "exampleEn": "Distributed systems often rely on eventual consistency for better availability.",
+        "exampleCn": "分布式系统通常依靠最终一致性来获得更好的可用性。",
+        "status": 0
+    },
+    {
+        "id": 69,
+        "term": "Strong Consistency",
+        "phonetic": "/strɔːŋ kənˈsɪstənsi/",
+        "definition": "强一致性",
+        "synonyms": "strict consistency",
+        "exampleEn": "Strong consistency is required for financial transactions to prevent data errors.",
+        "exampleCn": "金融交易需要强一致性以防止数据错误。",
+        "status": 0
+    },
+    {
+        "id": 70,
+        "term": "Artifact",
+        "phonetic": "/ˈɑːrtɪfækt/",
+        "definition": "制品",
+        "synonyms": "deliverable bundle",
+        "exampleEn": "The deployment process starts once the CI pipeline uploads the artifact.",
+        "exampleCn": "一旦 CI 流水线上传了制品，部署过程就会开始。",
+        "status": 0
+    },
+    {
+        "id": 71,
+        "term": "Zero-downtime",
+        "phonetic": "/ˈzɪroʊ ˈdaʊntaɪm/",
+        "definition": "零停机时间",
+        "synonyms": "seamless update",
+        "exampleEn": "Our deployment strategy ensures zero-downtime during updates.",
+        "exampleCn": "我们的部署策略确保了更新期间的零停机时间。",
+        "status": 0
+    },
+    {
+        "id": 72,
+        "term": "Provisioning",
+        "phonetic": "/prəˈvɪʒənɪŋ/",
+        "definition": "置备",
+        "synonyms": "resource setup",
+        "exampleEn": "Infrastructure provisioning is automated via Terraform scripts.",
+        "exampleCn": "基础设施置备通过 Terraform 脚本自动化完成。",
+        "status": 0
+    },
+    {
+        "id": 63,
+        "term": "Telemetry",
+        "phonetic": "/təˈlemətri/",
+        "definition": "遥测（监控数据的收集和传输）",
+        "synonyms": "remote monitoring data",
+        "exampleEn": "The system's telemetry data showed a spike in memory usage.",
+        "exampleCn": "系统的遥测数据映射出内存使用率的一个峰值。",
+        "status": 0
+    },
+    {
+        "id": 74,
+        "term": "Circuit Breaker",
+        "phonetic": "/ˈsɜːrkɪt ˈbreɪkər/",
+        "definition": "熔断器",
+        "synonyms": "fault protector",
+        "exampleEn": "The circuit breaker tripped to prevent a cascading failure in the system.",
+        "exampleCn": "熔断器跳闸以防止系统发生级联故障。",
+        "status": 0
+    },
+    {
+        "id": 75,
+        "term": "Sidecar",
+        "phonetic": "/ˈsaɪdkɑːr/",
+        "definition": "边车模式（辅助主应用的独立进程/容器）",
+        "synonyms": "helper container",
+        "exampleEn": "A sidecar container can be used to handle logging and monitoring.",
+        "exampleCn": "边车容器可用于处理日志记录和监控。",
+        "status": 0
+    },
+    {
+        "id": 76,
+        "term": "Throughput",
+        "phonetic": "/ˈθruːpʊt/",
+        "definition": "吞吐量",
+        "synonyms": "bandwidth",
+        "exampleEn": "Our goal is to increase the throughput of our background processing workers.",
+        "exampleCn": "我们的目标是提高后台处理工作进程的吞吐量。",
+        "status": 0
+    },
+    {
+        "id": 77,
+        "term": "Persistent Volume",
+        "phonetic": "/pərˈsɪstəns ˈvɑːljuːm/",
+        "definition": "持久卷（用于存储容器中的持久数据）",
+        "synonyms": "storage volume",
+        "exampleEn": "A persistent volume ensures that data is not lost when a pod is deleted.",
+        "exampleCn": "持久卷确保 Pod 被删除时数据不会丢失。",
+        "status": 0
+    },
+    {
+        "id": 78,
+        "term": "Rollout",
+        "phonetic": "/ˈroʊlaʊt/",
+        "definition": "逐步发布",
+        "synonyms": "progressive release",
+        "exampleEn": "The rollout of the new feature will be completed by the end of the week.",
+        "exampleCn": "新功能的逐步发布将在本周末前完成。",
+        "status": 0
+    },
+    {
+        "id": 79,
+        "term": "Cloud-native",
+        "phonetic": "/ˈklaʊd ˈneɪtɪv/",
+        "definition": "云原生",
+        "synonyms": "built for cloud",
+        "exampleEn": "Cloud-native applications are designed to fully leverage cloud services.",
+        "exampleCn": "云原生应用旨在充分利用云服务。",
+        "status": 0
+    },
+    {
+        "id": 80,
+        "term": "Provisioning",
+        "phonetic": "/prəˈvɪʒənɪŋ/",
+        "definition": "置备",
+        "synonyms": "preparation",
+        "exampleEn": "Resource provisioning takes just a few seconds on a modern cloud platform.",
+        "exampleCn": "在现代云平台上，资源置备仅需几秒钟。",
+        "status": 0
+    }
+]

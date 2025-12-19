@@ -58,10 +58,6 @@
 
     <div class="main-content">
         <div class="header">
-            <div class="type-tabs">
-                <div class="type-tab active" onclick="switchType('word')">单词 Word</div>
-                <div class="type-tab" onclick="switchType('phrase')">短语 Phrase</div>
-            </div>
             <div class="status-tabs">
                 <div class="status-pill active" onclick="switchStatus('all')">全部 <span id="count-all">0</span></div>
                 <div class="status-pill" onclick="switchStatus(0)">未标记 <span id="count-0">0</span></div>
@@ -79,29 +75,29 @@
         let books = [];
         let currentBookFile = null;
         let currentData = [];
-        let currentType = 'word';
         let currentStatus = 'all';
 
         document.addEventListener('DOMContentLoaded', () => {
             loadMenu();
         });
 
-        // 1. 加载目录清单 (menu.json)
+        // 1. 加载目录清单 (动态获取)
         async function loadMenu() {
             try {
-                const response = await fetch('menu.json?t=' + new Date().getTime());
-                if(!response.ok) throw new Error("无法加载 menu.json");
+                // Change: Fetch from the new backend endpoint instead of menu.json
+                const response = await fetch('/v1/get_word_books');
+                if(!response.ok) throw new Error("无法加载单词书列表");
 
                 const fileList = await response.json();
 
                 books = fileList.map(fileName => {
-                    // *** 优化点 1: 移除大小写转换，直接使用文件名（去掉后缀） ***
                     let displayName = fileName.replace('.json', '');
 
                     return {
                         id: fileName,
                         name: displayName,
-                        file: fileName
+                        // Change: The files are now in the 'wordbook/' directory
+                        file: 'wordbook/' + fileName
                     };
                 });
 
@@ -113,7 +109,7 @@
             } catch (error) {
                 console.error(error);
                 document.getElementById('sidebarBookList').innerHTML =
-                    `<div style="padding:10px; color:red; font-size:12px;">❌ 加载 menu.json 失败<br>请确保文件存在</div>`;
+                    `<div style="padding:10px; color:red; font-size:12px;">❌ 加载列表失败<br>请检查后端服务</div>`;
             }
         }
 
@@ -172,9 +168,8 @@
             container.innerHTML = '';
 
             const filtered = currentData.filter(item => {
-                const typeMatch = item.category === currentType;
                 const statusMatch = currentStatus === 'all' ? true : item.status === currentStatus;
-                return typeMatch && statusMatch;
+                return statusMatch;
             });
 
             updateCounts();
@@ -211,7 +206,6 @@
         }
 
         // 5. 操作逻辑 (保持不变)
-        function switchType(type) { currentType = type; renderContent(); }
         function switchStatus(status) { currentStatus = status; renderContent(); }
 
         function markStatus(id, newStatus) {
@@ -225,7 +219,7 @@
                         'Content-Type': 'application/json',
                     },
                     body: JSON.stringify({
-                        json_name: currentBookFile,
+                        json_name: 'wordbook/' + currentBookFile,
                         id: id,
                         status: newStatus
                     }),
@@ -256,7 +250,7 @@
         }
 
         function updateCounts() {
-            const typeData = currentData.filter(i => i.category === currentType);
+            const typeData = currentData;
             document.getElementById('count-all').innerText = typeData.length;
             document.getElementById('count-0').innerText = typeData.filter(i => i.status === 0).length;
             document.getElementById('count-1').innerText = typeData.filter(i => i.status === 1).length;
@@ -264,10 +258,6 @@
         }
 
         function updateTabStyles() {
-            const typeTabs = document.querySelectorAll('.type-tab');
-            typeTabs.forEach(t => t.classList.remove('active'));
-            typeTabs[currentType === 'word' ? 0 : 1].classList.add('active');
-
             const statusPills = document.querySelectorAll('.status-pill');
             statusPills.forEach(p => p.classList.remove('active'));
             const map = {'all':0, 0:1, 1:2, 2:3};

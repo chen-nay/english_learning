@@ -1,0 +1,752 @@
+[
+    {
+        "id": 1,
+        "term": "Monolith",
+        "phonetic": "/ˈmɑːnəlɪθ/",
+        "definition": "单体架构（所有功能集成在一个应用中）",
+        "synonyms": "monolithic architecture",
+        "exampleEn": "The company decided to break their monolith into smaller microservices.",
+        "exampleCn": "公司决定将其单体架构拆分为更小的微服务。",
+        "status": 0
+    },
+    {
+        "id": 2,
+        "term": "Microservices",
+        "phonetic": "/ˌmaɪkroʊˈsɜːrvɪsɪz/",
+        "definition": "微服务架构",
+        "synonyms": "distributed services",
+        "exampleEn": "Microservices allow teams to deploy features independently.",
+        "exampleCn": "微服务允许团队独立部署功能。",
+        "status": 0
+    },
+    {
+        "id": 3,
+        "term": "Scalability",
+        "phonetic": "/ˌskeɪləˈbɪləti/",
+        "definition": "可扩展性",
+        "synonyms": "expandability",
+        "exampleEn": "We need to ensure the scalability of the database as user traffic grows.",
+        "exampleCn": "随着用户流量的增长，我们需要确保数据库的可扩展性。",
+        "status": 0
+    },
+    {
+        "id": 4,
+        "term": "Modularity",
+        "phonetic": "/ˌmɑːdʒuˈlærəti/",
+        "definition": "模块化",
+        "synonyms": "segmentation",
+        "exampleEn": "High modularity makes the code easier to test and reuse.",
+        "exampleCn": "高度模块化使代码更易于测试和重用。",
+        "status": 0
+    },
+    {
+        "id": 5,
+        "term": "Decoupling",
+        "phonetic": "/ˌdiːˈkʌplɪŋ/",
+        "definition": "解耦",
+        "synonyms": "separation, detachment",
+        "exampleEn": "Using a message queue helps in decoupling the producer and the consumer.",
+        "exampleCn": "使用消息队列有助于解耦生产者和消费者。",
+        "status": 0
+    },
+    {
+        "id": 6,
+        "term": "Cohesion",
+        "phonetic": "/koʊˈhiːʒn/",
+        "definition": "内聚性（模块内部功能的紧密程度）",
+        "synonyms": "unity, stickiness",
+        "exampleEn": "A good design should aim for high cohesion and low coupling.",
+        "exampleCn": "一个好的设计应该追求高内聚和低耦合。",
+        "status": 0
+    },
+    {
+        "id": 7,
+        "term": "Coupling",
+        "phonetic": "/ˈkʌplɪŋ/",
+        "definition": "耦合度（模块之间相互依赖的程度）",
+        "synonyms": "dependency, interconnection",
+        "exampleEn": "Tight coupling makes it difficult to change one module without affecting others.",
+        "exampleCn": "紧耦合使得修改一个模块而不影响其他模块变得困难。",
+        "status": 0
+    },
+    {
+        "id": 8,
+        "term": "Maintainability",
+        "phonetic": "/meɪnˌteɪnəˈbɪləti/",
+        "definition": "可维护性",
+        "synonyms": "serviceability",
+        "exampleEn": "Refactoring the legacy code improved the system's maintainability.",
+        "exampleCn": "重构遗留代码提高了系统的可维护性。",
+        "status": 0
+    },
+    {
+        "id": 9,
+        "term": "Extensibility",
+        "phonetic": "/ɪkˌstenˈsəˈbɪləti/",
+        "definition": "可扩展性（指增加新功能而不破坏现有功能的能力）",
+        "synonyms": "expandability",
+        "exampleEn": "The plugin architecture provides great extensibility for the editor.",
+        "exampleCn": "插件架构为编辑器提供了极大的扩展性。",
+        "status": 0
+    },
+    {
+        "id": 10,
+        "term": "Robustness",
+        "phonetic": "/roʊˈbʌstnəs/",
+        "definition": "健壮性（处理错误和异常输入的能力）",
+        "synonyms": "resilience, durability",
+        "exampleEn": "We performed stress testing to verify the robustness of the server.",
+        "exampleCn": "我们进行了压力测试以验证服务器的健壮性。",
+        "status": 0
+    },
+    {
+        "id": 11,
+        "term": "Abstraction",
+        "phonetic": "/æbˈstrækʃn/",
+        "definition": "抽象层",
+        "synonyms": "generalization",
+        "exampleEn": "We added an abstraction layer to support multiple database types.",
+        "exampleCn": "我们添加了一个抽象层以支持多种数据库类型。",
+        "status": 0
+    },
+    {
+        "id": 12,
+        "term": "Separation of Concerns (SoC)",
+        "phonetic": "/ˌsepəˈreɪʃn əv kənˈsɜːrnz/",
+        "definition": "关注点分离",
+        "synonyms": "modularization",
+        "exampleEn": "Separation of concerns is a fundamental principle in software design.",
+        "exampleCn": "关注点分离是软件设计中的一个基本原则。",
+        "status": 0
+    },
+    {
+        "id": 13,
+        "term": "Distributed System",
+        "phonetic": "/dɪˈstrɪbjuːtɪd ˈsɪstəm/",
+        "definition": "分布式系统",
+        "synonyms": "decentralized system",
+        "exampleEn": "Ensuring data consistency is a major challenge in a distributed system.",
+        "exampleCn": "确保数据一致性是分布式系统中的一个主要挑战。",
+        "status": 0
+    },
+    {
+        "id": 14,
+        "term": "High Availability (HA)",
+        "phonetic": "/haɪ əˌveɪləˈbɪləti/",
+        "definition": "高可用性",
+        "synonyms": "uptime, reliability",
+        "exampleEn": "We use clustering to achieve high availability for our API.",
+        "exampleCn": "我们使用集群技术来实现 API 的高可用性。",
+        "status": 0
+    },
+    {
+        "id": 15,
+        "term": "Load Balancer",
+        "phonetic": "/loʊd ˈbælənsər/",
+        "definition": "负载均衡器",
+        "synonyms": "traffic distributor",
+        "exampleEn": "The load balancer distributes incoming requests across several servers.",
+        "exampleCn": "负载均衡器将传入的请求分配到多个服务器上。",
+        "status": 0
+    },
+    {
+        "id": 16,
+        "term": "Redundancy",
+        "phonetic": "/rɪˈdʌndənsi/",
+        "definition": "冗余（为了备份而增加的额外组件）",
+        "synonyms": "backup, duplication",
+        "exampleEn": "Data redundancy is necessary to prevent data loss in case of disk failure.",
+        "exampleCn": "为了防止磁盘故障导致的数据丢失，数据冗余是必要的。",
+        "status": 0
+    },
+    {
+        "id": 17,
+        "term": "Fault Tolerance",
+        "phonetic": "/fɔːlt ˈtɑːlərəns/",
+        "definition": "容错性",
+        "synonyms": "error resilience",
+        "exampleEn": "A fault-tolerant system continues to operate even if some components fail.",
+        "exampleCn": "即使某些组件发生故障，容错系统仍能继续运行。",
+        "status": 0
+    },
+    {
+        "id": 18,
+        "term": "Scalability (Horizontal/Vertical)",
+        "phonetic": "/ˌskeɪləˈbɪləti/",
+        "definition": "水平/垂直扩展",
+        "synonyms": "scaling out/up",
+        "exampleEn": "Horizontal scalability means adding more machines to the pool.",
+        "exampleCn": "水平扩展意味着向池中添加更多机器。",
+        "status": 0
+    },
+    {
+        "id": 19,
+        "term": "Caching",
+        "phonetic": "/ˈkæʃɪŋ/",
+        "definition": "缓存机制",
+        "synonyms": "temporary storage",
+        "exampleEn": "Implementing server-side caching significantly reduced response times.",
+        "exampleCn": "实现服务端缓存显著减少了响应时间。",
+        "status": 0
+    },
+    {
+        "id": 20,
+        "term": "Persistence",
+        "phonetic": "/pərˈsɪstəns/",
+        "definition": "持久化",
+        "synonyms": "data storage",
+        "exampleEn": "We use a database for long-term data persistence.",
+        "exampleCn": "我们使用数据库进行长期的数据持久化。",
+        "status": 0
+    },
+    {
+        "id": 21,
+        "term": "Latency",
+        "phonetic": "/ˈleɪtənsi/",
+        "definition": "延迟",
+        "synonyms": "delay, lag",
+        "exampleEn": "The new architecture aims to reduce network latency.",
+        "exampleCn": "新架构旨在减少网络延迟。",
+        "status": 0
+    },
+    {
+        "id": 22,
+        "term": "Throughput",
+        "phonetic": "/ˈθruːpʊt/",
+        "definition": "吞吐量",
+        "synonyms": "processing capacity",
+        "exampleEn": "Our goal is to increase the system throughput to 10,000 requests per second.",
+        "exampleCn": "我们的目标是将系统吞吐量提高到每秒 10,000 个请求。",
+        "status": 0
+    },
+    {
+        "id": 23,
+        "term": "Serverless",
+        "phonetic": "/ˈsɜːrvərləs/",
+        "definition": "无服务器架构",
+        "synonyms": "FaaS (Function as a Service)",
+        "exampleEn": "Serverless computing allows us to run code without managing servers.",
+        "exampleCn": "无服务器计算允许我们在不管理服务器的情况下运行代码。",
+        "status": 0
+    },
+    {
+        "id": 24,
+        "term": "Infrastructure",
+        "phonetic": "/ˈɪnfrəstrʌktʃər/",
+        "definition": "基础设施",
+        "synonyms": "foundation, framework",
+        "exampleEn": "We are migrating our infrastructure to the cloud.",
+        "exampleCn": "我们正在将我们的基础设施迁移到云端。",
+        "status": 0
+    },
+    {
+        "id": 25,
+        "term": "Microkernel",
+        "phonetic": "/ˌmaɪkroʊˈkɜːrnl/",
+        "definition": "微内核架构",
+        "synonyms": "plugin architecture",
+        "exampleEn": "The microkernel architecture keeps the core system small and clean.",
+        "exampleCn": "微内核架构使核心系统保持精简和整洁。",
+        "status": 0
+    },
+    {
+        "id": 26,
+        "term": "Service Mesh",
+        "phonetic": "/ˈsɜːrvɪs meʃ/",
+        "definition": "服务网格",
+        "synonyms": "service network",
+        "exampleEn": "Istio is a popular tool for managing a service mesh.",
+        "exampleCn": "Istio 是一个流行的管理服务网格的工具。",
+        "status": 0
+    },
+    {
+        "id": 27,
+        "term": "Orchestration",
+        "phonetic": "/ˌɔːrkɪˈstreɪʃn/",
+        "definition": "编排（如容器编排）",
+        "synonyms": "coordination, management",
+        "exampleEn": "Kubernetes is used for the orchestration of containerized applications.",
+        "exampleCn": "Kubernetes 用于容器化应用程序的编排。",
+        "status": 0
+    },
+    {
+        "id": 28,
+        "term": "Event-driven",
+        "phonetic": "/ɪˈvent ˈdrɪvn/",
+        "definition": "事件驱动的",
+        "synonyms": "reactive",
+        "exampleEn": "An event-driven architecture is highly responsive to real-time changes.",
+        "exampleCn": "事件驱动架构对实时变化具有高度响应性。",
+        "status": 0
+    },
+    {
+        "id": 29,
+        "term": "Pub/Sub (Publish/Subscribe)",
+        "phonetic": "/ˈpʌblɪʃ səbˈskraɪb/",
+        "definition": "发布/订阅模式",
+        "synonyms": "message broadcasting",
+        "exampleEn": "The pub/sub model allows for scalable communication between services.",
+        "exampleCn": "发布/订阅模式允许服务之间进行可扩展的通信。",
+        "status": 0
+    },
+    {
+        "id": 30,
+        "term": "Stateless",
+        "phonetic": "/ˈsteɪtləs/",
+        "definition": "无状态的",
+        "synonyms": "non-persistent",
+        "exampleEn": "Stateless services are easier to scale horizontally.",
+        "exampleCn": "无状态服务更容易进行水平扩展。",
+        "status": 0
+    },
+    {
+        "id": 31,
+        "term": "Stateful",
+        "phonetic": "/ˈsteɪtfl/",
+        "definition": "有状态的",
+        "synonyms": "persistent",
+        "exampleEn": "Database clusters are typically stateful systems.",
+        "exampleCn": "数据库集群通常是有状态系统。",
+        "status": 0
+    },
+    {
+        "id": 32,
+        "term": "Layered Architecture",
+        "phonetic": "/ˈleɪərd ˈɑːrkɪtektʃər/",
+        "definition": "分层架构",
+        "synonyms": "n-tier architecture",
+        "exampleEn": "A typical layered architecture includes presentation, logic, and data layers.",
+        "exampleCn": "典型的分层架构包括展示层、逻辑层和数据层。",
+        "status": 0
+    },
+    {
+        "id": 33,
+        "term": "Design Pattern",
+        "phonetic": "/dɪˈzaɪn ˈpætərn/",
+        "definition": "设计模式",
+        "synonyms": "standard solution",
+        "exampleEn": "Learning design patterns helps engineers solve recurring problems.",
+        "exampleCn": "学习设计模式有助于工程师解决反复出现的问题。",
+        "status": 0
+    },
+    {
+        "id": 34,
+        "term": "Observer Pattern",
+        "phonetic": "/əbˈzɜːrvər ˈpætərn/",
+        "definition": "观察者模式",
+        "synonyms": "listener pattern",
+        "exampleEn": "The observer pattern is used to notify objects when a state change occurs.",
+        "exampleCn": "观察者模式用于在状态发生变化时通知对象。",
+        "status": 0
+    },
+    {
+        "id": 35,
+        "term": "Factory Pattern",
+        "phonetic": "/ˈfæktri ˈpætərn/",
+        "definition": "工厂模式",
+        "synonyms": "creator pattern",
+        "exampleEn": "We used the factory pattern to instantiate different types of report generators.",
+        "exampleCn": "我们使用工厂模式来实例化不同类型的报表生成器。",
+        "status": 0
+    },
+    {
+        "id": 36,
+        "term": "Dependency Inversion",
+        "phonetic": "/dɪˈpendənsi ɪnˈvɜːrʒn/",
+        "definition": "依赖倒置",
+        "synonyms": "DIP",
+        "exampleEn": "Dependency inversion encourages programming to an interface rather than an implementation.",
+        "exampleCn": "依赖倒置鼓励面向接口编程而非面向实现编程。",
+        "status": 0
+    },
+    {
+        "id": 37,
+        "term": "Refactoring",
+        "phonetic": "/ˌriːˈfæktərɪŋ/",
+        "definition": "重构",
+        "synonyms": "restructuring",
+        "exampleEn": "The team spent two weeks refactoring the core logic to remove technical debt.",
+        "exampleCn": "团队花了两周时间重构核心逻辑以消除技术债。",
+        "status": 0
+    },
+    {
+        "id": 38,
+        "term": "Concurrency Control",
+        "phonetic": "/kənˈkɜːrənsi kənˈtroʊl/",
+        "definition": "并发控制",
+        "synonyms": "locking mechanism",
+        "exampleEn": "Optimistic locking is a form of concurrency control used in databases.",
+        "exampleCn": "乐观锁是数据库中使用的一种并发控制形式。",
+        "status": 0
+    },
+    {
+        "id": 39,
+        "term": "Message Queue (MQ)",
+        "phonetic": "/ˈmesɪdʒ kjuː/",
+        "definition": "消息队列",
+        "synonyms": "message broker",
+        "exampleEn": "RabbitMQ and Kafka are common choices for a message queue.",
+        "exampleCn": "RabbitMQ 和 Kafka 是消息队列的常用选择。",
+        "status": 0
+    },
+    {
+        "id": 40,
+        "term": "Sharding",
+        "phonetic": "/ˈʃɑːrdɪŋ/",
+        "definition": "分片（通常指数据库水平拆分）",
+        "synonyms": "horizontal partitioning",
+        "exampleEn": "Database sharding is used to handle extremely large datasets.",
+        "exampleCn": "数据库分片用于处理极其庞大的数据集。",
+        "status": 0
+    },
+    {
+        "id": 41,
+        "term": "Replication",
+        "phonetic": "/ˌreplɪˈkeɪʃn/",
+        "definition": "复制（如主从复制）",
+        "synonyms": "mirroring, copying",
+        "exampleEn": "Master-slave replication ensures data is backed up in real-time.",
+        "exampleCn": "主从复制确保数据得到实时备份。",
+        "status": 0
+    },
+    {
+        "id": 42,
+        "term": "Endpoint",
+        "phonetic": "/ˈendpɔɪnt/",
+        "definition": "（API）端点/接口点",
+        "synonyms": "API URL",
+        "exampleEn": "The health check endpoint returns the current status of the service.",
+        "exampleCn": "健康检查端点返回服务的当前状态。",
+        "status": 0
+    },
+    {
+        "id": 43,
+        "term": "RESTful",
+        "phonetic": "/ˈrestfl/",
+        "definition": "符合 REST 风格的",
+        "synonyms": "standard API style",
+        "exampleEn": "We are building a RESTful API for our mobile client.",
+        "exampleCn": "我们正在为移动客户端构建 RESTful API。",
+        "status": 0
+    },
+    {
+        "id": 44,
+        "term": "SOAP",
+        "phonetic": "/soʊp/",
+        "definition": "简单对象访问协议（一种较老的协议）",
+        "synonyms": "XML-based protocol",
+        "exampleEn": "SOAP is more formal and complex than REST.",
+        "exampleCn": "SOAP 比 REST 更正式且更复杂。",
+        "status": 0
+    },
+    {
+        "id": 45,
+        "term": "GraphQL",
+        "phonetic": "/ˈɡræf kjuː el/",
+        "definition": "一种用于 API 的查询语言",
+        "synonyms": "modern query API",
+        "exampleEn": "GraphQL allows clients to request exactly the data they need.",
+        "exampleCn": "GraphQL 允许客户端请求其确切需要的数据。",
+        "status": 0
+    },
+    {
+        "id": 46,
+        "term": "Interface Segregation",
+        "phonetic": "/ˈɪntərfeɪs ˌseɡrɪˈɡeɪʃn/",
+        "definition": "接口隔离原则",
+        "synonyms": "ISP",
+        "exampleEn": "Interface segregation suggests creating specific interfaces rather than general ones.",
+        "exampleCn": "接口隔离原则建议创建特定的接口而非通用的接口。",
+        "status": 0
+    },
+    {
+        "id": 47,
+        "term": "Encapsulation",
+        "phonetic": "/ɪnˌkæpsuˈleɪʃn/",
+        "definition": "封装（架构层面指模块边界清晰）",
+        "synonyms": "containment",
+        "exampleEn": "Good encapsulation prevents internal changes from leaking to other modules.",
+        "exampleCn": "良好的封装可以防止内部更改泄露到其他模块。",
+        "status": 0
+    },
+    {
+        "id": 48,
+        "term": "Data Integrity",
+        "phonetic": "/ˈdeɪtə ɪnˈteɡrəti/",
+        "definition": "数据完整性",
+        "synonyms": "data accuracy",
+        "exampleEn": "Foreign key constraints help maintain data integrity in a database.",
+        "exampleCn": "外键约束有助于维护数据库中的数据完整性。",
+        "status": 0
+    },
+    {
+        "id": 49,
+        "term": "Standardization",
+        "phonetic": "/ˌstændərdaɪˈzeɪʃn/",
+        "definition": "标准化",
+        "synonyms": "normalization",
+        "exampleEn": "Architecture standardization helps new developers understand the codebase faster.",
+        "exampleCn": "架构标准化有助于新开发人员更快地理解代码库。",
+        "status": 0
+    },
+    {
+        "id": 50,
+        "term": "Load Testing",
+        "phonetic": "/loʊd ˈtestɪŋ/",
+        "definition": "负载测试",
+        "synonyms": "capacity testing",
+        "exampleEn": "We conducted load testing to determine the maximum capacity of our system.",
+        "exampleCn": "我们进行了负载测试以确定系统的最大容量。",
+        "status": 0
+    },
+    {
+        "id": 51,
+        "term": "Elasticity",
+        "phonetic": "/ˌiːlæˈstɪsəti/",
+        "definition": "弹性（自动伸缩能力）",
+        "synonyms": "autoscaling",
+        "exampleEn": "Cloud elasticity allows the system to scale down during low traffic periods.",
+        "exampleCn": "云弹性允许系统在低流量期间缩小规模。",
+        "status": 0
+    },
+    {
+        "id": 52,
+        "term": "Protocol",
+        "phonetic": "/ˈproʊtəkɔːl/",
+        "definition": "协议",
+        "synonyms": "communication standard",
+        "exampleEn": "HTTPS is the standard protocol for secure web communication.",
+        "exampleCn": "HTTPS 是安全网络通信的标准协议。",
+        "status": 0
+    },
+    {
+        "id": 53,
+        "term": "Gateway",
+        "phonetic": "/ˈɡeɪtweɪ/",
+        "definition": "网关",
+        "synonyms": "entry point",
+        "exampleEn": "The API gateway handles authentication and rate limiting.",
+        "exampleCn": "API 网关处理认证和限流。",
+        "status": 0
+    },
+    {
+        "id": 54,
+        "term": "Sidecar",
+        "phonetic": "/ˈsaɪdkɑːr/",
+        "definition": "边车模式（在容器旁运行的辅助容器）",
+        "synonyms": "companion container",
+        "exampleEn": "The logging agent runs as a sidecar container in the pod.",
+        "exampleCn": "日志代理作为 pod 中的边车容器运行。",
+        "status": 0
+    },
+    {
+        "id": 55,
+        "term": "Backpressure",
+        "phonetic": "/ˈbækˌpreʃər/",
+        "definition": "背压/反向压力（系统处理不过来时向下游反馈）",
+        "synonyms": "flow control",
+        "exampleEn": "We implemented backpressure to prevent the consumer from being overwhelmed.",
+        "exampleCn": "我们实现了背压机制以防止消费者被淹没。",
+        "status": 0
+    },
+    {
+        "id": 56,
+        "term": "Consistency (Strong/Eventual)",
+        "phonetic": "/kənˈsɪstənsi/",
+        "definition": "一致性（强一致性/最终一致性）",
+        "synonyms": "data uniformity",
+        "exampleEn": "Many distributed databases trade strong consistency for higher availability.",
+        "exampleCn": "许多分布式数据库牺牲强一致性来换取更高的可用性。",
+        "status": 0
+    },
+    {
+        "id": 57,
+        "term": "CAP Theorem",
+        "phonetic": "/kæp ˈθɪərəm/",
+        "definition": "CAP 定理（一致性、可用性、分区容忍性）",
+        "synonyms": "Brewer's theorem",
+        "exampleEn": "The CAP theorem states that a distributed system can only provide two of three guarantees.",
+        "exampleCn": "CAP 定理指出，分布式系统只能提供三个保证中的两个。",
+        "status": 0
+    },
+    {
+        "id": 58,
+        "term": "Circuit Breaker",
+        "phonetic": "/ˈsɜːrkɪt ˈbreɪkər/",
+        "definition": "熔断器（防止故障蔓延的设计模式）",
+        "synonyms": "failsafe",
+        "exampleEn": "The circuit breaker tripped to protect the system from the failing service.",
+        "exampleCn": "熔断器跳闸以保护系统免受故障服务的影响。",
+        "status": 0
+    },
+    {
+        "id": 59,
+        "term": "Service Discovery",
+        "phonetic": "/ˈsɜːrvɪs dɪˈskʌvəri/",
+        "definition": "服务发现",
+        "synonyms": "dynamic lookup",
+        "exampleEn": "Service discovery helps microservices find each other in a dynamic environment.",
+        "exampleCn": "服务发现帮助微服务在动态环境中相互找到。",
+        "status": 0
+    },
+    {
+        "id": 60,
+        "term": "Transaction",
+        "phonetic": "/trænˈzækʃn/",
+        "definition": "事务",
+        "synonyms": "atomic operation",
+        "exampleEn": "A database transaction ensures that all operations succeed or all fail.",
+        "exampleCn": "数据库事务确保所有操作要么全部成功，要么全部失败。",
+        "status": 0
+    },
+    {
+        "id": 61,
+        "term": "Atomic",
+        "phonetic": "/əˈtɑːmɪk/",
+        "definition": "原子性的",
+        "synonyms": "indivisible",
+        "exampleEn": "The increment operation must be atomic to avoid race conditions.",
+        "exampleCn": "自增操作必须是原子的以避免竞态条件。",
+        "status": 0
+    },
+    {
+        "id": 62,
+        "term": "Idempotency",
+        "phonetic": "/ˌaɪdemˈpoʊtənsi/",
+        "definition": "幂等性（多次执行结果相同）",
+        "synonyms": "consistency after repetition",
+        "exampleEn": "The payment API must be idempotent to prevent duplicate charges.",
+        "exampleCn": "支付 API 必须具有幂等性，以防止重复收费。",
+        "status": 0
+    },
+    {
+        "id": 63,
+        "term": "Blueprint",
+        "phonetic": "/ˈbluːprɪnt/",
+        "definition": "蓝图/架构草图",
+        "synonyms": "architectural plan",
+        "exampleEn": "This diagram serves as the blueprint for our new cloud infrastructure.",
+        "exampleCn": "该图表作为我们新云基础设施的蓝图。",
+        "status": 0
+    },
+    {
+        "id": 64,
+        "term": "Schema",
+        "phonetic": "/ˈskiːmə/",
+        "definition": "架构/模式（通常指数据结构）",
+        "synonyms": "structure",
+        "exampleEn": "We need to design a flexible schema to handle varied user data.",
+        "exampleCn": "我们需要设计一个灵活的模式来处理多样的用户数据。",
+        "status": 0
+    },
+    {
+        "id": 65,
+        "term": "Refactor",
+        "phonetic": "/ˌriːˈfæktər/",
+        "definition": "架构重构",
+        "synonyms": "architectural rework",
+        "exampleEn": "Refactoring the monolithic core was the biggest challenge of the year.",
+        "exampleCn": "重构单体核心是今年最大的挑战。",
+        "status": 0
+    },
+    {
+        "id": 66,
+        "term": "Orchestration vs Choreography",
+        "phonetic": "/ˌɔːrkɪˈstreɪʃn ˈvɜːrsəs ˌkɔːriˈɑːɡrəfi/",
+        "definition": "编排 vs 编舞（微服务交互的两种模式）",
+        "synonyms": "centralized vs decentralized control",
+        "exampleEn": "Choreography is more decentralized compared to central orchestration.",
+        "exampleCn": "与中心化编排相比，编舞模式更加去中心化。",
+        "status": 0
+    },
+    {
+        "id": 67,
+        "term": "Normalization",
+        "phonetic": "/ˌnɔːrmələˈzeɪʃn/",
+        "definition": "规范化（数据库设计中减少冗余的过程）",
+        "synonyms": "standardizing data",
+        "exampleEn": "Database normalization reduces the risk of data anomalies.",
+        "exampleCn": "数据库规范化降低了数据异常的风险。",
+        "status": 0
+    },
+    {
+        "id": 68,
+        "term": "Denormalization",
+        "phonetic": "/ˌdiːnɔːrmələˈzeɪʃn/",
+        "definition": "反规范化（为了提高性能而增加冗余）",
+        "synonyms": "optimizing for read speed",
+        "exampleEn": "Sometimes we use denormalization to speed up complex queries.",
+        "exampleCn": "有时我们使用反规范化来加快复杂查询的速度。",
+        "status": 0
+    },
+    {
+        "id": 69,
+        "term": "Rate Limiting",
+        "phonetic": "/reɪt ˈlɪmɪtɪŋ/",
+        "definition": "限流",
+        "synonyms": "throttling",
+        "exampleEn": "Rate limiting protects the API from being abused by too many requests.",
+        "exampleCn": "限流保护 API 免于因过多请求而被滥用。",
+        "status": 0
+    },
+    {
+        "id": 70,
+        "term": "Throttling",
+        "phonetic": "/ˈθrɑːtlɪŋ/",
+        "definition": "节流（限制资源消耗速度）",
+        "synonyms": "flow control",
+        "exampleEn": "Throttling is often applied to background tasks to save CPU resources.",
+        "exampleCn": "节流通常应用于后台任务以节省 CPU 资源。",
+        "status": 0
+    },
+    {
+        "id": 71,
+        "term": "Cold Start",
+        "phonetic": "/koʊld stɑːrt/",
+        "definition": "冷启动（Serverless 或服务重启后的启动延迟）",
+        "synonyms": "initialization delay",
+        "exampleEn": "The team is working on reducing the cold start time for Lambda functions.",
+        "exampleCn": "团队正在努力减少 Lambda 函数的冷启动时间。",
+        "status": 0
+    },
+    {
+        "id": 72,
+        "term": "Warmup",
+        "phonetic": "/ˈwɔːrmʌp/",
+        "definition": "预热（提前加载资源以提高性能）",
+        "synonyms": "pre-loading",
+        "exampleEn": "The cache warmup process runs every morning before the peak hour.",
+        "exampleCn": "缓存预热过程每天在高峰时段前运行。",
+        "status": 0
+    },
+    {
+        "id": 73,
+        "term": "Technical Debt",
+        "phonetic": "/ˈteknɪkl det/",
+        "definition": "技术债",
+        "synonyms": "design debt",
+        "exampleEn": "Poor architecture today leads to high technical debt tomorrow.",
+        "exampleCn": "今天糟糕的架构会导致明天高昂的技术债。",
+        "status": 0
+    },
+    {
+        "id": 74,
+        "term": "Zero Trust",
+        "phonetic": "/ˈzɪroʊ trʌst/",
+        "definition": "零信任（安全架构模式）",
+        "synonyms": "no-trust security",
+        "exampleEn": "Our network architecture follows the Zero Trust model.",
+        "exampleCn": "我们的网络架构遵循零信任模型。",
+        "status": 0
+    },
+    {
+        "id": 75,
+        "term": "Legacy Migration",
+        "phonetic": "/ˈleɡəsi maɪˈɡreɪʃn/",
+        "definition": "遗留系统迁移",
+        "synonyms": "modernization",
+        "exampleEn": "Legacy migration is a complex process that requires careful planning.",
+        "exampleCn": "遗留迁移是一个需要仔细规划的复杂过程。",
+        "status": 0
+    }
+]

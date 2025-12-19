@@ -1,0 +1,702 @@
+[
+    {
+        "id": 1,
+        "term": "Responsive Design",
+        "phonetic": "/rɪˈspɑːnsɪv dɪˈzaɪn/",
+        "definition": "响应式设计（适配不同屏幕尺寸）",
+        "synonyms": "adaptive design",
+        "exampleEn": "Responsive design ensures that our website looks great on both mobile and desktop.",
+        "exampleCn": "响应式设计确保我们的网站在移动端和桌面端看起来都很棒。",
+        "status": 0
+    },
+    {
+        "id": 2,
+        "term": "Component",
+        "phonetic": "/kəmˈpoʊnənt/",
+        "definition": "组件",
+        "synonyms": "module, widget",
+        "exampleEn": "Each UI component should be reusable and independent.",
+        "exampleCn": "每个 UI 组件都应该是可重用且独立的。",
+        "status": 0
+    },
+    {
+        "id": 3,
+        "term": "DOM (Document Object Model)",
+        "phonetic": "/dɑːm/",
+        "definition": "文档对象模型",
+        "synonyms": "document structure",
+        "exampleEn": "Direct manipulation of the DOM can be slow, which is why React uses a Virtual DOM.",
+        "exampleCn": "直接操作 DOM 可能很慢，这就是为什么 React 使用虚拟 DOM 的原因。",
+        "status": 0
+    },
+    {
+        "id": 4,
+        "term": "Viewport",
+        "phonetic": "/ˈvjuːpɔːrt/",
+        "definition": "视口（用户可见的网页区域）",
+        "synonyms": "viewable area",
+        "exampleEn": "The meta tags need to be configured correctly to handle the viewport on mobile devices.",
+        "exampleCn": "需要正确配置 meta 标签来处理移动设备上的视口。",
+        "status": 0
+    },
+    {
+        "id": 5,
+        "term": "Breakpoint",
+        "phonetic": "/ˈbreɪkpɔɪnt/",
+        "definition": "断点（响应式设计中改变布局的临界点）",
+        "synonyms": "threshold",
+        "exampleEn": "We need to add a new breakpoint for tablets between 768px and 1024px.",
+        "exampleCn": "我们需要为 768px 到 1024px 之间的平板电脑添加一个新的断点。",
+        "status": 0
+    },
+    {
+        "id": 6,
+        "term": "Rendering (SSR / CSR / SSG)",
+        "phonetic": "/ˈrendərɪŋ/",
+        "definition": "渲染（服务端渲染/客户端渲染/静态生成）",
+        "synonyms": "painting, drawing",
+        "exampleEn": "SSR is better for SEO, while CSR provides a smoother user experience after the initial load.",
+        "exampleCn": "服务端渲染（SSR）对 SEO 更好，而客户端渲染（CSR）在初始加载后能提供更流畅的用户体验。",
+        "status": 0
+    },
+    {
+        "id": 7,
+        "term": "Hydration",
+        "phonetic": "/haɪˈdreɪʃn/",
+        "definition": "注水（让静态 HTML 具备交互性的过程）",
+        "synonyms": "activation",
+        "exampleEn": "Hydration issues can lead to a 'flicker' where the UI changes after the page loads.",
+        "exampleCn": "注水问题可能导致“闪烁”，即 UI 在页面加载后发生变化。",
+        "status": 0
+    },
+    {
+        "id": 8,
+        "term": "Accessibility (a11y)",
+        "phonetic": "/əkˌsesəˈbɪləti/",
+        "definition": "无障碍性",
+        "synonyms": "inclusivity",
+        "exampleEn": "Web accessibility ensures that people with disabilities can use our products.",
+        "exampleCn": "网页无障碍性确保残障人士也能使用我们的产品。",
+        "status": 0
+    },
+    {
+        "id": 9,
+        "term": "Asset",
+        "phonetic": "/ˈæset/",
+        "definition": "资源（图片、字体、样式表等）",
+        "synonyms": "resource",
+        "exampleEn": "Optimizing image assets can significantly reduce the page load time.",
+        "exampleCn": "优化图片资源可以显著缩短页面加载时间。",
+        "status": 0
+    },
+    {
+        "id": 10,
+        "term": "Bundle",
+        "phonetic": "/ˈbʌndl/",
+        "definition": "打包后的文件",
+        "synonyms": "package, output",
+        "exampleEn": "Our JS bundle size is too large; we need to implement code splitting.",
+        "exampleCn": "我们的 JS 打包文件太大了；我们需要实施代码分割。",
+        "status": 0
+    },
+    {
+        "id": 11,
+        "term": "Code Splitting",
+        "phonetic": "/koʊd ˈsplɪtɪŋ/",
+        "definition": "代码分割",
+        "synonyms": "lazy loading",
+        "exampleEn": "Code splitting allows us to load only the code needed for the current page.",
+        "exampleCn": "代码分割允许我们只加载当前页面所需的代码。",
+        "status": 0
+    },
+    {
+        "id": 12,
+        "term": "Lazy Loading",
+        "phonetic": "/ˈleɪzi ˈloʊdɪŋ/",
+        "definition": "懒加载（按需加载）",
+        "synonyms": "on-demand loading",
+        "exampleEn": "Lazy loading images below the fold can improve initial performance metrics.",
+        "exampleCn": "对首屏以下的图片进行懒加载可以提升初始性能指标。",
+        "status": 0
+    },
+    {
+        "id": 13,
+        "term": "Mockup",
+        "phonetic": "/ˈmɑːkʌp/",
+        "definition": "视觉原型（高保真设计稿）",
+        "synonyms": "high-fidelity design",
+        "exampleEn": "The designer just uploaded the latest mockups for the checkout page.",
+        "exampleCn": "设计师刚上传了结账页面的最新设计稿。",
+        "status": 0
+    },
+    {
+        "id": 14,
+        "term": "Wireframe",
+        "phonetic": "/ˈwaɪərfreɪm/",
+        "definition": "线框图（低保真结构图）",
+        "synonyms": "blueprint, low-fi",
+        "exampleEn": "We should review the wireframes before moving on to the visual design.",
+        "exampleCn": "在进入视觉设计阶段之前，我们应该先评审线框图。",
+        "status": 0
+    },
+    {
+        "id": 15,
+        "term": "Interactivity",
+        "phonetic": "/ˌɪntərækˈtɪvəti/",
+        "definition": "交互性",
+        "synonyms": "engagement",
+        "exampleEn": "The new chart library adds a lot of interactivity to our data dashboard.",
+        "exampleCn": "新的图表库为我们的数据仪表盘增加了许多交互性。",
+        "status": 0
+    },
+    {
+        "id": 16,
+        "term": "User Flow",
+        "phonetic": "/ˈjuːzər floʊ/",
+        "definition": "用户路径/用户流",
+        "synonyms": "navigation path",
+        "exampleEn": "We need to simplify the user flow for registration to increase conversion.",
+        "exampleCn": "我们需要简化注册的用户路径以提高转化率。",
+        "status": 0
+    },
+    {
+        "id": 17,
+        "term": "Consistency",
+        "phonetic": "/kənˈsɪstənsi/",
+        "definition": "一致性（UI 风格的一致）",
+        "synonyms": "uniformity",
+        "exampleEn": "Consistency in button styles helps users learn the interface faster.",
+        "exampleCn": "按钮风格的一致性有助于用户更快地熟悉界面。",
+        "status": 0
+    },
+    {
+        "id": 18,
+        "term": "Transition",
+        "phonetic": "/trænˈzɪʃn/",
+        "definition": "过渡动画",
+        "synonyms": "animation effect",
+        "exampleEn": "The smooth transition between pages makes the app feel more native.",
+        "exampleCn": "页面间平滑的过渡动画让应用感觉更像原生应用。",
+        "status": 0
+    },
+    {
+        "id": 19,
+        "term": "State Management",
+        "phonetic": "/steɪt ˈmænɪdʒmənt/",
+        "definition": "状态管理",
+        "synonyms": "data flow control",
+        "exampleEn": "Redux and Pinia are popular tools for global state management.",
+        "exampleCn": "Redux 和 Pinia 是流行的全局状态管理工具。",
+        "status": 0
+    },
+    {
+        "id": 20,
+        "term": "Cross-browser Compatibility",
+        "phonetic": "/krɔːs ˈbraʊzər kəmˌpætəˈbɪləti/",
+        "definition": "跨浏览器兼容性",
+        "synonyms": "browser support",
+        "exampleEn": "Cross-browser compatibility testing is mandatory before we go live.",
+        "exampleCn": "上线前必须进行跨浏览器兼容性测试。",
+        "status": 0
+    },
+    {
+        "id": 21,
+        "term": "Polyfill",
+        "phonetic": "/ˈpɑːlifɪl/",
+        "definition": "垫片/补丁（为旧浏览器提供新功能实现）",
+        "synonyms": "compatibility script",
+        "exampleEn": "We need to include a polyfill for the Promise API to support IE11.",
+        "exampleCn": "我们需要为 Promise API 包含一个垫片以支持 IE11。",
+        "status": 0
+    },
+    {
+        "id": 22,
+        "term": "Transpiler",
+        "phonetic": "/trænsˈpaɪlər/",
+        "definition": "转译器（如 Babel，将代码转为旧语法）",
+        "synonyms": "source-to-source compiler",
+        "exampleEn": "Babel is the most common transpiler used in modern frontend projects.",
+        "exampleCn": "Babel 是现代前端项目中最常用的转译器。",
+        "status": 0
+    },
+    {
+        "id": 23,
+        "term": "Minification",
+        "phonetic": "/ˌmɪnɪfɪˈkeɪʃn/",
+        "definition": "代码压缩（去除空格、注释以减小体积）",
+        "synonyms": "compression",
+        "exampleEn": "Minification and Gzip can reduce the size of CSS files by up to 80%.",
+        "exampleCn": "代码压缩和 Gzip 可以减少多达 80% 的 CSS 文件体积。",
+        "status": 0
+    },
+    {
+        "id": 24,
+        "term": "Uglification",
+        "phonetic": "/ˌʌɡlɪfɪˈkeɪʃn/",
+        "definition": "代码混淆",
+        "synonyms": "obfuscation",
+        "exampleEn": "Uglification makes the production code harder to read for humans but smaller for browsers.",
+        "exampleCn": "代码混淆让生产环境的代码对人类来说难以阅读，但对浏览器来说体积更小。",
+        "status": 0
+    },
+    {
+        "id": 25,
+        "term": "Shadow DOM",
+        "phonetic": "/ˈʃædoʊ dɑːm/",
+        "definition": "影子 DOM（用于封装组件内部结构）",
+        "synonyms": "encapsulated DOM",
+        "exampleEn": "Shadow DOM allows Web Components to have private styles that don't leak out.",
+        "exampleCn": "影子 DOM 允许 Web 组件拥有不会泄露出去的私有样式。",
+        "status": 0
+    },
+    {
+        "id": 26,
+        "term": "Web Component",
+        "phonetic": "/web kəmˈpoʊnənt/",
+        "definition": "Web 组件（原生标准的组件化技术）",
+        "synonyms": "custom element",
+        "exampleEn": "Web Components are framework-agnostic and can be used in any environment.",
+        "exampleCn": "Web 组件与框架无关，可以在任何环境中使用。",
+        "status": 0
+    },
+    {
+        "id": 27,
+        "term": "Hot Module Replacement (HMR)",
+        "phonetic": "/hɑːt ˈmɑːdʒuːl rɪˈpleɪsmənt/",
+        "definition": "模块热更新（无需刷新页面即可更新代码）",
+        "synonyms": "live reloading",
+        "exampleEn": "HMR significantly improves developer productivity by maintaining application state.",
+        "exampleCn": "模块热更新通过保持应用状态，显著提高了开发者的效率。",
+        "status": 0
+    },
+    {
+        "id": 28,
+        "term": "Package Manager",
+        "phonetic": "/ˈpækɪdʒ ˈmænɪdʒər/",
+        "definition": "包管理器（如 npm, yarn, pnpm）",
+        "synonyms": "dependency manager",
+        "exampleEn": "We recently switched to pnpm as our primary package manager to save disk space.",
+        "exampleCn": "我们最近切换到 pnpm 作为主要的包管理器以节省磁盘空间。",
+        "status": 0
+    },
+    {
+        "id": 29,
+        "term": "Routing",
+        "phonetic": "/ˈraʊtɪŋ/",
+        "definition": "路由",
+        "synonyms": "navigation logic",
+        "exampleEn": "Client-side routing allows for fast page transitions without full reloads.",
+        "exampleCn": "客户端路由允许在无需完整刷新页面的情况下实现快速的页面切换。",
+        "status": 0
+    },
+    {
+        "id": 30,
+        "term": "Hooks",
+        "phonetic": "/hʊks/",
+        "definition": "钩子（如 React Hooks）",
+        "synonyms": "functional enhancers",
+        "exampleEn": "useEffect is a common hook used to handle side effects in functional components.",
+        "exampleCn": "useEffect 是用于在函数组件中处理副作用的常用钩子。",
+        "status": 0
+    },
+    {
+        "id": 31,
+        "term": "Event Listener",
+        "phonetic": "/ɪˈvent ˈlɪsənər/",
+        "definition": "事件监听器",
+        "synonyms": "event handler",
+        "exampleEn": "Don't forget to remove the event listener when the component unmounts to avoid memory leaks.",
+        "exampleCn": "组件卸载时别忘了移除事件监听器，以避免内存泄漏。",
+        "status": 0
+    },
+    {
+        "id": 32,
+        "term": "Debouncing",
+        "phonetic": "/diˈbaʊnsɪŋ/",
+        "definition": "防抖（在一段时间内只执行最后一次）",
+        "synonyms": "execution limiting",
+        "exampleEn": "We used debouncing on the search input to limit the number of API calls.",
+        "exampleCn": "我们在搜索输入框上使用了防抖，以限制 API 调用次数。",
+        "status": 0
+    },
+    {
+        "id": 33,
+        "term": "Throttling",
+        "phonetic": "/ˈθrɑːtlɪŋ/",
+        "definition": "节流（控制执行频率，每隔一段时间执行一次）",
+        "synonyms": "rate limiting",
+        "exampleEn": "Throttling is useful for scroll events to improve scrolling performance.",
+        "exampleCn": "节流对滚动事件很有用，可以提高滚动性能。",
+        "status": 0
+    },
+    {
+        "id": 34,
+        "term": "Single Page Application (SPA)",
+        "phonetic": "/ˈsɪŋɡl peɪdʒ ˌæplɪˈkeɪʃn/",
+        "definition": "单页面应用",
+        "synonyms": "client-side app",
+        "exampleEn": "Building an SPA provides a very fast, app-like experience for the user.",
+        "exampleCn": "构建单页面应用可以为用户提供非常快速、类似原生应用的体验。",
+        "status": 0
+    },
+    {
+        "id": 35,
+        "term": "Skeleton Screen",
+        "phonetic": "/ˈskelɪtn skriːn/",
+        "definition": "骨架屏（加载时的占位结构）",
+        "synonyms": "placeholder UI",
+        "exampleEn": "Using a skeleton screen makes the application feel faster during data fetching.",
+        "exampleCn": "使用骨架屏会让应用在获取数据期间感觉更快。",
+        "status": 0
+    },
+    {
+        "id": 36,
+        "term": "CSS Preprocessor",
+        "phonetic": "/ˌsiː es ˈes ˌpriːˈprɑːsesər/",
+        "definition": "CSS 预处理器（如 Sass, Less）",
+        "synonyms": "CSS extension",
+        "exampleEn": "Sass allows us to use variables and nesting in our CSS files.",
+        "exampleCn": "Sass 允许我们在 CSS 文件中使用变量和嵌套。",
+        "status": 0
+    },
+    {
+        "id": 37,
+        "term": "Tailwind CSS / Atomic CSS",
+        "phonetic": "/ˈteɪlwɪnd ˌsiː es ˈes/",
+        "definition": "原子化 CSS（通过类名直接定义样式）",
+        "synonyms": "utility-first CSS",
+        "exampleEn": "Tailwind CSS helps in building custom designs without writing any custom CSS.",
+        "exampleCn": "Tailwind CSS 有助于在不编写任何自定义 CSS 的情况下构建自定义设计。",
+        "status": 0
+    },
+    {
+        "id": 38,
+        "term": "Figma / Sketch",
+        "phonetic": "/ˈfɪɡmə/",
+        "definition": "主流设计工具",
+        "synonyms": "design software",
+        "exampleEn": "The frontend team and designers collaborate primarily through Figma.",
+        "exampleCn": "前端团队和设计师主要通过 Figma 进行协作。",
+        "status": 0
+    },
+    {
+        "id": 39,
+        "term": "Grid / Flexbox",
+        "phonetic": "/ɡrɪd / ˈfleksbɑːks/",
+        "definition": "网格布局/弹性盒布局",
+        "synonyms": "layout system",
+        "exampleEn": "Flexbox is ideal for one-dimensional layouts, while Grid is best for two-dimensional structures.",
+        "exampleCn": "Flexbox 适合一维布局，而 Grid 最适合二维结构。",
+        "status": 0
+    },
+    {
+        "id": 40,
+        "term": "Dark Mode",
+        "phonetic": "/dɑːrk moʊd/",
+        "definition": "深色模式",
+        "synonyms": "night mode",
+        "exampleEn": "We implemented dark mode support using CSS variables and media queries.",
+        "exampleCn": "我们使用 CSS 变量和媒体查询实现了对深色模式的支持。",
+        "status": 0
+    },
+    {
+        "id": 41,
+        "term": "Search Engine Optimization (SEO)",
+        "phonetic": "/sɜːrtʃ ˈendʒɪn ˌɑːptɪməˈzeɪʃn/",
+        "definition": "搜索引擎优化",
+        "synonyms": "search visibility",
+        "exampleEn": "Proper semantic HTML is crucial for good SEO.",
+        "exampleCn": "正确的语义化 HTML 对良好的 SEO 至关重要。",
+        "status": 0
+    },
+    {
+        "id": 42,
+        "term": "Semantic HTML",
+        "phonetic": "/sɪˈmæntɪk ˌeɪtʃ tiː em ˈel/",
+        "definition": "语义化 HTML（使用具备含义的标签如 <article>）",
+        "synonyms": "meaningful markup",
+        "exampleEn": "Avoid using <div> for everything; use semantic HTML to improve accessibility.",
+        "exampleCn": "避免所有东西都用 <div>；使用语义化 HTML 以提高无障碍性。",
+        "status": 0
+    },
+    {
+        "id": 43,
+        "term": "Cross-Site Scripting (XSS)",
+        "phonetic": "/krɔːs saɪt ˈskrɪptɪŋ/",
+        "definition": "跨站脚本攻击（前端安全术语）",
+        "synonyms": "script injection",
+        "exampleEn": "Sanitizing user input is the best way to prevent XSS attacks.",
+        "exampleCn": "清理用户输入是防止 XSS 攻击的最佳方式。",
+        "status": 0
+    },
+    {
+        "id": 44,
+        "term": "Content Security Policy (CSP)",
+        "phonetic": "/ˈkɑːntent sɪˈkjʊrəti ˈpɑːləsi/",
+        "definition": "内容安全策略",
+        "synonyms": "security header",
+        "exampleEn": "A strong CSP can block unauthorized scripts from executing on our site.",
+        "exampleCn": "强大的 CSP 可以阻止未经授权的脚本在我们的网站上执行。",
+        "status": 0
+    },
+    {
+        "id": 45,
+        "term": "Tree Shaking",
+        "phonetic": "/triː ˈʃeɪkɪŋ/",
+        "definition": "摇树优化（移除未使用的代码）",
+        "synonyms": "dead code elimination",
+        "exampleEn": "Tree shaking helps in reducing the final bundle size by removing unused exports.",
+        "exampleCn": "摇树优化通过移除未使用的导出，有助于减小最终打包体积。",
+        "status": 0
+    },
+    {
+        "id": 46,
+        "term": "Critical Path CSS",
+        "phonetic": "/ˈkrɪtɪkl pæθ ˌsiː es ˈes/",
+        "definition": "关键路径 CSS（首屏渲染所需的最小样式）",
+        "synonyms": "above-the-fold CSS",
+        "exampleEn": "Inlining critical path CSS can improve the First Contentful Paint (FCP) metric.",
+        "exampleCn": "内联关键路径 CSS 可以改善首次内容绘制（FCP）指标。",
+        "status": 0
+    },
+    {
+        "id": 47,
+        "term": "Progressive Web App (PWA)",
+        "phonetic": "/prəˈɡresɪv web æp/",
+        "definition": "渐进式 Web 应用",
+        "synonyms": "installable web app",
+        "exampleEn": "PWAs allow users to install the website as an app and access it offline.",
+        "exampleCn": "PWA 允许用户将网站安装为应用并离线访问。",
+        "status": 0
+    },
+    {
+        "id": 48,
+        "term": "Service Worker",
+        "phonetic": "/ˈsɜːrvɪs ˈwɜːrkər/",
+        "definition": "服务工作线程（用于离线缓存等）",
+        "synonyms": "background script",
+        "exampleEn": "Service workers handle caching and background sync for PWAs.",
+        "exampleCn": "Service workers 处理 PWA 的缓存和后台同步。",
+        "status": 0
+    },
+    {
+        "id": 49,
+        "term": "Web Vitals",
+        "phonetic": "/web ˈvaɪtəlz/",
+        "definition": "网页指标（Google 定义的性能核心指标）",
+        "synonyms": "performance signals",
+        "exampleEn": "Core Web Vitals are now a factor in Google's search ranking algorithm.",
+        "exampleCn": "核心网页指标现在是 Google 搜索排名算法的一个因素。",
+        "status": 0
+    },
+    {
+        "id": 50,
+        "term": "Cumulative Layout Shift (CLS)",
+        "phonetic": "/ˈkjuːmjələtɪv ˈleɪaʊt ʃɪft/",
+        "definition": "累积布局偏移（衡量页面稳定性）",
+        "synonyms": "visual stability",
+        "exampleEn": "A high CLS score means elements are moving around while the page is loading.",
+        "exampleCn": "高 CLS 分数意味着页面加载期间元素在到处跳动。",
+        "status": 0
+    },
+    {
+        "id": 51,
+        "term": "Design System",
+        "phonetic": "/dɪˈzaɪn ˈsɪstəm/",
+        "definition": "设计系统",
+        "synonyms": "style guide",
+        "exampleEn": "Our design system provides a shared library of components for all product teams.",
+        "exampleCn": "我们的设计系统为所有产品团队提供共享的组件库。",
+        "status": 0
+    },
+    {
+        "id": 52,
+        "term": "Usability",
+        "phonetic": "/ˌjuːzəˈbɪləti/",
+        "definition": "可用性/易用性",
+        "synonyms": "ease of use",
+        "exampleEn": "The goal of usability testing is to identify where users get stuck.",
+        "exampleCn": "可用性测试的目标是识别用户在何处卡住。",
+        "status": 0
+    },
+    {
+        "id": 53,
+        "term": "Heuristics",
+        "phonetic": "/hjuˈrɪstɪks/",
+        "definition": "启发式评估（一种 UI 评估标准）",
+        "synonyms": "rules of thumb",
+        "exampleEn": "Nielsen's heuristics are the standard for evaluating user interface design.",
+        "exampleCn": "尼尔森的启发式评估是评估用户界面设计的标准。",
+        "status": 0
+    },
+    {
+        "id": 54,
+        "term": "Favicon",
+        "phonetic": "/ˈfævɪkɑːn/",
+        "definition": "网页图标（显示在标签栏的小图标）",
+        "synonyms": "tab icon",
+        "exampleEn": "Don't forget to update the favicon for the new brand identity.",
+        "exampleCn": "别忘了为新的品牌形象更新网页图标。",
+        "status": 0
+    },
+    {
+        "id": 55,
+        "term": "Canvas / SVG",
+        "phonetic": "/ˈkænvəs / ˌes viː ˈdʒiː/",
+        "definition": "画布/可缩放矢量图形",
+        "synonyms": "web graphics",
+        "exampleEn": "SVG is better for icons, while Canvas is preferred for complex animations.",
+        "exampleCn": "SVG 适合图标，而 Canvas 更适合复杂的动画。",
+        "status": 0
+    },
+    {
+        "id": 56,
+        "term": "Internationalization (i18n)",
+        "phonetic": "/ˌɪntərˌnæʃnələˈzeɪʃn/",
+        "definition": "国际化",
+        "synonyms": "globalization",
+        "exampleEn": "Setting up i18n properly allows us to support multiple languages easily.",
+        "exampleCn": "正确设置 i18n 允许我们轻松支持多种语言。",
+        "status": 0
+    },
+    {
+        "id": 57,
+        "term": "Localization (l10n)",
+        "phonetic": "/ˌloʊkələˈzeɪʃn/",
+        "definition": "本地化",
+        "synonyms": "regional adaptation",
+        "exampleEn": "Localization involves not just translation, but also adjusting date and currency formats.",
+        "exampleCn": "本地化不仅涉及翻译，还涉及调整日期和货币格式。",
+        "status": 0
+    },
+    {
+        "id": 58,
+        "term": "Above the fold",
+        "phonetic": "/əˈbʌv ðə foʊld/",
+        "definition": "首屏（无需滚动即可见的部分）",
+        "synonyms": "initial view",
+        "exampleEn": "The most important call-to-action should be placed above the fold.",
+        "exampleCn": "最重要的行动呼吁（CTA）应该放在首屏位置。",
+        "status": 0
+    },
+    {
+        "id": 59,
+        "term": "Below the fold",
+        "phonetic": "/bɪˈloʊ ðə foʊld/",
+        "definition": "首屏以下（需滚动可见的部分）",
+        "synonyms": "scrolled area",
+        "exampleEn": "Secondary information can be placed below the fold.",
+        "exampleCn": "次要信息可以放在首屏以下的部分。",
+        "status": 0
+    },
+    {
+        "id": 60,
+        "term": "Infinite Scroll",
+        "phonetic": "/ˈɪnfɪnət skroʊl/",
+        "definition": "无限滚动",
+        "synonyms": "continuous scrolling",
+        "exampleEn": "Infinite scroll is commonly used in social media feeds.",
+        "exampleCn": "无限滚动常用于社交媒体的消息流中。",
+        "status": 0
+    },
+    {
+        "id": 61,
+        "term": "Pagination",
+        "phonetic": "/ˌpædʒɪˈneɪʃn/",
+        "definition": "分页",
+        "synonyms": "paging",
+        "exampleEn": "Pagination is better for e-commerce sites as it helps users keep track of their location.",
+        "exampleCn": "分页更适合电子商务网站，因为它有助于用户了解自己所处的位置。",
+        "status": 0
+    },
+    {
+        "id": 62,
+        "term": "Breadcrumbs",
+        "phonetic": "/ˈbredkrʌmz/",
+        "definition": "面包屑导航",
+        "synonyms": "navigation trail",
+        "exampleEn": "Breadcrumbs improve navigation in deeply nested site structures.",
+        "exampleCn": "面包屑导航改善了深层嵌套网站结构中的导航体验。",
+        "status": 0
+    },
+    {
+        "id": 63,
+        "term": "Modal / Dialog",
+        "phonetic": "/ˈmoʊdl / ˈdaɪəlɔːɡ/",
+        "definition": "模态框/对话框",
+        "synonyms": "popup window",
+        "exampleEn": "The confirmation modal appears when you try to delete a record.",
+        "exampleCn": "当你尝试删除记录时，会弹出确认模态框。",
+        "status": 0
+    },
+    {
+        "id": 64,
+        "term": "Tooltip",
+        "phonetic": "/ˈtuːltɪp/",
+        "definition": "工具提示",
+        "synonyms": "hint",
+        "exampleEn": "A tooltip provides extra information when you hover over an icon.",
+        "exampleCn": "当鼠标悬停在图标上时，工具提示会提供额外信息。",
+        "status": 0
+    },
+    {
+        "id": 65,
+        "term": "Prop Drilling",
+        "phonetic": "/prɑːp ˈdrɪlɪŋ/",
+        "definition": "属性钻取（多层嵌套组件传递 props 的问题）",
+        "synonyms": "deep prop passing",
+        "exampleEn": "We can avoid prop drilling by using React Context or a state management library.",
+        "exampleCn": "我们可以通过使用 React Context 或状态管理库来避免属性钻取。",
+        "status": 0
+    },
+    {
+        "id": 66,
+        "term": "Unmount",
+        "phonetic": "/ˌʌnˈmaʊnt/",
+        "definition": "卸载（组件从 DOM 中移除）",
+        "synonyms": "detachment",
+        "exampleEn": "Cleanup functions in useEffect are called right before the component unmounts.",
+        "exampleCn": "useEffect 中的清理函数会在组件卸载前立即被调用。",
+        "status": 0
+    },
+    {
+        "id": 67,
+        "term": "Higher-Order Component (HOC)",
+        "phonetic": "/ˈhaɪər ˈɔːrdər kəmˈpoʊnənt/",
+        "definition": "高阶组件",
+        "synonyms": "wrapper component",
+        "exampleEn": "An HOC is a function that takes a component and returns a new component.",
+        "exampleCn": "高阶组件是一个接收一个组件并返回一个新组件的函数。",
+        "status": 0
+    },
+    {
+        "id": 68,
+        "term": "Web Worker",
+        "phonetic": "/web ˈwɜːrkər/",
+        "definition": "Web 工作线程（用于处理繁重的后台计算）",
+        "synonyms": "background thread",
+        "exampleEn": "We use a Web Worker to process the large CSV file without blocking the UI.",
+        "exampleCn": "我们使用 Web Worker 处理大型 CSV 文件，而不会阻塞 UI。",
+        "status": 0
+    },
+    {
+        "id": 69,
+        "term": "CORS (Cross-Origin Resource Sharing)",
+        "phonetic": "/kɔːrz/",
+        "definition": "跨源资源共享",
+        "synonyms": "origin policy",
+        "exampleEn": "You might encounter a CORS error when the frontend tries to call an API on a different domain.",
+        "exampleCn": "当前端尝试调用不同域名下的 API 时，你可能会遇到 CORS 错误。",
+        "status": 0
+    },
+    {
+        "id": 70,
+        "term": "Manifest file",
+        "phonetic": "/ˈmænɪfest faɪl/",
+        "definition": "清单文件（PWA 或打包配置中的说明文件）",
+        "synonyms": "app manifest",
+        "exampleEn": "The manifest.json file defines how the PWA should behave when installed.",
+        "exampleCn": "manifest.json 文件定义了 PWA 在安装后的行为。",
+        "status": 0
+    }
+]

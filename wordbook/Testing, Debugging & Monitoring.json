@@ -1,0 +1,752 @@
+[
+    {
+        "id": 1,
+        "term": "Unit Testing",
+        "phonetic": "/ˈjuːnɪt ˈtestɪŋ/",
+        "definition": "单元测试（针对最小可测试单元的测试）",
+        "synonyms": "component testing",
+        "exampleEn": "A good unit test should be isolated and not depend on external services.",
+        "exampleCn": "一个好的单元测试应该是隔离的，不依赖于外部服务。",
+        "status": 0
+    },
+    {
+        "id": 2,
+        "term": "Integration Testing",
+        "phonetic": "/ˌɪntɪˈɡreɪʃn ˈtestɪŋ/",
+        "definition": "集成测试（测试不同模块间的交互）",
+        "synonyms": "joint testing",
+        "exampleEn": "Integration testing ensures that the database and the API work together correctly.",
+        "exampleCn": "集成测试确保数据库和 API 能够正确协作。",
+        "status": 0
+    },
+    {
+        "id": 3,
+        "term": "End-to-End Testing (E2E)",
+        "phonetic": "/end tu end ˈtestɪŋ/",
+        "definition": "端到端测试（模拟真实用户场景的完整流程测试）",
+        "synonyms": "chain testing",
+        "exampleEn": "We use Cypress for our E2E testing to simulate user login and checkout flows.",
+        "exampleCn": "我们使用 Cypress 进行 E2E 测试，以模拟用户登录和结账流程。",
+        "status": 1
+    },
+    {
+        "id": 4,
+        "term": "Regression Testing",
+        "phonetic": "/rɪˈɡreʃn ˈtestɪŋ/",
+        "definition": "回归测试（确保新代码没有破坏旧功能）",
+        "synonyms": "re-testing",
+        "exampleEn": "Automated regression testing is essential before every major release.",
+        "exampleCn": "在每个重大版本发布前，自动化回归测试是必不可少的。",
+        "status": 0
+    },
+    {
+        "id": 5,
+        "term": "Smoke Testing",
+        "phonetic": "/smoʊk ˈtestɪŋ/",
+        "definition": "冒烟测试（对系统核心功能的最基本验证）",
+        "synonyms": "sanity check, build verification test",
+        "exampleEn": "The smoke test failed, so we rejected the new build immediately.",
+        "exampleCn": "冒烟测试失败了，所以我们立即打回了新的构建版本。",
+        "status": 0
+    },
+    {
+        "id": 6,
+        "term": "Sanity Check",
+        "phonetic": "/ˈsænəti tʃek/",
+        "definition": "完整性检查/正当性检查（初步验证逻辑是否符合常理）",
+        "synonyms": "basic verification",
+        "exampleEn": "Before doing a deep dive, let's do a quick sanity check on the configuration.",
+        "exampleCn": "在深入研究之前，我们先对配置做一个快速的完整性检查。",
+        "status": 0
+    },
+    {
+        "id": 7,
+        "term": "Stress Testing",
+        "phonetic": "/stres ˈtestɪŋ/",
+        "definition": "压力测试（测试系统在极端负载下的稳定性）",
+        "synonyms": "fatigue testing",
+        "exampleEn": "Stress testing revealed that the memory leaks under 10,000 concurrent users.",
+        "exampleCn": "压力测试显示，在 1 万个并发用户下，系统会出现内存泄漏。",
+        "status": 0
+    },
+    {
+        "id": 8,
+        "term": "Load Testing",
+        "phonetic": "/loʊd ˈtestɪŋ/",
+        "definition": "负载测试（测试系统在预期工作负载下的表现）",
+        "synonyms": "volume testing",
+        "exampleEn": "We performed load testing to ensure the site stays up during the Black Friday sale.",
+        "exampleCn": "我们进行了负载测试，以确保网站在黑五促销期间保持运行。",
+        "status": 0
+    },
+    {
+        "id": 9,
+        "term": "Code Coverage",
+        "phonetic": "/koʊd ˈkʌvərɪdʒ/",
+        "definition": "代码覆盖率",
+        "synonyms": "test coverage",
+        "exampleEn": "We aim for at least 80% code coverage for all new services.",
+        "exampleCn": "我们的目标是所有新服务的代码覆盖率至少达到 80%。",
+        "status": 0
+    },
+    {
+        "id": 10,
+        "term": "Test Driven Development (TDD)",
+        "phonetic": "/test ˈdrɪvn dɪˈveləpmənt/",
+        "definition": "测试驱动开发",
+        "synonyms": "test-first development",
+        "exampleEn": "TDD helps in writing cleaner and more maintainable code from the start.",
+        "exampleCn": "TDD 有助于从一开始就编写更简洁、更易维护的代码。",
+        "status": 0
+    },
+    {
+        "id": 11,
+        "term": "Mocking",
+        "phonetic": "/ˈmɑːkɪŋ/",
+        "definition": "模拟（创建虚假对象以代替真实依赖项）",
+        "synonyms": "simulating",
+        "exampleEn": "Mocking the payment gateway allows us to test without spending real money.",
+        "exampleCn": "模拟支付网关允许我们进行测试而无需花费真钱。",
+        "status": 0
+    },
+    {
+        "id": 12,
+        "term": "Stub",
+        "phonetic": "/stʌb/",
+        "definition": "桩（提供预定义返回值的简化实现）",
+        "synonyms": "dummy implementation",
+        "exampleEn": "The stub returns a fixed user profile regardless of the input ID.",
+        "exampleCn": "无论输入 ID 是什么，该桩函数都返回固定的用户信息。",
+        "status": 0
+    },
+    {
+        "id": 13,
+        "term": "Assertion",
+        "phonetic": "/əˈsɜːrʃn/",
+        "definition": "断言（测试中对预期结果的声明）",
+        "synonyms": "verification statement",
+        "exampleEn": "The test failed because the assertion expected 'Success' but got 'Error'.",
+        "exampleCn": "测试失败了，因为断言预期是 'Success' 但得到了 'Error'。",
+        "status": 0
+    },
+    {
+        "id": 14,
+        "term": "Breakpoint",
+        "phonetic": "/ˈbreɪkpɔɪnt/",
+        "definition": "断点（调试时程序暂停的位置）",
+        "synonyms": "pause point",
+        "exampleEn": "I set a breakpoint at line 50 to inspect the variable values.",
+        "exampleCn": "我在第 50 行设置了一个断点来检查变量值。",
+        "status": 0
+    },
+    {
+        "id": 15,
+        "term": "Step over/into/out",
+        "phonetic": "/step ˈoʊvər/ ˈɪntuː/ aʊt/",
+        "definition": "单步执行（跳过/进入/跳出函数）",
+        "synonyms": "single stepping",
+        "exampleEn": "Step into the function to see how the logic handles the null input.",
+        "exampleCn": "进入该函数以查看逻辑如何处理空输入。",
+        "status": 0
+    },
+    {
+        "id": 16,
+        "term": "Call Stack",
+        "phonetic": "/kɔːl stæk/",
+        "definition": "调用堆栈",
+        "synonyms": "execution stack",
+        "exampleEn": "Examine the call stack to see the sequence of function calls leading to the crash.",
+        "exampleCn": "检查调用堆栈，查看导致崩溃的函数调用序列。",
+        "status": 0
+    },
+    {
+        "id": 17,
+        "term": "Heap Dump",
+        "phonetic": "/hiːp dʌmp/",
+        "definition": "堆转储（内存快照，用于分析内存泄漏）",
+        "synonyms": "memory snapshot",
+        "exampleEn": "We analyzed the heap dump and found a massive list that was never cleared.",
+        "exampleCn": "我们分析了堆转储，发现了一个从未被清理的庞大列表。",
+        "status": 0
+    },
+    {
+        "id": 18,
+        "term": "Thread Dump",
+        "phonetic": "/θred dʌmp/",
+        "definition": "线程转储（用于分析死锁或 CPU 高占用）",
+        "synonyms": "thread snapshot",
+        "exampleEn": "The thread dump showed that five threads were waiting for the same database lock.",
+        "exampleCn": "线程转储显示五个线程正在等待同一个数据库锁。",
+        "status": 0
+    },
+    {
+        "id": 19,
+        "term": "Profiling",
+        "phonetic": "/ˈproʊfaɪlɪŋ/",
+        "definition": "性能分析（测量程序运行时的资源消耗）",
+        "synonyms": "performance analysis",
+        "exampleEn": "Profiling revealed that the JSON parsing was the main performance bottleneck.",
+        "exampleCn": "性能分析显示 JSON 解析是主要的性能瓶颈。",
+        "status": 0
+    },
+    {
+        "id": 20,
+        "term": "Trace",
+        "phonetic": "/treɪs/",
+        "definition": "追踪（详细记录执行路径）",
+        "synonyms": "track, trail",
+        "exampleEn": "Distributed tracing helps us follow a request across multiple microservices.",
+        "exampleCn": "分布式追踪帮助我们跟踪跨多个微服务的请求。",
+        "status": 0
+    },
+    {
+        "id": 21,
+        "term": "Log Level",
+        "phonetic": "/lɔːɡ ˈlevl/",
+        "definition": "日志级别（如 Debug, Info, Warn, Error）",
+        "synonyms": "severity level",
+        "exampleEn": "Please change the log level to 'Debug' to see more details about the error.",
+        "exampleCn": "请将日志级别改为 'Debug' 以查看有关错误的更多细节。",
+        "status": 0
+    },
+    {
+        "id": 22,
+        "term": "Root Cause Analysis (RCA)",
+        "phonetic": "/ruːt kɔːz əˈnæləsɪs/",
+        "definition": "根本原因分析",
+        "synonyms": "problem investigation",
+        "exampleEn": "We need to perform an RCA to prevent this incident from happening again.",
+        "exampleCn": "我们需要进行根本原因分析，以防止此类事件再次发生。",
+        "status": 0
+    },
+    {
+        "id": 23,
+        "term": "Post-mortem",
+        "phonetic": "/ˌpoʊst ˈmɔːrtəm/",
+        "definition": "事后总结（分析事故原因及改进措施）",
+        "synonyms": "after-action review",
+        "exampleEn": "The post-mortem document was shared with the entire engineering team.",
+        "exampleCn": "事后总结文档已分发给整个工程团队。",
+        "status": 0
+    },
+    {
+        "id": 24,
+        "term": "Observability",
+        "phonetic": "/əbˌzɜːrvəˈbɪləti/",
+        "definition": "可观测性（通过外部输出理解内部状态的能力）",
+        "synonyms": "system transparency",
+        "exampleEn": "The three pillars of observability are metrics, logs, and traces.",
+        "exampleCn": "可观测性的三大支柱是指标、日志和追踪。",
+        "status": 0
+    },
+    {
+        "id": 25,
+        "term": "Metrics",
+        "phonetic": "/ˈmetrɪks/",
+        "definition": "指标（可度量的数据点，如 CPU, RPS）",
+        "synonyms": "measurements",
+        "exampleEn": "We monitor business metrics like 'daily active users' in real-time.",
+        "exampleCn": "我们实时监控“日活用户”等业务指标。",
+        "status": 0
+    },
+    {
+        "id": 26,
+        "term": "Alerting",
+        "phonetic": "/əˈlɜːrtɪŋ/",
+        "definition": "告警",
+        "synonyms": "notification system",
+        "exampleEn": "The alerting system will ping the on-call engineer if the error rate exceeds 5%.",
+        "exampleCn": "如果错误率超过 5%，告警系统将呼叫值班工程师。",
+        "status": 0
+    },
+    {
+        "id": 27,
+        "term": "Health Check",
+        "phonetic": "/helθ tʃek/",
+        "definition": "健康检查",
+        "synonyms": "liveness probe",
+        "exampleEn": "The load balancer uses a health check to skip unresponsive instances.",
+        "exampleCn": "负载均衡器使用健康检查来跳过无响应的实例。",
+        "status": 0
+    },
+    {
+        "id": 28,
+        "term": "Downtime",
+        "phonetic": "/ˈdaʊntaɪm/",
+        "definition": "停机时间",
+        "synonyms": "outage period",
+        "exampleEn": "The scheduled maintenance will cause 15 minutes of downtime.",
+        "exampleCn": "计划内维护将导致 15 分钟的停机时间。",
+        "status": 0
+    },
+    {
+        "id": 29,
+        "term": "Uptime",
+        "phonetic": "/ˈʌptaɪm/",
+        "definition": "运行时间（通常指可用性比例）",
+        "synonyms": "availability time",
+        "exampleEn": "Our goal is to maintain 99.99% uptime for the payment service.",
+        "exampleCn": "我们的目标是维持支付服务 99.99% 的运行时间。",
+        "status": 0
+    },
+    {
+        "id": 30,
+        "term": "False Positive",
+        "phonetic": "/fɔːls ˈpɑːzətɪv/",
+        "definition": "误报（没问题却报警了）",
+        "synonyms": "false alarm",
+        "exampleEn": "The security scanner gave a false positive on this internal script.",
+        "exampleCn": "安全扫描器对这个内部脚本产生了误报。",
+        "status": 0
+    },
+    {
+        "id": 31,
+        "term": "False Negative",
+        "phonetic": "/fɔːls ˈneɡətɪv/",
+        "definition": "漏报（有问题却没检测出来）",
+        "synonyms": "missed detection",
+        "exampleEn": "The test suite's false negative led to a bug reaching production.",
+        "exampleCn": "测试套件的漏报导致一个 Bug 进入了生产环境。",
+        "status": 0
+    },
+    {
+        "id": 32,
+        "term": "Flaky Test",
+        "phonetic": "/ˈfleɪki test/",
+        "definition": "不稳定的测试（有时过有时不过）",
+        "synonyms": "unreliable test",
+        "exampleEn": "We need to fix the flaky tests because they are slowing down the CI pipeline.",
+        "exampleCn": "我们需要修复那些不稳定的测试，因为它们拖慢了 CI 流水线。",
+        "status": 0
+    },
+    {
+        "id": 33,
+        "term": "Threshold",
+        "phonetic": "/ˈθreʃhoʊld/",
+        "definition": "阈值",
+        "synonyms": "limit, boundary",
+        "exampleEn": "We set the alert threshold to 80% disk usage.",
+        "exampleCn": "我们将告警阈值设定为 80% 的磁盘占用率。",
+        "status": 0
+    },
+    {
+        "id": 34,
+        "term": "Telemetry",
+        "phonetic": "/təˈlemətri/",
+        "definition": "遥测（远程收集并传输数据）",
+        "synonyms": "remote data collection",
+        "exampleEn": "Client-side telemetry shows that users in certain regions have higher latency.",
+        "exampleCn": "客户端遥测显示某些地区的用户延迟较高。",
+        "status": 0
+    },
+    {
+        "id": 35,
+        "term": "Mean Time to Repair (MTTR)",
+        "phonetic": "/miːn taɪm tu rɪˈper/",
+        "definition": "平均修复时间",
+        "synonyms": "average recovery time",
+        "exampleEn": "By improving our automation, we significantly reduced our MTTR.",
+        "exampleCn": "通过改进自动化，我们显著缩短了平均修复时间。",
+        "status": 0
+    },
+    {
+        "id": 36,
+        "term": "Incident",
+        "phonetic": "/ˈɪnsɪdənt/",
+        "definition": "事故/突发事件",
+        "synonyms": "event, issue",
+        "exampleEn": "The major incident was resolved after two hours of intensive debugging.",
+        "exampleCn": "经过两小时的高强度调试，重大事故得以解决。",
+        "status": 0
+    },
+    {
+        "id": 37,
+        "term": "On-call",
+        "phonetic": "/ˌɑːn ˈkɔːl/",
+        "definition": "值班（随时待命处理线上问题）",
+        "synonyms": "standby",
+        "exampleEn": "I am on-call this weekend, so I need to keep my laptop with me.",
+        "exampleCn": "这周末我值班，所以我得随身带着电脑。",
+        "status": 0
+    },
+    {
+        "id": 38,
+        "term": "Escalation",
+        "phonetic": "/ˌeskəˈleɪʃn/",
+        "definition": "升级（将问题移交给更高级别或更专业的专家）",
+        "synonyms": "leveling up",
+        "exampleEn": "If you can't solve it within 30 minutes, follow the escalation policy.",
+        "exampleCn": "如果你在 30 分钟内无法解决，请遵循升级流程。",
+        "status": 0
+    },
+    {
+        "id": 39,
+        "term": "Throughput",
+        "phonetic": "/ˈθruːpʊt/",
+        "definition": "吞吐量（单位时间内处理的请求数）",
+        "synonyms": "processing rate",
+        "exampleEn": "The system throughput decreased due to slow database queries.",
+        "exampleCn": "由于数据库查询缓慢，系统吞吐量下降了。",
+        "status": 0
+    },
+    {
+        "id": 40,
+        "term": "Span",
+        "phonetic": "/spæn/",
+        "definition": "跨度（追踪中的基本工作单元，记录单个操作）",
+        "synonyms": "trace segment",
+        "exampleEn": "Each span in the trace shows the duration of a specific API call.",
+        "exampleCn": "追踪中的每个 Span 显示了特定 API 调用的持续时间。",
+        "status": 0
+    },
+    {
+        "id": 41,
+        "term": "Context Propagation",
+        "phonetic": "/ˈkɑːntekst ˌprɑːpəˈɡeɪʃn/",
+        "definition": "上下文传播（跨服务传递 Trace ID 等信息）",
+        "synonyms": "metadata passing",
+        "exampleEn": "Context propagation ensures that the same Trace ID is used across different services.",
+        "exampleCn": "上下文传播确保跨不同服务使用同一个 Trace ID。",
+        "status": 0
+    },
+    {
+        "id": 42,
+        "term": "Service Level Objective (SLO)",
+        "phonetic": "/ˈsɜːrvɪs ˈlevl əbˈdʒektɪv/",
+        "definition": "服务等级目标",
+        "synonyms": "reliability target",
+        "exampleEn": "Our SLO for API response time is under 200ms for 99% of requests.",
+        "exampleCn": "我们的 API 响应时间 SLO 是 99% 的请求在 200 毫秒以下。",
+        "status": 0
+    },
+    {
+        "id": 43,
+        "term": "Error Budget",
+        "phonetic": "/ˈerər ˈbʌdʒɪt/",
+        "definition": "错误预算（允许系统在一定限度内出现不可用）",
+        "synonyms": "allowed downtime",
+        "exampleEn": "We exhausted our error budget this month, so no new feature releases.",
+        "exampleCn": "我们本月的错误预算已经耗尽，因此不再发布新功能。",
+        "status": 0
+    },
+    {
+        "id": 44,
+        "term": "Synthetic Monitoring",
+        "phonetic": "/sɪnˈθetɪk ˈmɑːnɪtərɪŋ/",
+        "definition": "拨测/合成监控（通过模拟用户请求主动监控）",
+        "synonyms": "active monitoring",
+        "exampleEn": "Synthetic monitoring detected the login failure before actual users did.",
+        "exampleCn": "拨测在真实用户发现之前就检测到了登录失败。",
+        "status": 0
+    },
+    {
+        "id": 45,
+        "term": "Real User Monitoring (RUM)",
+        "phonetic": "/riːəl ˈjuːzər ˈmɑːnɪtərɪŋ/",
+        "definition": "真实用户监控",
+        "synonyms": "passive monitoring",
+        "exampleEn": "RUM gives us insight into how real users experience our site's performance.",
+        "exampleCn": "RUM 让我们了解真实用户对我们网站性能的体验。",
+        "status": 0
+    },
+    {
+        "id": 46,
+        "term": "Beta Testing",
+        "phonetic": "/ˈbeɪtə ˈtestɪŋ/",
+        "definition": "公测/Beta 测试",
+        "synonyms": "external testing",
+        "exampleEn": "The app is in beta testing with a selected group of external users.",
+        "exampleCn": "该应用正由选定的一组外部用户进行 Beta 测试。",
+        "status": 0
+    },
+    {
+        "id": 47,
+        "term": "Penetration Testing (Pen Test)",
+        "phonetic": "/ˌpenəˈtreɪʃn ˈtestɪŋ/",
+        "definition": "渗透测试（模拟攻击以查找安全漏洞）",
+        "synonyms": "ethical hacking",
+        "exampleEn": "We hire external security experts to perform a pen test once a year.",
+        "exampleCn": "我们每年聘请外部安全专家进行一次渗透测试。",
+        "status": 0
+    },
+    {
+        "id": 48,
+        "term": "Canary Deployment",
+        "phonetic": "/kəˈneri dɪˈplɔɪmənt/",
+        "definition": "金丝雀部署（先向小部分用户发布新版本）",
+        "synonyms": "phased rollout",
+        "exampleEn": "The canary deployment revealed a bug that only occurs on mobile devices.",
+        "exampleCn": "金丝雀部署发现了一个仅在移动设备上出现的 Bug。",
+        "status": 0
+    },
+    {
+        "id": 49,
+        "term": "Blue-Green Deployment",
+        "phonetic": "/bluː ɡriːn dɪˈplɔɪmənt/",
+        "definition": "蓝绿部署（通过切换流量实现无缝升级）",
+        "synonyms": "dual-environment deployment",
+        "exampleEn": "Blue-green deployment allows us to rollback almost instantly if things go wrong.",
+        "exampleCn": "蓝绿部署允许我们在出错时几乎瞬间进行回滚。",
+        "status": 0
+    },
+    {
+        "id": 50,
+        "term": "A/B Testing",
+        "phonetic": "/ˌeɪ ˈbiː ˈtestɪŋ/",
+        "definition": "A/B 测试（对比不同版本对用户的影响）",
+        "synonyms": "bucket testing",
+        "exampleEn": "A/B testing showed that the green button led to more conversions.",
+        "exampleCn": "A/B 测试显示绿色按钮带来了更多的转化率。",
+        "status": 0
+    },
+    {
+        "id": 51,
+        "term": "White-box Testing",
+        "phonetic": "/waɪt bɑːks ˈtestɪŋ/",
+        "definition": "白盒测试（了解内部结构的代码级测试）",
+        "synonyms": "structural testing",
+        "exampleEn": "White-box testing is used to ensure all code paths are executed.",
+        "exampleCn": "白盒测试用于确保所有代码路径都已执行。",
+        "status": 0
+    },
+    {
+        "id": 52,
+        "term": "Black-box Testing",
+        "phonetic": "/blæk bɑːks ˈtestɪŋ/",
+        "definition": "黑盒测试（不考虑内部实现的输入输出测试）",
+        "synonyms": "functional testing",
+        "exampleEn": "The QA team performs black-box testing based on the requirements.",
+        "exampleCn": "QA 团队根据需求进行黑盒测试。",
+        "status": 0
+    },
+    {
+        "id": 53,
+        "term": "Exploratory Testing",
+        "phonetic": "/ɪkˈsplɔːrətɔːri ˈtestɪŋ/",
+        "definition": "探索性测试（非剧本化的即兴测试）",
+        "synonyms": "ad-hoc testing",
+        "exampleEn": "Exploratory testing often catches edge cases that scripts miss.",
+        "exampleCn": "探索性测试经常能捕捉到脚本遗漏的边缘情况。",
+        "status": 0
+    },
+    {
+        "id": 54,
+        "term": "Snapshot Testing",
+        "phonetic": "/ˈsnæpʃɑːt ˈtestɪŋ/",
+        "definition": "快照测试（比较 UI 或数据结构的快照是否变化）",
+        "synonyms": "visual regression testing",
+        "exampleEn": "Snapshot testing is very effective for catching accidental UI changes.",
+        "exampleCn": "快照测试对于捕获意外的 UI 变化非常有效。",
+        "status": 0
+    },
+    {
+        "id": 55,
+        "term": "Load Balancer logs",
+        "phonetic": "/loʊd ˈbælənsər lɔːɡz/",
+        "definition": "负载均衡日志",
+        "synonyms": "access logs",
+        "exampleEn": "Load balancer logs help us identify the source of a DDoS attack.",
+        "exampleCn": "负载均衡日志帮助我们识别 DDoS 攻击的来源。",
+        "status": 0
+    },
+    {
+        "id": 56,
+        "term": "Audit Log",
+        "phonetic": "/ˈɔːdɪt lɔːɡ/",
+        "definition": "审计日志（记录谁做了什么敏感操作）",
+        "synonyms": "history trail",
+        "exampleEn": "All administrative actions must be recorded in the audit log for compliance.",
+        "exampleCn": "所有管理操作必须记录在审计日志中以符合合规性要求。",
+        "status": 0
+    },
+    {
+        "id": 57,
+        "term": "Log Aggregation",
+        "phonetic": "/lɔːɡ ˌæɡrɪˈɡeɪʃn/",
+        "definition": "日志聚合（将分布式日志汇总到一处）",
+        "synonyms": "centralized logging",
+        "exampleEn": "We use the ELK stack for log aggregation and searching.",
+        "exampleCn": "我们使用 ELK 栈进行日志聚合和搜索。",
+        "status": 0
+    },
+    {
+        "id": 58,
+        "term": "Static Analysis",
+        "phonetic": "/ˈstætɪk əˈnæləsɪs/",
+        "definition": "静态分析（不运行程序分析源代码）",
+        "synonyms": "static code analysis",
+        "exampleEn": "Static analysis tools can find potential security vulnerabilities early.",
+        "exampleCn": "静态分析工具可以尽早发现潜在的安全漏洞。",
+        "status": 0
+    },
+    {
+        "id": 59,
+        "term": "Dynamic Analysis",
+        "phonetic": "/daɪˈnæmɪk əˈnæləsɪs/",
+        "definition": "动态分析（程序运行时进行的分析）",
+        "synonyms": "runtime analysis",
+        "exampleEn": "Dynamic analysis helps in finding memory leaks that occur during execution.",
+        "exampleCn": "动态分析有助于发现在执行过程中发生的内存泄漏。",
+        "status": 0
+    },
+    {
+        "id": 60,
+        "term": "Deadlock",
+        "phonetic": "/ˈdedlɑːk/",
+        "definition": "死锁（调试时常见的多线程问题）",
+        "synonyms": "freeze, hang",
+        "exampleEn": "The system hang was caused by a database deadlock.",
+        "exampleCn": "系统挂起是由数据库死锁引起的。",
+        "status": 0
+    },
+    {
+        "id": 61,
+        "term": "Race Condition",
+        "phonetic": "/reɪs kənˈdɪʃn/",
+        "definition": "竞态条件",
+        "synonyms": "concurrency bug",
+        "exampleEn": "Race conditions are notoriously difficult to debug because they are non-deterministic.",
+        "exampleCn": "竞态条件因其非确定性而极难调试。",
+        "status": 0
+    },
+    {
+        "id": 62,
+        "term": "Throughput",
+        "phonetic": "/ˈθruːpʊt/",
+        "definition": "吞吐量",
+        "synonyms": "bandwidth",
+        "exampleEn": "Optimization improved the throughput of our image processing service.",
+        "exampleCn": "优化提高了我们图像处理服务的吞吐量。",
+        "status": 0
+    },
+    {
+        "id": 63,
+        "term": "Availability",
+        "phonetic": "/əˌveɪləˈbɪləti/",
+        "definition": "可用性",
+        "synonyms": "uptime ratio",
+        "exampleEn": "High availability architecture minimizes the impact of server failures.",
+        "exampleCn": "高可用性架构最大限度地减少了服务器故障的影响。",
+        "status": 0
+    },
+    {
+        "id": 64,
+        "term": "Latency",
+        "phonetic": "/ˈleɪtənsi/",
+        "definition": "延迟",
+        "synonyms": "response delay",
+        "exampleEn": "Network latency can significantly degrade user experience.",
+        "exampleCn": "网络延迟会显著降低用户体验。",
+        "status": 0
+    },
+    {
+        "id": 65,
+        "term": "Profiling",
+        "phonetic": "/ˈproʊfaɪlɪŋ/",
+        "definition": "性能画像",
+        "synonyms": "app measurement",
+        "exampleEn": "The CPU profiling showed that the regex was too complex.",
+        "exampleCn": "CPU 性能分析显示该正则表达式过于复杂。",
+        "status": 0
+    },
+    {
+        "id": 66,
+        "term": "Incident Response",
+        "phonetic": "/ˈɪnsɪdənt rɪˈspɑːns/",
+        "definition": "事故响应",
+        "synonyms": "crisis management",
+        "exampleEn": "Our incident response team was paged at 3 AM.",
+        "exampleCn": "我们的事故响应团队在凌晨 3 点被呼叫。",
+        "status": 0
+    },
+    {
+        "id": 67,
+        "term": "Heartbeat",
+        "phonetic": "/ˈhɑːrtbiːt/",
+        "definition": "心跳检测",
+        "synonyms": "keep-alive signal",
+        "exampleEn": "The service sends a heartbeat to the registry every 30 seconds.",
+        "exampleCn": "服务每 30 秒向注册表发送一次心跳信号。",
+        "status": 0
+    },
+    {
+        "id": 68,
+        "term": "Test Harness",
+        "phonetic": "/test ˈhɑːrnɪs/",
+        "definition": "测试桩/测试马具（支撑测试运行的一整套工具和环境）",
+        "synonyms": "test framework setup",
+        "exampleEn": "We built a custom test harness to automate integration tests.",
+        "exampleCn": "我们构建了一个自定义测试环境来自动执行集成测试。",
+        "status": 0
+    },
+    {
+        "id": 69,
+        "term": "Dashboard",
+        "phonetic": "/ˈdæʃbɔːrd/",
+        "definition": "仪表盘",
+        "synonyms": "monitoring board",
+        "exampleEn": "We use a Grafana dashboard to visualize system health metrics.",
+        "exampleCn": "我们使用 Grafana 仪表盘将系统健康指标可视化。",
+        "status": 0
+    },
+    {
+        "id": 70,
+        "term": "Root Cause",
+        "phonetic": "/ruːt kɔːz/",
+        "definition": "根本原因",
+        "synonyms": "underlying cause",
+        "exampleEn": "The root cause was a misconfigured environment variable.",
+        "exampleCn": "根本原因是一个配置错误的境变量。",
+        "status": 0
+    },
+    {
+        "id": 71,
+        "term": "Observation",
+        "phonetic": "/ˌɑːbzərˈveɪʃn/",
+        "definition": "观测值/观察结果",
+        "synonyms": "finding",
+        "exampleEn": "My initial observation is that the error only happens on Safari.",
+        "exampleCn": "我的初步观察是该错误仅在 Safari 浏览器上发生。",
+        "status": 0
+    },
+    {
+        "id": 72,
+        "term": "Environment parity",
+        "phonetic": "/ɪnˈvaɪrənmənt ˈpærəti/",
+        "definition": "环境一致性（保持开发、测试、生产环境尽可能相同）",
+        "synonyms": "environment consistency",
+        "exampleEn": "Docker helps us maintain environment parity across the team.",
+        "exampleCn": "Docker 帮助我们在团队中保持环境的一致性。",
+        "status": 0
+    },
+    {
+        "id": 73,
+        "term": "Staging environment",
+        "phonetic": "/ˈsteɪdʒɪŋ ɪnˈvaɪrənmənt/",
+        "definition": "预发布环境",
+        "synonyms": "pre-prod",
+        "exampleEn": "Final verification must be completed in the staging environment.",
+        "exampleCn": "最终验证必须在预发布环境中完成。",
+        "status": 0
+    },
+    {
+        "id": 74,
+        "term": "Side effect",
+        "phonetic": "/saɪd ɪˈfekt/",
+        "definition": "副作用（调试时关注的代码对外部的影响）",
+        "synonyms": "unexpected impact",
+        "exampleEn": "The bug fix had an unintended side effect on the reporting module.",
+        "exampleCn": "该 Bug 修复对报表模块产生了一个意外的副作用。",
+        "status": 0
+    },
+    {
+        "id": 75,
+        "term": "Warmup",
+        "phonetic": "/ˈwɔːrmʌp/",
+        "definition": "预热",
+        "synonyms": "pre-heat",
+        "exampleEn": "Without proper cache warmup, the system experiences high latency after a reboot.",
+        "exampleCn": "如果没有适当的缓存预热，系统在重启后会经历高延迟。",
+        "status": 0
+    }
+]
