@@ -1,0 +1,843 @@
+[
+    {
+        "id": 1,
+        "term": "Variable",
+        "phonetic": "/ˈveriəbl/",
+        "definition": "变量",
+        "synonyms": "placeholder, identifier",
+        "exampleEn": "You need to declare a global variable to store the user's session.",
+        "exampleCn": "你需要声明一个全局变量来存储用户的会话信息。",
+        "status": 0
+    },
+    {
+        "id": 2,
+        "term": "Constant",
+        "phonetic": "/ˈkɑːnstənt/",
+        "definition": "常量",
+        "synonyms": "immutable value, fixed value",
+        "exampleEn": "The API base URL should be defined as a constant.",
+        "exampleCn": "API 的基础 URL 应该定义为一个常量。",
+        "status": 0
+    },
+    {
+        "id": 3,
+        "term": "Data type",
+        "phonetic": "/ˈdeɪtə taɪp/",
+        "definition": "数据类型",
+        "synonyms": "type",
+        "exampleEn": "The function returns a boolean data type.",
+        "exampleCn": "该函数返回一个布尔数据类型。",
+        "status": 0
+    },
+    {
+        "id": 4,
+        "term": "Function",
+        "phonetic": "/ˈfʌŋkʃn/",
+        "definition": "函数",
+        "synonyms": "procedure, subroutine",
+        "exampleEn": "This function is responsible for calculating the total price.",
+        "exampleCn": "这个函数负责计算总价。",
+        "status": 0
+    },
+    {
+        "id": 5,
+        "term": "Method",
+        "phonetic": "/ˈmeθəd/",
+        "definition": "方法（通常指类中的函数）",
+        "synonyms": "class function",
+        "exampleEn": "The string object has a built-in method called toUpperCase().",
+        "exampleCn": "字符串对象有一个名为 toUpperCase() 的内置方法。",
+        "status": 0
+    },
+    {
+        "id": 6,
+        "term": "Parameter",
+        "phonetic": "/pəˈræmɪtər/",
+        "definition": "形参（定义函数时的变量）",
+        "synonyms": "formal argument",
+        "exampleEn": "The function takes three parameters: host, port, and timeout.",
+        "exampleCn": "该函数接收三个参数：主机名、端口和超时时间。",
+        "status": 0
+    },
+    {
+        "id": 7,
+        "term": "Argument",
+        "phonetic": "/ˈɑːrɡjumənt/",
+        "definition": "实参（调用函数时传入的值）",
+        "synonyms": "actual parameter",
+        "exampleEn": "You are passing the wrong argument type to the constructor.",
+        "exampleCn": "你给构造函数传入了错误的参数类型。",
+        "status": 0
+    },
+    {
+        "id": 8,
+        "term": "Return value",
+        "phonetic": "/rɪˈtɜːrn ˈvæljuː/",
+        "definition": "返回值",
+        "synonyms": "output, result",
+        "exampleEn": "If the operation fails, the return value will be null.",
+        "exampleCn": "如果操作失败，返回值将为 null。",
+        "status": 0
+    },
+    {
+        "id": 9,
+        "term": "Scope",
+        "phonetic": "/skoʊp/",
+        "definition": "作用域",
+        "synonyms": "visibility range",
+        "exampleEn": "The variable is not accessible here because it is out of scope.",
+        "exampleCn": "变量在这里无法访问，因为它超出了作用域。",
+        "status": 0
+    },
+    {
+        "id": 10,
+        "term": "Expression",
+        "phonetic": "/ɪkˈspreʃn/",
+        "definition": "表达式",
+        "synonyms": "formula",
+        "exampleEn": "This regular expression is used to validate email addresses.",
+        "exampleCn": "这个正则表达式用于验证电子邮件地址。",
+        "status": 0
+    },
+    {
+        "id": 11,
+        "term": "Statement",
+        "phonetic": "/ˈsteɪtmənt/",
+        "definition": "语句",
+        "synonyms": "instruction",
+        "exampleEn": "The code failed at the SQL update statement.",
+        "exampleCn": "代码在 SQL 更新语句处运行失败。",
+        "status": 0
+    },
+    {
+        "id": 12,
+        "term": "Operator",
+        "phonetic": "/ˈɑːpəreɪtər/",
+        "definition": "运算符",
+        "synonyms": "mathematical symbol",
+        "exampleEn": "The ternary operator is a shorthand for an if-else statement.",
+        "exampleCn": "三元运算符是 if-else 语句的简写形式。",
+        "status": 0
+    },
+    {
+        "id": 13,
+        "term": "Boolean",
+        "phonetic": "/ˈbuːliən/",
+        "definition": "布尔值",
+        "synonyms": "logical value",
+        "exampleEn": "The flag should be a boolean: true or false.",
+        "exampleCn": "该标志位应该是布尔值：true 或 false。",
+        "status": 0
+    },
+    {
+        "id": 14,
+        "term": "Conditional",
+        "phonetic": "/kənˈdɪʃənl/",
+        "definition": "条件语句",
+        "synonyms": "decision structure",
+        "exampleEn": "We need a conditional to check if the user is logged in.",
+        "exampleCn": "我们需要一个条件语句来检查用户是否已登录。",
+        "status": 0
+    },
+    {
+        "id": 15,
+        "term": "Loop",
+        "phonetic": "/luːp/",
+        "definition": "循环",
+        "synonyms": "cycle, iteration",
+        "exampleEn": "Use a for-loop to iterate through the array of products.",
+        "exampleCn": "使用 for 循环来遍历产品数组。",
+        "status": 0
+    },
+    {
+        "id": 16,
+        "term": "Iteration",
+        "phonetic": "/ˌɪtəˈreɪʃn/",
+        "definition": "迭代；轮次",
+        "synonyms": "repetition, pass",
+        "exampleEn": "The loop takes 10 iterations to complete the task.",
+        "exampleCn": "循环需要 10 轮迭代才能完成任务。",
+        "status": 0
+    },
+    {
+        "id": 17,
+        "term": "Recursion",
+        "phonetic": "/rɪˈkɜːrʒn/",
+        "definition": "递归",
+        "synonyms": "self-reference",
+        "exampleEn": "This problem can be solved easily using recursion.",
+        "exampleCn": "这个问题可以用递归轻松解决。",
+        "status": 0
+    },
+    {
+        "id": 18,
+        "term": "Array",
+        "phonetic": "/əˈreɪ/",
+        "definition": "数组",
+        "synonyms": "list, collection",
+        "exampleEn": "The data is stored in a multi-dimensional array.",
+        "exampleCn": "数据存储在一个多维数组中。",
+        "status": 0
+    },
+    {
+        "id": 19,
+        "term": "Object",
+        "phonetic": "/ˈɑːbdʒekt/",
+        "definition": "对象",
+        "synonyms": "instance, entity",
+        "exampleEn": "In JavaScript, almost everything is an object.",
+        "exampleCn": "在 JavaScript 中，几乎所有东西都是对象。",
+        "status": 0
+    },
+    {
+        "id": 20,
+        "term": "Class",
+        "phonetic": "/klæs/",
+        "definition": "类",
+        "synonyms": "blueprint, template",
+        "exampleEn": "We need to define a new class for the database connection.",
+        "exampleCn": "我们需要为数据库连接定义一个新类。",
+        "status": 0
+    },
+    {
+        "id": 21,
+        "term": "Instance",
+        "phonetic": "/ˈɪnstəns/",
+        "definition": "实例",
+        "synonyms": "occurrence, object",
+        "exampleEn": "Each instance of the class has its own unique ID.",
+        "exampleCn": "该类的每个实例都有其唯一的 ID。",
+        "status": 0
+    },
+    {
+        "id": 22,
+        "term": "Constructor",
+        "phonetic": "/kənˈstrʌktər/",
+        "definition": "构造函数",
+        "synonyms": "initializer",
+        "exampleEn": "The constructor is called automatically when an object is created.",
+        "exampleCn": "创建对象时会自动调用构造函数。",
+        "status": 0
+    },
+    {
+        "id": 23,
+        "term": "Attribute",
+        "phonetic": "/ˈætrɪbjuːt/",
+        "definition": "属性（通常指 HTML 或数据库字段）",
+        "synonyms": "field, characteristic",
+        "exampleEn": "The 'id' attribute of the element must be unique.",
+        "exampleCn": "元素的 'id' 属性必须是唯一的。",
+        "status": 0
+    },
+    {
+        "id": 24,
+        "term": "Property",
+        "phonetic": "/ˈprɑːpərti/",
+        "definition": "属性（通常指对象内部的成员）",
+        "synonyms": "member, trait",
+        "exampleEn": "You can access the length property of an array directly.",
+        "exampleCn": "你可以直接访问数组的 length 属性。",
+        "status": 0
+    },
+    {
+        "id": 25,
+        "term": "Inheritance",
+        "phonetic": "/ɪnˈherɪtəns/",
+        "definition": "继承",
+        "synonyms": "derivation",
+        "exampleEn": "Inheritance allows a subclass to reuse code from a parent class.",
+        "exampleCn": "继承允许子类重用父类的代码。",
+        "status": 0
+    },
+    {
+        "id": 26,
+        "term": "Polymorphism",
+        "phonetic": "/ˌpɑːliˈmɔːrfɪzəm/",
+        "definition": "多态",
+        "synonyms": "multi-formity",
+        "exampleEn": "Polymorphism enables us to treat different objects in a uniform way.",
+        "exampleCn": "多态使我们能够以统一的方式处理不同的对象。",
+        "status": 0
+    },
+    {
+        "id": 27,
+        "term": "Encapsulation",
+        "phonetic": "/ɪnˌkæpsuˈleɪʃn/",
+        "definition": "封装",
+        "synonyms": "information hiding",
+        "exampleEn": "Encapsulation keeps the internal state of an object private.",
+        "exampleCn": "封装使对象的内部状态保持私有。",
+        "status": 0
+    },
+    {
+        "id": 28,
+        "term": "Abstraction",
+        "phonetic": "/æbˈstrækʃn/",
+        "definition": "抽象",
+        "synonyms": "generalization",
+        "exampleEn": "Abstraction helps to hide complex implementation details from the user.",
+        "exampleCn": "抽象有助于向用户隐藏复杂的实现细节。",
+        "status": 0
+    },
+    {
+        "id": 29,
+        "term": "Interface",
+        "phonetic": "/ˈɪntərfeɪs/",
+        "definition": "接口",
+        "synonyms": "contract, boundary",
+        "exampleEn": "The service implements a common interface for all data sources.",
+        "exampleCn": "该服务为所有数据源实现了一个通用接口。",
+        "status": 0
+    },
+    {
+        "id": 30,
+        "term": "Static",
+        "phonetic": "/ˈstætɪk/",
+        "definition": "静态的",
+        "synonyms": "class-level",
+        "exampleEn": "Static methods can be called without creating an instance of the class.",
+        "exampleCn": "静态方法可以在不创建类实例的情况下调用。",
+        "status": 0
+    },
+    {
+        "id": 31,
+        "term": "Callback",
+        "phonetic": "/ˈkælbæk/",
+        "definition": "回调函数",
+        "synonyms": "hook",
+        "exampleEn": "The success callback will be executed after the data is fetched.",
+        "exampleCn": "获取数据后将执行成功回调函数。",
+        "status": 0
+    },
+    {
+        "id": 32,
+        "term": "Anonymous function",
+        "phonetic": "/əˈnɑːnɪməs ˈfʌŋkʃn/",
+        "definition": "匿名函数",
+        "synonyms": "nameless function",
+        "exampleEn": "We can pass an anonymous function as an argument to the map method.",
+        "exampleCn": "我们可以将一个匿名函数作为参数传递给 map 方法。",
+        "status": 0
+    },
+    {
+        "id": 33,
+        "term": "Lambda",
+        "phonetic": "/ˈlæmdə/",
+        "definition": "Lambda 表达式",
+        "synonyms": "arrow function",
+        "exampleEn": "Lambda expressions provide a concise way to represent functions.",
+        "exampleCn": "Lambda 表达式提供了一种简洁的方式来表示函数。",
+        "status": 0
+    },
+    {
+        "id": 34,
+        "term": "Closure",
+        "phonetic": "/ˈkloʊʒər/",
+        "definition": "闭包",
+        "synonyms": "enclosed scope",
+        "exampleEn": "Closures allow a function to access variables from its outer scope.",
+        "exampleCn": "闭包允许函数访问其外部作用域的变量。",
+        "status": 0
+    },
+    {
+        "id": 35,
+        "term": "Asynchronous",
+        "phonetic": "/eɪˈsɪŋkrənəs/",
+        "definition": "异步的",
+        "synonyms": "non-blocking",
+        "exampleEn": "Node.js is famous for its asynchronous I/O operations.",
+        "exampleCn": "Node.js 以其异步 I/O 操作而闻名。",
+        "status": 0
+    },
+    {
+        "id": 36,
+        "term": "Synchronous",
+        "phonetic": "/ˈsɪŋkrənəs/",
+        "definition": "同步的",
+        "synonyms": "blocking",
+        "exampleEn": "Synchronous code execution waits for each task to finish before starting the next.",
+        "exampleCn": "同步代码执行会等待每个任务完成后再开始下一个。",
+        "status": 0
+    },
+    {
+        "id": 37,
+        "term": "Promise",
+        "phonetic": "/ˈprɑːmɪs/",
+        "definition": "期约（JS中用于异步处理的对象）",
+        "synonyms": "future, eventual result",
+        "exampleEn": "The API call returns a promise that resolves to a user object.",
+        "exampleCn": "API 调用返回一个解析为用户对象的 Promise。",
+        "status": 0
+    },
+    {
+        "id": 38,
+        "term": "Await",
+        "phonetic": "/əˈweɪt/",
+        "definition": "等待（通常与 async 配合使用）",
+        "synonyms": "pause until finished",
+        "exampleEn": "Use 'await' to pause execution until the promise is settled.",
+        "exampleCn": "使用 'await' 来暂停执行，直到 Promise 状态确定。",
+        "status": 0
+    },
+    {
+        "id": 39,
+        "term": "Thread",
+        "phonetic": "/θred/",
+        "definition": "线程",
+        "synonyms": "execution path",
+        "exampleEn": "The main thread is responsible for handling user interactions.",
+        "exampleCn": "主线程负责处理用户交互。",
+        "status": 0
+    },
+    {
+        "id": 40,
+        "term": "Concurrency",
+        "phonetic": "/kənˈkɜːrənsi/",
+        "definition": "并发",
+        "synonyms": "simultaneous execution",
+        "exampleEn": "Handling multiple requests at once is a classic concurrency problem.",
+        "exampleCn": "同时处理多个请求是一个经典的并发问题。",
+        "status": 0
+    },
+    {
+        "id": 41,
+        "term": "Race condition",
+        "phonetic": "/reɪs kənˈdɪʃn/",
+        "definition": "竞态条件",
+        "synonyms": "concurrency bug",
+        "exampleEn": "A race condition occurs when two threads access shared data simultaneously.",
+        "exampleCn": "当两个线程同时访问共享数据时，就会发生竞态条件。",
+        "status": 0
+    },
+    {
+        "id": 42,
+        "term": "Deadlock",
+        "phonetic": "/ˈdedlɑːk/",
+        "definition": "死锁",
+        "synonyms": "stalemate",
+        "exampleEn": "The system became unresponsive due to a database deadlock.",
+        "exampleCn": "由于数据库死锁，系统变得无响应。",
+        "status": 0
+    },
+    {
+        "id": 43,
+        "term": "Immutable",
+        "phonetic": "/ɪˈmjuːtəbl/",
+        "definition": "不可变的",
+        "synonyms": "unchangeable, read-only",
+        "exampleEn": "Strings are immutable in many programming languages.",
+        "exampleCn": "在许多编程语言中，字符串是不可变的。",
+        "status": 0
+    },
+    {
+        "id": 44,
+        "term": "Mutable",
+        "phonetic": "/ˈmjuːtəbl/",
+        "definition": "可变的",
+        "synonyms": "changeable",
+        "exampleEn": "Objects and arrays are typically mutable data structures.",
+        "exampleCn": "对象和数组通常是可变的数据结构。",
+        "status": 0
+    },
+    {
+        "id": 45,
+        "term": "Side effect",
+        "phonetic": "/saɪd ɪˈfekt/",
+        "definition": "副作用（函数修改了外部状态）",
+        "synonyms": "external modification",
+        "exampleEn": "A pure function should not have any side effects.",
+        "exampleCn": "纯函数不应该有任何副作用。",
+        "status": 0
+    },
+    {
+        "id": 46,
+        "term": "State",
+        "phonetic": "/steɪt/",
+        "definition": "状态",
+        "synonyms": "status, condition",
+        "exampleEn": "We use React to manage the application state efficiently.",
+        "exampleCn": "我们使用 React 来高效地管理应用状态。",
+        "status": 0
+    },
+    {
+        "id": 47,
+        "term": "Exception",
+        "phonetic": "/ɪkˈsepʃn/",
+        "definition": "异常",
+        "synonyms": "error, anomaly",
+        "exampleEn": "The code will throw an exception if the file is not found.",
+        "exampleCn": "如果找不到文件，代码将抛出异常。",
+        "status": 0
+    },
+    {
+        "id": 48,
+        "term": "Stack trace",
+        "phonetic": "/stæk treɪs/",
+        "definition": "堆栈追踪（错误报告中的函数调用历史）",
+        "synonyms": "error stack",
+        "exampleEn": "Look at the stack trace to find where the error originated.",
+        "exampleCn": "查看堆栈追踪以找到错误的根源。",
+        "status": 0
+    },
+    {
+        "id": 49,
+        "term": "Null pointer",
+        "phonetic": "/nʌl ˈpɔɪntər/",
+        "definition": "空指针",
+        "synonyms": "null reference",
+        "exampleEn": "The app crashed because of a null pointer exception.",
+        "exampleCn": "由于空指针异常，应用程序崩溃了。",
+        "status": 0
+    },
+    {
+        "id": 50,
+        "term": "Memory leak",
+        "phonetic": "/ˈmeməri liːk/",
+        "definition": "内存泄漏",
+        "synonyms": "resource leak",
+        "exampleEn": "We need to fix the memory leak in the long-running background process.",
+        "exampleCn": "我们需要修复长期运行的后台进程中的内存泄漏。",
+        "status": 0
+    },
+    {
+        "id": 51,
+        "term": "Garbage collection",
+        "phonetic": "/ˈɡɑːrbɪdʒ kəˈlekʃn/",
+        "definition": "垃圾回收",
+        "synonyms": "memory management",
+        "exampleEn": "Automatic garbage collection helps prevent most memory-related bugs.",
+        "exampleCn": "自动垃圾回收有助于防止大多数与内存相关的漏洞。",
+        "status": 0
+    },
+    {
+        "id": 52,
+        "term": "Serialization",
+        "phonetic": "/ˌsɪriələˈzeɪʃn/",
+        "definition": "序列化",
+        "synonyms": "marshalling",
+        "exampleEn": "JSON is a common format used for data serialization.",
+        "exampleCn": "JSON 是用于数据序列化的常用格式。",
+        "status": 0
+    },
+    {
+        "id": 53,
+        "term": "Deserialization",
+        "phonetic": "/ˌdiːˌsɪriələˈzeɪʃn/",
+        "definition": "反序列化",
+        "synonyms": "unmarshalling",
+        "exampleEn": "Deserialization is the process of converting data back into an object.",
+        "exampleCn": "反序列化是将数据转换回对象的过程。",
+        "status": 0
+    },
+    {
+        "id": 54,
+        "term": "Type casting",
+        "phonetic": "/taɪp ˈkæstɪŋ/",
+        "definition": "类型转换",
+        "synonyms": "type conversion",
+        "exampleEn": "You might need to perform type casting to convert a string to an integer.",
+        "exampleCn": "你可能需要进行类型转换来将字符串转换为整数。",
+        "status": 0
+    },
+    {
+        "id": 55,
+        "term": "Syntax",
+        "phonetic": "/ˈsɪntæks/",
+        "definition": "语法",
+        "synonyms": "grammar, rules",
+        "exampleEn": "The compiler reported a syntax error on line 45.",
+        "exampleCn": "编译器在第 45 行报告了一个语法错误。",
+        "status": 0
+    },
+    {
+        "id": 56,
+        "term": "Runtime",
+        "phonetic": "/ˈrʌntaɪm/",
+        "definition": "运行时",
+        "synonyms": "execution time",
+        "exampleEn": "The bug only appears at runtime under heavy load.",
+        "exampleCn": "该 Bug 仅在重负载下的运行时出现。",
+        "status": 0
+    },
+    {
+        "id": 57,
+        "term": "Compile",
+        "phonetic": "/kəmˈpaɪl/",
+        "definition": "编译",
+        "synonyms": "build, transform",
+        "exampleEn": "Does the code compile without any warnings?",
+        "exampleCn": "代码编译时没有任何警告吗？",
+        "status": 0
+    },
+    {
+        "id": 58,
+        "term": "Logic error",
+        "phonetic": "/ˈlɑːdʒɪk ˈerər/",
+        "definition": "逻辑错误",
+        "synonyms": "semantic error",
+        "exampleEn": "The code runs, but the results are wrong due to a logic error.",
+        "exampleCn": "代码可以运行，但由于逻辑错误，结果是错误的。",
+        "status": 0
+    },
+    {
+        "id": 59,
+        "term": "Dependency injection",
+        "phonetic": "/dɪˈpendənsi ɪnˈdʒekʃn/",
+        "definition": "依赖注入",
+        "synonyms": "IoC",
+        "exampleEn": "Dependency injection makes the code more testable and modular.",
+        "exampleCn": "依赖注入使代码更具可测试性和模块化。",
+        "status": 0
+    },
+    {
+        "id": 60,
+        "term": "Singleton",
+        "phonetic": "/ˈsɪŋɡltən/",
+        "definition": "单例模式",
+        "synonyms": "single instance",
+        "exampleEn": "We use the singleton pattern for the database connection pool.",
+        "exampleCn": "我们对数据库连接池使用单例模式。",
+        "status": 0
+    },
+    {
+        "id": 61,
+        "term": "Pointer",
+        "phonetic": "/ˈpɔɪntər/",
+        "definition": "指针",
+        "synonyms": "memory address",
+        "exampleEn": "C++ allows direct manipulation of memory using pointers.",
+        "exampleCn": "C++ 允许使用指针直接操作内存。",
+        "status": 0
+    },
+    {
+        "id": 62,
+        "term": "Buffer",
+        "phonetic": "/ˈbʌfər/",
+        "definition": "缓冲区",
+        "synonyms": "temporary storage",
+        "exampleEn": "The data is stored in a buffer before being written to the disk.",
+        "exampleCn": "数据在写入磁盘之前被存储在缓冲区中。",
+        "status": 0
+    },
+    {
+        "id": 63,
+        "term": "Payload",
+        "phonetic": "/ˈpeɪloʊd/",
+        "definition": "有效负载（数据包中的核心数据）",
+        "synonyms": "data body",
+        "exampleEn": "The HTTP request payload contains the user information in JSON format.",
+        "exampleCn": "HTTP 请求的有效负载包含 JSON 格式的用户信息。",
+        "status": 0
+    },
+    {
+        "id": 64,
+        "term": "Metadata",
+        "phonetic": "/ˈmetədeɪtə/",
+        "definition": "元数据（描述数据的数据）",
+        "synonyms": "descriptive data",
+        "exampleEn": "The file metadata includes the creation date and the author.",
+        "exampleCn": "文件元数据包括创建日期和作者。",
+        "status": 0
+    },
+    {
+        "id": 65,
+        "term": "Reference",
+        "phonetic": "/ˈrefrəns/",
+        "definition": "引用",
+        "synonyms": "link, pointer",
+        "exampleEn": "Objects are passed by reference in this language.",
+        "exampleCn": "在这种语言中，对象是通过引用传递的。",
+        "status": 0
+    },
+    {
+        "id": 66,
+        "term": "Boilerplate",
+        "phonetic": "/ˈbɔɪlərpleɪt/",
+        "definition": "样板代码（重复性、基础性的代码）",
+        "synonyms": "standard code",
+        "exampleEn": "We use a template to generate the boilerplate code for new services.",
+        "exampleCn": "我们使用模板来为新服务生成样板代码。",
+        "status": 0
+    },
+    {
+        "id": 67,
+        "term": "Legacy code",
+        "phonetic": "/ˈleɡəsi koʊd/",
+        "definition": "遗留代码（老旧且难以维护的代码）",
+        "synonyms": "old code",
+        "exampleEn": "We are gradually refactoring the legacy code to modern standards.",
+        "exampleCn": "我们正逐步将遗留代码重构为现代标准。",
+        "status": 0
+    },
+    {
+        "id": 68,
+        "term": "Namespace",
+        "phonetic": "/ˈneɪmspeɪs/",
+        "definition": "命名空间",
+        "synonyms": "scope container",
+        "exampleEn": "Namespaces help to avoid naming conflicts in large projects.",
+        "exampleCn": "命名空间有助于避免大型项目中的命名冲突。",
+        "status": 0
+    },
+    {
+        "id": 69,
+        "term": "Wrapper",
+        "phonetic": "/ˈræpər/",
+        "definition": "包装器/包装函数",
+        "synonyms": "adapter, decorator",
+        "exampleEn": "I wrote a simple wrapper for the third-party SDK.",
+        "exampleCn": "我为第三方 SDK 写了一个简单的包装器。",
+        "status": 0
+    },
+    {
+        "id": 70,
+        "term": "Library",
+        "phonetic": "/ˈlaɪbreri/",
+        "definition": "库",
+        "synonyms": "module, toolkit",
+        "exampleEn": "This library provides a set of utility functions for date manipulation.",
+        "exampleCn": "这个库提供了一组用于日期操作的实用工具函数。",
+        "status": 0
+    },
+    {
+        "id": 71,
+        "term": "Framework",
+        "phonetic": "/ˈfreɪmwɜːrk/",
+        "definition": "框架",
+        "synonyms": "platform, structure",
+        "exampleEn": "Spring is a popular Java framework for building enterprise applications.",
+        "exampleCn": "Spring 是一个用于构建企业级应用的流行 Java 框架。",
+        "status": 0
+    },
+    {
+        "id": 72,
+        "term": "Mock",
+        "phonetic": "/mɑːk/",
+        "definition": "模拟（通常指测试中的模拟对象）",
+        "synonyms": "simulate, fake",
+        "exampleEn": "We need to mock the external API for unit testing.",
+        "exampleCn": "为了进行单元测试，我们需要模拟外部 API。",
+        "status": 0
+    },
+    {
+        "id": 73,
+        "term": "Stub",
+        "phonetic": "/stʌb/",
+        "definition": "桩函数（简单的替代实现）",
+        "synonyms": "placeholder implementation",
+        "exampleEn": "The stub returns a hardcoded value for testing purposes.",
+        "exampleCn": "出于测试目的，该桩函数返回一个硬编码的值。",
+        "status": 0
+    },
+    {
+        "id": 74,
+        "term": "Truthy / Falsy",
+        "phonetic": "/ˈtruːθi / ˈfɔːlsi/",
+        "definition": "真值/假值（在布尔语境下等效的值）",
+        "synonyms": "equivalent to true/false",
+        "exampleEn": "In JavaScript, an empty string is considered a falsy value.",
+        "exampleCn": "在 JavaScript 中，空字符串被视为假值。",
+        "status": 0
+    },
+    {
+        "id": 75,
+        "term": "Operator overloading",
+        "phonetic": "/ˈɑːpəreɪtər ˌoʊvərˈloʊdɪŋ/",
+        "definition": "运算符重载",
+        "synonyms": "operator redefinition",
+        "exampleEn": "Operator overloading allows us to use '+' for vector addition.",
+        "exampleCn": "运算符重载允许我们对向量加法使用 '+' 符号。",
+        "status": 0
+    },
+    {
+        "id": 76,
+        "term": "Parsing",
+        "phonetic": "/ˈpɑːrsɪŋ/",
+        "definition": "解析",
+        "synonyms": "analysis, decoding",
+        "exampleEn": "Parsing the large XML file took too much memory.",
+        "exampleCn": "解析这个大型 XML 文件消耗了太多内存。",
+        "status": 0
+    },
+    {
+        "id": 77,
+        "term": "Rendering",
+        "phonetic": "/ˈrendərɪŋ/",
+        "definition": "渲染",
+        "synonyms": "drawing, displaying",
+        "exampleEn": "The browser is rendering the page much faster now.",
+        "exampleCn": "浏览器现在的页面渲染速度快多了。",
+        "status": 0
+    },
+    {
+        "id": 78,
+        "term": "Hydration",
+        "phonetic": "/haɪˈdreɪʃn/",
+        "definition": "注水（SSR中客户端接管静态HTML的过程）",
+        "synonyms": "attaching event listeners",
+        "exampleEn": "React hydration ensures the static HTML becomes interactive.",
+        "exampleCn": "React 的注水过程确保了静态 HTML 变得可交互。",
+        "status": 0
+    },
+    {
+        "id": 79,
+        "term": "Middleware",
+        "phonetic": "/ˈmɪdlwer/",
+        "definition": "中间件",
+        "synonyms": "interceptor",
+        "exampleEn": "The authentication middleware checks the token for every request.",
+        "exampleCn": "认证中间件会检查每个请求的令牌。",
+        "status": 0
+    },
+    {
+        "id": 80,
+        "term": "Pipeline",
+        "phonetic": "/ˈpaɪplaɪn/",
+        "definition": "流水线",
+        "synonyms": "workflow, sequence",
+        "exampleEn": "The data goes through a processing pipeline before reaching the frontend.",
+        "exampleCn": "数据在到达前端之前会经过一个处理流水线。",
+        "status": 0
+    },
+    {
+        "id": 81,
+        "term": "Queue",
+        "phonetic": "/kjuː/",
+        "definition": "队列",
+        "synonyms": "waiting list, FIFO",
+        "exampleEn": "Messages are stored in a queue until they are processed.",
+        "exampleCn": "消息存储在队列中直到被处理。",
+        "status": 0
+    },
+    {
+        "id": 82,
+        "term": "Stack",
+        "phonetic": "/stæk/",
+        "definition": "栈/技术栈",
+        "synonyms": "LIFO / technology suite",
+        "exampleEn": "Our tech stack includes React, Node.js, and PostgreSQL.",
+        "exampleCn": "我们的技术栈包括 React、Node.js 和 PostgreSQL。",
+        "status": 0
+    },
+    {
+        "id": 83,
+        "term": "Schema",
+        "phonetic": "/ˈskiːmə/",
+        "definition": "模式/结构",
+        "synonyms": "structure, layout",
+        "exampleEn": "We need to update the database schema to add a new column.",
+        "exampleCn": "我们需要更新数据库模式以添加一个新列。",
+        "status": 0
+    },
+    {
+        "id": 84,
+        "term": "Query",
+        "phonetic": "/ˈkwɪri/",
+        "definition": "查询",
+        "synonyms": "search, request",
+        "exampleEn": "The slow SQL query is causing performance issues.",
+        "exampleCn": "缓慢的 SQL 查询正在引起性能问题。",
+        "status": 0
+    }
+
+]
