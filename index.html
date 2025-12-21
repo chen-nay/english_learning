@@ -9,21 +9,27 @@
         body { margin: 0; font-family: 'Segoe UI', sans-serif; background-color: var(--bg-color); display: flex; height: 100vh; overflow: hidden; }
         .sidebar { width: 220px; background-color: white; border-right: 1px solid var(--border-color); padding: 20px; display: flex; flex-direction: column; }
         .logo { font-size: 18px; font-weight: bold; color: var(--text-main); margin-bottom: 25px; display: flex; align-items: center; gap: 8px; padding-bottom: 15px; border-bottom: 1px solid #f3f4f6; }
-        .book-list { display: flex; flex-direction: column; gap: 8px; }
-        .book-item { padding: 12px 15px; border-radius: 8px; cursor: pointer; color: var(--text-main); font-weight: 500; display: flex; align-items: center; justify-content: space-between; transition: all 0.2s; }
-        .book-item:hover { background-color: #f9fafb; }
-        .book-item.active { background-color: #eff6ff; color: var(--primary-blue); font-weight: 600; }
+        .nav-list { display: flex; flex-direction: column; gap: 8px; }
+        .nav-item { padding: 12px 15px; border-radius: 8px; cursor: pointer; color: var(--text-main); font-weight: 500; display: flex; align-items: center; justify-content: space-between; transition: all 0.2s; }
+        .nav-item:hover { background-color: #f9fafb; }
+        .nav-item.active { background-color: #eff6ff; color: var(--primary-blue); font-weight: 600; }
+        
         .loading-mask { display: none; position: fixed; top: 0; right: 0; bottom: 0; left: 260px; background: rgba(255,255,255,0.8); z-index: 10; align-items: center; justify-content: center; font-size: 14px; color: var(--text-sub); }
         .main-content { flex: 1; display: flex; flex-direction: column; overflow: hidden; position: relative; }
-        .header { background-color: white; border-bottom: 1px solid var(--border-color); padding: 15px 30px; display: flex; justify-content: space-between; align-items: center; }
-        .type-tabs { display: flex; gap: 15px; margin-bottom: 15px; }
-        .type-tab { padding: 6px 18px; border-radius: 6px; cursor: pointer; font-weight: 500; background: #f3f4f6; color: var(--text-sub); font-size: 14px; }
-        .type-tab.active { background-color: var(--primary-blue); color: white; }
+        
+        /* Top Bar for Wordbooks */
+        .top-book-bar { background-color: white; border-bottom: 1px solid var(--border-color); padding: 10px 30px; display: flex; gap: 10px; overflow-x: auto; white-space: nowrap; flex-shrink: 0; }
+        .top-book-bar::-webkit-scrollbar { height: 4px; }
+        .top-book-bar::-webkit-scrollbar-thumb { background: #e5e7eb; border-radius: 4px; }
+        .book-pill { padding: 6px 16px; border-radius: 20px; font-size: 13px; cursor: pointer; border: 1px solid var(--border-color); background: white; color: var(--text-sub); transition: all 0.2s; }
+        .book-pill:hover { background-color: #f9fafb; border-color: #d1d5db; }
+        .book-pill.active { background-color: #eff6ff; border-color: var(--primary-blue); color: var(--primary-blue); font-weight: bold; }
+
+        .header { background-color: white; border-bottom: 1px solid var(--border-color); padding: 15px 30px; display: flex; justify-content: space-between; align-items: center; flex-shrink: 0; }
         .status-tabs { display: flex; gap: 10px; }
         .status-pill { padding: 5px 14px; border-radius: 20px; font-size: 13px; cursor: pointer; border: 1px solid var(--border-color); background: white; color: var(--text-sub); }
         .status-pill.active { background-color: #eff6ff; border-color: var(--primary-blue); color: var(--primary-blue); font-weight: bold; }
         
-        /* Visibility Toggle Styles */
         .btn-toggle-view { cursor: pointer; padding: 8px; border-radius: 50%; color: var(--text-sub); transition: all 0.2s; display: flex; align-items: center; justify-content: center; }
         .btn-toggle-view:hover { background-color: #f3f4f6; color: var(--primary-blue); }
         
@@ -34,9 +40,16 @@
         .mode-hidden .line-5-example {
             display: none;
         }
+
+        .mode-hidden .similar-cn,
+        .mode-hidden .similar-phonetic {
+            display: none;
+        }
         
         .content-area { flex: 1; padding: 30px; overflow-y: auto; }
         .card-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 20px; }
+        
+        /* Wordbook Card Styles */
         .card { background: white; border-radius: 12px; padding: 24px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); position: relative; transition: all 0.2s; }
         .card:hover { box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1); transform: translateY(-2px); }
         .card-actions { position: absolute; top: 20px; right: 20px; display: flex; gap: 8px; opacity: 0; transition: opacity 0.2s; }
@@ -46,6 +59,22 @@
         .btn-known:hover { background: #ecfdf5; }
         .btn-unknown { color: var(--danger-color); border-color: var(--danger-color); }
         .btn-unknown:hover { background: #fef2f2; }
+        
+        /* Reveal Button */
+        .btn-reveal-details { display: none; color: var(--primary-blue); border-color: var(--primary-blue); background: rgba(59, 130, 246, 0.1); }
+        .mode-hidden .card .btn-reveal-details,
+        .mode-hidden .similar-card .btn-reveal-details { display: block; }
+        .btn-reveal-details:hover { background: #e0f2fe; }
+        
+        /* Individual Reveal Logic */
+        .mode-hidden .card.card-revealed .line-2-audio,
+        .mode-hidden .card.card-revealed .line-3-meaning,
+        .mode-hidden .card.card-revealed .line-4-synonyms,
+        .mode-hidden .card.card-revealed .line-5-example { display: flex; display: block; }
+
+        .mode-hidden .similar-card.card-revealed .similar-cn,
+        .mode-hidden .similar-card.card-revealed .similar-phonetic { display: block; }
+
         .line-1-term { font-size: 22px; font-weight: 700; color: var(--text-main); margin-bottom: 8px; }
         .line-2-audio { display: flex; align-items: center; gap: 8px; color: var(--text-sub); font-family: 'Lucida Sans Unicode', sans-serif; margin-bottom: 16px; font-size: 14px; }
         .audio-icon { cursor: pointer; width: 22px; height: 22px; background-color: #f3f4f6; border-radius: 50%; display: flex; align-items: center; justify-content: center; transition: background 0.2s;}
@@ -56,28 +85,37 @@
         .example-cn { margin-top: 4px; font-style: normal; color: #94a3b8; font-size: 12px; }
         .empty-state { text-align: center; color: var(--text-sub); margin-top: 50px; font-size: 14px;}
 
-        /* Individual Card Reveal Button */
-        .btn-reveal-details {
-            display: none; /* Hidden by default */
-            color: var(--primary-blue);
-            border-color: var(--primary-blue);
-            background: rgba(var(--primary-blue-rgb), 0.1); /* Subtle background */
+        /* Similar Words Styles */
+        .similar-card {
+            background: #fff; border-radius: 12px; padding: 24px; box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            transition: transform 0.2s, box-shadow 0.2s; border-top: 5px solid transparent;
+            position: relative; 
         }
-        .mode-hidden .card .btn-reveal-details {
-            display: block; /* Show when in hidden mode */
-        }
-        .btn-reveal-details:hover {
-            background: #e0f2fe;
-        }
+        .similar-card:hover { transform: translateY(-5px); box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1); }
+        
+        /* Similar Card Actions */
+        .similar-card .card-actions { position: absolute; top: 10px; right: 10px; display: flex; gap: 8px; opacity: 0; transition: opacity 0.2s; }
+        .similar-card:hover .card-actions { opacity: 1; }
 
-        /* Override hidden mode for individually revealed cards */
-        .mode-hidden .card.card-revealed .line-2-audio,
-        .mode-hidden .card.card-revealed .line-3-meaning,
-        .mode-hidden .card.card-revealed .line-4-synonyms,
-        .mode-hidden .card.card-revealed .line-5-example {
-            display: flex; /* For audio line */
-            display: block; /* For others */
-        }
+        .theme-blue { background-color: #e3f2fd; border-color: #2196f3; }
+        .theme-blue .similar-word-item { border-bottom: 1px solid #bbdefb; }
+
+        .theme-green { background-color: #e8f5e9; border-color: #4caf50; }
+        .theme-green .similar-word-item { border-bottom: 1px solid #c8e6c9; }
+
+        .theme-purple { background-color: #f3e5f5; border-color: #9c27b0; }
+        .theme-purple .similar-word-item { border-bottom: 1px solid #e1bee7; }
+
+        .theme-orange { background-color: #fff3e0; border-color: #ff9800; }
+        .theme-orange .similar-word-item { border-bottom: 1px solid #ffe0b2; }
+
+        .suffix-tag { font-size: 0.85rem; padding: 4px 8px; border-radius: 6px; background-color: rgba(255,255,255,0.6); font-weight: normal; color: #333; }
+        .similar-word-list { list-style: none; padding: 0; margin: 0; }
+        .similar-word-item { display: flex; justify-content: space-between; align-items: baseline; padding: 12px 0; }
+        .similar-word-item:last-child { border-bottom: none !important; }
+        .similar-en { font-weight: 600; font-size: 1.1rem; display: block; color: var(--text-main); }
+        .similar-cn { font-size: 0.95rem; color: var(--text-sub); display: block; margin-top: 4px; }
+        .similar-phonetic { font-size: 0.85rem; color: #94a3b8; font-weight: normal; text-align: right; flex-shrink: 0; }
     </style>
 </head>
 <body>
@@ -86,14 +124,26 @@
         <div class="logo">
             <span>💻</span> DevEnglish
         </div>
-        <div class="book-list" id="sidebarBookList">
+        <div class="nav-list">
+            <div class="nav-item active" id="nav-software" onclick="switchAppMode('software')">
+                <span>Software Words</span>
             </div>
+            <div class="nav-item" id="nav-similar" onclick="switchAppMode('similar')">
+                <span>Similar Words</span>
+            </div>
+        </div>
     </div>
 
     <div class="loading-mask" id="loadingMask">加载中...</div>
 
     <div class="main-content">
-        <div class="header">
+        <!-- Software Words Top Bar -->
+        <div class="top-book-bar" id="topBookList">
+            <!-- Dynamically populated -->
+        </div>
+
+        <!-- Software Words Header -->
+        <div class="header" id="softwareHeader">
             <div class="status-tabs">
                 <div class="status-pill active" onclick="switchStatus('all')">全部 <span id="count-all">0</span></div>
                 <div class="status-pill" onclick="switchStatus(0)">未标记 <span id="count-0">0</span></div>
@@ -102,49 +152,174 @@
             </div>
             <div class="btn-toggle-view" onclick="toggleMode()" title="切换显示/隐藏详情">
                 <!-- Default Open Eye SVG -->
-                <svg id="icon-eye" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+            </div>
+        </div>
+
+        <!-- Similar Words Header -->
+        <div class="header" id="similarHeader" style="display: none; justify-content: flex-end;">
+            <div class="btn-toggle-view" onclick="toggleMode()" title="切换显示/隐藏详情">
+                <!-- Default Open Eye SVG -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
             </div>
         </div>
 
         <div class="content-area">
+            <!-- Software Words View -->
             <div class="card-grid" id="cardContainer"></div>
+            
+            <!-- Similar Words View -->
+            <div class="card-grid" id="similarContainer" style="display: none;"></div>
         </div>
     </div>
 
     <script>
+        // State
+        let currentAppMode = 'software'; // 'software' | 'similar'
+        
+        // Software Words State
         let books = [];
         let currentBookFile = null;
         let currentData = [];
         let currentStatus = 'all';
-        let isModeHidden = false; // New state variable
-        let revealedCards = new Set(); // New: to track individually revealed cards
+        let isModeHidden = false; 
+        let revealedCards = new Set(); 
+
+        // Similar Words State
+        let similarWordsData = null;
 
         document.addEventListener('DOMContentLoaded', () => {
-            loadMenu();
+            loadMenu(); // Initialize App
         });
 
-        // Toggle View Mode Function
-        function toggleMode() {
-            isModeHidden = !isModeHidden;
-            const container = document.getElementById('cardContainer');
-            const btn = document.querySelector('.btn-toggle-view');
+        // --- App Mode Switching ---
+
+        function switchAppMode(mode) {
+            currentAppMode = mode;
             
-            if (isModeHidden) {
-                container.classList.add('mode-hidden');
-                // Change icon to Closed Eye (Slash)
-                btn.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"></path><line x1="1" y1="1" x2="23" y2="23"></line></svg>`;
+            // Update Sidebar UI
+            document.querySelectorAll('.nav-item').forEach(el => el.classList.remove('active'));
+            document.getElementById(`nav-${mode}`).classList.add('active');
+
+            // Toggle Main Content Areas
+            const topBookList = document.getElementById('topBookList');
+            const softwareHeader = document.getElementById('softwareHeader');
+            const similarHeader = document.getElementById('similarHeader');
+            const cardContainer = document.getElementById('cardContainer');
+            const similarContainer = document.getElementById('similarContainer');
+
+            if (mode === 'software') {
+                topBookList.style.display = 'flex';
+                softwareHeader.style.display = 'flex';
+                similarHeader.style.display = 'none';
+                cardContainer.style.display = 'grid';
+                similarContainer.style.display = 'none';
             } else {
-                container.classList.remove('mode-hidden');
-                // When exiting hidden mode, clear individually revealed cards
-                revealedCards.clear();
-                // Change icon back to Open Eye
-                btn.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>`;
+                topBookList.style.display = 'none';
+                softwareHeader.style.display = 'none';
+                similarHeader.style.display = 'flex';
+                cardContainer.style.display = 'none';
+                similarContainer.style.display = 'grid';
+                
+                // Load Similar Words Data if not loaded
+                if (!similarWordsData) {
+                    loadSimilarWords();
+                }
             }
-            // Re-render content to apply/remove .card-revealed classes if isModeHidden state changes
-            renderContent();
+            // Update view mode icon state for the new header
+            updateViewModeUI();
         }
 
-        // Toggle individual card details function
+        // --- Similar Words Logic ---
+
+        async function loadSimilarWords() {
+            const container = document.getElementById('similarContainer');
+            const mask = document.getElementById('loadingMask');
+            
+            try {
+                mask.style.display = 'flex';
+                const response = await fetch('similarword/similar_words.json');
+                if (!response.ok) throw new Error("Failed to load similar words");
+                similarWordsData = await response.json();
+                renderSimilarWords();
+            } catch (error) {
+                console.error(error);
+                container.innerHTML = `<div class="empty-state">❌ 加载相似单词失败<br>${error.message}</div>`;
+            } finally {
+                mask.style.display = 'none';
+            }
+        }
+
+        function renderSimilarWords() {
+            const container = document.getElementById('similarContainer');
+            container.innerHTML = '';
+
+            similarWordsData.forEach((group, index) => {
+                const card = document.createElement('div');
+                card.id = `similar-card-${index}`;
+                card.className = `similar-card ${group.theme}`;
+                if (isModeHidden && revealedCards.has(`similar-${index}`)) {
+                    card.classList.add('card-revealed');
+                }
+                
+                let wordsHtml = group.words.map(w => `
+                    <li class="similar-word-item">
+                        <div style="flex: 1; padding-right: 10px;">
+                            <span class="similar-en">${w.en}</span>
+                            <span class="similar-cn">${w.cn}</span>
+                        </div>
+                        ${w.phonetic ? `<span class="similar-phonetic">${w.phonetic}</span>` : ''}
+                    </li>
+                `).join('');
+
+                card.innerHTML = `
+                    <div class="card-actions">
+                        <button class="btn-action btn-reveal-details" onclick="toggleSimilarCardDetails(${index})" title="显示/隐藏详情">👁️</button>
+                    </div>
+                    <ul class="similar-word-list">
+                        ${wordsHtml}
+                    </ul>
+                `;
+                container.appendChild(card);
+            });
+        }
+
+
+        // --- Software Words Logic ---
+
+        function toggleMode() {
+            isModeHidden = !isModeHidden;
+            updateViewModeUI();
+            
+            const cardContainer = document.getElementById('cardContainer');
+            const similarContainer = document.getElementById('similarContainer');
+            
+            if (isModeHidden) {
+                cardContainer.classList.add('mode-hidden');
+                similarContainer.classList.add('mode-hidden');
+            } else {
+                cardContainer.classList.remove('mode-hidden');
+                similarContainer.classList.remove('mode-hidden');
+                revealedCards.clear();
+            }
+            
+            // Re-render active view if needed, but mainly we just toggle CSS classes.
+            // However, we might need to re-render to reset individual revealed states if we cleared them.
+            // Actually, we just cleared the Set, so we need to remove the .card-revealed class from DOM elements.
+            document.querySelectorAll('.card-revealed').forEach(el => el.classList.remove('card-revealed'));
+        }
+
+        function updateViewModeUI() {
+            const btns = document.querySelectorAll('.btn-toggle-view');
+            
+            const openEye = `<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>`;
+            const closedEye = `<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"></path><line x1="1" y1="1" x2="23" y2="23"></line></svg>`;
+
+            btns.forEach(btn => {
+                btn.innerHTML = isModeHidden ? closedEye : openEye;
+            });
+        }
+
         function toggleCardDetails(id) {
             const cardElement = document.getElementById(`card-${id}`);
             if (cardElement) {
@@ -157,12 +332,20 @@
             }
         }
 
+        function toggleSimilarCardDetails(index) {
+            const cardElement = document.getElementById(`similar-card-${index}`);
+            if (cardElement) {
+                cardElement.classList.toggle('card-revealed');
+                if (cardElement.classList.contains('card-revealed')) {
+                    revealedCards.add(`similar-${index}`);
+                } else {
+                    revealedCards.delete(`similar-${index}`);
+                }
+            }
+        }
 
-
-        // 1. 加载目录清单 (动态获取)
         async function loadMenu() {
             try {
-                // Change: Fetch from the new backend endpoint instead of menu.json
                 const response = await fetch('/v1/get_word_books');
                 if(!response.ok) throw new Error("无法加载单词书列表");
 
@@ -170,41 +353,35 @@
 
                 books = fileList.map(fileName => {
                     let displayName = fileName.replace('.json', '');
-
                     return {
                         id: fileName,
                         name: displayName,
-                        // Change: The files are now in the 'wordbook/' directory
                         file: 'wordbook/' + fileName
                     };
                 });
 
-                renderSidebar();
+                renderTopBookList();
 
                 if(books.length > 0) {
                     loadBook(books[0].id);
                 }
             } catch (error) {
                 console.error(error);
-                document.getElementById('sidebarBookList').innerHTML =
-                    `<div style="padding:10px; color:red; font-size:12px;">❌ 加载列表失败<br>请检查后端服务</div>`;
+                document.getElementById('topBookList').innerHTML =
+                    `<div style="padding:10px; color:red; font-size:12px;">❌ 加载列表失败</div>`;
             }
         }
 
-        // 2. 渲染侧边栏
-        function renderSidebar() {
-            const container = document.getElementById('sidebarBookList');
+        function renderTopBookList() {
+            const container = document.getElementById('topBookList');
             container.innerHTML = books.map(book => `
-                <div class="book-item" id="book-nav-${CSS.escape(book.id)}" onclick="loadBook('${book.id}')">
-                    <span>${book.name}</span>
-                    <span style="font-size:12px; opacity:0.5">📂</span>
+                <div class="book-pill" id="book-nav-${CSS.escape(book.id)}" onclick="loadBook('${book.id}')">
+                    ${book.name}
                 </div>
             `).join('');
         }
 
-        // 3. 加载具体的单词本
         async function loadBook(bookId) {
-            // UI 高亮更新
             if (currentBookFile) {
                 const prevNav = document.getElementById(`book-nav-${CSS.escape(currentBookFile)}`);
                 if(prevNav) prevNav.classList.remove('active');
@@ -222,7 +399,6 @@
                 if (!response.ok) throw new Error("File not found");
                 currentData = await response.json();
 
-                // Initialize status to 0 if not present
                 currentData.forEach(item => {
                     if (item.status === undefined) {
                         item.status = 0;
@@ -240,7 +416,6 @@
             }
         }
 
-        // 4. 渲染内容 (核心逻辑不变)
         function renderContent() {
             const container = document.getElementById('cardContainer');
             container.innerHTML = '';
@@ -259,9 +434,8 @@
 
             filtered.forEach(item => {
                 const card = document.createElement('div');
-                card.id = `card-${item.id}`; // Add unique ID to each card
+                card.id = `card-${item.id}`;
                 card.className = 'card';
-                // If in hidden mode and this card was individually revealed, add the class
                 if (isModeHidden && revealedCards.has(item.id)) {
                     card.classList.add('card-revealed');
                 }
@@ -275,7 +449,7 @@
                     <div class="line-1-term">${item.term}</div>
                     <div class="line-2-audio">
                         ${item.phonetic}
-                        <div class="audio-icon" onclick="speak('${item.term.replace(/'/g, "\\'")}')">🔊</div>
+                        <div class="audio-icon" onclick="speak('${item.term.replace(/'/g, "\'")}')">🔊</div>
                     </div>
                     <div class="line-3-meaning">${item.definition}</div>
                     <div class="line-4-synonyms">同义: ${item.synonyms}</div>
@@ -290,41 +464,19 @@
             updateTabStyles();
         }
 
-        // 5. 操作逻辑 (保持不变)
         function switchStatus(status) { currentStatus = status; renderContent(); }
 
         function markStatus(id, newStatus) {
             const item = currentData.find(i => i.id === id);
             if (item) {
                 item.status = newStatus;
-
                 fetch('/v1/modify_status', {
                     method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json',
-                    },
-                    body: JSON.stringify({
-                        json_name: 'wordbook/' + currentBookFile,
-                        id: id,
-                        status: newStatus
-                    }),
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ json_name: 'wordbook/' + currentBookFile, id: id, status: newStatus }),
                 })
-                .then(response => {
-                    if (!response.ok) {
-                        throw new Error('Network response was not ok');
-                    }
-                    return response.text();
-                })
-                .then(data => {
-                    console.log(data);
-                    renderContent();
-                })
-                .catch(error => {
-                    console.error('There has been a problem with your fetch operation:', error);
-                    // If the request fails, revert the status change in the UI
-                    item.status = item.originalStatus || 0;
-                    renderContent();
-                });
+                .then(response => { if (!response.ok) throw new Error('Network response was not ok'); renderContent(); })
+                .catch(error => { console.error('Error:', error); item.status = item.originalStatus || 0; renderContent(); });
             }
         }
 
