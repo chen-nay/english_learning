@@ -25,7 +25,7 @@
         .book-pill:hover { background-color: #f9fafb; border-color: #d1d5db; }
         .book-pill.active { background-color: #eff6ff; border-color: var(--primary-blue); color: var(--primary-blue); font-weight: bold; }
 
-        .header { background-color: white; border-bottom: 1px solid var(--border-color); padding: 15px 30px; display: flex; justify-content: space-between; align-items: center; flex-shrink: 0; }
+        .header { background-color: white; border-bottom: 1px solid var(--border-color); padding: 8px 30px; display: flex; justify-content: space-between; align-items: center; flex-shrink: 0; }
         .status-tabs { display: flex; gap: 10px; }
         .status-pill { padding: 5px 14px; border-radius: 20px; font-size: 13px; cursor: pointer; border: 1px solid var(--border-color); background: white; color: var(--text-sub); }
         .status-pill.active { background-color: #eff6ff; border-color: var(--primary-blue); color: var(--primary-blue); font-weight: bold; }
@@ -71,8 +71,21 @@
         .mode-hidden .similar-phonetic {
             display: none;
         }
+
+        /* Dialogue Hidden Mode */
+        .mode-hidden .scenario-card .chat-container,
+        .mode-hidden .scenario-card .key-structures-box {
+            display: none;
+        }
         
-        .card:hover, .similar-card:hover { 
+        /* Removed cursor: pointer from scenario-card */
+        
+        .mode-hidden .scenario-card.card-revealed .chat-container,
+        .mode-hidden .scenario-card.card-revealed .key-structures-box {
+            display: flex; /* Restore flex layout */
+        }
+        
+        .card:hover, .similar-card:hover {  
             box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1); 
             transform: translateY(-2px); 
         }
@@ -124,6 +137,34 @@
         .similar-en { font-weight: 600; font-size: 1.1rem; display: block; color: var(--text-main); }
         .similar-cn { font-size: 0.95rem; color: var(--text-sub); display: block; margin-top: 4px; }
         .similar-phonetic { font-size: 0.85rem; color: #94a3b8; font-weight: normal; text-align: right; flex-shrink: 0; }
+
+        /* Dialogue Styles */
+        .scenario-card { background: white; border-radius: 12px; padding: 24px; margin-bottom: 30px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); display: flex; flex-wrap: wrap; gap: 30px; align-items: flex-start; }
+        .scenario-title { font-size: 18px; font-weight: 700; color: var(--text-main); padding-bottom: 10px; border-bottom: 1px solid #f3f4f6; width: 100%; margin-bottom: 10px; }
+        .chat-container { flex: 1; min-width: 300px; display: flex; flex-direction: column; gap: 15px; }
+        .chat-bubble { max-width: 100%; padding: 12px 16px; border-radius: 12px; font-size: 15px; line-height: 1.5; position: relative; }
+        
+        /* Left Bubble (Others) */
+        .bubble-left { align-self: flex-start; background-color: #f3f4f6; color: var(--text-main); border-bottom-left-radius: 2px; }
+        .bubble-speaker { font-size: 11px; color: var(--text-sub); margin-bottom: 4px; font-weight: 600; }
+        
+        /* Right Bubble (You/Traveler) */
+        .bubble-right { align-self: flex-end; background-color: #dbeafe; color: var(--text-main); border: 1px solid #bfdbfe; border-bottom-right-radius: 2px; }
+        
+        .key-structures-box { flex-shrink: 0; width: 320px; background-color: #fffbeb; border: 1px solid #fcd34d; border-radius: 8px; padding: 15px; position: sticky; top: 20px; }
+        
+        @media (max-width: 900px) {
+            .key-structures-box { width: 100%; position: static; }
+        }
+
+        .ks-title { font-size: 14px; font-weight: 700; color: #92400e; margin-bottom: 10px; display: flex; align-items: center; gap: 6px; }
+        .ks-item { margin-bottom: 10px; font-size: 13px; }
+        .ks-item:last-child { margin-bottom: 0; }
+        .ks-pattern { font-weight: 600; color: #b45309; }
+        .ks-example { font-style: italic; color: #78350f; margin: 2px 0; }
+        .ks-explanation { color: #92400e; font-size: 12px; }
+        .highlight-text { color: var(--primary-blue); font-weight: 600; }
+
     </style>
 </head>
 <body>
@@ -136,6 +177,9 @@
             <div class="nav-item active" id="nav-software" onclick="switchAppMode('software')">
                 <span>Software Words</span>
             </div>
+            <div class="nav-item" id="nav-dialogue" onclick="switchAppMode('dialogue')">
+                <span>Dialogue</span>
+            </div>
             <div class="nav-item" id="nav-similar" onclick="switchAppMode('similar')">
                 <span>Similar Words</span>
             </div>
@@ -147,6 +191,11 @@
     <div class="main-content">
         <!-- Software Words Top Bar -->
         <div class="top-book-bar" id="topBookList">
+            <!-- Dynamically populated -->
+        </div>
+
+        <!-- Dialogue Top Bar -->
+        <div class="top-book-bar" id="topDialogueList" style="display: none;">
             <!-- Dynamically populated -->
         </div>
 
@@ -171,6 +220,9 @@
             <!-- Software Words View -->
             <div class="card-grid" id="cardContainer"></div>
             
+            <!-- Dialogue View -->
+            <div class="content-container" id="dialogueContainer" style="display: none; padding-bottom: 40px;"></div>
+
             <!-- Similar Words View -->
             <div class="card-grid" id="similarContainer" style="display: none;"></div>
         </div>
@@ -187,6 +239,11 @@
         // Similar Words State
         let similarWordsData = null;
 
+        // Dialogue State
+        let dialogueBooks = [];
+        let currentDialogueFile = null;
+        let currentDialogueData = [];
+
         document.addEventListener('DOMContentLoaded', () => {
             loadMenu(); // Initialize App
         });
@@ -202,22 +259,35 @@
 
             // Toggle Main Content Areas
             const topBookList = document.getElementById('topBookList');
+            const topDialogueList = document.getElementById('topDialogueList');
             const softwareHeader = document.getElementById('softwareHeader');
             const similarHeader = document.getElementById('similarHeader');
             const cardContainer = document.getElementById('cardContainer');
+            const dialogueContainer = document.getElementById('dialogueContainer');
             const similarContainer = document.getElementById('similarContainer');
+
+            // Reset displays
+            topBookList.style.display = 'none';
+            topDialogueList.style.display = 'none';
+            softwareHeader.style.display = 'none';
+            similarHeader.style.display = 'none';
+            cardContainer.style.display = 'none';
+            dialogueContainer.style.display = 'none';
+            similarContainer.style.display = 'none';
 
             if (mode === 'software') {
                 topBookList.style.display = 'flex';
                 softwareHeader.style.display = 'flex';
-                similarHeader.style.display = 'none';
                 cardContainer.style.display = 'grid'; 
-                similarContainer.style.display = 'none';
+            } else if (mode === 'dialogue') {
+                topDialogueList.style.display = 'flex';
+                softwareHeader.style.display = 'flex'; // Show header for Eye button
+                dialogueContainer.style.display = 'block';
+                if (dialogueBooks.length === 0) {
+                    loadDialogueMenu();
+                }
             } else {
-                topBookList.style.display = 'none';
-                softwareHeader.style.display = 'none';
                 similarHeader.style.display = 'flex';
-                cardContainer.style.display = 'none';
                 similarContainer.style.display = 'grid';
                 
                 // Load Similar Words Data if not loaded
@@ -288,13 +358,16 @@
             updateViewModeUI();
             
             const cardContainer = document.getElementById('cardContainer');
+            const dialogueContainer = document.getElementById('dialogueContainer');
             const similarContainer = document.getElementById('similarContainer');
             
             if (isModeHidden) {
                 cardContainer.classList.add('mode-hidden');
+                dialogueContainer.classList.add('mode-hidden');
                 similarContainer.classList.add('mode-hidden');
             } else {
                 cardContainer.classList.remove('mode-hidden');
+                dialogueContainer.classList.remove('mode-hidden');
                 similarContainer.classList.remove('mode-hidden');
                 revealedCards.clear();
             }
@@ -320,6 +393,18 @@
                     revealedCards.add(id);
                 } else {
                     revealedCards.delete(id);
+                }
+            }
+        }
+        
+        function toggleScenarioDetails(index) {
+            const cardElement = document.getElementById(`scenario-${index}`);
+            if (cardElement) {
+                cardElement.classList.toggle('card-revealed');
+                if (cardElement.classList.contains('card-revealed')) {
+                    revealedCards.add(`scenario-${index}`);
+                } else {
+                    revealedCards.delete(`scenario-${index}`);
                 }
             }
         }
@@ -414,6 +499,127 @@
                         "${item.exampleEn}"
                         <div class="example-cn">${item.exampleCn}</div>
                     </div>
+                `;
+                container.appendChild(card);
+            });
+        }
+
+        // --- Dialogue Logic ---
+
+        async function loadDialogueMenu() {
+            try {
+                const response = await fetch('/v1/get_dialogue_books');
+                if(!response.ok) throw new Error("无法加载对话列表");
+                const fileList = await response.json();
+                dialogueBooks = fileList.map(fileName => {
+                    let displayName = fileName.replace('.json', '');
+                    // Capitalize first letter
+                    displayName = displayName.charAt(0).toUpperCase() + displayName.slice(1);
+                    return { id: fileName, name: displayName, file: 'dialogue/' + fileName };
+                });
+                renderTopDialogueList();
+                if(dialogueBooks.length > 0) { loadDialogueBook(dialogueBooks[0].id); }
+            } catch (error) {
+                console.error(error);
+                document.getElementById('topDialogueList').innerHTML = `<div style="padding:10px; color:red; font-size:12px;">❌ 加载列表失败</div>`;
+            }
+        }
+
+        function renderTopDialogueList() {
+            const container = document.getElementById('topDialogueList');
+            container.innerHTML = dialogueBooks.map(book => `
+                <div class="book-pill" id="dialogue-nav-${CSS.escape(book.id)}" onclick="loadDialogueBook('${book.id}')">
+                    ${book.name}
+                </div>
+            `).join('');
+        }
+
+        async function loadDialogueBook(bookId) {
+            if (currentDialogueFile) {
+                const prevNav = document.getElementById(`dialogue-nav-${CSS.escape(currentDialogueFile)}`);
+                if(prevNav) prevNav.classList.remove('active');
+            }
+            currentDialogueFile = bookId;
+            const nav = document.getElementById(`dialogue-nav-${CSS.escape(bookId)}`);
+            if(nav) nav.classList.add('active');
+            
+            const bookConfig = dialogueBooks.find(b => b.id === bookId);
+            const mask = document.getElementById('loadingMask');
+            
+            try {
+                mask.style.display = 'flex';
+                const response = await fetch('dialogue/' + encodeURIComponent(bookConfig.id) + '?t=' + new Date().getTime());
+                if (!response.ok) throw new Error("File not found");
+                currentDialogueData = await response.json();
+                renderDialogue();
+            } catch (error) {
+                console.error(error);
+                document.getElementById('dialogueContainer').innerHTML = `<div class="empty-state">无法加载 ${bookConfig.file}</div>`;
+            } finally {
+                mask.style.display = 'none';
+            }
+        }
+
+        function renderDialogue() {
+            const container = document.getElementById('dialogueContainer');
+            container.innerHTML = '';
+            
+            if (currentDialogueData.length === 0) {
+                container.innerHTML = '<div class="empty-state">没有对话数据</div>';
+                return;
+            }
+
+            currentDialogueData.forEach((scenario, index) => {
+                const card = document.createElement('div');
+                card.className = 'scenario-card';
+                card.id = `scenario-${index}`;
+                // Remove onclick from card
+                
+                if (isModeHidden && revealedCards.has(`scenario-${index}`)) {
+                    card.classList.add('card-revealed');
+                }
+                
+                // Parse markdown bold in dialogue
+                const parseBold = (text) => text.replace(/\*\*(.*?)\*\*/g, '<span class="highlight-text">$1</span>');
+
+                let dialogueHtml = scenario.dialogue.map((d, i) => {
+                    // Alternate colors based on index.
+                    // Even index: bubble-left (Gray)
+                    // Odd index: bubble-right (Blue), but force align-start
+                    const isEven = i % 2 === 0;
+                    const baseClass = isEven ? 'bubble-left' : 'bubble-right';
+                    const styleOverride = isEven ? '' : 'style="align-self: flex-start;"';
+                    
+                    return `
+                        <div class="chat-bubble ${baseClass}" ${styleOverride}>
+                            ${i < 2 ? `<div class="bubble-speaker">${d.speaker}</div>` : ''}
+                            <div>${parseBold(d.text)}</div>
+                        </div>
+                    `;
+                }).join('');
+
+                let ksHtml = '';
+                if (scenario.key_structures && scenario.key_structures.length > 0) {
+                    ksHtml = `
+                        <div class="key-structures-box">
+                            <div class="ks-title">🔑 Key Structures</div>
+                            ${scenario.key_structures.map(ks => `
+                                <div class="ks-item">
+                                    <div class="ks-pattern">${ks.pattern}</div>
+                                    <div class="ks-example">"${ks.example}"</div>
+                                    <div class="ks-explanation">${ks.explanation}</div>
+                                </div>
+                            `).join('')}
+                        </div>
+                    `;
+                }
+
+                card.innerHTML = `
+                    <div class="scenario-title" onclick="toggleScenarioDetails(${index})" style="cursor: pointer;" title="点击展开/收起">${scenario.scenario}</div>
+                    <div class="chat-container">
+                        ${dialogueHtml}
+                    </div>
+                    ${ksHtml}
                 `;
                 container.appendChild(card);
             });

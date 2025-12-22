@@ -19,6 +19,17 @@ class MyHttpRequestHandler(http.server.SimpleHTTPRequestHandler):
                 self.send_response(500)
                 self.end_headers()
                 self.wfile.write(str(e).encode())
+        elif self.path == '/v1/get_dialogue_books':
+            try:
+                files = [f for f in os.listdir('dialogue') if f.endswith('.json')]
+                self.send_response(200)
+                self.send_header('Content-type', 'application/json')
+                self.end_headers()
+                self.wfile.write(json.dumps(files).encode())
+            except Exception as e:
+                self.send_response(500)
+                self.end_headers()
+                self.wfile.write(str(e).encode())
         else:
             # Serve static files as usual
             super().do_GET()
