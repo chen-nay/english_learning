@@ -1,0 +1,267 @@
+[
+  {
+    "scenario": "办理入住 (Check-in)，确认预定信息、早餐，并礼貌提出房间偏好",
+    "dialogue": [
+      {
+        "speaker": "Guest",
+        "text": "Hi, good afternoon. I’d like to **check in**, please. I have a **reservation under the name** Li Ming."
+      },
+      {
+        "speaker": "Reception",
+        "text": "Let me check... Yes, I found your booking. Here is your passport."
+      },
+      {
+        "speaker": "Guest",
+        "text": "**Just to double-check**, is breakfast included in my booking?"
+      },
+      {
+        "speaker": "Reception",
+        "text": "Yes, breakfast is served from 6 to 10 AM."
+      },
+      {
+        "speaker": "Guest",
+        "text": "Great. One last thing, **would it be possible to** get a room on a higher floor? I’d really appreciate a quiet room."
+      }
+    ],
+    "key_structures": [
+      {
+        "pattern": "...under the name [Name]",
+        "example": "I have a reservation under the name Li Ming.",
+        "explanation": "固定的预定话术。比直接说 My name is... 更地道，适用于酒店、餐厅预订。"
+      },
+      {
+        "pattern": "Just to double-check...",
+        "example": "Just to double-check, is breakfast included?",
+        "explanation": "很好的缓冲语（Softener），用于确认信息，显得专业且不突兀。"
+      },
+      {
+        "pattern": "Would it be possible to...",
+        "example": "Would it be possible to get a room on a higher floor?",
+        "explanation": "英语中最礼貌的请求方式之一，用于提出额外要求（如高楼层、延迟退房）。"
+      }
+    ]
+  },
+  {
+    "scenario": "设施报修 (AC Issue) 与进门权限确认。房间空调坏了，要求维修，并确认自己是否需要在场",
+    "dialogue": [
+      {
+        "speaker": "Guest",
+        "text": "Hi, I’m in room 305. **I'm afraid there's a slight issue with** the air conditioner."
+      },
+      {
+        "speaker": "Reception",
+        "text": "I'm sorry to hear that. What seems to be the problem?"
+      },
+      {
+        "speaker": "Guest",
+        "text": "It’s making a really loud noise, and **it doesn't seem to be working properly**. **Could you have someone take a look at it?**"
+      },
+      {
+        "speaker": "Reception",
+        "text": "Sure, I'll send maintenance up right away."
+      },
+      {
+        "speaker": "Guest",
+        "text": "Great. **Do I need to be there** to let them in, or do they have a master key?"
+      },
+      {
+        "speaker": "Reception",
+        "text": "They have a key, so you don't need to be present."
+      },
+      {
+        "speaker": "Guest",
+        "text": "Perfect. **In that case**, I'll be out for dinner. **Feel free to** have them fix it while I'm gone."
+      }
+    ],
+    "key_structures": [
+      {
+        "pattern": "I'm afraid there's a slight issue with...",
+        "example": "I'm afraid there's a slight issue with the air conditioner.",
+        "explanation": "万能报修开头句。用来礼貌地引出负面问题，避免直接指责。"
+      },
+      {
+        "pattern": "Could you have someone take a look at it?",
+        "example": "Could you have someone take a look at it?",
+        "explanation": "标准的“叫人来修”的地道表达。"
+      },
+      {
+        "pattern": "Do I need to be there...?",
+        "example": "Do I need to be there to let them in?",
+        "explanation": "询问是否需要陪同/在场的最常用口语。"
+      }
+    ]
+  },
+  {
+    "scenario": "礼宾服务 (Concierge)。退房后寄存行李，并询问去机场的出租车费用",
+    "dialogue": [
+      {
+        "speaker": "Guest",
+        "text": "Hi, I just checked out. Since my flight isn't until tonight, **is there any way I could** store my luggage here for a few hours?"
+      },
+      {
+        "speaker": "Concierge",
+        "text": "Absolutely, sir. Just leave them here."
+      },
+      {
+        "speaker": "Guest",
+        "text": "That’s great. Also, **could you help me arrange a taxi** to the airport for 6 PM?"
+      },
+      {
+        "speaker": "Concierge",
+        "text": "Certainly."
+      },
+      {
+        "speaker": "Guest",
+        "text": "Thanks. **Roughly how much should I expect to pay** for the fare?"
+      }
+    ],
+    "key_structures": [
+      {
+        "pattern": "Is there any way I could...",
+        "example": "Is there any way I could store my luggage here?",
+        "explanation": "当请求对方提供便利（可能稍显麻烦）时使用的句型，比 Can I... 更委婉。"
+      },
+      {
+        "pattern": "Roughly how much should I expect to pay...",
+        "example": "Roughly how much should I expect to pay for the fare?",
+        "explanation": "询问估价的高级句型，适用于打车、小费等非固定费用的询问。"
+      }
+    ]
+  },
+  {
+    "scenario": "延迟退房 (Late Check-out)。因航班延误申请延迟退房，并尝试免除费用",
+    "dialogue": [
+      {
+        "speaker": "Guest",
+        "text": "Good morning. My flight has been delayed, so **I was wondering if it might be possible to** get a late check-out?"
+      },
+      {
+        "speaker": "Reception",
+        "text": "Let me check availability. How late were you thinking?"
+      },
+      {
+        "speaker": "Guest",
+        "text": "Until 1:00 PM **if possible**. I’m happy to pay a fee if strictly necessary, but **I’d really appreciate it if** you could **waive it**."
+      }
+    ],
+    "key_structures": [
+      {
+        "pattern": "I was wondering if it might be possible to...",
+        "example": "I was wondering if it might be possible to get a late check-out?",
+        "explanation": "英语中最长、最软、最礼貌的请求句型。用于提出比较过分的要求（如免费延迟退房）。"
+      },
+      {
+        "pattern": "Waive",
+        "example": "I'd appreciate it if you could waive the fee.",
+        "explanation": "高分动词，意为“免除（费用、规定）”。"
+      }
+    ]
+  },
+  {
+    "scenario": "部分打扫 (Partial Cleaning Request)。不需要全套打扫，只需要补充毛巾和洗漱用品",
+    "dialogue": [
+      {
+        "speaker": "Guest",
+        "text": "Hi, this is room 305. **I don't need a full service today, but could I just get** some fresh towels and extra shampoo?"
+      },
+      {
+        "speaker": "Housekeeping",
+        "text": "Sure thing. Do you need us to empty the trash as well?"
+      },
+      {
+        "speaker": "Guest",
+        "text": "Yes, that would be great. You can just **leave the items outside the door** if I don't answer."
+      }
+    ],
+    "key_structures": [
+      {
+        "pattern": "I don't need X, but could I just get Y?",
+        "example": "I don't need a full service, but could I just get some fresh towels?",
+        "explanation": "地道的转折表达，用于提出部分需求。"
+      },
+      {
+        "pattern": "Leave the items outside the door",
+        "example": "You can just leave the items outside the door.",
+        "explanation": "社恐必备，不需要开门面对服务员的实用表达。"
+      }
+    ]
+  },
+  {
+    "scenario": "投诉打扫 (Cleaning Complaint)。晚上回来发现房间没打扫，礼貌投诉",
+    "dialogue": [
+      {
+        "speaker": "Guest",
+        "text": "Hi, I just returned to my room. **It seems that my room hasn't been made up yet.**"
+      },
+      {
+        "speaker": "Reception",
+        "text": "Oh, I’m so sorry about that. We might have missed it."
+      },
+      {
+        "speaker": "Guest",
+        "text": "**Is it still possible to send someone up** to change the sheets and empty the bins?"
+      },
+      {
+        "speaker": "Reception",
+        "text": "I can send someone right now."
+      },
+      {
+        "speaker": "Guest",
+        "text": "Please do. **I'd appreciate it if** they could come as soon as possible."
+      }
+    ],
+    "key_structures": [
+      {
+        "pattern": "It seems that my room hasn't been made up",
+        "example": "It seems that my room hasn't been made up yet.",
+        "explanation": "使用被动语态陈述事实，避免直接指责对方（You didn't clean...），更有教养。"
+      },
+      {
+        "pattern": "Is it still possible to...",
+        "example": "Is it still possible to send someone up?",
+        "explanation": "即使在生气/投诉时，使用该句型依然能体现素质，促使对方更快解决问题。"
+      }
+    ]
+  },
+  {
+    "scenario": "打扫房间 (Standard Request)。出门前交代前台打扫，并指定时间",
+    "dialogue": [
+      {
+        "speaker": "Guest",
+        "text": "Good morning. I'm heading out for the day. **Could you please have housekeeping make up my room?**"
+      },
+      {
+        "speaker": "Reception",
+        "text": "Certainly. Is there a specific time you'd like them to come?"
+      },
+      {
+        "speaker": "Guest",
+        "text": "**Any time before 5 PM is fine.** I just want to come back to a clean room."
+      },
+      {
+        "speaker": "Reception",
+        "text": "Noted."
+      },
+      {
+        "speaker": "Guest",
+        "text": "Thanks. Oh, and **could you ask them to replace** the towels?"
+      },
+      {
+        "speaker": "Reception",
+        "text": "Of course."
+      }
+    ],
+    "key_structures": [
+      {
+        "pattern": "Have [someone] do [something]",
+        "example": "Could you have housekeeping make up my room?",
+        "explanation": "这个结构比直接说 \"Please clean my room\" 要高级，意思是“麻烦你安排客房部打扫一下”。"
+      },
+      {
+        "pattern": "Any time before/after...",
+        "example": "Any time before 5 PM is fine.",
+        "explanation": "设定时间的最好方式。不用精确到几点几分，给一个范围即可。"
+      }
+    ]
+  }
+]

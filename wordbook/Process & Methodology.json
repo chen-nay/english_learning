@@ -6,8 +6,7 @@
         "definition": "需求",
         "synonyms": "specification, demand",
         "exampleEn": "The functional requirements for the new module are clearly defined.",
-        "exampleCn": "新模块的功能需求已经定义得很清楚了。",
-        "status": 0
+        "exampleCn": "新模块的功能需求已经定义得很清楚了。"
     },
     {
         "id": 2,
@@ -16,8 +15,7 @@
         "definition": "验收标准",
         "synonyms": "AC, pass criteria",
         "exampleEn": "Please check the acceptance criteria before you start coding.",
-        "exampleCn": "在开始写代码之前，请先检查验收标准。",
-        "status": 0
+        "exampleCn": "在开始写代码之前，请先检查验收标准。"
     },
     {
         "id": 3,
@@ -26,8 +24,7 @@
         "definition": "冲刺（敏捷开发周期，通常为1-4周）",
         "synonyms": "iteration, cycle",
         "exampleEn": "We need to finish these tickets by the end of this sprint.",
-        "exampleCn": "我们需要在本冲刺结束前完成这些任务票。",
-        "status": 0
+        "exampleCn": "我们需要在本冲刺结束前完成这些任务票。"
     },
     {
         "id": 4,
@@ -36,8 +33,7 @@
         "definition": "积压工作；待办事项清单",
         "synonyms": "to-do list, pending tasks",
         "exampleEn": "Let's move this low-priority task to the product backlog.",
-        "exampleCn": "让我们把这个低优先级的任务移到产品待办事项清单中。",
-        "status": 0
+        "exampleCn": "让我们把这个低优先级的任务移到产品待办事项清单中。"
     },
     {
         "id": 5,
@@ -46,8 +42,7 @@
         "definition": "每日站会",
         "synonyms": "daily scrum, huddle",
         "exampleEn": "In the daily stand-up, I mentioned that I'm blocked by the API.",
-        "exampleCn": "在每日站会上，我提到我被 API 阻塞了进度。",
-        "status": 0
+        "exampleCn": "在每日站会上，我提到我被 API 阻塞了进度。"
     },
     {
         "id": 6,
@@ -56,8 +51,7 @@
         "definition": "路线图",
         "synonyms": "strategy, master plan",
         "exampleEn": "The product roadmap shows we will focus on security next quarter.",
-        "exampleCn": "产品路线图显示我们下个季度的重点是安全性。",
-        "status": 0
+        "exampleCn": "产品路线图显示我们下个季度的重点是安全性。"
     },
     {
         "id": 7,
@@ -66,8 +60,7 @@
         "definition": "里程碑",
         "synonyms": "landmark, key stage",
         "exampleEn": "Reaching 1 million users is a major milestone for our team.",
-        "exampleCn": "达到 100 万用户是我们团队的一个重要里程碑。",
-        "status": 0
+        "exampleCn": "达到 100 万用户是我们团队的一个重要里程碑。"
     },
     {
         "id": 8,
@@ -76,8 +69,7 @@
         "definition": "被阻塞（因外部因素无法继续工作）",
         "synonyms": "stuck, hindered",
         "exampleEn": "I am currently blocked because the design assets are not ready.",
-        "exampleCn": "我现在被阻塞了，因为设计资源还没准备好。",
-        "status": 0
+        "exampleCn": "我现在被阻塞了，因为设计资源还没准备好。"
     },
     {
         "id": 9,
@@ -86,8 +78,7 @@
         "definition": "（人的）精力或时间带宽",
         "synonyms": "capacity, availability",
         "exampleEn": "I don't have the bandwidth to take on another project this week.",
-        "exampleCn": "我这周没有精力再接另一个项目了。",
-        "status": 0
+        "exampleCn": "我这周没有精力再接另一个项目了。"
     },
     {
         "id": 10,
@@ -96,8 +87,7 @@
         "definition": "速率（团队在一个冲刺中完成的工作量）",
         "synonyms": "speed, pace",
         "exampleEn": "The team's velocity has increased since we started using the new tool.",
-        "exampleCn": "自从开始使用新工具后，团队的开发速率有所提升。",
-        "status": 0
+        "exampleCn": "自从开始使用新工具后，团队的开发速率有所提升。"
     },
     {
         "id": 11,
@@ -106,8 +96,7 @@
         "definition": "启动会",
         "synonyms": "launch meeting, initiation",
         "exampleEn": "The project kick-off meeting is scheduled for Monday morning.",
-        "exampleCn": "项目启动会定在周一上午。",
-        "status": 0
+        "exampleCn": "项目启动会定在周一上午。"
     },
     {
         "id": 12,
@@ -116,8 +105,7 @@
         "definition": "回顾展/复盘会 (简称 Retro)",
         "synonyms": "review, post-mortem",
         "exampleEn": "During the retrospective, we discussed how to improve our deployment process.",
-        "exampleCn": "在复盘会期间，我们讨论了如何改进部署流程。",
-        "status": 0
+        "exampleCn": "在复盘会期间，我们讨论了如何改进部署流程。"
     },
     {
         "id": 13,
@@ -126,8 +114,7 @@
         "definition": "估算（时间或工作量）",
         "synonyms": "assessment, rough guess",
         "exampleEn": "Give me a rough estimation of how long this feature will take.",
-        "exampleCn": "给我一个关于这个功能需要多长时间的粗略估算。",
-        "status": 0
+        "exampleCn": "给我一个关于这个功能需要多长时间的粗略估算。"
     },
     {
         "id": 14,
@@ -136,8 +123,7 @@
         "definition": "最小可行性产品 (Minimum Viable Product)",
         "synonyms": "prototype, pilot version",
         "exampleEn": "We should focus on the MVP features first to get user feedback.",
-        "exampleCn": "我们应该先专注于 MVP 功能以获取用户反馈。",
-        "status": 0
+        "exampleCn": "我们应该先专注于 MVP 功能以获取用户反馈。"
     },
     {
         "id": 15,
@@ -146,8 +132,7 @@
         "definition": "敏捷开发",
         "synonyms": "nimble, flexible development",
         "exampleEn": "Our company follows Agile methodology to ensure rapid delivery.",
-        "exampleCn": "我们公司遵循敏捷开发方法论以确保快速交付。",
-        "status": 0
+        "exampleCn": "我们公司遵循敏捷开发方法论以确保快速交付。"
     },
     {
         "id": 16,
@@ -156,8 +141,7 @@
         "definition": "迭代式开发框架",
         "synonyms": "agile framework",
         "exampleEn": "The Scrum Master helps the team follow Scrum values.",
-        "exampleCn": "Scrum 导师帮助团队遵循 Scrum 的价值观。",
-        "status": 0
+        "exampleCn": "Scrum 导师帮助团队遵循 Scrum 的价值观。"
     },
     {
         "id": 17,
@@ -166,8 +150,7 @@
         "definition": "用户故事",
         "synonyms": "user requirement",
         "exampleEn": "This user story describes the login process from a customer's perspective.",
-        "exampleCn": "这个用户故事从客户的角度描述了登录过程。",
-        "status": 0
+        "exampleCn": "这个用户故事从客户的角度描述了登录过程。"
     },
     {
         "id": 18,
@@ -176,8 +159,7 @@
         "definition": "史诗（大型工作单元，通常包含多个用户故事）",
         "synonyms": "large feature, initiative",
         "exampleEn": "The 'Payment System' epic will take three months to complete.",
-        "exampleCn": "“支付系统”这个史诗任务将需要三个月来完成。",
-        "status": 0
+        "exampleCn": "“支付系统”这个史诗任务将需要三个月来完成。"
     },
     {
         "id": 19,
@@ -186,8 +168,7 @@
         "definition": "工单；任务票",
         "synonyms": "issue, task item",
         "exampleEn": "I've created a Jira ticket for the UI bug you found.",
-        "exampleCn": "我为你发现的 UI 漏洞创建了一个 Jira 工单。",
-        "status": 0
+        "exampleCn": "我为你发现的 UI 漏洞创建了一个 Jira 工单。"
     },
     {
         "id": 20,
@@ -196,8 +177,7 @@
         "definition": "故事点（衡量任务复杂度的单位）",
         "synonyms": "complexity units",
         "exampleEn": "We assigned 5 story points to this refactoring task.",
-        "exampleCn": "我们给这个重构任务分配了 5 个故事点。",
-        "status": 0
+        "exampleCn": "我们给这个重构任务分配了 5 个故事点。"
     },
     {
         "id": 21,
@@ -206,8 +186,7 @@
         "definition": "同步信息/进度",
         "synonyms": "align, harmonize",
         "exampleEn": "Let's sync up on the database schema design tomorrow.",
-        "exampleCn": "我们明天同步一下数据库模式设计的进度。",
-        "status": 0
+        "exampleCn": "我们明天同步一下数据库模式设计的进度。"
     },
     {
         "id": 22,
@@ -216,8 +195,7 @@
         "definition": "达成一致；对齐",
         "synonyms": "agreement, consensus",
         "exampleEn": "We need alignment between the product and engineering teams.",
-        "exampleCn": "我们需要产品团队和工程团队达成一致。",
-        "status": 0
+        "exampleCn": "我们需要产品团队和工程团队达成一致。"
     },
     {
         "id": 23,
@@ -226,8 +204,7 @@
         "definition": "利益相关者",
         "synonyms": "interested party, sponsor",
         "exampleEn": "We need to present the new features to the internal stakeholders.",
-        "exampleCn": "我们需要向内部利益相关者展示新功能。",
-        "status": 0
+        "exampleCn": "我们需要向内部利益相关者展示新功能。"
     },
     {
         "id": 24,
@@ -236,8 +213,7 @@
         "definition": "瓶颈",
         "synonyms": "choke point, block",
         "exampleEn": "The slow code review process is the main bottleneck for our team.",
-        "exampleCn": "缓慢的代码审查过程是我们团队的主要瓶颈。",
-        "status": 0
+        "exampleCn": "缓慢的代码审查过程是我们团队的主要瓶颈。"
     },
     {
         "id": 25,
@@ -246,8 +222,7 @@
         "definition": "最后截止日期",
         "synonyms": "due date, cutoff",
         "exampleEn": "We are working hard to meet the Friday deadline.",
-        "exampleCn": "我们正在努力工作以赶上周五的截止日期。",
-        "status": 0
+        "exampleCn": "我们正在努力工作以赶上周五的截止日期。"
     },
     {
         "id": 26,
@@ -256,8 +231,7 @@
         "definition": "工作流",
         "synonyms": "process, routine",
         "exampleEn": "Our workflow includes coding, code review, and QA testing.",
-        "exampleCn": "我们的工作流包括编码、代码审查和 QA 测试。",
-        "status": 0
+        "exampleCn": "我们的工作流包括编码、代码审查和 QA 测试。"
     },
     {
         "id": 27,
@@ -266,8 +240,7 @@
         "definition": "需求蔓延（项目范围在非控制下扩大）",
         "synonyms": "function creep",
         "exampleEn": "To avoid scope creep, we must stick to the original requirements.",
-        "exampleCn": "为了避免需求蔓延，我们必须坚持原始需求。",
-        "status": 0
+        "exampleCn": "为了避免需求蔓延，我们必须坚持原始需求。"
     },
     {
         "id": 28,
@@ -276,8 +249,7 @@
         "definition": "看板管理",
         "synonyms": "visual workflow",
         "exampleEn": "Move your ticket to 'In Progress' on the Kanban board.",
-        "exampleCn": "在看板上把你的任务票移到“进行中”。",
-        "status": 0
+        "exampleCn": "在看板上把你的任务票移到“进行中”。"
     },
     {
         "id": 29,
@@ -286,8 +258,7 @@
         "definition": "可交付成果",
         "synonyms": "output, product",
         "exampleEn": "The primary deliverable for this sprint is the user profile page.",
-        "exampleCn": "本冲刺的主要可交付成果是用户资料页。",
-        "status": 0
+        "exampleCn": "本冲刺的主要可交付成果是用户资料页。"
     },
     {
         "id": 30,
@@ -296,8 +267,7 @@
         "definition": "可行性",
         "synonyms": "practicability, viability",
         "exampleEn": "We need to conduct a feasibility study before using this new library.",
-        "exampleCn": "在使用这个新库之前，我们需要进行可行性研究。",
-        "status": 0
+        "exampleCn": "在使用这个新库之前，我们需要进行可行性研究。"
     },
     {
         "id": 31,
@@ -306,8 +276,7 @@
         "definition": "签字认可；最终批准",
         "synonyms": "approval, endorsement",
         "exampleEn": "We are waiting for the PM's sign-off before deploying to production.",
-        "exampleCn": "我们正在等待 PM 的批准，然后才能部署到生产环境。",
-        "status": 0
+        "exampleCn": "我们正在等待 PM 的批准，然后才能部署到生产环境。"
     },
     {
         "id": 32,
@@ -316,8 +285,7 @@
         "definition": "依赖关系",
         "synonyms": "reliance, interconnection",
         "exampleEn": "Our task has a dependency on the backend team's API.",
-        "exampleCn": "我们的任务依赖于后端团队的 API。",
-        "status": 0
+        "exampleCn": "我们的任务依赖于后端团队的 API。"
     },
     {
         "id": 33,
@@ -326,8 +294,7 @@
         "definition": "入职引导；上手过程",
         "synonyms": "orientation, induction",
         "exampleEn": "The documentation made my onboarding process very smooth.",
-        "exampleCn": "文档让我的入职过程非常顺利。",
-        "status": 0
+        "exampleCn": "文档让我的入职过程非常顺利。"
     },
     {
         "id": 34,
@@ -336,8 +303,7 @@
         "definition": "重构（不改变外部行为，优化内部结构）",
         "synonyms": "restructure, reorganize",
         "exampleEn": "I need some time to refactor this messy function.",
-        "exampleCn": "我需要一些时间来重构这个混乱的函数。",
-        "status": 0
+        "exampleCn": "我需要一些时间来重构这个混乱的函数。"
     },
     {
         "id": 35,
@@ -346,8 +312,7 @@
         "definition": "技术债",
         "synonyms": "design debt",
         "exampleEn": "Cutting corners now will increase our technical debt in the future.",
-        "exampleCn": "现在走捷径会增加我们未来的技术债。",
-        "status": 0
+        "exampleCn": "现在走捷径会增加我们未来的技术债。"
     },
     {
         "id": 36,
@@ -356,8 +321,7 @@
         "definition": "待办事项梳理",
         "synonyms": "backlog refinement",
         "exampleEn": "We clarified several user stories during the backlog grooming session.",
-        "exampleCn": "在待办事项梳理会议期间，我们明确了几个用户故事。",
-        "status": 0
+        "exampleCn": "在待办事项梳理会议期间，我们明确了几个用户故事。"
     },
     {
         "id": 37,
@@ -366,8 +330,7 @@
         "definition": "实现；落地",
         "synonyms": "execution, realization",
         "exampleEn": "The implementation of the new algorithm is very efficient.",
-        "exampleCn": "新算法的实现非常高效。",
-        "status": 0
+        "exampleCn": "新算法的实现非常高效。"
     },
     {
         "id": 38,
@@ -376,8 +339,7 @@
         "definition": "截止日期",
         "synonyms": "deadline, target date",
         "exampleEn": "What is the due date for this bug fix?",
-        "exampleCn": "这个 Bug 修复的截止日期是什么时候？",
-        "status": 0
+        "exampleCn": "这个 Bug 修复的截止日期是什么时候？"
     },
     {
         "id": 39,
@@ -386,8 +348,7 @@
         "definition": "燃尽图",
         "synonyms": "progress chart",
         "exampleEn": "The burn-down chart shows that we are slightly behind schedule.",
-        "exampleCn": "燃尽图显示我们的进度稍微落后于计划。",
-        "status": 0
+        "exampleCn": "燃尽图显示我们的进度稍微落后于计划。"
     },
     {
         "id": 40,
@@ -396,8 +357,7 @@
         "definition": "概要设计",
         "synonyms": "architectural design",
         "exampleEn": "Let's review the high-level design before writing the code.",
-        "exampleCn": "写代码前，我们先评审一下概要设计。",
-        "status": 0
+        "exampleCn": "写代码前，我们先评审一下概要设计。"
     },
     {
         "id": 41,
@@ -406,8 +366,7 @@
         "definition": "领域专家 (Subject Matter Expert)",
         "synonyms": "expert, specialist",
         "exampleEn": "If you have questions about the payment logic, ask the SME.",
-        "exampleCn": "如果你对支付逻辑有疑问，去问那个领域专家。",
-        "status": 0
+        "exampleCn": "如果你对支付逻辑有疑问，去问那个领域专家。"
     },
     {
         "id": 42,
@@ -416,8 +375,7 @@
         "definition": "优先级",
         "synonyms": "precedence, urgency",
         "exampleEn": "Fixing the production crash is our top priority.",
-        "exampleCn": "修复生产环境崩溃是我们的最高优先级任务。",
-        "status": 0
+        "exampleCn": "修复生产环境崩溃是我们的最高优先级任务。"
     },
     {
         "id": 43,
@@ -426,8 +384,7 @@
         "definition": "进行中",
         "synonyms": "ongoing, underway",
         "exampleEn": "This feature is currently in progress and will be ready tomorrow.",
-        "exampleCn": "这个功能目前正在开发中，明天能好。",
-        "status": 0
+        "exampleCn": "这个功能目前正在开发中，明天能好。"
     },
     {
         "id": 44,
@@ -436,8 +393,7 @@
         "definition": "完成的定义",
         "synonyms": "completion criteria",
         "exampleEn": "A task isn't finished until it meets our Definition of Done.",
-        "exampleCn": "一个任务只有满足了我们的“完成定义”才算结束。",
-        "status": 0
+        "exampleCn": "一个任务只有满足了我们的“完成定义”才算结束。"
     },
     {
         "id": 45,
@@ -446,8 +402,7 @@
         "definition": "专题研讨会",
         "synonyms": "seminar, training session",
         "exampleEn": "We are holding a workshop on the new system architecture.",
-        "exampleCn": "我们正在举办一个关于新系统架构的研讨会。",
-        "status": 0
+        "exampleCn": "我们正在举办一个关于新系统架构的研讨会。"
     },
     {
         "id": 46,
@@ -456,8 +411,7 @@
         "definition": "时间盒（限制某项活动的时间长度）",
         "synonyms": "time limit",
         "exampleEn": "Let's timebox this discussion to 15 minutes.",
-        "exampleCn": "让我们把这次讨论限制在 15 分钟内。",
-        "status": 0
+        "exampleCn": "让我们把这次讨论限制在 15 分钟内。"
     },
     {
         "id": 47,
@@ -466,8 +420,7 @@
         "definition": "权衡；取舍",
         "synonyms": "compromise, balance",
         "exampleEn": "There is always a trade-off between performance and code readability.",
-        "exampleCn": "在性能和代码可读性之间总是存在权衡。",
-        "status": 0
+        "exampleCn": "在性能和代码可读性之间总是存在权衡。"
     },
     {
         "id": 48,
@@ -476,8 +429,7 @@
         "definition": "瀑布模型（传统开发方法）",
         "synonyms": "sequential model",
         "exampleEn": "The company is moving away from Waterfall to an Agile approach.",
-        "exampleCn": "公司正在从瀑布模型转向敏捷开发方法。",
-        "status": 0
+        "exampleCn": "公司正在从瀑布模型转向敏捷开发方法。"
     },
     {
         "id": 49,
@@ -486,8 +438,7 @@
         "definition": "头脑风暴",
         "synonyms": "idea generation",
         "exampleEn": "We had a productive brainstorming session for the new UI.",
-        "exampleCn": "我们就新 UI 进行了一场富有成效的头脑风暴。",
-        "status": 0
+        "exampleCn": "我们就新 UI 进行了一场富有成效的头脑风暴。"
     },
     {
         "id": 50,
@@ -496,8 +447,7 @@
         "definition": "替代方案；临时补救措施",
         "synonyms": "bypass, temporary fix",
         "exampleEn": "We found a workaround while waiting for the official bug fix.",
-        "exampleCn": "在等待官方修复漏洞时，我们找到了一个临时替代方案。",
-        "status": 0
+        "exampleCn": "在等待官方修复漏洞时，我们找到了一个临时替代方案。"
     },
     {
         "id": 51,
@@ -506,8 +456,7 @@
         "definition": "产品负责人",
         "synonyms": "product lead",
         "exampleEn": "The PO will decide which features are included in the next release.",
-        "exampleCn": "产品负责人将决定下个版本包含哪些功能。",
-        "status": 0
+        "exampleCn": "产品负责人将决定下个版本包含哪些功能。"
     },
     {
         "id": 52,
@@ -516,8 +465,7 @@
         "definition": "敏捷教练/站会主持人",
         "synonyms": "facilitator",
         "exampleEn": "Our Scrum Master ensures the team is not interrupted by external tasks.",
-        "exampleCn": "我们的 Scrum Master 确保团队不被外部任务打断。",
-        "status": 0
+        "exampleCn": "我们的 Scrum Master 确保团队不被外部任务打断。"
     },
     {
         "id": 53,
@@ -526,8 +474,7 @@
         "definition": "瓶颈",
         "synonyms": "congestion, blockage",
         "exampleEn": "The code review stage has become a bottleneck in our pipeline.",
-        "exampleCn": "代码审查阶段已成为我们流水线中的瓶颈。",
-        "status": 0
+        "exampleCn": "代码审查阶段已成为我们流水线中的瓶颈。"
     },
     {
         "id": 54,
@@ -536,8 +483,7 @@
         "definition": "阻碍；障碍",
         "synonyms": "obstacle, barrier",
         "exampleEn": "Do you have any impediments that might stop you from finishing the task?",
-        "exampleCn": "你有什么可能阻碍你完成任务的事情吗？",
-        "status": 0
+        "exampleCn": "你有什么可能阻碍你完成任务的事情吗？"
     },
     {
         "id": 55,
@@ -546,8 +492,7 @@
         "definition": "事后总结/事后分析（通常指事故后）",
         "synonyms": "after-action review",
         "exampleEn": "We held a post-mortem to analyze why the server crashed yesterday.",
-        "exampleCn": "我们进行了一次事后总结，分析昨天服务器崩溃的原因。",
-        "status": 0
+        "exampleCn": "我们进行了一次事后总结，分析昨天服务器崩溃的原因。"
     },
     {
         "id": 56,
@@ -556,8 +501,7 @@
         "definition": "最佳实践",
         "synonyms": "standard procedure",
         "exampleEn": "Writing unit tests is considered a best practice in software development.",
-        "exampleCn": "编写单元测试被认为是软件开发中的一种最佳实践。",
-        "status": 0
+        "exampleCn": "编写单元测试被认为是软件开发中的一种最佳实践。"
     },
     {
         "id": 57,
@@ -566,8 +510,7 @@
         "definition": "文档",
         "synonyms": "manual, guide",
         "exampleEn": "The API documentation is out of date and needs an update.",
-        "exampleCn": "这个 API 文档过时了，需要更新。",
-        "status": 0
+        "exampleCn": "这个 API 文档过时了，需要更新。"
     },
     {
         "id": 58,
@@ -576,8 +519,7 @@
         "definition": "正式上线",
         "synonyms": "launch, deployment",
         "exampleEn": "The go-live date for the new website is scheduled for next Monday.",
-        "exampleCn": "新网站的正式上线日期定在下周一。",
-        "status": 0
+        "exampleCn": "新网站的正式上线日期定在下周一。"
     },
     {
         "id": 59,
@@ -586,8 +528,7 @@
         "definition": "迭代",
         "synonyms": "repetition, cycle",
         "exampleEn": "We will improve the user interface in the next iteration.",
-        "exampleCn": "我们将在下次迭代中改进用户界面。",
-        "status": 0
+        "exampleCn": "我们将在下次迭代中改进用户界面。"
     },
     {
         "id": 60,
@@ -596,8 +537,7 @@
         "definition": "精益（开发方法，强调减少浪费）",
         "synonyms": "efficient, streamlined",
         "exampleEn": "Lean development focuses on delivering value to the customer quickly.",
-        "exampleCn": "精益开发专注于快速向客户交付价值。",
-        "status": 0
+        "exampleCn": "精益开发专注于快速向客户交付价值。"
     },
     {
         "id": 61,
@@ -606,8 +546,7 @@
         "definition": "生命周期 (Software Development Life Cycle)",
         "synonyms": "development process",
         "exampleEn": "Security should be considered throughout the entire software development lifecycle.",
-        "exampleCn": "在整个软件开发生命周期中都应考虑安全性。",
-        "status": 0
+        "exampleCn": "在整个软件开发生命周期中都应考虑安全性。"
     },
     {
         "id": 62,
@@ -616,8 +555,7 @@
         "definition": "超出范围（不属于本次讨论或项目）",
         "synonyms": "irrelevant, excluded",
         "exampleEn": "That feature is out of scope for the initial launch.",
-        "exampleCn": "该功能不在初始上线的范围之内。",
-        "status": 0
+        "exampleCn": "该功能不在初始上线的范围之内。"
     },
     {
         "id": 63,
@@ -626,8 +564,7 @@
         "definition": "待定的；挂起的",
         "synonyms": "awaiting, undecided",
         "exampleEn": "The PR is still pending review from the senior engineer.",
-        "exampleCn": "这个 PR 还在等待高级工程师的审查。",
-        "status": 0
+        "exampleCn": "这个 PR 还在等待高级工程师的审查。"
     },
     {
         "id": 64,
@@ -636,8 +573,7 @@
         "definition": "质量保证（测试人员/部门）",
         "synonyms": "testing, inspection",
         "exampleEn": "The ticket has been moved to QA for verification.",
-        "exampleCn": "工单已移至 QA 部门进行验证。",
-        "status": 0
+        "exampleCn": "工单已移至 QA 部门进行验证。"
     },
     {
         "id": 65,
@@ -646,8 +582,7 @@
         "definition": "需求收集",
         "synonyms": "needs analysis",
         "exampleEn": "Requirement gathering is the first step of any project.",
-        "exampleCn": "需求收集是任何项目的第一步。",
-        "status": 0
+        "exampleCn": "需求收集是任何项目的第一步。"
     },
     {
         "id": 66,
@@ -656,8 +591,7 @@
         "definition": "资源分配（指人、财、物）",
         "synonyms": "resource management",
         "exampleEn": "We need better resource allocation to meet our deadlines.",
-        "exampleCn": "我们需要更好的资源分配以赶上截止日期。",
-        "status": 0
+        "exampleCn": "我们需要更好的资源分配以赶上截止日期。"
     },
     {
         "id": 67,
@@ -666,8 +600,7 @@
         "definition": "服务等级协议 (Service Level Agreement)",
         "synonyms": "service contract",
         "exampleEn": "Our SLA guarantees 99.9% uptime for the service.",
-        "exampleCn": "我们的 SLA 保证服务 99.9% 的正常运行时间。",
-        "status": 0
+        "exampleCn": "我们的 SLA 保证服务 99.9% 的正常运行时间。"
     },
     {
         "id": 68,
@@ -676,8 +609,7 @@
         "definition": "（针对问题）构思解决方案",
         "synonyms": "problem solving",
         "exampleEn": "We spent all morning solutioning the architectural problem.",
-        "exampleCn": "我们整个上午都在构思那个架构问题的解决方案。",
-        "status": 0
+        "exampleCn": "我们整个上午都在构思那个架构问题的解决方案。"
     },
     {
         "id": 69,
@@ -686,8 +618,7 @@
         "definition": "标准化",
         "synonyms": "normalize",
         "exampleEn": "We need to standardize our code style across the team.",
-        "exampleCn": "我们需要在团队中统一代码风格。",
-        "status": 0
+        "exampleCn": "我们需要在团队中统一代码风格。"
     },
     {
         "id": 70,
@@ -696,8 +627,7 @@
         "definition": "子任务",
         "synonyms": "breakdown task",
         "exampleEn": "I'll break this story into smaller sub-tasks.",
-        "exampleCn": "我会把这个故事拆分成更小的子任务。",
-        "status": 0
+        "exampleCn": "我会把这个故事拆分成更小的子任务。"
     },
     {
         "id": 71,
@@ -706,8 +636,7 @@
         "definition": "时间线",
         "synonyms": "schedule",
         "exampleEn": "Do we have a realistic timeline for this migration?",
-        "exampleCn": "我们对这次迁移有切实可行的时间线吗？",
-        "status": 0
+        "exampleCn": "我们对这次迁移有切实可行的时间线吗？"
     },
     {
         "id": 72,
@@ -716,8 +645,7 @@
         "definition": "上游/下游",
         "synonyms": "source / sequence",
         "exampleEn": "The bug is caused by a change in an upstream service.",
-        "exampleCn": "这个 Bug 是由上游服务的改动引起的。",
-        "status": 0
+        "exampleCn": "这个 Bug 是由上游服务的改动引起的。"
     },
     {
         "id": 73,
@@ -726,8 +654,7 @@
         "definition": "用户反馈",
         "synonyms": "customer input",
         "exampleEn": "We modified the UI based on user feedback.",
-        "exampleCn": "我们根据用户反馈修改了 UI。",
-        "status": 0
+        "exampleCn": "我们根据用户反馈修改了 UI。"
     },
     {
         "id": 74,
@@ -736,8 +663,7 @@
         "definition": "速率",
         "synonyms": "rate of progress",
         "exampleEn": "High velocity is good, but quality should not be sacrificed.",
-        "exampleCn": "高效率是好事，但不应牺牲质量。",
-        "status": 0
+        "exampleCn": "高效率是好事，但不应牺牲质量。"
     },
     {
         "id": 75,
@@ -746,8 +672,7 @@
         "definition": "内部维基知识库",
         "synonyms": "internal knowledge base",
         "exampleEn": "Check the team Wiki for the setup instructions.",
-        "exampleCn": "查看团队 Wiki 以获取安装说明。",
-        "status": 0
+        "exampleCn": "查看团队 Wiki 以获取安装说明。"
     },
     {
         "id": 76,
@@ -756,8 +681,7 @@
         "definition": "任务负责人；被分配者",
         "synonyms": "owner, responsible party",
         "exampleEn": "Who is the assignee for this high-priority ticket?",
-        "exampleCn": "这张高优先级工单的负责人是谁？",
-        "status": 0
+        "exampleCn": "这张高优先级工单的负责人是谁？"
     },
     {
         "id": 77,
@@ -766,8 +690,7 @@
         "definition": "缓冲时间",
         "synonyms": "margin, extra time",
         "exampleEn": "We should add a two-day buffer to the schedule.",
-        "exampleCn": "我们应该在计划中增加两天的缓冲时间。",
-        "status": 0
+        "exampleCn": "我们应该在计划中增加两天的缓冲时间。"
     },
     {
         "id": 78,
@@ -776,8 +699,7 @@
         "definition": "更新日志",
         "synonyms": "release notes",
         "exampleEn": "Please update the change log before tagging the new release.",
-        "exampleCn": "在标记新版本之前，请更新更新日志。",
-        "status": 0
+        "exampleCn": "在标记新版本之前，请更新更新日志。"
     },
     {
         "id": 79,
@@ -786,8 +708,7 @@
         "definition": "一致性",
         "synonyms": "uniformity",
         "exampleEn": "Consistency in API naming is crucial for developer experience.",
-        "exampleCn": "API 命名的一致性对开发者体验至关重要。",
-        "status": 0
+        "exampleCn": "API 命名的一致性对开发者体验至关重要。"
     },
     {
         "id": 80,
@@ -796,8 +717,7 @@
         "definition": "核心价值观",
         "synonyms": "principles",
         "exampleEn": "Transparency is one of our team's core values.",
-        "exampleCn": "透明度是我们团队的核心价值观之一。",
-        "status": 0
+        "exampleCn": "透明度是我们团队的核心价值观之一。"
     },
     {
         "id": 81,
@@ -806,8 +726,7 @@
         "definition": "标准",
         "synonyms": "standards, benchmarks",
         "exampleEn": "Does this solution meet all the security criteria?",
-        "exampleCn": "这个解决方案满足所有的安全标准吗？",
-        "status": 0
+        "exampleCn": "这个解决方案满足所有的安全标准吗？"
     },
     {
         "id": 82,
@@ -816,8 +735,7 @@
         "definition": "仪表盘；数据看板",
         "synonyms": "control panel",
         "exampleEn": "I checked the Grafana dashboard to monitor system health.",
-        "exampleCn": "我查看了 Grafana 仪表盘以监控系统健康状况。",
-        "status": 0
+        "exampleCn": "我查看了 Grafana 仪表盘以监控系统健康状况。"
     },
     {
         "id": 83,
@@ -826,8 +744,7 @@
         "definition": "估算扑克（一种敏捷估算技巧）",
         "synonyms": "planning poker",
         "exampleEn": "We used estimation poker to decide the story points.",
-        "exampleCn": "我们使用估算扑克来决定故事点。",
-        "status": 0
+        "exampleCn": "我们使用估算扑克来决定故事点。"
     },
     {
         "id": 84,
@@ -836,8 +753,7 @@
         "definition": "功能规格说明书",
         "synonyms": "functional spec",
         "exampleEn": "The developer is reading the functional specification for the new feature.",
-        "exampleCn": "开发人员正在阅读新功能的功能规格说明书。",
-        "status": 0
+        "exampleCn": "开发人员正在阅读新功能的功能规格说明书。"
     },
     {
         "id": 85,
@@ -846,8 +762,7 @@
         "definition": "交接",
         "synonyms": "transfer",
         "exampleEn": "We need a formal handover meeting before you leave for vacation.",
-        "exampleCn": "在你休假之前，我们需要开一个正式的交接会。",
-        "status": 0
+        "exampleCn": "在你休假之前，我们需要开一个正式的交接会。"
     },
     {
         "id": 86,
@@ -856,8 +771,7 @@
         "definition": "增量（指软件的增加部分）",
         "synonyms": "addition, enhancement",
         "exampleEn": "Each sprint should produce a potentially shippable product increment.",
-        "exampleCn": "每个冲刺都应产生一个潜在可发布的软件增量。",
-        "status": 0
+        "exampleCn": "每个冲刺都应产生一个潜在可发布的软件增量。"
     },
     {
         "id": 87,
@@ -866,8 +780,7 @@
         "definition": "维护",
         "synonyms": "upkeep",
         "exampleEn": "Regular maintenance is necessary to prevent system failure.",
-        "exampleCn": "为了防止系统故障，定期维护是必要的。",
-        "status": 0
+        "exampleCn": "为了防止系统故障，定期维护是必要的。"
     },
     {
         "id": 88,
@@ -876,8 +789,7 @@
         "definition": "手动测试",
         "synonyms": "human testing",
         "exampleEn": "We still perform manual testing for complex user scenarios.",
-        "exampleCn": "对于复杂的用户场景，我们仍然进行手动测试。",
-        "status": 0
+        "exampleCn": "对于复杂的用户场景，我们仍然进行手动测试。"
     },
     {
         "id": 89,
@@ -886,8 +798,7 @@
         "definition": "非功能性需求（如性能、安全、可靠性）",
         "synonyms": "system qualities",
         "exampleEn": "Performance and scalability are critical non-functional requirements.",
-        "exampleCn": "性能和可扩展性是关键的非功能性需求。",
-        "status": 0
+        "exampleCn": "性能和可扩展性是关键的非功能性需求。"
     },
     {
         "id": 90,
@@ -896,8 +807,7 @@
         "definition": "目标",
         "synonyms": "goal, aim",
         "exampleEn": "What is our primary objective for this quarter?",
-        "exampleCn": "我们本季度的主要目标是什么？",
-        "status": 0
+        "exampleCn": "我们本季度的主要目标是什么？"
     },
     {
         "id": 91,
@@ -906,8 +816,7 @@
         "definition": "场外会议/团队团建（常用于深度讨论）",
         "synonyms": "company retreat",
         "exampleEn": "The management team is away at an offsite today.",
-        "exampleCn": "管理团队今天在外面开场外会议。",
-        "status": 0
+        "exampleCn": "管理团队今天在外面开场外会议。"
     },
     {
         "id": 92,
@@ -916,8 +825,7 @@
         "definition": "痛点",
         "synonyms": "difficulty, frustration",
         "exampleEn": "Slow build times are a major pain point for the engineers.",
-        "exampleCn": "构建时间慢是工程师们的一个主要痛点。",
-        "status": 0
+        "exampleCn": "构建时间慢是工程师们的一个主要痛点。"
     },
     {
         "id": 93,
@@ -926,8 +834,7 @@
         "definition": "同行评审",
         "synonyms": "colleague evaluation",
         "exampleEn": "Peer review helps ensure code quality and knowledge sharing.",
-        "exampleCn": "同行评审有助于确保代码质量和知识共享。",
-        "status": 0
+        "exampleCn": "同行评审有助于确保代码质量和知识共享。"
     },
     {
         "id": 94,
@@ -936,8 +843,7 @@
         "definition": "原型",
         "synonyms": "mock-up, model",
         "exampleEn": "We built a prototype to test the new navigation flow.",
-        "exampleCn": "我们构建了一个原型来测试新的导航流程。",
-        "status": 0
+        "exampleCn": "我们构建了一个原型来测试新的导航流程。"
     },
     {
         "id": 95,
@@ -946,8 +852,7 @@
         "definition": "评审",
         "synonyms": "examination, inspection",
         "exampleEn": "Let's schedule a design review for next Tuesday.",
-        "exampleCn": "让我们安排下周二进行一次设计评审。",
-        "status": 0
+        "exampleCn": "让我们安排下周二进行一次设计评审。"
     },
     {
         "id": 96,
@@ -956,8 +861,7 @@
         "definition": "定界/确定范围",
         "synonyms": "defining boundaries",
         "exampleEn": "We need to finish the scoping of the project by Friday.",
-        "exampleCn": "我们需要在周五前完成项目的范围界定。",
-        "status": 0
+        "exampleCn": "我们需要在周五前完成项目的范围界定。"
     },
     {
         "id": 97,
@@ -966,8 +870,7 @@
         "definition": "左移（指在流程早期引入测试或安全评审）",
         "synonyms": "early testing",
         "exampleEn": "By adopting a 'shift left' approach, we can catch bugs earlier.",
-        "exampleCn": "通过采用“左移”策略，我们可以更早地发现 Bug。",
-        "status": 0
+        "exampleCn": "通过采用“左移”策略，我们可以更早地发现 Bug。"
     },
     {
         "id": 98,
@@ -976,8 +879,7 @@
         "definition": "吞吐量（单位时间内完成的工作量）",
         "synonyms": "output rate",
         "exampleEn": "We need to improve our team's throughput.",
-        "exampleCn": "我们需要提高团队的吞吐量。",
-        "status": 0
+        "exampleCn": "我们需要提高团队的吞吐量。"
     },
     {
         "id": 99,
@@ -986,8 +888,7 @@
         "definition": "待定 (To Be Determined)",
         "synonyms": "pending, undecided",
         "exampleEn": "The date for the final release is still TBD.",
-        "exampleCn": "最终发布的日期仍然待定。",
-        "status": 0
+        "exampleCn": "最终发布的日期仍然待定。"
     },
     {
         "id": 100,
@@ -996,7 +897,6 @@
         "definition": "用户验收测试",
         "synonyms": "beta testing",
         "exampleEn": "The software is ready for UAT after the QA cycle.",
-        "exampleCn": "在 QA 周期结束后，软件就可以进行用户验收测试了。",
-        "status": 0
+        "exampleCn": "在 QA 周期结束后，软件就可以进行用户验收测试了。"
     }
 ]

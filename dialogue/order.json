@@ -1,0 +1,183 @@
+[
+  {
+    "scenario": "流水线点餐 (Subway/Chipotle Style)。在赛百味或类似餐厅，一步步选择面包、肉、配菜和酱料",
+    "dialogue": [
+      {
+        "speaker": "Staff",
+        "text": "Hi, what can I get for you?"
+      },
+      {
+        "speaker": "Customer",
+        "text": "I'll have a **6-inch Tuna on Italian bread**, please."
+      },
+      {
+        "speaker": "Staff",
+        "text": "Toasted?"
+      },
+      {
+        "speaker": "Customer",
+        "text": "Yes, please."
+      },
+      {
+        "speaker": "Staff",
+        "text": "Any cheese or veggies?"
+      },
+      {
+        "speaker": "Customer",
+        "text": "Cheddar cheese. For veggies, **I'll have everything but onions and jalapenos.**"
+      },
+      {
+        "speaker": "Staff",
+        "text": "And sauce?"
+      },
+      {
+        "speaker": "Customer",
+        "text": "Just a little bit of mayo and **easy on the mustard**."
+      }
+    ],
+    "key_structures": [
+      {
+        "pattern": "Everything but...",
+        "example": "I'll have everything but onions.",
+        "explanation": "这是点配菜时的神句！与其一个一个报你要什么（Lettuce, tomato, cucumber...），不如直接说“除了洋葱全都要”，效率极高。"
+      },
+      {
+        "pattern": "Easy on...",
+        "example": "Easy on the mustard.",
+        "explanation": "意思是“少放点...”。不要说 \"Small mustard\"，说 \"Easy on\" 非常地道。"
+      }
+    ]
+  },
+  {
+    "scenario": "汉堡店点餐 (Burger Joint)。区分套餐与单点，并提出忌口（不要酸黄瓜）",
+    "dialogue": [
+      {
+        "speaker": "Cashier",
+        "text": "Welcome. What would you like to order?"
+      },
+      {
+        "speaker": "Customer",
+        "text": "Can I get a Cheeseburger, please?"
+      },
+      {
+        "speaker": "Cashier",
+        "text": "**Do you want to make it a meal?**"
+      },
+      {
+        "speaker": "Customer",
+        "text": "No, **just the sandwich**. But could you please **hold the pickles**?"
+      },
+      {
+        "speaker": "Cashier",
+        "text": "Sure. Anything to drink?"
+      },
+      {
+        "speaker": "Customer",
+        "text": "I'll grab a Coke. Actually, make that a Diet Coke. That's all."
+      }
+    ],
+    "key_structures": [
+      {
+        "pattern": "Make it a meal / Combo",
+        "example": "Do you want to make it a meal?",
+        "explanation": "Meal/Combo = 套餐（汉堡+薯条+饮料）。如果不想要套餐，就回答 \"Just the sandwich\"（只要汉堡）。"
+      },
+      {
+        "pattern": "Hold the [ingredient]",
+        "example": "Hold the pickles.",
+        "explanation": "快餐店专用术语，意思是“不要放...”。比 \"No pickles\" 听起来更像本地人。"
+      }
+    ]
+  },
+  {
+    "scenario": "咖啡定制 (Advanced Coffee)。调整冰块、甜度和留奶位",
+    "dialogue": [
+      {
+        "speaker": "Barista",
+        "text": "Next please!"
+      },
+      {
+        "speaker": "Customer",
+        "text": "Hi, can I get a **Grande Iced Americano**?"
+      },
+      {
+        "speaker": "Barista",
+        "text": "Sure. Anything else?"
+      },
+      {
+        "speaker": "Customer",
+        "text": "Yes, could you do **light ice** and add an extra shot of espresso?"
+      },
+      {
+        "speaker": "Barista",
+        "text": "Got it. **Do you want room for cream?**"
+      },
+      {
+        "speaker": "Customer",
+        "text": "No, fill it to the top, thanks. Oh, and can I have my name on the cup? It's 'Lee'."
+      }
+    ],
+    "key_structures": [
+      {
+        "pattern": "Light ice / No ice",
+        "example": "Could you do light ice?",
+        "explanation": "少冰 / 去冰。如果你不想喝一杯全是冰块的咖啡，一定要说 Light ice。"
+      },
+      {
+        "pattern": "Room for cream",
+        "example": "Do you want room for cream?",
+        "explanation": "非常高频的问题！意思是“杯口要不要留点空隙给你加牛奶？”如果你回答 No，他们会把黑咖啡倒满。"
+      }
+    ]
+  },
+  {
+    "scenario": "餐厅求推荐 (Recommendations & Spiciness)。游客身份求推荐特色菜，并确认辣度能否接受",
+    "dialogue": [
+      {
+        "speaker": "Customer",
+        "text": "Hi, **do you have a table for two?**"
+      },
+      {
+        "speaker": "Server",
+        "text": "Yes, we do. Right this way... (Later) ... Are you ready to order?"
+      },
+      {
+        "speaker": "Customer",
+        "text": "Actually, not yet. **We're tourists and it's our first time here.** Could you **recommend some local specialties?**"
+      },
+      {
+        "speaker": "Server",
+        "text": "Definitely. Our 'Volcano Pizza' is famous here. It comes with local sausage and chili peppers."
+      },
+      {
+        "speaker": "Customer",
+        "text": "That sounds interesting. **Is it very spicy?**"
+      },
+      {
+        "speaker": "Server",
+        "text": "**It has a bit of a kick.** Are you okay with spicy food?"
+      },
+      {
+        "speaker": "Customer",
+        "text": "Yeah, **I can handle it.** That shouldn't be a problem. We'll try that, please."
+      }
+    ],
+    "key_structures": [
+      {
+        "pattern": "Recommend some local specialties",
+        "example": "Could you recommend some local specialties?",
+        "explanation": "表明游客身份并求推荐的最佳方式。Specialties 指“特色菜/招牌菜”。"
+      },
+      {
+        "pattern": "It has a bit of a kick",
+        "example": "It has a bit of a kick.",
+        "explanation": "地道口语，形容食物“有点辣”或“有后劲”，比直接说 \"It is a little spicy\" 更生动。"
+      },
+      {
+        "pattern": "I can handle it",
+        "example": "I can handle it.",
+        "explanation": "非常自信地表达“我能吃辣/我能搞定”。"
+      }
+    ]
+  }
+]

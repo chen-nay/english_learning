@@ -1,0 +1,177 @@
+[
+  {
+    "scenario": "值机与托运 (Check-in & Bag Drop)。办理登机牌，挑选座位，并询问转机行李是否直挂",
+    "dialogue": [
+      {
+        "speaker": "Traveler",
+        "text": "Hi, I'd like to **check in for my flight to** New York. Here is my passport."
+      },
+      {
+        "speaker": "Agent",
+        "text": "Thank you. Do you have any bags to check in?"
+      },
+      {
+        "speaker": "Traveler",
+        "text": "Yes, just this one suitcase. **I also have a carry-on** and a backpack."
+      },
+      {
+        "speaker": "Agent",
+        "text": "That's fine. Would you prefer a window or an aisle seat?"
+      },
+      {
+        "speaker": "Traveler",
+        "text": "Aisle, please. Also, **do I need to pick up my luggage in** the connecting city, or **will it go straight through to** the final destination?"
+      },
+      {
+        "speaker": "Agent",
+        "text": "It goes straight through. Here is your boarding pass. Gate 15."
+      }
+    ],
+    "key_structures": [
+      {
+        "pattern": "Check in for my flight to...",
+        "example": "I'd like to check in for my flight to New York.",
+        "explanation": "标准的值机开场白。"
+      },
+      {
+        "pattern": "Do I need to pick up my luggage in...",
+        "example": "Do I need to pick up my luggage in Chicago?",
+        "explanation": "国际转机必问！确认在中转站是否需要自己提取行李重新托运。"
+      },
+      {
+        "pattern": "Go straight through",
+        "example": "Will it go straight through to London?",
+        "explanation": "指行李“直挂”到目的地，中途不用管。"
+      }
+    ]
+  },
+  {
+    "scenario": "过海关/移民局 (Immigration Control)。回答入境目的、停留时间，这是最需要冷静的环节",
+    "dialogue": [
+      {
+        "speaker": "Officer",
+        "text": "Next. Good morning. **What is the purpose of your visit?**"
+      },
+      {
+        "speaker": "Traveler",
+        "text": "I'm here for work. I'm a software engineer."
+      },
+      {
+        "speaker": "Officer",
+        "text": "**How long do you intend to stay?**"
+      },
+      {
+        "speaker": "Traveler",
+        "text": "I plan to stay for one year. **Here is my return ticket and visa documents.**"
+      },
+      {
+        "speaker": "Officer",
+        "text": "Where will you be staying?"
+      },
+      {
+        "speaker": "Traveler",
+        "text": "I'll be staying at the Hilton Hotel initially, then moving to an apartment."
+      }
+    ],
+    "key_structures": [
+      {
+        "pattern": "What is the purpose of your visit?",
+        "example": "What is the purpose of your visit?",
+        "explanation": "海关必问问题。关键词：Purpose (目的)。"
+      },
+      {
+        "pattern": "I intend to stay for...",
+        "example": "I intend to stay for two weeks.",
+        "explanation": "回答停留时长。Intend to (打算) 比 Will 听起来更正式、符合入境询问的语境。"
+      },
+      {
+        "pattern": "Here is/are my...",
+        "example": "Here are my visa documents.",
+        "explanation": "当官员还在犹豫时，主动递交材料的万能句。"
+      }
+    ]
+  },
+  {
+    "scenario": "安检 (Security Check)。询问电子产品和液体是否需要取出",
+    "dialogue": [
+      {
+        "speaker": "Security",
+        "text": "Please empty your pockets and put everything in the bin."
+      },
+      {
+        "speaker": "Traveler",
+        "text": "**Do I need to take my laptop out of** the bag?"
+      },
+      {
+        "speaker": "Security",
+        "text": "Yes, electronics in a separate bin, please."
+      },
+      {
+        "speaker": "Traveler",
+        "text": "Okay. **What about liquids?**"
+      },
+      {
+        "speaker": "Security",
+        "text": "Liquids under 100ml must be in a clear plastic bag. **Take off your shoes and belt**, please."
+      },
+      {
+        "speaker": "Traveler",
+        "text": "Understood."
+      }
+    ],
+    "key_structures": [
+      {
+        "pattern": "Do I need to take... out of...",
+        "example": "Do I need to take my laptop out of the bag?",
+        "explanation": "安检时最常问的问题，关于取出物品。"
+      },
+      {
+        "pattern": "In a separate bin",
+        "example": "Put electronics in a separate bin.",
+        "explanation": "Bin = 安检用的塑料框。Separate = 单独的。"
+      }
+    ]
+  },
+  {
+    "scenario": "行李遗失 (Lost Luggage)。发现行李没到，去柜台报失（心态要稳）",
+    "dialogue": [
+      {
+        "speaker": "Traveler",
+        "text": "Excuse me, **my luggage hasn't arrived on the carousel**. I've been waiting for 30 minutes."
+      },
+      {
+        "speaker": "Staff",
+        "text": "Can I see your baggage claim tag, please?"
+      },
+      {
+        "speaker": "Traveler",
+        "text": "Here it is. It's a large black Samsonite suitcase with a red ribbon on the handle."
+      },
+      {
+        "speaker": "Staff",
+        "text": "Okay, we'll need to file a report. Please fill out this form."
+      },
+      {
+        "speaker": "Traveler",
+        "text": "Sure. **Once you find it, could you deliver it to** my hotel? I really need my clothes."
+      }
+    ],
+    "key_structures": [
+      {
+        "pattern": "Carousel",
+        "example": "My luggage isn't on the carousel.",
+        "explanation": "行李传送带的专有名词（千万别说 conveyor belt，那是工厂用的）。"
+      },
+      {
+        "pattern": "Baggage claim tag",
+        "example": "Here is my baggage claim tag.",
+        "explanation": "行李票（贴在登机牌后面那个小贴纸）。"
+      },
+      {
+        "pattern": "Could you deliver it to...",
+        "example": "Could you deliver it to my address?",
+        "explanation": "行李延误通常是航空公司负责免费送到你住处的，一定要提出这个要求。"
+      }
+    ]
+  }
+]

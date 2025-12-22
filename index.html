@@ -33,6 +33,32 @@
         .btn-toggle-view { cursor: pointer; padding: 8px; border-radius: 50%; color: var(--text-sub); transition: all 0.2s; display: flex; align-items: center; justify-content: center; }
         .btn-toggle-view:hover { background-color: #f3f4f6; color: var(--primary-blue); }
         
+        /* Layout Optimization: Masonry (Adaptive) Layout */
+        .content-area { flex: 1; padding: 30px; overflow-y: auto; width: 100%; box-sizing: border-box; }
+        .card-grid { 
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            width: 100%;
+            padding-bottom: 40px;
+        }
+        
+        /* Card Base Styles */
+        .card, .similar-card { 
+            display: flex;
+            flex-direction: column;
+            width: auto;           
+            margin-bottom: 0;   
+            box-sizing: border-box;
+            background: white; 
+            border-radius: 12px; 
+            padding: 24px; 
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1); 
+            position: relative; 
+            transition: all 0.2s; 
+            height: 100%; /* Equal height in row */
+        }
+
         /* Hidden Mode Styles */
         .mode-hidden .line-2-audio, 
         .mode-hidden .line-3-meaning, 
@@ -46,25 +72,16 @@
             display: none;
         }
         
-        .content-area { flex: 1; padding: 30px; overflow-y: auto; }
-        .card-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 20px; }
-        
-        /* Wordbook Card Styles */
-        .card { background: white; border-radius: 12px; padding: 24px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); position: relative; transition: all 0.2s; }
-        .card:hover { box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1); transform: translateY(-2px); }
+        .card:hover, .similar-card:hover { 
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1); 
+            transform: translateY(-2px); 
+        }
+
+        .mode-hidden .card, .mode-hidden .similar-card {
+            cursor: pointer;
+        }
+
         .card-actions { position: absolute; top: 20px; right: 20px; display: flex; gap: 8px; opacity: 0; transition: opacity 0.2s; }
-        .card:hover .card-actions { opacity: 1; }
-        .btn-action { padding: 4px 10px; border-radius: 4px; font-size: 12px; cursor: pointer; background: white; border: 1px solid; }
-        .btn-known { color: var(--success-color); border-color: var(--success-color); }
-        .btn-known:hover { background: #ecfdf5; }
-        .btn-unknown { color: var(--danger-color); border-color: var(--danger-color); }
-        .btn-unknown:hover { background: #fef2f2; }
-        
-        /* Reveal Button */
-        .btn-reveal-details { display: none; color: var(--primary-blue); border-color: var(--primary-blue); background: rgba(59, 130, 246, 0.1); }
-        .mode-hidden .card .btn-reveal-details,
-        .mode-hidden .similar-card .btn-reveal-details { display: block; }
-        .btn-reveal-details:hover { background: #e0f2fe; }
         
         /* Individual Reveal Logic */
         .mode-hidden .card.card-revealed .line-2-audio,
@@ -86,16 +103,8 @@
         .empty-state { text-align: center; color: var(--text-sub); margin-top: 50px; font-size: 14px;}
 
         /* Similar Words Styles */
-        .similar-card {
-            background: #fff; border-radius: 12px; padding: 24px; box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-            transition: transform 0.2s, box-shadow 0.2s; border-top: 5px solid transparent;
-            position: relative; 
-        }
-        .similar-card:hover { transform: translateY(-5px); box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1); }
-        
-        /* Similar Card Actions */
-        .similar-card .card-actions { position: absolute; top: 10px; right: 10px; display: flex; gap: 8px; opacity: 0; transition: opacity 0.2s; }
-        .similar-card:hover .card-actions { opacity: 1; }
+        .similar-card { border-top: 5px solid transparent; }
+        .similar-card .card-actions { top: 10px; right: 10px; }
 
         .theme-blue { background-color: #e3f2fd; border-color: #2196f3; }
         .theme-blue .similar-word-item { border-bottom: 1px solid #bbdefb; }
@@ -109,7 +118,6 @@
         .theme-orange { background-color: #fff3e0; border-color: #ff9800; }
         .theme-orange .similar-word-item { border-bottom: 1px solid #ffe0b2; }
 
-        .suffix-tag { font-size: 0.85rem; padding: 4px 8px; border-radius: 6px; background-color: rgba(255,255,255,0.6); font-weight: normal; color: #333; }
         .similar-word-list { list-style: none; padding: 0; margin: 0; }
         .similar-word-item { display: flex; justify-content: space-between; align-items: baseline; padding: 12px 0; }
         .similar-word-item:last-child { border-bottom: none !important; }
@@ -144,12 +152,7 @@
 
         <!-- Software Words Header -->
         <div class="header" id="softwareHeader">
-            <div class="status-tabs">
-                <div class="status-pill active" onclick="switchStatus('all')">全部 <span id="count-all">0</span></div>
-                <div class="status-pill" onclick="switchStatus(0)">未标记 <span id="count-0">0</span></div>
-                <div class="status-pill" onclick="switchStatus(1)">认识 <span id="count-1">0</span></div>
-                <div class="status-pill" onclick="switchStatus(2)">不认识 <span id="count-2">0</span></div>
-            </div>
+            <div style="flex: 1;"></div>
             <div class="btn-toggle-view" onclick="toggleMode()" title="切换显示/隐藏详情">
                 <!-- Default Open Eye SVG -->
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
@@ -174,14 +177,10 @@
     </div>
 
     <script>
-        // State
-        let currentAppMode = 'software'; // 'software' | 'similar'
-        
         // Software Words State
         let books = [];
         let currentBookFile = null;
         let currentData = [];
-        let currentStatus = 'all';
         let isModeHidden = false; 
         let revealedCards = new Set(); 
 
@@ -212,7 +211,7 @@
                 topBookList.style.display = 'flex';
                 softwareHeader.style.display = 'flex';
                 similarHeader.style.display = 'none';
-                cardContainer.style.display = 'grid';
+                cardContainer.style.display = 'grid'; 
                 similarContainer.style.display = 'none';
             } else {
                 topBookList.style.display = 'none';
@@ -226,7 +225,6 @@
                     loadSimilarWords();
                 }
             }
-            // Update view mode icon state for the new header
             updateViewModeUI();
         }
 
@@ -258,6 +256,7 @@
                 const card = document.createElement('div');
                 card.id = `similar-card-${index}`;
                 card.className = `similar-card ${group.theme}`;
+                card.onclick = () => toggleSimilarCardDetails(index);
                 if (isModeHidden && revealedCards.has(`similar-${index}`)) {
                     card.classList.add('card-revealed');
                 }
@@ -273,9 +272,6 @@
                 `).join('');
 
                 card.innerHTML = `
-                    <div class="card-actions">
-                        <button class="btn-action btn-reveal-details" onclick="toggleSimilarCardDetails(${index})" title="显示/隐藏详情">👁️</button>
-                    </div>
                     <ul class="similar-word-list">
                         ${wordsHtml}
                     </ul>
@@ -303,15 +299,11 @@
                 revealedCards.clear();
             }
             
-            // Re-render active view if needed, but mainly we just toggle CSS classes.
-            // However, we might need to re-render to reset individual revealed states if we cleared them.
-            // Actually, we just cleared the Set, so we need to remove the .card-revealed class from DOM elements.
             document.querySelectorAll('.card-revealed').forEach(el => el.classList.remove('card-revealed'));
         }
 
         function updateViewModeUI() {
             const btns = document.querySelectorAll('.btn-toggle-view');
-            
             const openEye = `<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>`;
             const closedEye = `<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"></path><line x1="1" y1="1" x2="23" y2="23"></line></svg>`;
 
@@ -348,27 +340,16 @@
             try {
                 const response = await fetch('/v1/get_word_books');
                 if(!response.ok) throw new Error("无法加载单词书列表");
-
                 const fileList = await response.json();
-
                 books = fileList.map(fileName => {
                     let displayName = fileName.replace('.json', '');
-                    return {
-                        id: fileName,
-                        name: displayName,
-                        file: 'wordbook/' + fileName
-                    };
+                    return { id: fileName, name: displayName, file: 'wordbook/' + fileName };
                 });
-
                 renderTopBookList();
-
-                if(books.length > 0) {
-                    loadBook(books[0].id);
-                }
+                if(books.length > 0) { loadBook(books[0].id); }
             } catch (error) {
                 console.error(error);
-                document.getElementById('topBookList').innerHTML =
-                    `<div style="padding:10px; color:red; font-size:12px;">❌ 加载列表失败</div>`;
+                document.getElementById('topBookList').innerHTML = `<div style="padding:10px; color:red; font-size:12px;">❌ 加载列表失败</div>`;
             }
         }
 
@@ -389,28 +370,19 @@
             currentBookFile = bookId;
             const nav = document.getElementById(`book-nav-${CSS.escape(bookId)}`);
             if(nav) nav.classList.add('active');
-
             const bookConfig = books.find(b => b.id === bookId);
             const mask = document.getElementById('loadingMask');
-
             try {
                 mask.style.display = 'flex';
-                const response = await fetch(bookConfig.file + '?t=' + new Date().getTime());
+                // Encode the filename to handle special characters like '&', spaces, commas
+                const response = await fetch('wordbook/' + encodeURIComponent(bookConfig.id) + '?t=' + new Date().getTime());
                 if (!response.ok) throw new Error("File not found");
                 currentData = await response.json();
-
-                currentData.forEach(item => {
-                    if (item.status === undefined) {
-                        item.status = 0;
-                    }
-                });
-
+                // Removed status initialization
                 renderContent();
-
             } catch (error) {
                 console.error(error);
-                document.getElementById('cardContainer').innerHTML =
-                    `<div class="empty-state">无法加载 ${bookConfig.file}</div>`;
+                document.getElementById('cardContainer').innerHTML = `<div class="empty-state">无法加载 ${bookConfig.file}</div>`;
             } finally {
                 mask.style.display = 'none';
             }
@@ -419,37 +391,22 @@
         function renderContent() {
             const container = document.getElementById('cardContainer');
             container.innerHTML = '';
-
-            const filtered = currentData.filter(item => {
-                const statusMatch = currentStatus === 'all' ? true : item.status === currentStatus;
-                return statusMatch;
-            });
-
-            updateCounts();
-
-            if (filtered.length === 0) {
-                container.innerHTML = '<div class="empty-state">没有符合条件的单词</div>';
+            
+            if (currentData.length === 0) {
+                container.innerHTML = '<div class="empty-state">没有单词数据</div>';
                 return;
             }
-
-            filtered.forEach(item => {
+            currentData.forEach(item => {
                 const card = document.createElement('div');
                 card.id = `card-${item.id}`;
                 card.className = 'card';
-                if (isModeHidden && revealedCards.has(item.id)) {
-                    card.classList.add('card-revealed');
-                }
-
+                card.onclick = () => toggleCardDetails(item.id);
+                if (isModeHidden && revealedCards.has(item.id)) { card.classList.add('card-revealed'); }
                 card.innerHTML = `
-                    <div class="card-actions">
-                        <button class="btn-action btn-known" onclick="markStatus(${item.id}, 1)">认识</button>
-                        <button class="btn-action btn-unknown" onclick="markStatus(${item.id}, 2)">不认识</button>
-                        <button class="btn-action btn-reveal-details" onclick="toggleCardDetails(${item.id})" title="显示/隐藏详情">👁️</button>
-                    </div>
                     <div class="line-1-term">${item.term}</div>
                     <div class="line-2-audio">
                         ${item.phonetic}
-                        <div class="audio-icon" onclick="speak('${item.term.replace(/'/g, "\'")}')">🔊</div>
+                        <div class="audio-icon" onclick="event.stopPropagation(); speak('${item.term.replace(/'/g, "\'")}')">🔊</div>
                     </div>
                     <div class="line-3-meaning">${item.definition}</div>
                     <div class="line-4-synonyms">同义: ${item.synonyms}</div>
@@ -460,45 +417,12 @@
                 `;
                 container.appendChild(card);
             });
-
-            updateTabStyles();
-        }
-
-        function switchStatus(status) { currentStatus = status; renderContent(); }
-
-        function markStatus(id, newStatus) {
-            const item = currentData.find(i => i.id === id);
-            if (item) {
-                item.status = newStatus;
-                fetch('/v1/modify_status', {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({ json_name: 'wordbook/' + currentBookFile, id: id, status: newStatus }),
-                })
-                .then(response => { if (!response.ok) throw new Error('Network response was not ok'); renderContent(); })
-                .catch(error => { console.error('Error:', error); item.status = item.originalStatus || 0; renderContent(); });
-            }
         }
 
         function speak(text) {
             const u = new SpeechSynthesisUtterance(text);
             u.lang = 'en-US'; u.rate = 0.9;
             window.speechSynthesis.speak(u);
-        }
-
-        function updateCounts() {
-            const typeData = currentData;
-            document.getElementById('count-all').innerText = typeData.length;
-            document.getElementById('count-0').innerText = typeData.filter(i => i.status === 0).length;
-            document.getElementById('count-1').innerText = typeData.filter(i => i.status === 1).length;
-            document.getElementById('count-2').innerText = typeData.filter(i => i.status === 2).length;
-        }
-
-        function updateTabStyles() {
-            const statusPills = document.querySelectorAll('.status-pill');
-            statusPills.forEach(p => p.classList.remove('active'));
-            const map = {'all':0, 0:1, 1:2, 2:3};
-            if(map[currentStatus] !== undefined) statusPills[map[currentStatus]].classList.add('active');
         }
     </script>
 </body>

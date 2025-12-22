@@ -6,8 +6,7 @@
         "definition": "仓库（简称 Repo）",
         "synonyms": "repo, store",
         "exampleEn": "You need to clone the repository to your local machine first.",
-        "exampleCn": "你首先需要将仓库克隆到你的本地机器上。",
-        "status": 0
+        "exampleCn": "你首先需要将仓库克隆到你的本地机器上。"
     },
     {
         "id": 2,
@@ -16,8 +15,7 @@
         "definition": "提交（保存当前代码快照）",
         "synonyms": "save point, revision",
         "exampleEn": "Make sure to write a clear commit message for your changes.",
-        "exampleCn": "确保为你的改动写一个清晰的提交信息。",
-        "status": 0
+        "exampleCn": "确保为你的改动写一个清晰的提交信息。"
     },
     {
         "id": 3,
@@ -26,8 +24,7 @@
         "definition": "分支",
         "synonyms": "fork, stream",
         "exampleEn": "I am working on a new feature in a separate branch.",
-        "exampleCn": "我正在一个独立的分支上开发新功能。",
-        "status": 0
+        "exampleCn": "我正在一个独立的分支上开发新功能。"
     },
     {
         "id": 4,
@@ -36,8 +33,7 @@
         "definition": "合并",
         "synonyms": "combine, integrate",
         "exampleEn": "We will merge the feature branch into the main branch tomorrow.",
-        "exampleCn": "我们明天会将功能分支合并到主分支中。",
-        "status": 0
+        "exampleCn": "我们明天会将功能分支合并到主分支中。"
     },
     {
         "id": 5,
@@ -46,8 +42,7 @@
         "definition": "拉取请求（请求将代码合并）",
         "synonyms": "merge request, MR",
         "exampleEn": "I just submitted a PR; could you please review my code?",
-        "exampleCn": "我刚刚提交了一个 PR，你能帮我审一下代码吗？",
-        "status": 0
+        "exampleCn": "我刚刚提交了一个 PR，你能帮我审一下代码吗？"
     },
     {
         "id": 6,
@@ -56,8 +51,7 @@
         "definition": "冲突",
         "synonyms": "clash, collision",
         "exampleEn": "I spent an hour resolving merge conflicts in the project.",
-        "exampleCn": "我花了一个小时处理项目中的合并冲突。",
-        "status": 0
+        "exampleCn": "我花了一个小时处理项目中的合并冲突。"
     },
     {
         "id": 7,
@@ -66,8 +60,7 @@
         "definition": "远程仓库",
         "synonyms": "upstream, origin",
         "exampleEn": "Don't forget to push your local commits to the remote server.",
-        "exampleCn": "别忘了把你的本地提交推送到远程服务器。",
-        "status": 0
+        "exampleCn": "别忘了把你的本地提交推送到远程服务器。"
     },
     {
         "id": 8,
@@ -76,8 +69,7 @@
         "definition": "检出/切换（分支或文件）",
         "synonyms": "switch",
         "exampleEn": "You can use 'git checkout' to switch to another branch.",
-        "exampleCn": "你可以使用 'git checkout' 来切换到另一个分支。",
-        "status": 0
+        "exampleCn": "你可以使用 'git checkout' 来切换到另一个分支。"
     },
     {
         "id": 9,
@@ -86,8 +78,7 @@
         "definition": "克隆/复制仓库",
         "synonyms": "copy, duplicate",
         "exampleEn": "Clone the repo using the SSH link for better security.",
-        "exampleCn": "使用 SSH 链接克隆仓库以获得更好的安全性。",
-        "status": 0
+        "exampleCn": "使用 SSH 链接克隆仓库以获得更好的安全性。"
     },
     {
         "id": 10,
@@ -96,8 +87,7 @@
         "definition": "获取（下载远程更新但不合并）",
         "synonyms": "retrieve, get",
         "exampleEn": "Run 'git fetch' to see what changes others have made.",
-        "exampleCn": "运行 'git fetch' 来查看其他人做了哪些改动。",
-        "status": 0
+        "exampleCn": "运行 'git fetch' 来查看其他人做了哪些改动。"
     },
     {
         "id": 11,
@@ -106,8 +96,7 @@
         "definition": "拉取（获取并自动合并远程更新）",
         "synonyms": "fetch and merge",
         "exampleEn": "You should pull the latest changes before you start coding.",
-        "exampleCn": "在开始写代码之前，你应该先拉取最新的改动。",
-        "status": 0
+        "exampleCn": "在开始写代码之前，你应该先拉取最新的改动。"
     },
     {
         "id": 12,
@@ -116,8 +105,7 @@
         "definition": "推送（将本地更新上传到远程）",
         "synonyms": "upload, publish",
         "exampleEn": "Push your changes to the origin so the CI pipeline can run.",
-        "exampleCn": "将你的改动推送到远端，以便 CI 流水线可以运行。",
-        "status": 0
+        "exampleCn": "将你的改动推送到远端，以便 CI 流水线可以运行。"
     },
     {
         "id": 13,
@@ -126,8 +114,7 @@
         "definition": "变基（重新整理提交历史）",
         "synonyms": "rewrite history",
         "exampleEn": "I prefer to rebase my branch to keep a linear history.",
-        "exampleCn": "我更倾向于对分支进行变基，以保持线性的提交历史。",
-        "status": 0
+        "exampleCn": "我更倾向于对分支进行变基，以保持线性的提交历史。"
     },
     {
         "id": 14,
@@ -136,8 +123,7 @@
         "definition": "暂存（临时保存未完成的改动）",
         "synonyms": "store away, hide",
         "exampleEn": "I'll stash my current work to fix an urgent bug on master.",
-        "exampleCn": "我会把当前的工作暂存起来，去修复主分支上的一个紧急 Bug。",
-        "status": 0
+        "exampleCn": "我会把当前的工作暂存起来，去修复主分支上的一个紧急 Bug。"
     },
     {
         "id": 15,
@@ -146,8 +132,7 @@
         "definition": "遴选（选择性地合并某个提交）",
         "synonyms": "selective merge",
         "exampleEn": "We can cherry-pick this specific bug fix into the release branch.",
-        "exampleCn": "我们可以把这个特定的 Bug 修复遴选到发布分支中。",
-        "status": 0
+        "exampleCn": "我们可以把这个特定的 Bug 修复遴选到发布分支中。"
     },
     {
         "id": 16,
@@ -156,8 +141,7 @@
         "definition": "压缩（合并多个提交为一个）",
         "synonyms": "flatten, compress",
         "exampleEn": "Please squash your commits before merging the PR.",
-        "exampleCn": "请在合并 PR 之前压缩你的提交。",
-        "status": 0
+        "exampleCn": "请在合并 PR 之前压缩你的提交。"
     },
     {
         "id": 17,
@@ -166,8 +150,7 @@
         "definition": "差异比较",
         "synonyms": "difference, contrast",
         "exampleEn": "Check the diff to see what exactly was changed in this file.",
-        "exampleCn": "检查一下 diff，看看这个文件到底改了什么。",
-        "status": 0
+        "exampleCn": "检查一下 diff，看看这个文件到底改了什么。"
     },
     {
         "id": 18,
@@ -176,8 +159,7 @@
         "definition": "头指针（指向当前分支的最新提交）",
         "synonyms": "current tip",
         "exampleEn": "The HEAD is currently pointing to the latest commit on develop.",
-        "exampleCn": "HEAD 目前指向 develop 分支上的最新提交。",
-        "status": 0
+        "exampleCn": "HEAD 目前指向 develop 分支上的最新提交。"
     },
     {
         "id": 19,
@@ -186,8 +168,7 @@
         "definition": "默认远程仓库名",
         "synonyms": "remote source",
         "exampleEn": "My local branch is tracking origin/main.",
-        "exampleCn": "我的本地分支正在追踪 origin/main。",
-        "status": 0
+        "exampleCn": "我的本地分支正在追踪 origin/main。"
     },
     {
         "id": 20,
@@ -196,8 +177,7 @@
         "definition": "上游（通常指原始仓库）",
         "synonyms": "source repository",
         "exampleEn": "You should sync your fork with the upstream repository regularly.",
-        "exampleCn": "你应该定期同步你的 fork 仓库与上游仓库。",
-        "status": 0
+        "exampleCn": "你应该定期同步你的 fork 仓库与上游仓库。"
     },
     {
         "id": 21,
@@ -206,8 +186,7 @@
         "definition": "派生（复制一份仓库到个人账号下）",
         "synonyms": "personal copy",
         "exampleEn": "I forked the open-source project to contribute a new feature.",
-        "exampleCn": "我派生了这个开源项目，准备贡献一个新功能。",
-        "status": 0
+        "exampleCn": "我派生了这个开源项目，准备贡献一个新功能。"
     },
     {
         "id": 22,
@@ -216,8 +195,7 @@
         "definition": "暂存区（准备提交的文件区域）",
         "synonyms": "index",
         "exampleEn": "Files must be added to the staging area before they can be committed.",
-        "exampleCn": "文件必须先添加到暂存区才能被提交。",
-        "status": 0
+        "exampleCn": "文件必须先添加到暂存区才能被提交。"
     },
     {
         "id": 23,
@@ -226,8 +204,7 @@
         "definition": "未跟踪文件",
         "synonyms": "new file",
         "exampleEn": "Git won't include untracked files in your next commit.",
-        "exampleCn": "Git 不会将未跟踪的文件包含在你的下次提交中。",
-        "status": 0
+        "exampleCn": "Git 不会将未跟踪的文件包含在你的下次提交中。"
     },
     {
         "id": 24,
@@ -236,8 +213,7 @@
         "definition": "修正（修改上一次提交）",
         "synonyms": "fixing last commit",
         "exampleEn": "I forgot to include a file, so I am amending my last commit.",
-        "exampleCn": "我漏掉了一个文件，所以我正在修正上一次提交。",
-        "status": 0
+        "exampleCn": "我漏掉了一个文件，所以我正在修正上一次提交。"
     },
     {
         "id": 25,
@@ -246,8 +222,7 @@
         "definition": "回退/撤销（通过产生新提交来抵消旧提交）",
         "synonyms": "undo, roll back",
         "exampleEn": "We had to revert the last commit because it broke the build.",
-        "exampleCn": "我们不得不撤销上个提交，因为它破坏了构建。",
-        "status": 0
+        "exampleCn": "我们不得不撤销上个提交，因为它破坏了构建。"
     },
     {
         "id": 26,
@@ -256,8 +231,7 @@
         "definition": "重置（强制将分支指向某个位置）",
         "synonyms": "force back",
         "exampleEn": "Be careful with a hard reset; you will lose all uncommitted changes.",
-        "exampleCn": "使用硬重置（hard reset）要小心；你会丢失所有未提交的改动。",
-        "status": 0
+        "exampleCn": "使用硬重置（hard reset）要小心；你会丢失所有未提交的改动。"
     },
     {
         "id": 27,
@@ -266,8 +240,7 @@
         "definition": "标签（通常用于标记版本号）",
         "synonyms": "version marker, label",
         "exampleEn": "We created a tag 'v1.0.2' for the current production release.",
-        "exampleCn": "我们为当前的生产发布创建了一个 'v1.0.2' 标签。",
-        "status": 0
+        "exampleCn": "我们为当前的生产发布创建了一个 'v1.0.2' 标签。"
     },
     {
         "id": 28,
@@ -276,8 +249,7 @@
         "definition": "日志/提交记录",
         "synonyms": "history",
         "exampleEn": "Check the git log to see who modified this function.",
-        "exampleCn": "查看 git log 看看是谁修改了这个函数。",
-        "status": 0
+        "exampleCn": "查看 git log 看看是谁修改了这个函数。"
     },
     {
         "id": 29,
@@ -286,8 +258,7 @@
         "definition": "忽略文件配置",
         "synonyms": "exclusion list",
         "exampleEn": "Add the 'node_modules' folder to your .gitignore file.",
-        "exampleCn": "把 'node_modules' 文件夹加到你的 .gitignore 文件里。",
-        "status": 0
+        "exampleCn": "把 'node_modules' 文件夹加到你的 .gitignore 文件里。"
     },
     {
         "id": 30,
@@ -296,8 +267,7 @@
         "definition": "钩子（自动化脚本，如 pre-commit）",
         "synonyms": "trigger script",
         "exampleEn": "The pre-commit hook runs the linter automatically.",
-        "exampleCn": "pre-commit 钩子会自动运行代码检查工具。",
-        "status": 0
+        "exampleCn": "pre-commit 钩子会自动运行代码检查工具。"
     },
     {
         "id": 31,
@@ -306,8 +276,7 @@
         "definition": "主分支",
         "synonyms": "primary branch",
         "exampleEn": "All stable code should be in the main branch.",
-        "exampleCn": "所有稳定的代码都应该在主分支中。",
-        "status": 0
+        "exampleCn": "所有稳定的代码都应该在主分支中。"
     },
     {
         "id": 32,
@@ -316,8 +285,7 @@
         "definition": "功能分支",
         "synonyms": "topic branch",
         "exampleEn": "Create a feature branch for every new user story.",
-        "exampleCn": "为每个新的用户故事创建一个功能分支。",
-        "status": 0
+        "exampleCn": "为每个新的用户故事创建一个功能分支。"
     },
     {
         "id": 33,
@@ -326,8 +294,7 @@
         "definition": "热修复分支（紧急修复线上问题）",
         "synonyms": "emergency branch",
         "exampleEn": "We need to create a hotfix branch to solve the production crash.",
-        "exampleCn": "我们需要创建一个热修复分支来解决生产环境崩溃问题。",
-        "status": 0
+        "exampleCn": "我们需要创建一个热修复分支来解决生产环境崩溃问题。"
     },
     {
         "id": 34,
@@ -336,8 +303,7 @@
         "definition": "冲突解决",
         "synonyms": "fixing clashes",
         "exampleEn": "Conflict resolution is a common task after a long rebase.",
-        "exampleCn": "在漫长的变基之后，解决冲突是一项常见任务。",
-        "status": 0
+        "exampleCn": "在漫长的变基之后，解决冲突是一项常见任务。"
     },
     {
         "id": 35,
@@ -346,8 +312,7 @@
         "definition": "游离提交（不被任何分支指向的提交）",
         "synonyms": "orphaned commit",
         "exampleEn": "Git's garbage collector will eventually remove dangling commits.",
-        "exampleCn": "Git 的垃圾回收机制最终会移除游离提交。",
-        "status": 0
+        "exampleCn": "Git 的垃圾回收机制最终会移除游离提交。"
     },
     {
         "id": 36,
@@ -356,8 +321,7 @@
         "definition": "引用日志（记录 HEAD 的每一次移动）",
         "synonyms": "reference history",
         "exampleEn": "You can use the reflog to recover a deleted branch.",
-        "exampleCn": "你可以使用 reflog 来恢复一个被删除的分支。",
-        "status": 0
+        "exampleCn": "你可以使用 reflog 来恢复一个被删除的分支。"
     },
     {
         "id": 37,
@@ -366,8 +330,7 @@
         "definition": "已跟踪的分支",
         "synonyms": "upstream-linked branch",
         "exampleEn": "Your local 'develop' is a tracked branch of 'origin/develop'.",
-        "exampleCn": "你的本地 'develop' 分支是 'origin/develop' 的跟踪分支。",
-        "status": 0
+        "exampleCn": "你的本地 'develop' 分支是 'origin/develop' 的跟踪分支。"
     },
     {
         "id": 38,
@@ -376,8 +339,7 @@
         "definition": "拉取策略（如 rebase 或 merge）",
         "synonyms": "integration method",
         "exampleEn": "Our team uses the rebase pull strategy to keep the history clean.",
-        "exampleCn": "我们团队使用 rebase 拉取策略来保持历史整洁。",
-        "status": 0
+        "exampleCn": "我们团队使用 rebase 拉取策略来保持历史整洁。"
     },
     {
         "id": 39,
@@ -386,8 +348,7 @@
         "definition": "子模块",
         "synonyms": "nested repo",
         "exampleEn": "This repository includes the shared library as a submodule.",
-        "exampleCn": "这个仓库将共享库作为一个子模块包含在内。",
-        "status": 0
+        "exampleCn": "这个仓库将共享库作为一个子模块包含在内。"
     },
     {
         "id": 40,
@@ -396,8 +357,7 @@
         "definition": "工作目录",
         "synonyms": "local workspace",
         "exampleEn": "Your working directory contains uncommitted changes.",
-        "exampleCn": "你的工作目录包含未提交的改动。",
-        "status": 0
+        "exampleCn": "你的工作目录包含未提交的改动。"
     },
     {
         "id": 41,
@@ -406,8 +366,7 @@
         "definition": "远程跟踪分支",
         "synonyms": "remote mirror",
         "exampleEn": "Origin/main is a remote-tracking branch.",
-        "exampleCn": "Origin/main 是一个远程跟踪分支。",
-        "status": 0
+        "exampleCn": "Origin/main 是一个远程跟踪分支。"
     },
     {
         "id": 42,
@@ -416,8 +375,7 @@
         "definition": "快进合并",
         "synonyms": "linear merge",
         "exampleEn": "Since there were no new commits on main, Git did a fast-forward merge.",
-        "exampleCn": "由于主分支上没有新提交，Git 执行了快进合并。",
-        "status": 0
+        "exampleCn": "由于主分支上没有新提交，Git 执行了快进合并。"
     },
     {
         "id": 43,
@@ -426,8 +384,7 @@
         "definition": "冲突标记（如 <<<<<<< HEAD）",
         "synonyms": "clash indicators",
         "exampleEn": "You need to manually remove the conflict markers after fixing the code.",
-        "exampleCn": "修复代码后，你需要手动移除冲突标记。",
-        "status": 0
+        "exampleCn": "修复代码后，你需要手动移除冲突标记。"
     },
     {
         "id": 44,
@@ -436,8 +393,7 @@
         "definition": "代码审查",
         "synonyms": "peer review",
         "exampleEn": "The code review caught several potential bugs.",
-        "exampleCn": "代码审查发现了几处潜在的 Bug。",
-        "status": 0
+        "exampleCn": "代码审查发现了几处潜在的 Bug。"
     },
     {
         "id": 45,
@@ -446,8 +402,7 @@
         "definition": "合作者",
         "synonyms": "partner, contributor",
         "exampleEn": "I invited three collaborators to the private repository.",
-        "exampleCn": "我邀请了三位合作者加入这个私有仓库。",
-        "status": 0
+        "exampleCn": "我邀请了三位合作者加入这个私有仓库。"
     },
     {
         "id": 46,
@@ -456,8 +411,7 @@
         "definition": "SSH 密钥",
         "synonyms": "access key",
         "exampleEn": "You need to add your SSH key to GitHub to push code.",
-        "exampleCn": "你需要将你的 SSH 密钥添加到 GitHub 才能推送代码。",
-        "status": 0
+        "exampleCn": "你需要将你的 SSH 密钥添加到 GitHub 才能推送代码。"
     },
     {
         "id": 47,
@@ -466,8 +420,7 @@
         "definition": "网络钩子（用于触发外部系统，如 CI）",
         "synonyms": "HTTP callback",
         "exampleEn": "The webhook notifies the Jenkins server whenever code is pushed.",
-        "exampleCn": "每当代码推送时，网络钩子都会通知 Jenkins 服务器。",
-        "status": 0
+        "exampleCn": "每当代码推送时，网络钩子都会通知 Jenkins 服务器。"
     },
     {
         "id": 48,
@@ -476,8 +429,7 @@
         "definition": "差异比较工具",
         "synonyms": "comparison tool",
         "exampleEn": "Beyond Compare is a popular diff tool among developers.",
-        "exampleCn": "Beyond Compare 是开发者中很流行的差异比较工具。",
-        "status": 0
+        "exampleCn": "Beyond Compare 是开发者中很流行的差异比较工具。"
     },
     {
         "id": 49,
@@ -486,8 +438,7 @@
         "definition": "补丁",
         "synonyms": "fix, update file",
         "exampleEn": "Send me the patch file so I can apply it to my local repo.",
-        "exampleCn": "把补丁文件发给我，这样我就可以应用到我的本地仓库了。",
-        "status": 0
+        "exampleCn": "把补丁文件发给我，这样我就可以应用到我的本地仓库了。"
     },
     {
         "id": 50,
@@ -496,8 +447,7 @@
         "definition": "版本说明/更新日志",
         "synonyms": "change log",
         "exampleEn": "Check the release notes for a list of new features and fixes.",
-        "exampleCn": "查看版本说明以获取新功能和修复的列表。",
-        "status": 0
+        "exampleCn": "查看版本说明以获取新功能和修复的列表。"
     },
     {
         "id": 51,
@@ -506,8 +456,7 @@
         "definition": "二进制文件",
         "synonyms": "non-text file",
         "exampleEn": "Git is not ideal for tracking large binary files like videos.",
-        "exampleCn": "Git 不太适合跟踪像视频这样的大型二进制文件。",
-        "status": 0
+        "exampleCn": "Git 不太适合跟踪像视频这样的大型二进制文件。"
     },
     {
         "id": 52,
@@ -516,8 +465,7 @@
         "definition": "元数据（记录谁在什么时候提交等信息）",
         "synonyms": "commit info",
         "exampleEn": "A commit includes the author's metadata and a timestamp.",
-        "exampleCn": "提交包含作者的元数据和时间戳。",
-        "status": 0
+        "exampleCn": "提交包含作者的元数据和时间戳。"
     },
     {
         "id": 53,
@@ -526,8 +474,7 @@
         "definition": "游离头指针状态（HEAD 指向具体提交而非分支）",
         "synonyms": "detached HEAD",
         "exampleEn": "Be careful not to make changes while in a headless state.",
-        "exampleCn": "小心不要在游离头指针状态下进行改动。",
-        "status": 0
+        "exampleCn": "小心不要在游离头指针状态下进行改动。"
     },
     {
         "id": 54,
@@ -536,8 +483,7 @@
         "definition": "压缩并合并",
         "synonyms": "flattened integration",
         "exampleEn": "We use 'squash and merge' to keep the main branch history clean.",
-        "exampleCn": "我们使用“压缩并合并”来保持主分支历史整洁。",
-        "status": 0
+        "exampleCn": "我们使用“压缩并合并”来保持主分支历史整洁。"
     },
     {
         "id": 55,
@@ -546,8 +492,7 @@
         "definition": "强制推送",
         "synonyms": "overwrite remote",
         "exampleEn": "Avoid using force push on shared branches like 'main'.",
-        "exampleCn": "避免在像 'main' 这样的共享分支上使用强制推送。",
-        "status": 0
+        "exampleCn": "避免在像 'main' 这样的共享分支上使用强制推送。"
     },
     {
         "id": 56,
@@ -556,8 +501,7 @@
         "definition": "责备/追溯（查看每一行代码是谁写的）",
         "synonyms": "annotate, authorship",
         "exampleEn": "I used 'git blame' to find out who introduced this bug.",
-        "exampleCn": "我使用了 'git blame' 来查出是谁引入了这个 Bug。",
-        "status": 0
+        "exampleCn": "我使用了 'git blame' 来查出是谁引入了这个 Bug。"
     },
     {
         "id": 57,
@@ -566,8 +510,7 @@
         "definition": "最新的",
         "synonyms": "current, latest",
         "exampleEn": "Is your local branch up-to-date with the remote?",
-        "exampleCn": "你的本地分支和远端同步到最新了吗？",
-        "status": 0
+        "exampleCn": "你的本地分支和远端同步到最新了吗？"
     },
     {
         "id": 58,
@@ -576,8 +519,7 @@
         "definition": "分叉（本地和远端都有各自不同的新提交）",
         "synonyms": "branched off",
         "exampleEn": "Your branch has diverged from 'origin/main'.",
-        "exampleCn": "你的分支已经与 'origin/main' 发生了分叉。",
-        "status": 0
+        "exampleCn": "你的分支已经与 'origin/main' 发生了分叉。"
     },
     {
         "id": 59,
@@ -586,8 +528,7 @@
         "definition": "快照",
         "synonyms": "state capture",
         "exampleEn": "Every commit in Git is a snapshot of the entire project.",
-        "exampleCn": "Git 中的每一次提交都是整个项目的一个快照。",
-        "status": 0
+        "exampleCn": "Git 中的每一次提交都是整个项目的一个快照。"
     },
     {
         "id": 60,
@@ -596,8 +537,7 @@
         "definition": "Git 工作流模型",
         "synonyms": "branching strategy",
         "exampleEn": "Gitflow is a popular branching model for managing releases.",
-        "exampleCn": "Gitflow 是一种非常流行的管理发布的开发分支模型。",
-        "status": 0
+        "exampleCn": "Gitflow 是一种非常流行的管理发布的开发分支模型。"
     },
     {
         "id": 61,
@@ -606,8 +546,7 @@
         "definition": "代码规范检查工具",
         "synonyms": "style checker",
         "exampleEn": "The CI failed because the linter found styling issues.",
-        "exampleCn": "CI 失败了，因为代码检查工具发现了风格问题。",
-        "status": 0
+        "exampleCn": "CI 失败了，因为代码检查工具发现了风格问题。"
     },
     {
         "id": 62,
@@ -616,8 +555,7 @@
         "definition": "预发布环境/暂存中",
         "synonyms": "pre-production",
         "exampleEn": "Let's deploy the changes to staging for final testing.",
-        "exampleCn": "让我们把改动部署到预发布环境进行最终测试。",
-        "status": 0
+        "exampleCn": "让我们把改动部署到预发布环境进行最终测试。"
     },
     {
         "id": 63,
@@ -626,8 +564,7 @@
         "definition": "解决（如解决冲突）",
         "synonyms": "fix, settle",
         "exampleEn": "I need to resolve the issues raised in the code review.",
-        "exampleCn": "我需要解决代码审查中提出的问题。",
-        "status": 0
+        "exampleCn": "我需要解决代码审查中提出的问题。"
     },
     {
         "id": 64,
@@ -636,8 +573,7 @@
         "definition": "未提交的改动",
         "synonyms": "dirty state",
         "exampleEn": "You cannot switch branches if you have uncommitted changes.",
-        "exampleCn": "如果你有未提交的改动，你无法切换分支。",
-        "status": 0
+        "exampleCn": "如果你有未提交的改动，你无法切换分支。"
     },
     {
         "id": 65,
@@ -646,7 +582,6 @@
         "definition": "语义化版本控制 (如 1.2.3)",
         "synonyms": "standard versioning",
         "exampleEn": "Our project follows Semantic Versioning for all releases.",
-        "exampleCn": "我们的项目在所有发布版本中都遵循语义化版本规范。",
-        "status": 0
+        "exampleCn": "我们的项目在所有发布版本中都遵循语义化版本规范。"
     }
 ]

@@ -1,0 +1,177 @@
+[
+  {
+    "theme": "theme-blue",
+    "words": [
+      {
+        "en": "Remarkable",
+        "phonetic": "/rɪˈmɑːrkəbl/",
+        "cn": "非凡的，值得注意的"
+      },
+      {
+        "en": "Incredible",
+        "phonetic": "/ɪnˈkredəbl/",
+        "cn": "难以置信的，极好的"
+      },
+      {
+        "en": "Reasonable",
+        "phonetic": "/ˈriːznəbl/",
+        "cn": "合理的 (如合理的默认值)"
+      },
+      {
+        "en": "Considerable",
+        "phonetic": "/kənˈsɪdərəbl/",
+        "cn": "相当大的，可观的 (指数量或程度)"
+      }
+    ]
+  },
+  {
+    "theme": "theme-blue",
+    "words": [
+      {
+        "en": "Scalable",
+        "phonetic": "/ˈskeɪləbl/",
+        "cn": "可扩展的"
+      },
+      {
+        "en": "Maintainable",
+        "phonetic": "/meɪnˈteɪnəbl/",
+        "cn": "可维护的 (代码清晰、易于修改)"
+      },
+      {
+        "en": "Configurable",
+        "phonetic": "/kənˈfɪɡjərəbl/",
+        "cn": "可配置的 (非硬编码，可通过参数调整)"
+      },
+      {
+        "en": "Reusable",
+        "phonetic": "/riːˈjuːzəbl/",
+        "cn": "可重用的 (如组件、工具类)"
+      },
+      {
+        "en": "Immutable",
+        "phonetic": "/ɪˈmjuːtəbl/",
+        "cn": "不可变的 (并发编程核心概念，对象一旦创建不可修改)"
+      },
+      {
+        "en": "Nullable",
+        "phonetic": "/ˈnʌləbl/",
+        "cn": "可为空的 (数据库字段或变量允许为null)"
+      },
+      {
+        "en": "Serializable",
+        "phonetic": "/ˌsɪriəˈlaɪzəbl/",
+        "cn": "可序列化的 (对象转字节流，Java常用接口)"
+      },
+      {
+        "en": "Testable",
+        "phonetic": "/ˈtestəbl/",
+        "cn": "可测试的 (逻辑解耦，便于写单元测试)"
+      },
+      {
+        "en": "Deployable",
+        "phonetic": "/dɪˈplɔɪəbl/",
+        "cn": "可部署的 (指构建好的软件包/制品)"
+      }
+    ]
+  },
+  {
+    "theme": "theme-green",
+    "words": [
+      {
+        "en": "Reliability",
+        "phonetic": "",
+        "cn": "可靠性，稳定性"
+      },
+      {
+        "en": "Maintainability",
+        "phonetic": "/meɪnˌteɪnəˈbɪləti/",
+        "cn": "可维护性 (代码易于修改和维护)"
+      },
+      {
+        "en": "Compatibility",
+        "phonetic": "/kəmˌpætəˈbɪləti/",
+        "cn": "兼容性 (版本或系统之间)"
+      },
+      {
+        "en": "Stability",
+        "phonetic": "/stəˈbɪləti/",
+        "cn": "稳定性 (系统运行状态)"
+      },
+      {
+        "en": "Flexibility",
+        "phonetic": "/ˌfleksəˈbɪləti/",
+        "cn": "灵活性 (架构易于适应变化)"
+      },
+      {
+        "en": "Vulnerability",
+        "phonetic": "/ˌvʌlnərəˈbɪləti/",
+        "cn": "漏洞，脆弱性 (安全领域核心词)"
+      },
+      {
+        "en": "Observability",
+        "phonetic": "/əbˌzɜːrvəˈbɪləti/",
+        "cn": "可观测性 (监控、日志、链路追踪)"
+      },
+      {
+        "en": "Portability",
+        "phonetic": "/ˌpɔːrtəˈbɪləti/",
+        "cn": "可移植性 (如Docker或Java跨平台)"
+      },
+      {
+        "en": "Usability",
+        "phonetic": "/ˌjuːzəˈbɪləti/",
+        "cn": "易用性 (用户体验)"
+      }
+    ]
+  },
+  {
+    "theme": "theme-purple",
+    "words": [
+      {
+        "en": "Initialize",
+        "phonetic": "",
+        "cn": "初始化"
+      },
+      {
+        "en": "Optimize",
+        "phonetic": "",
+        "cn": "优化"
+      },
+      {
+        "en": "Customize",
+        "phonetic": "",
+        "cn": "定制，自定义"
+      },
+      {
+        "en": "Visualize",
+        "phonetic": "",
+        "cn": "可视化"
+      }
+    ]
+  },
+  {
+    "theme": "theme-orange",
+    "words": [
+      {
+        "en": "Implementation",
+        "phonetic": "",
+        "cn": "实现，实施"
+      },
+      {
+        "en": "Configuration",
+        "phonetic": "",
+        "cn": "配置"
+      },
+      {
+        "en": "Exception",
+        "phonetic": "",
+        "cn": "异常"
+      },
+      {
+        "en": "Integration",
+        "phonetic": "",
+        "cn": "集成"
+      }
+    ]
+  }
+]
