@@ -1,0 +1,1473 @@
+[
+  {
+  "scenario": "1 聚会相识 (Meeting at a party)。Todd 自我介绍并认识 John 的表弟 Matt，两人谈论家乡、爱好及未来的行程安排 [1]",
+  "dialogue": [
+    {
+      "speaker": "Todd",
+      "text": "Hi—you must be John’s cousin Matt, **right**? From San Diego?"
+    },
+    {
+      "speaker": "Matt",
+      "text": "**Correct**! I **just got in** last night."
+    },
+    {
+      "speaker": "Todd",
+      "text": "I’m Todd, John’s roommate from Tech. **Glad to meet you**. **I can assure you that** I’m not anything like what John has told you."
+    },
+    {
+      "speaker": "Matt",
+      "text": "I’m happy to meet you, too—and, yes—I have heard about you! Football player and **party animal** extraordinaire."
+    },
+    {
+      "speaker": "Todd",
+      "text": "Football, yes—and **as a matter of fact**, I do like parties. But **tell me more about yourself** and **what you do** in San Diego."
+    },
+    {
+      "speaker": "Matt",
+      "text": "Well, I’m more (of) a surfer than a football player. You know, San Diego has a fantastic coast—and we can surf all day and then party on the beach at night."
+    },
+    {
+      "speaker": "Todd",
+      "text": "That sounds **awesome**. How long are you staying?"
+    },
+    {
+      "speaker": "Matt",
+      "text": "Well, I’ll be here for two weeks. John has promised me a **nonstop schedule**—kind of a **mix** of sightseeing, meeting his friends, checking out the **local scene**, and—hopefully—camping in the mountains for **a couple of days**."
+    },
+    {
+      "speaker": "Todd",
+      "text": "John’s a **good guy**—and **you can be sure** he knows the **local scene**. He knows everybody in town. I’m sure he’ll **show you a good time**. And his friends are here to help."
+    },
+    {
+      "speaker": "Matt",
+      "text": "**Thanks so much**—I really appreciate that. I’m still a bit jet-lagged at the moment but should be in **good shape** by tomorrow. I’m **looking forward to** hearing what John has **in store for** me. . . ."
+    },
+    {
+      "speaker": "Todd",
+      "text": "Don’t worry. We’ll all take good care of you. And don’t be surprised if we **show up on your doorstep** in San Diego one day, ready for surfing!"
+    }
+  ],
+  "key_structures": [
+    {
+      "pattern": "Right? / Correct!",
+      "example": "Hi—you must be John’s cousin Matt, right? ... Correct!",
+      "explanation": "非正式的确认信息方式。“Right?”用于询问刚才所说是真实的，而“Correct!”则是非正式的肯定回答 [2], [3]。"
+    },
+    {
+      "pattern": "To get in",
+      "example": "I just got in last night.",
+      "explanation": "意思是“到达”（arrive），通常用于过去式（got in）表示刚到某地 [4]。"
+    },
+    {
+      "pattern": "As a matter of fact",
+      "example": "As a matter of fact, I do like parties.",
+      "explanation": "常用短语，表示“事实上”或“其实”，用于引入对之前话题的确认或修正，也可以放在动词之后 [5]。"
+    },
+    {
+      "pattern": "Tell me about yourself",
+      "example": "Tell me more about yourself and what you do...",
+      "explanation": "一种礼貌的方式，表示有兴趣了解对方，但这比直接提问更好，因为被问者可以决定分享哪些信息 [6]。"
+    },
+    {
+      "pattern": "The local scene",
+      "example": "checking out the local scene",
+      "explanation": "指特定地区提供的文化和娱乐活动范围（当地的圈子/好玩的地方）[7]。"
+    },
+    {
+      "pattern": "To show someone a good time",
+      "example": "I’m sure he’ll show you a good time.",
+      "explanation": "意思是确保某人玩得开心，即好好招待某人 [7]。"
+    },
+    {
+      "pattern": "Show up on someone’s doorstep",
+      "example": "don’t be surprised if we show up on your doorstep",
+      "explanation": "意思是未经通知就去拜访某人 [8]。"
+    }
+  ]
+},
+  {
+  "scenario": "2 初次相识 (Getting acquainted)。Lauren 和 Sarah 是新室友，她们谈论彼此的兴趣（棒球、舞蹈）、计划周末活动，并讨论重新布置房间。",
+  "dialogue": [
+    {
+      "speaker": "Lauren",
+      "text": "Hi—you must be Sarah. **I can tell** from your picture. I’m Lauren. **Finally** we meet! So we’re going to be **roomies** this semester!"
+    },
+    {
+      "speaker": "Sarah",
+      "text": "Yes, I recognize you from your photo, too! I’m so glad to meet you in person—and I see from your T-shirt that you like baseball. I’m a **big fan**, too!"
+    },
+    {
+      "speaker": "Lauren",
+      "text": "Well, the T-shirt was a **going-away present** from my brother, who’s a baseball player. Look on the back—it has a photo of all the players on his team. They **actually** won the city championship this summer."
+    },
+    {
+      "speaker": "Sarah",
+      "text": "That’s **awesome**. **I tell you**, I’m not very athletic, but I **love** to watch baseball, **even if** it’s a **Little League** game. **You could say** I’m a professional spectator. What about you, do you play a sport?"
+    },
+    {
+      "speaker": "Lauren",
+      "text": "Yes, I play tennis. **As a matter of fact**, I have a **scholarship**, and I’m going to play for the university. Now **tell me**, what else do you like to do?"
+    },
+    {
+      "speaker": "Sarah",
+      "text": "Well—what I like to do best is dance. I’m studying classical ballet, but I also like to dance to popular music."
+    },
+    {
+      "speaker": "Lauren",
+      "text": "Cool. We **have a lot in common**. I like to dance, too. Think you’ll be **up for** checking out the **local clubs** this weekend?"
+    },
+    {
+      "speaker": "Sarah",
+      "text": "Oh, **yeah**. And the restaurants, too. **Speaking of which**—are you hungry? I’d love to **grab a bite** before it gets too late. I’m starving!"
+    },
+    {
+      "speaker": "Lauren",
+      "text": "**Are you kidding me?** I’m always **up for** going out! How about trying the place up the street? I’m kind of hungry for a good hamburger."
+    },
+    {
+      "speaker": "Sarah",
+      "text": "(Later) Lauren, **what do you think of** our room?"
+    },
+    {
+      "speaker": "Lauren",
+      "text": "**To be honest with you**, I really **can’t stand** that dark color on the walls. It’s, like, really depressing. I prefer light colors. **Plus**, I’d like to change the rug and the bedspreads. Do you like them?"
+    },
+    {
+      "speaker": "Sarah",
+      "text": "No, I agree with you. They’re horrible. With a **couple of** coats of paint and a few small changes, we’ll make this room comfortable and cozy. Everybody will want to **hang out** here."
+    },
+    {
+      "speaker": "Lauren",
+      "text": "**Man**, I’m so relieved! I think we’re really going to **get along**. I’m going to call my mom right now and tell her how cool my new **roomie** is."
+    }
+  ],
+  "key_structures": [
+    {
+      "pattern": "I can tell",
+      "example": "I can tell from your picture.",
+      "explanation": "表示能够不经告知就看出来或知道某事。"
+    },
+    {
+      "pattern": "Big fan",
+      "example": "I’m a big fan, too!",
+      "explanation": "表示非常喜欢某事物。如果不喜欢，可以说 'I'm not a big fan of...'。"
+    },
+    {
+      "pattern": "Up for",
+      "example": "Think you’ll be up for checking out the local clubs?",
+      "explanation": "意思是想要做某事（want to do it），或者有兴致做某事。"
+    },
+    {
+      "pattern": "Speaking of which",
+      "example": "Speaking of which—are you hungry?",
+      "explanation": "用于表示刚才提到的话题让你想起了与之相关的另一条信息（顺便提一下/说到这个）。"
+    },
+    {
+      "pattern": "Grab a bite",
+      "example": "I’d love to grab a bite before it gets too late.",
+      "explanation": "意思是快速地吃点东西（to get something to eat quickly）。"
+    },
+    {
+      "pattern": "Are you kidding me?",
+      "example": "Are you kidding me? I’m always up for going out!",
+      "explanation": "在这里并非真的问对方是否在开玩笑，而是表示某事非常真实（或非常不真实），以至于无需多言。此处表示“那还用说吗，我当然愿意”。"
+    },
+    {
+      "pattern": "To be honest with you",
+      "example": "To be honest with you, I really can’t stand that dark color...",
+      "explanation": "用于引入一段你认为对方可能不太想听的实话或坦率的意见。"
+    },
+    {
+      "pattern": "Can't stand",
+      "example": "I really can’t stand that dark color.",
+      "explanation": "意思是无法忍受（not tolerate）或非常不喜欢（not like）。"
+    },
+    {
+      "pattern": "Get along",
+      "example": "I think we’re really going to get along.",
+      "explanation": "指与某人相处融洽，没有矛盾或争吵。"
+    }
+  ]
+},
+  {
+  "scenario": "3 谈论室友 (Talking about roommates)。Eric 和 Michael 互相描述各自的室友，讨论他们的生活习惯（如作息、整洁程度）以及与室友的相处情况。",
+  "dialogue": [
+    {
+      "speaker": "Eric",
+      "text": "So, Michael, **what’s your new roommate like**?"
+    },
+    {
+      "speaker": "Michael",
+      "text": "Well, if you have all day, I’ll describe him for you. He’s **quite the character**."
+    },
+    {
+      "speaker": "Eric",
+      "text": "I don’t have all day, **dude**—but **basically**—do you get along with him?"
+    },
+    {
+      "speaker": "Michael",
+      "text": "**Actually**, yeah—but that’s only because we **hardly ever** see each other. The guy sleeps all day. Sometimes he gets up just to go to his classes, and then he comes back to the room and goes back to bed. Then he’ll get up at midnight and study all night."
+    },
+    {
+      "speaker": "Eric",
+      "text": "**Really**? You don’t eat together, **then**?"
+    },
+    {
+      "speaker": "Michael",
+      "text": "**The truth is**, I don’t even know when he eats, or where."
+    },
+    {
+      "speaker": "Eric",
+      "text": "Then **at least** he doesn’t leave a mess in the kitchen."
+    },
+    {
+      "speaker": "Michael",
+      "text": "No! The guy is incredibly neat. He actually leaves the bathroom clean every day—and he doesn’t seem to have dirty clothes. He’s **like** a ghost."
+    },
+    {
+      "speaker": "Eric",
+      "text": "**Man**, I think you have the perfect roommate!"
+    },
+    {
+      "speaker": "Michael",
+      "text": "**What about** yours? **What’s he like**?"
+    },
+    {
+      "speaker": "Eric",
+      "text": "Well, he’s the exact opposite of yours. We’re a lot alike, and we’re together a lot. **I mean**, we have two classes together and we’re in the same **fraternity**, so we’re really good friends."
+    },
+    {
+      "speaker": "Michael",
+      "text": "Sounds to me like you have the ideal roommate!"
+    },
+    {
+      "speaker": "Eric",
+      "text": "Well, yes—and no. Mine is a disaster in the house. **In the first place**, he always leaves a mess in the kitchen; he doesn’t wash the dishes or take out the trash. **Plus**, he throws his clothes all over the place. **Not to mention** how he leaves the bathroom . . ."
+    },
+    {
+      "speaker": "Michael",
+      "text": "**Come on**, Eric—he sounds a lot like you. **No wonder** you get along so well!"
+    }
+  ],
+  "key_structures": [
+    {
+      "pattern": "What is ... like?",
+      "example": "What’s your new roommate like?",
+      "explanation": "用于询问对某人、某地或某事物的描述（性质、特征等）。"
+    },
+    {
+      "pattern": "Quite the character",
+      "example": "He’s quite the character.",
+      "explanation": "指某人很不寻常、独特或很有个性（unusual in some way）。"
+    },
+    {
+      "pattern": "Hardly ever",
+      "example": "we hardly ever see each other.",
+      "explanation": "意思是“几乎从不”（almost never）。"
+    },
+    {
+      "pattern": "The truth is / Actually",
+      "example": "The truth is, I don’t even know when he eats...",
+      "explanation": "用于引出事实真相，即使这个事实可能令人惊讶或出乎意料。"
+    },
+    {
+      "pattern": "In the first place",
+      "example": "In the first place, he always leaves a mess in the kitchen...",
+      "explanation": "用于提出不喜欢（或喜欢）某事物的第一个理由，随后常用 'Plus' 或 'In the second place' 引出后续理由。"
+    },
+    {
+      "pattern": "Not to mention",
+      "example": "Not to mention how he leaves the bathroom...",
+      "explanation": "用于引入一系列例子中的最后一点，通常是为了强调更糟糕（或更好）的情况。"
+    },
+    {
+      "pattern": "No wonder",
+      "example": "No wonder you get along so well!",
+      "explanation": "表示事情很明显、不足为奇（It is obvious）。"
+    },
+    {
+      "pattern": "Come on",
+      "example": "Come on, Eric—he sounds a lot like you.",
+      "explanation": "在这里用于表示认为对方有些夸大其词，或者用于促使对方重新考虑。"
+    }
+  ]
+},
+  {
+  "scenario": "4 偶遇朋友 (Running into a friend)。Nicole 和 Jen 在街上偶遇，两人许久未见 (haven't seen for ages)。她们互相更新了工作近况（Jen 在服装店工作，Nicole 在做服务员并申请教师职位），最后 Nicole 决定去 Jen 的店里买衣服。",
+  "dialogue": [
+    {
+      "speaker": "Nicole",
+      "text": "Hi, Jen. **What’s up**? I haven’t seen you **for ages**."
+    },
+    {
+      "speaker": "Jen",
+      "text": "Nicole! **Fancy running into you here**. Do you have time for a cup of coffee?"
+    },
+    {
+      "speaker": "Nicole",
+      "text": "Sure. We really need to **catch up**. Do you work around here?"
+    },
+    {
+      "speaker": "Jen",
+      "text": "At the dress shop across the street. I’m a sales assistant for the time being, but I’m hoping they’ll promote me to buyer after I have some experience **on the floor**."
+    },
+    {
+      "speaker": "Nicole",
+      "text": "Oh—I love that shop. Their clothes are so **trendy** and different from the **run of the mill**. You look fantastic—**I’ll bet** their sales have gone up since you started working there."
+    },
+    {
+      "speaker": "Jen",
+      "text": "Well—**I try**! **The thing is**, I enjoy the work, because I love the clothes, and I like helping people find what works for them. It’s actually quite fulfilling."
+    },
+    {
+      "speaker": "Nicole",
+      "text": "Good for you. And I think the idea of becoming a buyer is great. **Before you know it**, you’ll be working on your own designs. I remember how you **used to** dream of being a fashion designer."
+    },
+    {
+      "speaker": "Jen",
+      "text": "Yeah, and I think this is a **step in the right direction**. Now, **what are you up to**? The last I heard, you were **about to** move across country. I hope you’re back to stay!"
+    },
+    {
+      "speaker": "Nicole",
+      "text": "**As a matter of fact**, I just got back a **couple of** months ago. I’m glad I went, because now I know I really want to be here. I’m working as a waitress right now but am hoping to get a teaching job. I’ve applied to most of the local school districts so **have my fingers crossed** I’ll get something this fall."
+    },
+    {
+      "speaker": "Jen",
+      "text": "What do you want to teach? I’ve heard there are openings for high school teachers in Howard County."
+    },
+    {
+      "speaker": "Nicole",
+      "text": "**No way**! I haven’t even applied there. I’ll do it **as soon as** I get home. **Man**, that’ll be **awesome** if they need a biology teacher. Thanks for the **tip**! **Which reminds me**—waiting tables isn’t all bad. On weekends I get pretty good **tips**. And **banking on** the info you just gave me, I think I’ll follow you back to work and **splurge** on a new dress!"
+    },
+    {
+      "speaker": "Jen",
+      "text": "Great. I already have in mind some things for you to **try on**."
+    },
+    {
+      "speaker": "Nicole",
+      "text": "(Later) Wow. I love this one. I guess I’m **getting ahead of myself**, but I **have a feeling** this is just what I need for the interview with the principal."
+    },
+    {
+      "speaker": "Jen",
+      "text": "And for the first day of school!"
+    },
+    {
+      "speaker": "Nicole",
+      "text": "**Thanks so much** for your help. Now I’m really **pumped**! I’m so happy I **ran into** you today."
+    },
+    {
+      "speaker": "Jen",
+      "text": "**Me, too**. Let’s **make sure** we **get together** more often."
+    },
+    {
+      "speaker": "Nicole",
+      "text": "Yeah. I promise I’ll **keep in touch**."
+    },
+    {
+      "speaker": "Jen",
+      "text": "Take care, and **let me know** what happens. Bye for now."
+    },
+    {
+      "speaker": "Nicole",
+      "text": "Bye—and thanks again!"
+    }
+  ],
+  "key_structures": [
+    {
+      "pattern": "Fancy running into you here",
+      "example": "Nicole! Fancy running into you here.",
+      "explanation": "意为“真没想到在这里见到你”。常用于在不常遇见某人的地方偶然相遇时表达惊讶。"
+    },
+    {
+      "pattern": "Run of the mill",
+      "example": "Their clothes are so trendy and different from the run of the mill.",
+      "explanation": "形容某事物非常普通、平淡无奇或毫无特色（very ordinary or nondescript）。"
+    },
+    {
+      "pattern": "Have one's fingers crossed",
+      "example": "I... have my fingers crossed I’ll get something this fall.",
+      "explanation": "意为祈求好运，表示强烈希望某事发生（indicate strong desire or hope）。"
+    },
+    {
+      "pattern": "Bank on",
+      "example": "And banking on the info you just gave me...",
+      "explanation": "意为依靠、指望或信任某些信息（rely on / count on）。"
+    },
+    {
+      "pattern": "Splurge",
+      "example": "I think I’ll follow you back to work and splurge on a new dress!",
+      "explanation": "指因为非常想要某物而花费比必要更多的钱（spend more money than necessary），即“挥霍”或“破费”一下。"
+    },
+    {
+      "pattern": "Get ahead of oneself",
+      "example": "I guess I’m getting ahead of myself...",
+      "explanation": "指根据尚未发生的事情做计划，即“操之过急”或“过早乐观”（类似 'count one’s chickens before they hatch'）。"
+    },
+    {
+      "pattern": "Pumped",
+      "example": "Now I’m really pumped!",
+      "explanation": "意为非常兴奋（very excited），为某个场合或事件做好了准备。"
+    }
+  ]
+},
+  {
+  "scenario": "5 预约看病 (Making an appointment with a doctor)。Lisa 打电话给诊所预约 Dr. Sharp 做入职体检。由于 Dr. Sharp 预约已满，她接受了 Dr. Manning 的预约，并询问了体检前的注意事项（如禁食）。",
+  "dialogue": [
+    {
+      "speaker": "Receptionist",
+      "text": "Drs. Manning and Sharp. How can I help you?"
+    },
+    {
+      "speaker": "Lisa",
+      "text": "Hello. My name is Lisa Peterson. **I’d like to make an appointment** to see Dr. Sharp, **hopefully** sometime next week."
+    },
+    {
+      "speaker": "Receptionist",
+      "text": "And what is it you want to see him about?"
+    },
+    {
+      "speaker": "Lisa",
+      "text": "I need a complete physical for a new job I’m **about to** take."
+    },
+    {
+      "speaker": "Receptionist",
+      "text": "Do you have a form that has to be filled out?"
+    },
+    {
+      "speaker": "Lisa",
+      "text": "Yes, I do—and it looks like I’ll need a pretty thorough exam."
+    },
+    {
+      "speaker": "Receptionist",
+      "text": "Can you fax it to me? That way I’ll know how much time to allot for your appointment."
+    },
+    {
+      "speaker": "Lisa",
+      "text": "Sure. Can you give me your fax number?"
+    },
+    {
+      "speaker": "Receptionist",
+      "text": "It’s 202-739-5906."
+    },
+    {
+      "speaker": "Lisa",
+      "text": "Good. I’ll fax it to you right away. Will you call me back when you get it?"
+    },
+    {
+      "speaker": "Receptionist",
+      "text": "Right."
+    },
+    {
+      "speaker": "Receptionist",
+      "text": "(Later) Hello, Lisa. This is Dr. Sharp’s office. I see you’re going to need an hour-long appointment, and Dr. Sharp won’t be able to do that for at least another month. I could give you an appointment with Dr. Manning next Thursday, **though**, at 1 p.m. **Would you like to** take that?"
+    },
+    {
+      "speaker": "Lisa",
+      "text": "Um . . . yes, that sounds fine. Is there anything I should do to prepare for the exam?"
+    },
+    {
+      "speaker": "Receptionist",
+      "text": "Yes. I know this will be difficult, but you **mustn’t** eat or drink anything after midnight the night before. I **wish** I could give you an appointment earlier in the day, but we don’t have any other openings."
+    },
+    {
+      "speaker": "Lisa",
+      "text": "OK. But if there is a cancellation earlier in the day, please let me know. I’d much **rather** come in early in the morning."
+    },
+    {
+      "speaker": "Receptionist",
+      "text": "**Of course**."
+    },
+    {
+      "speaker": "Lisa",
+      "text": "Thanks very much. Good-bye."
+    }
+  ],
+  "key_structures": [
+    {
+      "pattern": "I'd like to make an appointment",
+      "example": "I’d like to make an appointment to see Dr. Sharp.",
+      "explanation": "预约医生时的标准用语。表达想要做某事（want to do）的礼貌方式。"
+    },
+    {
+      "pattern": "Though",
+      "example": "I could give you an appointment with Dr. Manning next Thursday, though...",
+      "explanation": "放在句尾或句中时，表示“然而”或“但是”（however），指出有一个替代方案。"
+    },
+    {
+      "pattern": "Mustn't (Must not)",
+      "example": "you mustn’t eat or drink anything after midnight...",
+      "explanation": "表示禁止或强烈的建议（prohibition or strong advice），意为“千万不要”或“禁止”。"
+    },
+    {
+      "pattern": "I wish...",
+      "example": "I wish I could give you an appointment earlier in the day...",
+      "explanation": "用于表达对现状的遗憾，后接虚拟语气（如 could/were），表示希望事情是某种样子但实际上并非如此。"
+    },
+    {
+      "pattern": "Would rather",
+      "example": "I’d much rather come in early in the morning.",
+      "explanation": "用于表达偏好（preference）。此处 'I'd' 是 'I would' 的缩写，意为“宁愿”或“更喜欢”。"
+    },
+    {
+      "pattern": "Of course",
+      "example": "Of course.",
+      "explanation": "表示同意或事情显而易见（agreed to or obvious），在此处表示接待员答应了Lisa的请求。"
+    }
+  ]
+},
+  {
+  "scenario": "6 寻找新公寓 (Looking for a new apartment)。Ted 在租赁代理处咨询，接待员将他引荐给 Shirley。Ted 描述了他对公寓的要求（地点、设施、预算），并最终决定考虑与朋友合租以符合预算。",
+  "dialogue": [
+    {
+      "speaker": "Receptionist",
+      "text": "Good morning! How can I help you?"
+    },
+    {
+      "speaker": "Ted",
+      "text": "I’d like to rent an apartment in this neighborhood and wonder if you can help me."
+    },
+    {
+      "speaker": "Receptionist",
+      "text": "You need to talk to Shirley—she’s our **go-to** agent for apartment rentals. Here, I’ll take you to her office."
+    },
+    {
+      "speaker": "Shirley",
+      "text": "Hello, I’m Shirley. Have a seat and tell me what kind of apartment you’re looking for. Is it just for you?"
+    },
+    {
+      "speaker": "Ted",
+      "text": "Well, that depends on what’s available. I’d really rather live alone, but if I don’t see anything that works, I could share a bigger place with a friend of mine."
+    },
+    {
+      "speaker": "Shirley",
+      "text": "OK. First, tell me what you **have in mind**."
+    },
+    {
+      "speaker": "Ted",
+      "text": "The most important thing is the location. I want to be in the city, **preferably** in this neighborhood, so I can walk to the university and to the metro station. I don’t have a car."
+    },
+    {
+      "speaker": "Shirley",
+      "text": "OK, then you **don’t mind** if there’s no parking space."
+    },
+    {
+      "speaker": "Ted",
+      "text": "Exactly. But I want a secure building. I also want it to have a living room, a dining room, one bedroom, and, of course, a modern kitchen and bathroom. I don’t really need **all the bells and whistles**, but I would like to have a balcony."
+    },
+    {
+      "speaker": "Shirley",
+      "text": "And what is your budget? I mean, what monthly rent are you thinking about, including **utilities**?"
+    },
+    {
+      "speaker": "Ted",
+      "text": "I’m hoping to find something for about $700 a month."
+    },
+    {
+      "speaker": "Shirley",
+      "text": "Look, I can tell you right now there are no decent apartments in this area under $1,200 a month—and none of them have dining rooms or balconies. There are modern, secure buildings that are actually near the metro—but they’re at least six miles outside of the city."
+    },
+    {
+      "speaker": "Ted",
+      "text": "There’s no way I’m going to live way out there. Do you think you could find a two-bedroom place closer in for, **say**, $1,400 a month? Something I could share with my friend?"
+    },
+    {
+      "speaker": "Shirley",
+      "text": "Let me do a little research this morning and see what’s **out there**. I’m not going to tell you that it’s impossible, but I can’t promise anything, either. Give me a **couple of** hours to see what’s out there. If I find anything **worthwhile**, we can go **have a look** this afternoon. **In the meantime**, I need you to fill out this form so I have your contact information. **As a matter of fact**, both you and your friend will have to fill out an application in order to be approved as tenants. I’m assuming you want a one-year lease. Is that right? Oh, **one more thing**: you don’t have a pet, do you?"
+    },
+    {
+      "speaker": "Ted",
+      "text": "Yes, I’m willing to sign a one-year lease, and no, I don’t have a pet. And I’ll make sure my friend **gets rid of** his dog. He can leave it with his family—they have a place in the **country**. I’d better go give him a **heads-up** right now."
+    },
+    {
+      "speaker": "Shirley",
+      "text": "Good. Be sure both of you bring your financial and credit information with you."
+    },
+    {
+      "speaker": "Ted",
+      "text": "Right. We’ll see you at noon, then. Thank you very much."
+    },
+    {
+      "speaker": "Shirley",
+      "text": "See you later."
+    }
+  ],
+  "key_structures": [
+    {
+      "pattern": "Go-to",
+      "example": "she’s our go-to agent for apartment rentals.",
+      "explanation": "形容词，指某人、某地或某物是人们在有特定需求时首先会去依靠或寻找的（首选的/必找的）。"
+    },
+    {
+      "pattern": "Have in mind",
+      "example": "First, tell me what you have in mind.",
+      "explanation": "意思是心里对想要的东西有个大概的想法或构思。"
+    },
+    {
+      "pattern": "Preferably",
+      "example": "preferably in this neighborhood",
+      "explanation": "表示某人的首选或最希望的情况（最好是...）。"
+    },
+    {
+      "pattern": "All the bells and whistles",
+      "example": "I don’t really need all the bells and whistles",
+      "explanation": "指房屋或其他产品中最新、最现代、通常也是昂贵的附加功能或花哨配置。"
+    },
+    {
+      "pattern": "Utilities",
+      "example": "including utilities?",
+      "explanation": "指维持房屋运作所需的服务费用，如水费、排污费、暖气费、电费等。"
+    },
+    {
+      "pattern": "Say",
+      "example": "for, say, $1,400 a month?",
+      "explanation": "用于引入一个可能性的例子或假设（比如说/例如）。"
+    },
+    {
+      "pattern": "Out there",
+      "example": "see what’s out there",
+      "explanation": "指在现实世界中、目前的市场上（有什么可供选择的）。"
+    },
+    {
+      "pattern": "In the meantime",
+      "example": "In the meantime, I need you to fill out this form",
+      "explanation": "指在两个事件之间的那段时间（在此期间/同时）。"
+    },
+    {
+      "pattern": "Get rid of",
+      "example": "I’ll make sure my friend gets rid of his dog.",
+      "explanation": "意思是处理掉、摆脱掉某物，确保不再持有它。"
+    },
+    {
+      "pattern": "A heads-up",
+      "example": "give him a heads-up right now",
+      "explanation": "指预先的告知或警告，让对方做好准备（打个招呼/提个醒）。"
+    },
+    {
+      "pattern": "One more thing",
+      "example": "Oh, one more thing: you don’t have a pet, do you?",
+      "explanation": "用于在一系列谈话结束前，补充一个差点忘记的重要事项或问题。"
+    }
+  ]
+},
+{
+  "scenario": "7 帮助同学 (Helping a classmate)。Jim 请求 Ali 借阅生物笔记，Ali 爽快答应并提出反向请求：希望 Jim 能在他和女友约会时，带上女友的姐姐（凑成四人约会）。",
+  "dialogue": [
+    {
+      "speaker": "Jim",
+      "text": "Hey, buddy, **can I ask you a favor**?"
+    },
+    {
+      "speaker": "Ali",
+      "text": "Sure—**what can I do for you**?"
+    },
+    {
+      "speaker": "Jim",
+      "text": "**I wonder if you’d be willing to** lend me your biology notes. I **missed** a couple of classes when I was sick, and now I’m totally lost."
+    },
+    {
+      "speaker": "Ali",
+      "text": "OK. **Why don’t we** go to the library and copy my notebook and then go to your place and **go over** the lessons. I’m **acing** biology this semester, so I’m sure I can get you **back on track**."
+    },
+    {
+      "speaker": "Jim",
+      "text": "(Later) Oh, man, that will be a **load off my shoulders**. I can’t thank you enough."
+    },
+    {
+      "speaker": "Ali",
+      "text": "Glad to help. **As a matter of fact**, I have a favor to ask of you."
+    },
+    {
+      "speaker": "Jim",
+      "text": "**Oh yeah**? **Don’t tell me** you need more advice about your girlfriend!"
+    },
+    {
+      "speaker": "Ali",
+      "text": "Well, **not exactly**. **It’s that** her sister is coming up for the weekend, and I need to find her a **date**. **Any chance** you’d go out with her on Saturday night? We’d all four go to the theater and then out to eat."
+    },
+    {
+      "speaker": "Jim",
+      "text": "Look, I already agreed to go to the movies with Ben. But **how about if** I invite her to go to the movies with us **instead**? **Of course**, afterward we’d **grab a bite** to eat, but it won’t be anything **fancy**."
+    },
+    {
+      "speaker": "Ali",
+      "text": "That sounds great to me. Let me see what Jessica thinks about it, and **I’ll get back to you ASAP**."
+    },
+    {
+      "speaker": "Jim",
+      "text": "Good. And **by the way**, thanks again for the help with biology. I think I’m **on top of it** now."
+    },
+    {
+      "speaker": "Ali",
+      "text": "No problem. **Don’t hesitate** to call me if you have any questions."
+    },
+    {
+      "speaker": "Jim",
+      "text": "Thanks, buddy. **See you later**."
+    }
+  ],
+  "key_structures": [
+    {
+      "pattern": "I wonder if you’d be willing to...",
+      "example": "I wonder if you’d be willing to lend me your biology notes.",
+      "explanation": "一种非常礼貌的提出请求的方式，询问对方是否愿意做某事。"
+    },
+    {
+      "pattern": "Back on track",
+      "example": "I’m sure I can get you back on track.",
+      "explanation": "意为“重回正轨”，指在经历困难或中断后恢复正常状态。"
+    },
+    {
+      "pattern": "A load off my shoulders/mind",
+      "example": "Oh, man, that will be a load off my shoulders.",
+      "explanation": "指卸下了重担，形容如释重负、松了一口气。"
+    },
+    {
+      "pattern": "Don't tell me...",
+      "example": "Don’t tell me you need more advice about your girlfriend!",
+      "explanation": "用于表示你不希望某个答案是真的（通常带有惊讶或无奈的语气），意为“别告诉我是... / 我怕你要说...”。"
+    },
+    {
+      "pattern": "ASAP",
+      "example": "I’ll get back to you ASAP.",
+      "explanation": "As soon as possible 的缩写，意为“尽快”。"
+    }
+  ]
+},
+{
+  "scenario": "8 给朋友建议 (Advice to a friend)。Pat 打电话向 Katie 倾诉（cry on shoulder），抱怨工作中的苛刻老板以及家里不讲卫生的室友。Katie 建议她冷静下来，先列出生活中的积极面。",
+  "dialogue": [
+    {
+      "speaker": "Pat",
+      "text": "Hi, Katie—I’m calling you to **cry on your shoulder**. **Do you mind if** I come over? I really need to talk to you."
+    },
+    {
+      "speaker": "Katie",
+      "text": "Of course I don’t mind; come over. I’ll make a pot of tea. Pat, **what’s the matter**?"
+    },
+    {
+      "speaker": "Pat",
+      "text": "**It’s just that** everything is wrong with my life. **In the first place**, there are **so many** problems at work. My boss is really **out to get** me. He’s **on my case** for every little thing. Lately I can’t do anything that pleases him. **Plus**, he makes me so nervous that I’m beginning to make unnecessary mistakes."
+    },
+    {
+      "speaker": "Katie",
+      "text": "**So**, what’s the reason for all that?"
+    },
+    {
+      "speaker": "Pat",
+      "text": "It’s probably because he has problems at home. But that doesn’t give him the right to **take it all out on** me, does it?"
+    },
+    {
+      "speaker": "Katie",
+      "text": "It’s **just the opposite**. It’s at work where he ought to seek a little peace so he can **work out** his personal problems at home. **At least** that’s what I think."
+    },
+    {
+      "speaker": "Pat",
+      "text": "I have the impression that nobody is really happy. The situation at my house doesn’t exactly **cheer me up** either. You know what? Those two guys I share the house with **don’t have a clue** about how to keep it clean. They **don’t lift a finger** to help me. Last night I **spent** two hours cleaning the kitchen while they **pigged out** on pizza and watched TV. I’m **sick and tired** of their behavior. But that’s not the worst! **As if that weren’t enough**, Brad refuses to talk to me. Like **out of the blue** he’s decided he **wants his space**. I really feel like **throwing in the towel**."
+    },
+    {
+      "speaker": "Katie",
+      "text": "Calm down, Pat, and **let’s** look at one thing at a time. I don’t think things are as bad as they seem right now. **For a start**, **why don’t** we make a list of the positive things in your life? That way, you’ll realize what your **strengths** are. Then we’ll make a plan to begin changing the things that aren’t **working** for you. You shouldn’t let yourself get depressed."
+    },
+    {
+      "speaker": "Pat",
+      "text": "Thanks, Katie. You know, I already feel much better. You really know how to **cheer me up**."
+    },
+    {
+      "speaker": "Katie",
+      "text": "I care about you. **After all**, you are my best friend—and have been **from the get-go**. I know I can **count on** you for good advice **from time to time**."
+    }
+  ],
+  "key_structures": [
+    {
+      "pattern": "Cry on someone’s shoulder",
+      "example": "I’m calling you to cry on your shoulder.",
+      "explanation": "意思是向某人倾诉烦恼，寻求同情和安慰。"
+    },
+    {
+      "pattern": "On someone's case",
+      "example": "He’s on my case for every little thing.",
+      "explanation": "指不断地批评、指责或挑剔某人。"
+    },
+    {
+      "pattern": "Pig out",
+      "example": "while they pigged out on pizza",
+      "explanation": "非正式用语，指大吃特吃（尤指吃得过量）。"
+    },
+    {
+      "pattern": "Sick and tired",
+      "example": "I’m sick and tired of their behavior.",
+      "explanation": "表示对某事厌烦透顶，无法再忍受。"
+    },
+    {
+      "pattern": "Throw in the towel",
+      "example": "I really feel like throwing in the towel.",
+      "explanation": "源自拳击术语，意思是放弃、认输（give up）。"
+    },
+    {
+      "pattern": "Count on",
+      "example": "I know I can count on you for good advice",
+      "explanation": "意思是信赖、依靠某人（depend on / rely on）。"
+    }
+  ]
+},
+{
+  "scenario": "9.1 日程安排 (Scheduled events)。Raj 和 Ines 确认电影放映时间，并计划乘坐公交车往返。",
+  "dialogue": [
+    {
+      "speaker": "Raj",
+      "text": "What time does the movie start?"
+    },
+    {
+      "speaker": "Ines",
+      "text": "It **starts** at 7:30, and **ends** at 9:45."
+    },
+    {
+      "speaker": "Raj",
+      "text": "Good, we can go on the bus, and get back home before it’s too dark. Is there a bus stop near your house?"
+    },
+    {
+      "speaker": "Ines",
+      "text": "Yes. It **stops** on the corner every fifteen minutes."
+    },
+    {
+      "speaker": "Raj",
+      "text": "Perfect. I’m **looking forward to** seeing this movie."
+    }
+  ],
+  "key_structures": [
+    {
+      "pattern": "Present Tense for Future",
+      "example": "It starts at 7:30... It stops on the corner...",
+      "explanation": "一般现在时用于谈论将来发生的事件时，通常表示已确定的时间表（如时刻表、节目单），发生概率极高（99%）。"
+    },
+    {
+      "pattern": "Looking forward to",
+      "example": "I’m looking forward to seeing this movie.",
+      "explanation": "表达对未来事件的期待和高兴。注意 to 后面接名词或动名词（seeing）。"
+    }
+  ]
+},
+{
+  "scenario": "9.2 近期计划 (Plans for the very near future)。Jenny 询问 Paula 明天的计划，Paula 准备去海滩，而 Jenny 打算在家处理积压的事务。",
+  "dialogue": [
+    {
+      "speaker": "Jenny",
+      "text": "What are you doing tomorrow?"
+    },
+    {
+      "speaker": "Paula",
+      "text": "I’m **going to** the beach with my family for a week. We’re leaving early—at 6 a.m."
+    },
+    {
+      "speaker": "Jenny",
+      "text": "Oh, nice! So I guess you’re planning to go to bed early tonight."
+    },
+    {
+      "speaker": "Paula",
+      "text": "Yeah, I’m **gonna** pack my bag and try to **hit the sack** by nine o’clock."
+    },
+    {
+      "speaker": "Jenny",
+      "text": "**Good luck with that**! What are you taking?"
+    },
+    {
+      "speaker": "Paula",
+      "text": "I always **pack light** for the beach—a bathing suit, a couple of pairs of shorts, some T-shirts, a hat, and lots of sunscreen. How about you? What are you doing next week?"
+    },
+    {
+      "speaker": "Jenny",
+      "text": "I’m going to stay home and **catch up on** some unfinished projects."
+    },
+    {
+      "speaker": "Paula",
+      "text": "Like what?"
+    },
+    {
+      "speaker": "Jenny",
+      "text": "Oh, I have a long list! First I’m going to clean up my office, pay bills, write letters, and **take care of** a **bunch of** paperwork. Then I’m going to redecorate my bedroom—paint the walls and get new curtains."
+    },
+    {
+      "speaker": "Paula",
+      "text": "Wow. What color are you going to paint it?"
+    },
+    {
+      "speaker": "Jenny",
+      "text": "It’s a very light blue. I’ve already picked it out and bought the paint."
+    },
+    {
+      "speaker": "Paula",
+      "text": "Cool."
+    }
+  ],
+  "key_structures": [
+    {
+      "pattern": "Going to / Gonna",
+      "example": "I’m gonna pack my bag...",
+      "explanation": "用于表示近期计划好的未来事件（发生概率约95%）。"
+    },
+    {
+      "pattern": "Hit the sack",
+      "example": "try to hit the sack by nine o’clock.",
+      "explanation": "非常口语化的表达，意思是“去睡觉”（go to bed）。"
+    },
+    {
+      "pattern": "Pack light",
+      "example": "I always pack light for the beach",
+      "explanation": "意思是“轻装上阵”，只带很少的行李。"
+    },
+    {
+      "pattern": "Catch up on",
+      "example": "catch up on some unfinished projects.",
+      "explanation": "意为“补做”或“赶做”之前没时间做的事情。"
+    },
+    {
+      "pattern": "Good luck with that",
+      "example": "Good luck with that!",
+      "explanation": "通常暗示说话者认为对方提到的事情不太可能成功或很难做到。"
+    }
+  ]
+},
+  {
+  "scenario": "9.3 长期计划 (Long-term plans)。Emma 和 Kim 讨论大学毕业后的打算，涉及在大城市工作、离家近还是去海外发展。",
+  "dialogue": [
+    {
+      "speaker": "Emma",
+      "text": "What do you think you’ll do when you finish college?"
+    },
+    {
+      "speaker": "Kim",
+      "text": "Oh, I’ll **probably** stay in the city and look for work here. Then I’ll go back home on holidays."
+    },
+    {
+      "speaker": "Emma",
+      "text": "I love that idea, but I’ll probably go closer to home to get a job. I like being close to my family and old friends. **Still**, life in the big city is certainly tempting!"
+    },
+    {
+      "speaker": "Kim",
+      "text": "Well, maybe you could find a job in a big city closer to home."
+    },
+    {
+      "speaker": "Emma",
+      "text": "Yeah, that would be a good **happy medium**."
+    },
+    {
+      "speaker": "Kim",
+      "text": "**On the other hand**, **since** you like to travel, you could possibly get a job in another country—do something exotic."
+    },
+    {
+      "speaker": "Emma",
+      "text": "You’re right. I might get really bored just doing the **same old thing**. I’d learn a lot **overseas**—even **pick up** another language. It’s definitely something to think about."
+    },
+    {
+      "speaker": "Kim",
+      "text": "Well, I guess we don’t have to decide now, since we’re still in our **freshman** year!"
+    }
+  ],
+  "key_structures": [
+    {
+      "pattern": "Still",
+      "example": "Still, life in the big city is certainly tempting!",
+      "explanation": "用于引入与前述信息相反或矛盾的观点，表示一种两难或转折。"
+    },
+    {
+      "pattern": "Happy medium",
+      "example": "that would be a good happy medium.",
+      "explanation": "意为“折衷办法”或“中庸之道”，指兼顾双方的妥协方案。"
+    },
+    {
+      "pattern": "On the other hand",
+      "example": "On the other hand, since you like to travel...",
+      "explanation": "用于引入相反的或另一方面的论点。"
+    },
+    {
+      "pattern": "Same old thing",
+      "example": "doing the same old thing",
+      "explanation": "指例行公事、通过常规且略显乏味的活动。"
+    },
+    {
+      "pattern": "Pick up",
+      "example": "pick up another language",
+      "explanation": "指（通常是轻松地或非正式地）学会或习得某种技能或语言。"
+    }
+  ]
+},
+{
+  "scenario": "9.4 遥远未来的预测 (Predictions for the more distant future)。老师和学生们讨论50年后的世界会是什么样子，大家提出了各种天马行空的预测。",
+  "dialogue": [
+    {
+      "speaker": "Teacher",
+      "text": "What **will** the world be like fifty years from now?"
+    },
+    {
+      "speaker": "Andy",
+      "text": "**Just think**! People **will be living** on Mars."
+    },
+    {
+      "speaker": "Emily",
+      "text": "**I’ll bet** cars will be replaced by little helicopters, so you’ll be able to fly ahead in traffic."
+    },
+    {
+      "speaker": "Holly",
+      "text": "There **won’t** be any more wars."
+    },
+    {
+      "speaker": "Julie",
+      "text": "Women will make more money than men."
+    },
+    {
+      "speaker": "Stacey",
+      "text": "**No way**! Women will stay home and the men will do all the work."
+    },
+    {
+      "speaker": "Joe",
+      "text": "There will be a better form of government."
+    },
+    {
+      "speaker": "Zack",
+      "text": "People will have forgotten how to talk and will only communicate electronically."
+    },
+    {
+      "speaker": "Heather",
+      "text": "There won’t be any disease, and people will live to be 150 years old."
+    },
+    {
+      "speaker": "Courtney",
+      "text": "That will be horrible. It will be so crowded!"
+    },
+    {
+      "speaker": "Andy",
+      "text": "That’s why people **will be living** on Mars!"
+    }
+  ],
+  "key_structures": [
+    {
+      "pattern": "Just think!",
+      "example": "Just think! People will be living on Mars.",
+      "explanation": "用于引入说话者感到兴奋的幻想或计划（想象一下！）。"
+    },
+    {
+      "pattern": "I'll bet",
+      "example": "I’ll bet cars will be replaced by little helicopters",
+      "explanation": "表示说话者相当确信某事会发生（虽然没有证据），意为“我敢打赌”。"
+    },
+    {
+      "pattern": "No way",
+      "example": "No way! Women will stay home...",
+      "explanation": "表示某事是不可能的、难以置信的（imposible），或者极其令人惊讶。"
+    },
+    {
+      "pattern": "Will be + -ing (Future Continuous)",
+      "example": "People will be living on Mars.",
+      "explanation": "将来进行时，用于描述未来某段时间正在进行的动作或状态，常用于预测。"
+    }
+  ]
+},
+  {
+  "scenario": "10 推选公司主管 (Selecting a company officer)。老板召集员工讨论新客服总监的人选（Martha Francis vs. Juliette Welch）。大家各抒己见，讨论两人的优缺点（pros and cons）。",
+  "dialogue": [
+    {
+      "speaker": "Boss",
+      "text": "I’ve called you here to talk about the selection of a new director for the Customer Service Department. As you know, **so far** there are only two candidates, Martha Francis and Juliette Welch. First, I’d like to hear your comments, both **pro** and **con**, about Martha’s qualifications for this position."
+    },
+    {
+      "speaker": "Ivana",
+      "text": "Well, I think Martha is the perfect person for this position. She’s been with the company for twenty years, so she knows the business **inside out**. She’s conservative and serious; **plus** she gets along with everybody."
+    },
+    {
+      "speaker": "April",
+      "text": "**Yikes**! In my opinion, if she becomes director, nothing will change. **I mean**, we wouldn’t see anything new—**just the opposite**—we’d **keep on** implementing the same programs as always."
+    },
+    {
+      "speaker": "Katie",
+      "text": "She isn’t known for **thinking outside the box**. **What’s more**, we’d start to see our current customer base **fall off**, simply because our competitors have enthusiastic new people and innovative programs. **I’m just sayin’** . . ."
+    },
+    {
+      "speaker": "Tim",
+      "text": "I have to agree with April and Katie on this one. **In the first place**, Martha is too conservative; **plus** she’d **hardly** inspire any enthusiasm among the employees."
+    },
+    {
+      "speaker": "Boss",
+      "text": "Anybody else want to **put their two cents in**? OK. Then let’s talk about Juliette. **What do you guys think**?"
+    },
+    {
+      "speaker": "Ivana",
+      "text": "Look, if Juliette gets this job, it will be a **total** disaster for the company. In the first place, her fancy degree isn’t **worth squat** because she has **zero** experience. **Besides**, we don’t even know her very well. **Good grief**, she’s only been here since March, and **to top it all off**, we all know that she was fired from her last job."
+    },
+    {
+      "speaker": "Tim",
+      "text": "**Really**. I’ve heard that her coworkers think she’s **a bit uppity**, like she thinks she’s the queen of the office. She’s **not exactly** popular with the other employees. I don’t think they’d be happy with her as the boss."
+    },
+    {
+      "speaker": "Stan",
+      "text": "Well, **since** I **put her name up**, I have to say that I see her as a very bright and competent person. **Still**, I recognize that she lacks experience. And now that you tell me that her personality could cause **friction** among the employees, then I’ll **go along with** your decision in this case."
+    },
+    {
+      "speaker": "Boss",
+      "text": "**Obviously**, we haven’t found the ideal person to **handle** this job. We may have to look outside the company, which I don’t particularly want to do. We’ll meet here tomorrow at the same time. I’ll expect your suggestions—and they’**d better** be more promising!"
+    }
+  ],
+  "key_structures": [
+    {
+      "pattern": "Inside out",
+      "example": "she knows the business inside out.",
+      "explanation": "意为“彻底地、完全地”，指对某事了如指掌。"
+    },
+    {
+      "pattern": "Think outside the box",
+      "example": "She isn’t known for thinking outside the box.",
+      "explanation": "意为“跳出框框思考”，指具有创造性思维或用新颖的方法解决问题。"
+    },
+    {
+      "pattern": "Put one's two cents in",
+      "example": "Anybody else want to put their two cents in?",
+      "explanation": "指发表个人的（通常是微不足道的）意见或看法。"
+    },
+    {
+      "pattern": "Worth squat",
+      "example": "her fancy degree isn’t worth squat",
+      "explanation": "意思是“毫无价值”或“一文不值”（squat 意为 nothing at all）。"
+    },
+    {
+      "pattern": "To top it all off",
+      "example": "and to top it all off, we all know that she was fired...",
+      "explanation": "用于在一系列（通常是糟糕的）事件之后引入最后一项，意为“更糟糕的是”或“最重要的是”。"
+    },
+    {
+      "pattern": "A bit uppity",
+      "example": "her coworkers think she’s a bit uppity",
+      "explanation": "指某人有点傲慢、自大或摆架子（stuck-up/snooty）。"
+    },
+    {
+      "pattern": "Go along with",
+      "example": "I’ll go along with your decision",
+      "explanation": "意思是同意、接受或支持某个想法或决定。"
+    }
+  ]
+},
+{
+  "scenario": "11 交通事故 (A traffic accident)。Jack 看到 Sam 拄着拐杖，询问发生了什么。Sam 讲述了自己在去篮球决赛的路上，因为下大雨和分心（接女友电话），导致追尾并扭伤脚踝的倒霉经历。",
+  "dialogue": [
+    {
+      "speaker": "Jack",
+      "text": "Hey, buddy, what happened to you? Don’t tell me you broke your leg!"
+    },
+    {
+      "speaker": "Sam",
+      "text": "No, it’s not that drastic. I just twisted my ankle. **Still**, it hurts a lot, and walking with these crutches is a **pain in the neck**."
+    },
+    {
+      "speaker": "Jack",
+      "text": "So when did it happen?"
+    },
+    {
+      "speaker": "Sam",
+      "text": "It was the night of the basketball championship. And **the worst thing** is that we lost the game and all hopes of winning our title back."
+    },
+    {
+      "speaker": "Jack",
+      "text": "**What a bummer**! Sit down here for a minute and tell me all about it."
+    },
+    {
+      "speaker": "Sam",
+      "text": "Well, it all happened last Thursday. It was **pouring down rain** and also freezing. I was in a hurry to get to the gym early to **chill out** a bit before the game. I was **all stressed out** about the game when I left home, but I got in the car and started to drive toward the gym. **All of a sudden** my phone rang—it was my girlfriend. She was **all excited** about the game and wanted to wish me good luck. I started to get **pumped up** and ready for the game. My girlfriend and I **kept on** talking when I **suddenly** **realized** that the cars **in front of** me were stopped, and I was going a little fast. I slammed on the brakes, but it was **too** late. The street was wet, and I hit the car that was stopped in front of me. That hard braking caused me to twist my ankle. I could **hardly** get out of the car to talk to the other driver because my ankle hurt so much. **To tell you the truth**, I was so **freaked out** I didn’t know what to do. I was thinking about the game, my girlfriend, my teammates—it never occurred to me that I wouldn’t be able to play that night. **Finally** a **cop** came and made me sign some **papers**; **then** an ambulance took me to the hospital. They took some X-rays to see if my ankle was broken or not. **Thank goodness** it wasn’t broken, but **the upshot** was that I wasn’t going to play basketball that night. And now I’m **stuck with** these crutches."
+    }
+  ],
+  "key_structures": [
+    {
+      "pattern": "Pain in the neck",
+      "example": "walking with these crutches is a pain in the neck.",
+      "explanation": "指令人讨厌、烦恼的人或事。"
+    },
+    {
+      "pattern": "Bummer",
+      "example": "What a bummer!",
+      "explanation": "指令人失望的坏消息或坏运气（It's bad luck/bad news）。"
+    },
+    {
+      "pattern": "Pouring down rain",
+      "example": "It was pouring down rain",
+      "explanation": "形容下大雨（raining heavily/raining cats and dogs）。"
+    },
+    {
+      "pattern": "Pumped up",
+      "example": "I started to get pumped up",
+      "explanation": "意思是变得非常兴奋（very excited）。"
+    },
+    {
+      "pattern": "Freaked out",
+      "example": "I was so freaked out",
+      "explanation": "指极度恐惧、紧张或情绪失控。"
+    },
+    {
+      "pattern": "The upshot",
+      "example": "the upshot was that I wasn’t going to play...",
+      "explanation": "意思是结果、结局（result/outcome）。"
+    },
+    {
+      "pattern": "Stuck with",
+      "example": "I’m stuck with these crutches.",
+      "explanation": "指被迫接受或应对某种不愉快的情况。"
+    }
+  ]
+},
+{
+  "scenario": "12.1 一般现在时的转述 (In the present tense)。Mike 询问 Adam 新工作的情况，Adam 表示正在适应管理工作。Mike 随后转述了这段对话。",
+  "dialogue": [
+    {
+      "speaker": "Mike",
+      "text": "Hey **dude**, **what’s up**? I hear you have a new job. **How’s it going**?"
+    },
+    {
+      "speaker": "Adam",
+      "text": "Pretty well, **so far**. I have a lot to learn, but the people are nice, and there’s not too much **pressure**."
+    },
+    {
+      "speaker": "Mike",
+      "text": "**What do you do**?"
+    },
+    {
+      "speaker": "Adam",
+      "text": "Basically, I’m **learning the ropes** of management, studying the history of the company so I know how everything works."
+    },
+    {
+      "speaker": "Mike",
+      "text": "That’s great! I hope it all **works out** for you."
+    },
+    {
+      "speaker": "Mike (Retelling)",
+      "text": "I asked Adam what was up and told him that I heard he had a new job. I asked him how it was going. He told me that it was going pretty well, so far. He said that he had a lot to learn but that the people were nice and that there wasn’t too much pressure. Then I asked him what he did. He answered that basically he was learning the ropes of management and studying the history of the company so that he knew how everything worked. Then I told him that that was great and that I hoped it worked out for him."
+    }
+  ],
+  "key_structures": [
+    {
+      "pattern": "Learning the ropes",
+      "example": "I’m learning the ropes of management.",
+      "explanation": "意思是正在熟悉新工作、新程序的入门规则和操作（getting acquainted with a new job or routine）。"
+    },
+    {
+      "pattern": "Pressure",
+      "example": "there’s not too much pressure.",
+      "explanation": "指当期望过高或任务过多时感到的压力（stress of responsibility）。"
+    },
+    {
+      "pattern": "So far",
+      "example": "Pretty well, so far.",
+      "explanation": "意为“到目前为止”（as of this date or time）。"
+    },
+    {
+      "pattern": "Dude",
+      "example": "Hey dude, what’s up?",
+      "explanation": "非正式用语，用于称呼男性朋友。"
+    }
+  ]
+},
+{
+  "scenario": "12.2 现在完成时的转述 (In the present perfect tense)。Renee 邀请 Emily 吃午饭，但 Emily 已经吃过了。Renee 随后转述了这段对话。",
+  "dialogue": [
+    {
+      "speaker": "Renee",
+      "text": "Have you eaten **yet**?"
+    },
+    {
+      "speaker": "Emily",
+      "text": "No, but I’ve **already** bought my lunch. Want to join me in the park?"
+    },
+    {
+      "speaker": "Renee",
+      "text": "Thanks, but I’ve made a reservation for two at Kincaid’s Restaurant. Have you **ever** eaten there?"
+    },
+    {
+      "speaker": "Emily",
+      "text": "Yes, I’ve been there several times. It’s great!"
+    },
+    {
+      "speaker": "Renee (Retelling)",
+      "text": "I asked Emily if she had eaten yet, and she told me that she had already bought her lunch. She asked me if I wanted to join her in the park, but I told her that I had made a reservation for two at Kincaid’s Restaurant. Then I asked her if she had ever eaten there, and she told me yes, that she had been there several times. She said it was great."
+    }
+  ],
+  "key_structures": [
+    {
+      "pattern": "Already",
+      "example": "I’ve already bought my lunch.",
+      "explanation": "表示动作在过去某时已经发生，不需要重复做。"
+    },
+    {
+      "pattern": "Yet",
+      "example": "Have you eaten yet?",
+      "explanation": "用于疑问句，询问某事是否已经完成。"
+    },
+    {
+      "pattern": "Ever",
+      "example": "Have you ever eaten there?",
+      "explanation": "意为“曾经”，用于询问过去或未来的任何时间。"
+    }
+  ]
+},
+{
+  "scenario": "12.3 一般过去时的转述 (In the past tense)。Jason 询问 Gina 昨晚为何没来派对，Gina 解释因姐姐临时有事要去帮忙照看孩子。Jason 随后转述了这段对话。",
+  "dialogue": [
+    {
+      "speaker": "Jason",
+      "text": "Where were you last night? We **missed** you at the party."
+    },
+    {
+      "speaker": "Gina",
+      "text": "Oh, I had to go to my sister’s house. They called her from the hospital **at the last minute** and asked her to work the night shift, so I went over to **babysit** for her kids. I **ended up** spending the night at her place."
+    },
+    {
+      "speaker": "Jason (Retelling)",
+      "text": "I asked Gina where she had been the night before and told her that we had missed her at the party. She said that she had had to go to her sister’s house—that they had called her sister from the hospital at the last minute and had asked her to work the night shift, so she had gone over to babysit for her kids. She said she had ended up spending the night at her sister’s place."
+    }
+  ],
+  "key_structures": [
+    {
+      "pattern": "At the last minute",
+      "example": "They called her... at the last minute",
+      "explanation": "指事情发生在最后时刻，紧挨着截止时间之前（immediately before it was too late）。"
+    },
+    {
+      "pattern": "End up",
+      "example": "I ended up spending the night",
+      "explanation": "意思是“最终处于......状况”或“结果是......”，通常指未计划或出乎意料的结果。"
+    },
+    {
+      "pattern": "Babysit",
+      "example": "I went over to babysit for her kids.",
+      "explanation": "指照看或照顾别人的孩子（take care of / look after）。"
+    }
+  ]
+},
+{
+  "scenario": "12.4 将来时的转述 (In future tenses)。Ben 因刚分手无事可做，Jeremy 邀请他一起去市中心玩，Ben 请求搭便车。Ben 随后转述了这段对话。",
+  "dialogue": [
+    {
+      "speaker": "Ben",
+      "text": "Hi, Jeremy. What are you guys doing tonight? I’m kind of **at a loose end** since I broke up with Sydney."
+    },
+    {
+      "speaker": "Jeremy",
+      "text": "Join us, then—we’re going to **hang out** downtown—probably go to several places. Are you **up for** that?"
+    },
+    {
+      "speaker": "Ben",
+      "text": "Definitely. Where should I meet you? Better still, can you **give me a ride**?"
+    },
+    {
+      "speaker": "Jeremy",
+      "text": "Glad to. I’ll **pick you up** at your place at 9:30. OK?"
+    },
+    {
+      "speaker": "Ben",
+      "text": "**Perfect**. I’ll look out for you."
+    },
+    {
+      "speaker": "Ben (Retelling)",
+      "text": "I said hi to Jeremy and asked him what he and the other guys were doing that night. I told him that I had been kind of at a loose end ever since I broke up with Sydney. He told me to join them and said that they were going to hang out downtown—probably go to several places. He asked me if I was up for that. I said that I definitely was and asked him where I should meet them. Then I told him that it would be even better if he could give me a ride. He said he would be glad to and told me that he would pick me up at my place at 9:30. He asked me if that would be OK. I said that it would be perfect and that I would look out for him."
+    }
+  ],
+  "key_structures": [
+    {
+      "pattern": "At a loose end",
+      "example": "I’m kind of at a loose end",
+      "explanation": "指暂时无事可做，或不知道该做什么（temporarily not have anything to do）。"
+    },
+    {
+      "pattern": "Give someone a ride",
+      "example": "can you give me a ride?",
+      "explanation": "指主动提出用车载某人去某地（offer to take someone somewhere in your car）。"
+    },
+    {
+      "pattern": "Pick up",
+      "example": "I’ll pick you up at your place",
+      "explanation": "指开车去接正在等待的人（go in a vehicle to where someone is waiting）。"
+    },
+    {
+      "pattern": "Up for",
+      "example": "Are you up for that?",
+      "explanation": "意思是想要做某事或有兴致参与某事。"
+    }
+  ]
+},
+  {
+  "scenario": "13 电子对话 (Electronic conversation)。本章主要介绍现代通信（邮件、短信、推特等）中常用的缩略语和符号。以下是书中提供的“短信翻译”练习。",
+  "dialogue": [
+    {
+      "speaker": "Message 1",
+      "text": "Cn U cm ovr asap?",
+      "translation": "Can you come over as soon as possible?"
+    },
+    {
+      "speaker": "Message 2",
+      "text": "AYS? im @schl. BBB",
+      "translation": "Are you serious? I’m at school. Boring beyond belief."
+    },
+    {
+      "speaker": "Message 3",
+      "text": "its OVR btwn us. sory",
+      "translation": "It’s over between us. Sorry."
+    },
+    {
+      "speaker": "Message 4",
+      "text": "lol UR crzy",
+      "translation": "Laugh out loud. You’re crazy."
+    },
+    {
+      "speaker": "Message 5",
+      "text": "im :( w/o U",
+      "translation": "I’m unhappy without you."
+    },
+    {
+      "speaker": "Message 6",
+      "text": "me2",
+      "translation": "Me, too."
+    },
+    {
+      "speaker": "Message 7",
+      "text": "CU L8r",
+      "translation": "See you later."
+    },
+    {
+      "speaker": "Message 8",
+      "text": "OMG shes OTL",
+      "translation": "Oh my God. She’s out to lunch (not focused/lacking good judgment)."
+    }
+  ],
+  "key_structures": [
+    {
+      "pattern": "ASAP",
+      "example": "asap",
+      "explanation": "As soon as possible (尽快)。"
+    },
+    {
+      "pattern": "LOL",
+      "example": "lol",
+      "explanation": "Laugh out loud (大笑/很好笑)。"
+    },
+    {
+      "pattern": "BTW",
+      "example": "(Common acronym)",
+      "explanation": "By the way (顺便说一句)。"
+    },
+    {
+      "pattern": "FYI",
+      "example": "(Common acronym)",
+      "explanation": "For your information (供你参考/告知你)。"
+    },
+    {
+      "pattern": "OMG",
+      "example": "OMG",
+      "explanation": "Oh my God (天哪，表示惊讶)。"
+    },
+    {
+      "pattern": "OTL",
+      "example": "OTL",
+      "explanation": "Out to lunch (心不在焉/缺乏判断力)。"
+    },
+    {
+      "pattern": "TTYL",
+      "example": "(Common acronym)",
+      "explanation": "Talk to you later (回头聊)。"
+    }
+  ]
+}
+]

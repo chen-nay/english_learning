@@ -1,0 +1,18 @@
+{
+  "dialogue": [
+    "airport.json",
+    "conversation.json",
+    "hotel.json",
+    "order.json"
+  ],
+  "wordbook": [
+    "Architecture & Design.json",
+    "Backend, Database & DevOps.json",
+    "Code & Logic.json",
+    "Frontend & UI_UX.json",
+    "Process & Methodology.json",
+    "Professional Verbs & Phrases.json",
+    "Testing, Debugging & Monitoring.json",
+    "Version Control & Git Workflow.json"
+  ]
+}

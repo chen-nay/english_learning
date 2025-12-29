@@ -3,18 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DevEnglish - 程序员单词本</title>
+    <title>English Learning</title>
+    <link rel="icon" href="img/learn.png" type="image/png">
     <style>
         :root { --primary-blue: #3b82f6; --bg-color: #f3f4f6; --text-main: #1f2937; --text-sub: #6b7280; --border-color: #e5e7eb; --success-color: #10b981; --danger-color: #ef4444; }
         body { margin: 0; font-family: 'Segoe UI', sans-serif; background-color: var(--bg-color); display: flex; height: 100vh; overflow: hidden; }
-        .sidebar { width: 220px; background-color: white; border-right: 1px solid var(--border-color); padding: 20px; display: flex; flex-direction: column; }
-        .logo { font-size: 18px; font-weight: bold; color: var(--text-main); margin-bottom: 25px; display: flex; align-items: center; gap: 8px; padding-bottom: 15px; border-bottom: 1px solid #f3f4f6; }
-        .nav-list { display: flex; flex-direction: column; gap: 8px; }
-        .nav-item { padding: 12px 15px; border-radius: 8px; cursor: pointer; color: var(--text-main); font-weight: 500; display: flex; align-items: center; justify-content: space-between; transition: all 0.2s; }
+        .sidebar { width: 220px; background-color: white; border-right: 1px solid var(--border-color); padding: 20px; display: flex; flex-direction: column; transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1); flex-shrink: 0; position: relative; }
+        .sidebar.collapsed { width: 68px; padding: 20px 10px; }
+        
+        .logo { font-size: 18px; font-weight: bold; color: var(--text-main); margin-bottom: 25px; display: flex; align-items: center; justify-content: space-between; padding-bottom: 15px; border-bottom: 1px solid #f3f4f6; white-space: nowrap; overflow: hidden; }
+        .logo-group { display: flex; align-items: center; gap: 8px; transition: opacity 0.2s; }
+        .logo-img { width: 24px; height: 24px; object-fit: contain; }
+        
+        .sidebar-toggle { cursor: pointer; padding: 6px; border-radius: 6px; color: var(--text-sub); display: flex; align-items: center; justify-content: center; transition: all 0.2s; }
+        .sidebar-toggle:hover { background-color: #f3f4f6; color: var(--primary-blue); }
+        
+        /* Collapsed Sidebar Styles */
+        .sidebar.collapsed .logo-text { display: none; }
+        .sidebar.collapsed .logo { justify-content: center; }
+        .sidebar.collapsed .sidebar-toggle { position: absolute; top: 28px; right: -12px; background: white; border: 1px solid var(--border-color); border-radius: 50%; width: 24px; height: 24px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); padding: 0; color: var(--primary-blue); }
+        .sidebar.collapsed .sidebar-toggle svg { transform: rotate(180deg); }
+        .sidebar.collapsed .nav-text { display: none; }
+        .sidebar.collapsed .nav-item { justify-content: center; padding: 12px 0; }
+        
+        .nav-list { display: flex; flex-direction: column; gap: 8px; overflow: hidden; }
+        .nav-item { padding: 12px 15px; border-radius: 8px; cursor: pointer; color: var(--text-main); font-weight: 500; display: flex; align-items: center; gap: 12px; transition: all 0.2s; white-space: nowrap; }
         .nav-item:hover { background-color: #f9fafb; }
         .nav-item.active { background-color: #eff6ff; color: var(--primary-blue); font-weight: 600; }
+        .nav-icon { font-size: 18px; display: flex; align-items: center; justify-content: center; width: 24px; }
         
-        .loading-mask { display: none; position: fixed; top: 0; right: 0; bottom: 0; left: 260px; background: rgba(255,255,255,0.8); z-index: 10; align-items: center; justify-content: center; font-size: 14px; color: var(--text-sub); }
+        .loading-mask { display: none; position: absolute; top: 0; right: 0; bottom: 0; left: 0; background: rgba(255,255,255,0.8); z-index: 50; align-items: center; justify-content: center; font-size: 14px; color: var(--text-sub); }
         .main-content { flex: 1; display: flex; flex-direction: column; overflow: hidden; position: relative; }
         
         /* Top Bar for Wordbooks */
@@ -80,9 +98,12 @@
         
         /* Removed cursor: pointer from scenario-card */
         
-        .mode-hidden .scenario-card.card-revealed .chat-container,
+        .mode-hidden .scenario-card.card-revealed .chat-container {
+            display: flex; /* Restore flex layout for chat */
+        }
+
         .mode-hidden .scenario-card.card-revealed .key-structures-box {
-            display: flex; /* Restore flex layout */
+            display: block; /* Restore block layout for key structures */
         }
         
         .card:hover, .similar-card:hover {  
@@ -169,26 +190,36 @@
 </head>
 <body>
 
-    <div class="sidebar">
+    <div class="sidebar" id="sidebar">
         <div class="logo">
-            <span>💻</span> DevEnglish
+            <div class="logo-group">
+                <img src="img/learn.png" alt="Logo" class="logo-img">
+                <span class="logo-text">English Learning</span>
+            </div>
+            <div class="sidebar-toggle" onclick="toggleSidebar()" title="折叠/展开侧边栏">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+            </div>
         </div>
         <div class="nav-list">
-            <div class="nav-item active" id="nav-software" onclick="switchAppMode('software')">
-                <span>Software Words</span>
+            <div class="nav-item active" id="nav-software" onclick="switchAppMode('software')" title="Software Words">
+                <span class="nav-icon">💾</span>
+                <span class="nav-text">Software Words</span>
             </div>
-            <div class="nav-item" id="nav-dialogue" onclick="switchAppMode('dialogue')">
-                <span>Dialogue</span>
+            <div class="nav-item" id="nav-dialogue" onclick="switchAppMode('dialogue')" title="Dialogue">
+                <span class="nav-icon">💬</span>
+                <span class="nav-text">Dialogue</span>
             </div>
-            <div class="nav-item" id="nav-similar" onclick="switchAppMode('similar')">
-                <span>Similar Words</span>
+            <div class="nav-item" id="nav-similar" onclick="switchAppMode('similar')" title="Similar Words">
+                <span class="nav-icon">⚖️</span>
+                <span class="nav-text">Similar Words</span>
             </div>
         </div>
     </div>
 
-    <div class="loading-mask" id="loadingMask">加载中...</div>
+    <!-- loading-mask removed from here, will be added to main-content -->
 
     <div class="main-content">
+        <div class="loading-mask" id="loadingMask">加载中...</div>
         <!-- Software Words Top Bar -->
         <div class="top-book-bar" id="topBookList">
             <!-- Dynamically populated -->
@@ -247,6 +278,12 @@
         document.addEventListener('DOMContentLoaded', () => {
             loadMenu(); // Initialize App
         });
+
+        // Sidebar Logic
+        function toggleSidebar() {
+            const sidebar = document.getElementById('sidebar');
+            sidebar.classList.toggle('collapsed');
+        }
 
         // --- App Mode Switching ---
 
@@ -421,11 +458,21 @@
             }
         }
 
+        async function loadSourceConfig() {
+            try {
+                const response = await fetch('source.json');
+                if (!response.ok) throw new Error("无法加载 source.json");
+                return await response.json();
+            } catch (error) {
+                console.error("Failed to load source.json", error);
+                throw error;
+            }
+        }
+
         async function loadMenu() {
             try {
-                const response = await fetch('/v1/get_word_books');
-                if(!response.ok) throw new Error("无法加载单词书列表");
-                const fileList = await response.json();
+                const config = await loadSourceConfig();
+                const fileList = config.wordbook;
                 books = fileList.map(fileName => {
                     let displayName = fileName.replace('.json', '');
                     return { id: fileName, name: displayName, file: 'wordbook/' + fileName };
@@ -508,9 +555,8 @@
 
         async function loadDialogueMenu() {
             try {
-                const response = await fetch('/v1/get_dialogue_books');
-                if(!response.ok) throw new Error("无法加载对话列表");
-                const fileList = await response.json();
+                const config = await loadSourceConfig();
+                const fileList = config.dialogue;
                 dialogueBooks = fileList.map(fileName => {
                     let displayName = fileName.replace('.json', '');
                     // Capitalize first letter

@@ -1,83 +1,72 @@
-# DevEnglish - 程序员单词本
-
-DevEnglish 是一个为程序员设计的英语词汇学习工具。它帮助你通过简洁的界面记忆和管理专业词汇，支持“认识/不认识”的状态标记，并提供相似词汇的分组记忆功能。
-
-## 功能特点
-
-*   **单词本管理**：
-    *   动态加载 `wordbook/` 目录下的所有 JSON 单词书。
-    *   支持按 "全部"、"未标记"、"认识"、"不认识" 筛选单词。
-    *   实时保存单词状态到 JSON 文件。
-    *   **记忆模式**：一键隐藏音标、释义、例句，仅显示单词，用于自我测试。
-    *   **详细查看**：在记忆模式下，可单独点击卡片上的“眼睛”按钮查看特定单词的详情。
-    *   支持 TTS 语音朗读。
-
-*   **相似词分组 (Similar Words)**：
-    *   将形近词、意近词或同根词分组展示，提高记忆效率。
-    *   数据驱动：从 `similarword/similar_words.json` 动态加载数据。
-    *   **记忆模式**：同样支持一键隐藏中文释义和音标，仅显示英文单词。
-    *   支持单独查看某个卡片的隐藏内容。
-
-## 项目结构
+# English Learning - 英语学习助手 💻🚀
 
 ```
+Note:
+1 除了场景对话(Dialogue)中的conversation内容来自书本《English Conversation Premium》外，其余英语内容由AI生成
+2 本项目所有代码，均由AI生成(包括本篇READEME)
+```
+
+本项目是一个辅助英语学习工具，旨在帮助掌握软件专业术语、提升职场交流能力（如机场、酒店等真实场景），并清晰辨析形近意近词汇。
+
+项目为**纯静态 Web 应用**，无需复杂的后端环境即可运行。
+
+## ✨ 功能特点
+
+*   **💾 专业词汇 (Software Words)**：
+    *   按技术领域分类（架构、前端、后端、版本控制等）。
+    *   包含音标、精准释义、同义词及中英双语例句。
+    *   **自测模式**：点击右上角“小眼睛”隐藏所有详情，仅留单词进行自我测试。
+    *   **语音支持**：点击喇叭图标，支持 Web Speech API 实时发音。
+
+*   **💬 场景对话 (Dialogue)**：
+    *   模拟机场、酒店、订餐等真实出国交流场景。
+    *   包含重点句型 (Key Structures) 解析。
+    *   同样支持自测模式，隐藏对话详情进行盲听或口语练习。
+
+*   **⚖️ 易混词辨析 (Similar Words)**：
+    *   将容易混淆的词汇进行对比展示。
+    *   使用不同的颜色主题进行视觉区分。
+
+*   **🛠 交互优化**：
+    *   **可折叠侧边栏**：点击 Logo 旁的箭头可收起菜单，最大化学习区域。
+    *   **完全静态化**：基于 `source.json` 管理数据源，无需运行 Python 服务。
+
+## 📂 项目结构
+
+```text
 vocabulary_learn/
-├── index.html          # 主程序入口，包含所有前端逻辑
-├── similar.html        # 独立的相似词展示页面（组件化）
-├── server.py           # Python HTTP 服务器，处理 JSON 读写
-├── wordbook/           # 存放单词书数据的目录 (.json)
-│   ├── Architecture & Design.json
-│   └── ...
-└── similarword/        # 存放相似词数据的目录
-    └── similar_words.json
+├── index.html          # 核心程序入口 (HTML/CSS/JS)
+├── source.json         # 数据源配置文件，管理所有 JSON 文件列表
+├── img/                # 图片资源目录 (favicon, logo)
+├── wordbook/           # 存放专业词汇数据的目录 (.json)
+├── dialogue/           # 存放场景对话数据的目录 (.json)
+└── similarword/        # 存放易混词数据的目录 (.json)
 ```
 
-## 快速开始
+## 🚀 快速开始
 
-1.  **启动服务器**：
-    确保你安装了 Python 3，然后在终端运行：
-    ```bash
-    python3 server.py
-    ```
+由于本项目是纯静态的，你可以直接用浏览器打开 `index.html`（部分浏览器可能因安全限制无法读取本地 JSON），推荐使用简单的静态文件服务器：
 
-2.  **访问应用**：
-    打开浏览器访问 `http://localhost:9001`。
+**使用 Python (推荐):**
+```bash
+# 在项目根目录下运行
+python3 -m http.server 9001
+```
+然后访问：`http://localhost:9001`
 
-3.  **使用**：
-    *   左侧侧边栏切换 "Software Words" (单词本) 和 "Similar Words" (相似词)。
-    *   在 "Software Words" 模式下，顶部栏可切换不同的单词书。
-    *   点击右上角的“眼睛”图标切换显示/隐藏模式。
-
-## 数据格式说明
-
-### 单词本 (`wordbook/*.json`)
-```json
-[
-    {
-        "id": 1,
-        "term": "Algorithm",
-        "phonetic": "/ˈælɡərɪðəm/",
-        "definition": "算法",
-        "synonyms": "Procedure, Routine",
-        "exampleEn": "The sorting algorithm is very efficient.",
-        "exampleCn": "这个排序算法非常高效。",
-        "status": 0  // 0:未标记, 1:认识, 2:不认识
-    }
-]
+**使用 Node.js (npx):**
+```bash
+npx serve .
 ```
 
-### 相似词 (`similarword/similar_words.json`)
-```json
-[
-    {
-        "theme": "theme-blue", // 卡片颜色主题
-        "words": [
-            {
-                "en": "Remarkable",
-                "cn": "卓越的",
-                "phonetic": "/rɪˈmɑːkəbl/"
-            }
-        ]
-    }
-]
-```
+## ⚙️ 数据扩展
+
+如果你想添加自己的单词书或对话：
+
+1.  **添加文件**：在 `wordbook/` 或 `dialogue/` 目录下创建新的 `.json` 文件（参考现有文件格式）。
+2.  **更新配置**：在根目录的 `source.json` 中，将你的新文件名添加到对应的数组中。
+3.  **刷新页面**：应用会自动加载并显示新的分类。
+
+---
+
+*Enjoy learning English for Developers!* 🌟
