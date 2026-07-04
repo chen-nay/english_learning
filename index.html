@@ -186,6 +186,37 @@
         .ks-explanation { color: #92400e; font-size: 12px; }
         .highlight-text { color: var(--primary-blue); font-weight: 600; }
 
+        /* IELTS Styles */
+        .ielts-toolbar { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; flex: 1; }
+        .ielts-search { padding: 6px 14px; font-size: 13px; border: 1px solid var(--border-color); border-radius: 20px; outline: none; width: 200px; color: var(--text-main); background: white; }
+        .ielts-search:focus { border-color: var(--primary-blue); }
+        .ielts-count { font-size: 12px; color: var(--text-sub); white-space: nowrap; margin-left: auto; padding-right: 10px; }
+        .ielts-count b { color: var(--success-color); font-weight: 600; }
+        .ielts-card { background: white; border-radius: 12px; padding: 16px 18px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); transition: all 0.2s; box-sizing: border-box; }
+        .ielts-card:hover { box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1); transform: translateY(-2px); }
+        .ielts-word-row { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+        .ielts-term { font-size: 19px; font-weight: 700; color: var(--text-main); }
+        .ielts-phonetic { color: var(--text-sub); font-size: 13px; font-family: 'Lucida Sans Unicode', sans-serif; }
+        .ielts-actions { display: flex; gap: 5px; }
+        .ielts-act { cursor: pointer; border: 1px solid var(--border-color); border-radius: 6px; padding: 1px 8px; font-size: 12px; color: var(--text-sub); user-select: none; white-space: nowrap; background: white; transition: all 0.15s; }
+        .ielts-act:hover { border-color: var(--primary-blue); }
+        .ielts-act.fav-on { background: #fffbeb; border-color: #f59e0b; color: #b45309; }
+        .ielts-act.known-on { background: #ecfdf5; border-color: var(--success-color); color: #047857; }
+        .ielts-meaning { font-size: 14px; font-weight: 600; color: var(--text-main); margin: 8px 0 4px; }
+        .ielts-meaning .pos { color: var(--primary-blue); font-style: italic; }
+        .ielts-label { display: inline-block; font-size: 11px; font-weight: 600; color: var(--text-sub); background: var(--bg-color); border-radius: 4px; padding: 1px 7px; margin: 5px 0 2px; }
+        .ielts-phrase { font-size: 13px; padding: 1px 0 1px 4px; color: var(--text-main); }
+        .ielts-phrase .cn { color: var(--text-sub); margin-left: 8px; font-size: 12px; }
+        .ielts-sent { background-color: #f8fafc; padding: 8px 10px; border-radius: 6px; border-left: 3px solid var(--primary-blue); font-size: 13px; color: #475569; margin: 5px 0; }
+        .ielts-sent .cn { margin-top: 2px; color: #94a3b8; font-size: 12px; }
+        .sent-speak { cursor: pointer; border: none; background: none; font-size: 12px; opacity: 0.6; padding: 0 4px; }
+        .sent-speak:hover { opacity: 1; }
+        .mode-hidden .ielts-detail { display: none; }
+        .mode-hidden .ielts-card { cursor: pointer; }
+        .mode-hidden .ielts-card.card-revealed .ielts-detail { display: block; }
+        .ielts-pager { display: flex; justify-content: center; align-items: center; gap: 12px; padding: 20px 0 40px; }
+        .ielts-pager .page-info { font-size: 13px; color: var(--text-sub); }
+
     </style>
 </head>
 <body>
@@ -202,16 +233,20 @@
         </div>
         <div class="nav-list">
             <div class="nav-item active" id="nav-software" onclick="switchAppMode('software')" title="Software Words">
-                <span class="nav-icon">💾</span>
+                <span class="nav-icon"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg></span>
                 <span class="nav-text">Software Words</span>
             </div>
             <div class="nav-item" id="nav-dialogue" onclick="switchAppMode('dialogue')" title="Dialogue">
-                <span class="nav-icon">💬</span>
+                <span class="nav-icon"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg></span>
                 <span class="nav-text">Dialogue</span>
             </div>
             <div class="nav-item" id="nav-similar" onclick="switchAppMode('similar')" title="Similar Words">
-                <span class="nav-icon">⚖️</span>
+                <span class="nav-icon"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg></span>
                 <span class="nav-text">Similar Words</span>
+            </div>
+            <div class="nav-item" id="nav-ielts" onclick="switchAppMode('ielts')" title="IELTS">
+                <span class="nav-icon"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg></span>
+                <span class="nav-text">IELTS</span>
             </div>
         </div>
     </div>
@@ -228,6 +263,11 @@
         <!-- Dialogue Top Bar -->
         <div class="top-book-bar" id="topDialogueList" style="display: none;">
             <!-- Dynamically populated -->
+        </div>
+
+        <!-- IELTS Letter Bar -->
+        <div class="top-book-bar" id="topIeltsBar" style="display: none;">
+            <!-- Dynamically populated: ALL / A-Z -->
         </div>
 
         <!-- Software Words Header -->
@@ -247,6 +287,24 @@
             </div>
         </div>
 
+        <!-- IELTS Header -->
+        <div class="header" id="ieltsHeader" style="display: none;">
+            <div class="ielts-toolbar">
+                <input class="ielts-search" id="ieltsSearch" type="text" placeholder="搜索单词或中文释义…" oninput="onIeltsSearch(this.value)">
+                <div class="status-tabs" id="ieltsStatusTabs">
+                    <div class="status-pill active" data-f="all" onclick="setIeltsFilter('all', this)">全部</div>
+                    <div class="status-pill" data-f="fav" onclick="setIeltsFilter('fav', this)">⭐ 收藏</div>
+                    <div class="status-pill" data-f="known" onclick="setIeltsFilter('known', this)">✅ 已掌握</div>
+                    <div class="status-pill" data-f="unknown" onclick="setIeltsFilter('unknown', this)">未掌握</div>
+                    <div class="status-pill" id="ieltsShuffleBtn" onclick="toggleIeltsShuffle(this)">🔀 随机</div>
+                </div>
+                <span class="ielts-count" id="ieltsCount"></span>
+            </div>
+            <div class="btn-toggle-view" onclick="toggleMode()" title="切换显示/隐藏详情(自测模式)">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+            </div>
+        </div>
+
         <div class="content-area">
             <!-- Software Words View -->
             <div class="card-grid" id="cardContainer"></div>
@@ -256,6 +314,12 @@
 
             <!-- Similar Words View -->
             <div class="card-grid" id="similarContainer" style="display: none;"></div>
+
+            <!-- IELTS View -->
+            <div id="ieltsWrap" style="display: none;">
+                <div class="card-grid" id="ieltsContainer"></div>
+                <div class="ielts-pager" id="ieltsPager"></div>
+            </div>
         </div>
     </div>
 
@@ -275,8 +339,15 @@
         let currentDialogueFile = null;
         let currentDialogueData = [];
 
+        let currentAppMode = 'software';
+
         document.addEventListener('DOMContentLoaded', () => {
             loadMenu(); // Initialize App
+            initIeltsEvents();
+            // 窄屏(手机)默认收起侧边栏
+            if (window.innerWidth < 768) {
+                document.getElementById('sidebar').classList.add('collapsed');
+            }
         });
 
         // Sidebar Logic
@@ -297,25 +368,31 @@
             // Toggle Main Content Areas
             const topBookList = document.getElementById('topBookList');
             const topDialogueList = document.getElementById('topDialogueList');
+            const topIeltsBar = document.getElementById('topIeltsBar');
             const softwareHeader = document.getElementById('softwareHeader');
             const similarHeader = document.getElementById('similarHeader');
+            const ieltsHeader = document.getElementById('ieltsHeader');
             const cardContainer = document.getElementById('cardContainer');
             const dialogueContainer = document.getElementById('dialogueContainer');
             const similarContainer = document.getElementById('similarContainer');
+            const ieltsWrap = document.getElementById('ieltsWrap');
 
             // Reset displays
             topBookList.style.display = 'none';
             topDialogueList.style.display = 'none';
+            topIeltsBar.style.display = 'none';
             softwareHeader.style.display = 'none';
             similarHeader.style.display = 'none';
+            ieltsHeader.style.display = 'none';
             cardContainer.style.display = 'none';
             dialogueContainer.style.display = 'none';
             similarContainer.style.display = 'none';
+            ieltsWrap.style.display = 'none';
 
             if (mode === 'software') {
                 topBookList.style.display = 'flex';
                 softwareHeader.style.display = 'flex';
-                cardContainer.style.display = 'grid'; 
+                cardContainer.style.display = 'grid';
             } else if (mode === 'dialogue') {
                 topDialogueList.style.display = 'flex';
                 softwareHeader.style.display = 'flex'; // Show header for Eye button
@@ -323,10 +400,17 @@
                 if (dialogueBooks.length === 0) {
                     loadDialogueMenu();
                 }
+            } else if (mode === 'ielts') {
+                topIeltsBar.style.display = 'flex';
+                ieltsHeader.style.display = 'flex';
+                ieltsWrap.style.display = 'block';
+                if (!ieltsData) {
+                    loadIelts();
+                }
             } else {
                 similarHeader.style.display = 'flex';
                 similarContainer.style.display = 'grid';
-                
+
                 // Load Similar Words Data if not loaded
                 if (!similarWordsData) {
                     loadSimilarWords();
@@ -397,15 +481,18 @@
             const cardContainer = document.getElementById('cardContainer');
             const dialogueContainer = document.getElementById('dialogueContainer');
             const similarContainer = document.getElementById('similarContainer');
-            
+            const ieltsContainer = document.getElementById('ieltsContainer');
+
             if (isModeHidden) {
                 cardContainer.classList.add('mode-hidden');
                 dialogueContainer.classList.add('mode-hidden');
                 similarContainer.classList.add('mode-hidden');
+                ieltsContainer.classList.add('mode-hidden');
             } else {
                 cardContainer.classList.remove('mode-hidden');
                 dialogueContainer.classList.remove('mode-hidden');
                 similarContainer.classList.remove('mode-hidden');
+                ieltsContainer.classList.remove('mode-hidden');
                 revealedCards.clear();
             }
             
@@ -507,7 +594,7 @@
             try {
                 mask.style.display = 'flex';
                 // Encode the filename to handle special characters like '&', spaces, commas
-                const response = await fetch('wordbook/' + encodeURIComponent(bookConfig.id) + '?t=' + new Date().getTime());
+                const response = await fetch('wordbook/' + encodeURIComponent(bookConfig.id));
                 if (!response.ok) throw new Error("File not found");
                 currentData = await response.json();
                 // Removed status initialization
@@ -538,7 +625,7 @@
                     <div class="line-1-term">${item.term}</div>
                     <div class="line-2-audio">
                         ${item.phonetic}
-                        <div class="audio-icon" onclick="event.stopPropagation(); speak('${item.term.replace(/'/g, "\'")}')">🔊</div>
+                        <div class="audio-icon" onclick="event.stopPropagation(); speak('${item.term.replace(/'/g, "\\'")}')">🔊</div>
                     </div>
                     <div class="line-3-meaning">${item.definition}</div>
                     <div class="line-4-synonyms">同义: ${item.synonyms}</div>
@@ -594,7 +681,7 @@
             
             try {
                 mask.style.display = 'flex';
-                const response = await fetch('dialogue/' + encodeURIComponent(bookConfig.id) + '?t=' + new Date().getTime());
+                const response = await fetch('dialogue/' + encodeURIComponent(bookConfig.id));
                 if (!response.ok) throw new Error("File not found");
                 currentDialogueData = await response.json();
                 renderDialogue();
@@ -670,9 +757,206 @@
             });
         }
 
+        // --- IELTS Logic ---
+
+        const IELTS_PAGE_SIZE = 60;
+        let ieltsData = null;
+        let ieltsFav = new Set(JSON.parse(localStorage.getItem('ielts_fav') || '[]'));
+        let ieltsKnown = new Set(JSON.parse(localStorage.getItem('ielts_known') || '[]'));
+        let ieltsLetter = '', ieltsFilter = 'all', ieltsQuery = '', ieltsPage = 1, ieltsOrder = null;
+        let ieltsSearchTimer = null;
+
+        function saveIeltsProgress() {
+            localStorage.setItem('ielts_fav', JSON.stringify([...ieltsFav]));
+            localStorage.setItem('ielts_known', JSON.stringify([...ieltsKnown]));
+        }
+
+        function escHtml(s) {
+            return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+        }
+
+        async function loadIelts() {
+            const mask = document.getElementById('loadingMask');
+            try {
+                mask.style.display = 'flex';
+                const response = await fetch('ielts/words.json');
+                if (!response.ok) throw new Error("Failed to load IELTS words");
+                ieltsData = await response.json();
+                renderIeltsLetterBar();
+                renderIelts();
+            } catch (error) {
+                console.error(error);
+                document.getElementById('ieltsContainer').innerHTML = `<div class="empty-state">❌ 加载雅思词汇失败<br>${error.message}</div>`;
+            } finally {
+                mask.style.display = 'none';
+            }
+        }
+
+        function renderIeltsLetterBar() {
+            const letters = [...new Set(ieltsData.map(x => x.w[0].toUpperCase()))].sort();
+            const bar = document.getElementById('topIeltsBar');
+            bar.innerHTML = `<div class="book-pill active" onclick="setIeltsLetter('', this)">ALL</div>` +
+                letters.map(l => `<div class="book-pill" onclick="setIeltsLetter('${l}', this)">${l}</div>`).join('');
+        }
+
+        function setIeltsLetter(l, el) {
+            ieltsLetter = l;
+            ieltsPage = 1;
+            document.querySelectorAll('#topIeltsBar .book-pill').forEach(p => p.classList.remove('active'));
+            el.classList.add('active');
+            renderIelts();
+        }
+
+        function setIeltsFilter(f, el) {
+            ieltsFilter = f;
+            ieltsPage = 1;
+            document.querySelectorAll('#ieltsStatusTabs .status-pill[data-f]').forEach(p => p.classList.remove('active'));
+            el.classList.add('active');
+            renderIelts();
+        }
+
+        function onIeltsSearch(v) {
+            clearTimeout(ieltsSearchTimer);
+            ieltsSearchTimer = setTimeout(() => {
+                ieltsQuery = v.trim();
+                ieltsPage = 1;
+                renderIelts();
+            }, 150);
+        }
+
+        function toggleIeltsShuffle(el) {
+            if (ieltsOrder) {
+                ieltsOrder = null;
+                el.classList.remove('active');
+            } else {
+                ieltsOrder = ieltsData.map((_, i) => i);
+                for (let i = ieltsOrder.length - 1; i > 0; i--) {
+                    const j = Math.floor(Math.random() * (i + 1));
+                    [ieltsOrder[i], ieltsOrder[j]] = [ieltsOrder[j], ieltsOrder[i]];
+                }
+                el.classList.add('active');
+            }
+            ieltsPage = 1;
+            renderIelts();
+        }
+
+        function getIeltsFiltered() {
+            const arr = ieltsOrder ? ieltsOrder.map(i => ieltsData[i]) : ieltsData;
+            const q = ieltsQuery.toLowerCase();
+            return arr.filter(x => {
+                if (ieltsLetter && x.w[0].toUpperCase() !== ieltsLetter) return false;
+                if (ieltsFilter === 'fav' && !ieltsFav.has(x.w)) return false;
+                if (ieltsFilter === 'known' && !ieltsKnown.has(x.w)) return false;
+                if (ieltsFilter === 'unknown' && ieltsKnown.has(x.w)) return false;
+                if (q && !x.w.toLowerCase().includes(q) && !x.m.includes(ieltsQuery)) return false;
+                return true;
+            });
+        }
+
+        // 给释义里的词性(v. n. adj. 等)上色
+        function fmtIeltsMeaning(m) {
+            return escHtml(m).replace(/(^|[;；]\s*)((?:v|n|adj|adv|prep|conj|pron|num|art|aux|int|vt|vi)\.)/g,
+                '$1<span class="pos">$2</span>');
+        }
+
+        function renderIelts() {
+            const data = getIeltsFiltered();
+            const pages = Math.max(1, Math.ceil(data.length / IELTS_PAGE_SIZE));
+            if (ieltsPage > pages) ieltsPage = pages;
+            const slice = data.slice((ieltsPage - 1) * IELTS_PAGE_SIZE, ieltsPage * IELTS_PAGE_SIZE);
+            const container = document.getElementById('ieltsContainer');
+
+            if (!slice.length) {
+                container.innerHTML = '<div class="empty-state">没有符合条件的单词</div>';
+            } else {
+                container.innerHTML = slice.map(x => {
+                    const phrases = x.ph.map(p =>
+                        `<div class="ielts-phrase">${escHtml(p.en)}<span class="cn">${escHtml(p.cn)}</span></div>`).join('');
+                    const sents = x.s.map(s =>
+                        `<div class="ielts-sent">${escHtml(s.en)}<button class="sent-speak" data-say="${escHtml(s.en)}" title="朗读例句">🔊</button><div class="cn">${escHtml(s.cn)}</div></div>`).join('');
+                    return `
+                    <div class="ielts-card" data-w="${escHtml(x.w)}">
+                        <div class="ielts-word-row">
+                            <span class="ielts-term">${escHtml(x.w)}</span>
+                            <span class="ielts-phonetic">/${escHtml(x.p)}/</span>
+                            <div class="audio-icon" data-say="${escHtml(x.w)}" title="美式发音">🔊</div>
+                            <div class="ielts-actions">
+                                <span class="ielts-act fav-btn ${ieltsFav.has(x.w) ? 'fav-on' : ''}">${ieltsFav.has(x.w) ? '⭐ 已收藏' : '☆ 收藏'}</span>
+                                <span class="ielts-act known-btn ${ieltsKnown.has(x.w) ? 'known-on' : ''}">${ieltsKnown.has(x.w) ? '✅ 已掌握' : '◻ 掌握'}</span>
+                            </div>
+                        </div>
+                        <div class="ielts-detail">
+                            <div class="ielts-meaning">${fmtIeltsMeaning(x.m)}</div>
+                            ${phrases ? '<span class="ielts-label">词组</span>' + phrases : ''}
+                            ${sents ? '<span class="ielts-label">例句</span>' + sents : ''}
+                        </div>
+                    </div>`;
+                }).join('');
+            }
+
+            const pager = document.getElementById('ieltsPager');
+            pager.innerHTML = data.length <= IELTS_PAGE_SIZE ? '' : `
+                <div class="status-pill" onclick="ieltsGoPage(-1)">‹ 上一页</div>
+                <span class="page-info">第 ${ieltsPage} / ${pages} 页 · ${data.length} 词</span>
+                <div class="status-pill" onclick="ieltsGoPage(1)">下一页 ›</div>`;
+
+            document.getElementById('ieltsCount').innerHTML =
+                `共 ${ieltsData.length} 词 · 已掌握 <b>${ieltsKnown.size}</b> · 收藏 ${ieltsFav.size}`;
+        }
+
+        function ieltsGoPage(d) {
+            const pages = Math.max(1, Math.ceil(getIeltsFiltered().length / IELTS_PAGE_SIZE));
+            const np = ieltsPage + d;
+            if (np < 1 || np > pages) return;
+            ieltsPage = np;
+            renderIelts();
+            document.querySelector('.content-area').scrollTop = 0;
+        }
+
+        function initIeltsEvents() {
+            document.getElementById('ieltsContainer').addEventListener('click', e => {
+                const say = e.target.closest('[data-say]');
+                if (say) { speak(say.dataset.say); return; }
+                const card = e.target.closest('.ielts-card');
+                if (!card) return;
+                const w = card.dataset.w;
+                if (e.target.closest('.fav-btn')) {
+                    ieltsFav.has(w) ? ieltsFav.delete(w) : ieltsFav.add(w);
+                    saveIeltsProgress();
+                    renderIelts();
+                    return;
+                }
+                if (e.target.closest('.known-btn')) {
+                    ieltsKnown.has(w) ? ieltsKnown.delete(w) : ieltsKnown.add(w);
+                    saveIeltsProgress();
+                    renderIelts();
+                    return;
+                }
+                if (isModeHidden) { card.classList.toggle('card-revealed'); }
+            });
+        }
+
+        // --- Speech (美式发音,优先选择 en-US 音色) ---
+
+        let enVoice = null;
+        function pickEnVoice() {
+            const vs = window.speechSynthesis.getVoices();
+            enVoice = vs.find(v => v.lang === 'en-US' && /Samantha|Alex|Google US/i.test(v.name))
+                   || vs.find(v => v.lang === 'en-US')
+                   || vs.find(v => v.lang.startsWith('en'))
+                   || null;
+        }
+        if ('speechSynthesis' in window) {
+            pickEnVoice();
+            window.speechSynthesis.onvoiceschanged = pickEnVoice;
+        }
+
         function speak(text) {
+            if (!('speechSynthesis' in window)) return;
+            window.speechSynthesis.cancel(); // 打断上一次,避免排队
             const u = new SpeechSynthesisUtterance(text);
             u.lang = 'en-US'; u.rate = 0.9;
+            if (enVoice) u.voice = enVoice;
             window.speechSynthesis.speak(u);
         }
     </script>
