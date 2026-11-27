@@ -225,6 +225,7 @@
         .notebook-phrases { list-style: none; margin: 0; padding: 0; }
         .notebook-phrases li + li { margin-top: 7px; }
         .notebook-phrase-en { display: block; font-size: 13px; font-weight: 500; color: #334155; line-height: 1.6; overflow-wrap: anywhere; }
+        .notebook-dialog .notebook-phrase-en { color: #b45309; font-weight: 600; }
         .notebook-phrase-cn { display: block; color: #64748b; font-size: 12px; line-height: 1.6; }
         .notebook-sentence { margin: 0; padding: 10px 11px; background: #f8fafc; border-left: 2px solid #bfdbfe; border-radius: 0 6px 6px 0; }
         .notebook-sentence p { margin: 0; font-size: 13px; line-height: 1.7; color: #334155; }
@@ -234,6 +235,9 @@
         .notebook-relations { display: flex; flex-wrap: wrap; gap: 6px; }
         .notebook-relation { padding: 4px 7px; border: 1px solid #e2e8f0; border-radius: 5px; color: #475569; background: white; font-size: 11px; line-height: 1.6; }
         .notebook-relation span { color: #64748b; margin-left: 5px; }
+        .notebook-relation .notebook-relation-en { color: inherit; margin-left: 0; }
+        .notebook-dialog .notebook-synonyms .notebook-relation-en { color: #15803d; font-weight: 600; }
+        .notebook-dialog .notebook-antonyms .notebook-relation-en { color: #be123c; font-weight: 600; }
         .notebook-relation-note { margin: 6px 0 0; font-size: 11px; line-height: 1.7; color: #64748b; }
         @media (max-width: 600px) {
             body.app-notebook .content-area { padding: 16px; }
@@ -615,7 +619,7 @@
             }
             const audioIcon = '<svg aria-hidden="true" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M11 5 6 9H3v6h3l5 4V5zM15 8a6 6 0 0 1 0 8M18 5a10 10 0 0 1 0 14"></path></svg>';
             const audioButton = (text, label) => `<button type="button" class="notebook-speak" data-say="${escHtml(text)}" aria-label="${escHtml(label)}" title="${escHtml(label)}">${audioIcon}</button>`;
-            const relations = words => words.length ? words.map(word => `<span class="notebook-relation"><span lang="en" style="color:inherit; margin:0;">${escHtml(word.en)}</span><span>${escHtml(word.cn)}</span></span>`).join('') : '<span class="notebook-relation-note">No common direct equivalent.</span>';
+            const relations = words => words.length ? words.map(word => `<span class="notebook-relation"><span class="notebook-relation-en" lang="en">${escHtml(word.en)}</span><span>${escHtml(word.cn)}</span></span>`).join('') : '<span class="notebook-relation-note">No common direct equivalent.</span>';
             const phrases = items => `<ul class="notebook-phrases">${items.map(phrase => `<li><span class="notebook-phrase-en" lang="en">${escHtml(phrase.en)}</span><span class="notebook-phrase-cn">${escHtml(phrase.cn)}</span></li>`).join('')}</ul>`;
             const sentence = item => `<blockquote class="notebook-sentence">${audioButton(item.en, 'Play sentence')}<p lang="en">${escHtml(item.en)}</p><p class="notebook-sentence-cn">${escHtml(item.cn)}</p></blockquote>`;
             const isExpression = entry => entry.type === 'phrase' || entry.type === 'pattern';
@@ -654,10 +658,10 @@
                                         ${sense.relatedExpressions && sense.relatedExpressions.length ? `<h4 class="notebook-section-label">Related expressions</h4><div class="notebook-relations">${relations(sense.relatedExpressions)}</div>${sense.relatedNote ? `<p class="notebook-relation-note">${escHtml(sense.relatedNote)}</p>` : ''}` : ''}
                                     ` : `
                                     <h4 class="notebook-section-label">Synonyms</h4>
-                                    <div class="notebook-relations">${relations(sense.synonyms || [])}</div>
+                                    <div class="notebook-relations notebook-synonyms">${relations(sense.synonyms || [])}</div>
                                     ${sense.synonymNote ? `<p class="notebook-relation-note">${escHtml(sense.synonymNote)}</p>` : ''}
                                     <h4 class="notebook-section-label">Antonyms / contrasts</h4>
-                                    <div class="notebook-relations">${relations(sense.antonyms || [])}</div>
+                                    <div class="notebook-relations notebook-antonyms">${relations(sense.antonyms || [])}</div>
                                     ${sense.antonymNote ? `<p class="notebook-relation-note">${escHtml(sense.antonymNote)}</p>` : ''}
                                     `}
                                 </section>`).join('')}
