@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>English Learning</title>
-    <link rel="icon" href="img/learn.png" type="image/png">
+    <link rel="icon" href="img/learn-v3-soft-book.png" type="image/png">
     <style>
         :root { --primary-blue: #3b82f6; --bg-color: #f3f4f6; --text-main: #1f2937; --text-sub: #6b7280; --border-color: #e5e7eb; --success-color: #10b981; --danger-color: #ef4444; }
         body { margin: 0; font-family: 'Segoe UI', sans-serif; background-color: var(--bg-color); display: flex; height: 100vh; overflow: hidden; }
@@ -85,11 +85,6 @@
             display: none;
         }
 
-        .mode-hidden .similar-cn,
-        .mode-hidden .similar-phonetic {
-            display: none;
-        }
-
         /* Dialogue Hidden Mode */
         .mode-hidden .scenario-card .chat-container,
         .mode-hidden .scenario-card .key-structures-box {
@@ -111,7 +106,7 @@
             transform: translateY(-2px); 
         }
 
-        .mode-hidden .card, .mode-hidden .similar-card {
+        .mode-hidden .card {
             cursor: pointer;
         }
 
@@ -122,9 +117,6 @@
         .mode-hidden .card.card-revealed .line-3-meaning,
         .mode-hidden .card.card-revealed .line-4-synonyms,
         .mode-hidden .card.card-revealed .line-5-example { display: flex; display: block; }
-
-        .mode-hidden .similar-card.card-revealed .similar-cn,
-        .mode-hidden .similar-card.card-revealed .similar-phonetic { display: block; }
 
         .line-1-term { font-size: 22px; font-weight: 700; color: var(--text-main); margin-bottom: 8px; }
         .line-2-audio { display: flex; align-items: center; gap: 8px; color: var(--text-sub); font-family: 'Lucida Sans Unicode', sans-serif; margin-bottom: 16px; font-size: 14px; }
@@ -137,27 +129,117 @@
         .empty-state { text-align: center; color: var(--text-sub); margin-top: 50px; font-size: 14px;}
 
         /* Similar Words Styles */
-        .similar-card { border-top: 5px solid transparent; }
-        .similar-card .card-actions { top: 10px; right: 10px; }
-
-        .theme-blue { background-color: #e3f2fd; border-color: #2196f3; }
-        .theme-blue .similar-word-item { border-bottom: 1px solid #bbdefb; }
-
-        .theme-green { background-color: #e8f5e9; border-color: #4caf50; }
-        .theme-green .similar-word-item { border-bottom: 1px solid #c8e6c9; }
-
-        .theme-purple { background-color: #f3e5f5; border-color: #9c27b0; }
-        .theme-purple .similar-word-item { border-bottom: 1px solid #e1bee7; }
-
-        .theme-orange { background-color: #fff3e0; border-color: #ff9800; }
-        .theme-orange .similar-word-item { border-bottom: 1px solid #ffe0b2; }
-
+        #similarHeader { gap: 16px; padding-top: 16px; padding-bottom: 16px; }
+        .similar-heading { flex: 1; min-width: 0; }
+        .similar-heading h1 { margin: 0 0 5px; font-size: 20px; color: var(--text-main); }
+        .similar-description { margin: 0; font-size: 13px; line-height: 1.6; color: var(--text-sub); }
+        #similarHeader .btn-toggle-view { gap: 7px; border: 1px solid var(--border-color); border-radius: 8px; background: white; font: inherit; font-size: 13px; flex-shrink: 0; }
+        #similarHeader .btn-toggle-view[aria-pressed="true"] { color: var(--primary-blue); background: #eff6ff; border-color: #bfdbfe; }
+        #similarContainer { grid-template-columns: repeat(auto-fill, minmax(min(100%, 320px), 1fr)); align-items: start; gap: 20px; }
+        .similar-category { grid-column: 1 / -1; margin: 12px 0 -4px; display: flex; align-items: center; gap: 10px; color: var(--text-main); }
+        .similar-category h2 { font-size: 16px; margin: 0; }
+        .similar-category span { font-size: 12px; color: var(--text-sub); }
+        .similar-card { --group-accent: #3b82f6; height: auto; min-width: 0; padding: 20px; border: 1px solid var(--border-color); border-top: 3px solid var(--group-accent); box-shadow: 0 1px 2px rgba(0,0,0,0.03); }
+        .similar-card:hover { transform: none; box-shadow: 0 3px 10px rgba(0,0,0,0.05); }
+        .similar-card[data-category="meaning"] { --group-accent: #0d9488; }
+        .similar-card[data-category="concept"] { --group-accent: #8b5cf6; }
+        .similar-card[data-category="family"] { --group-accent: #d97706; }
+        .similar-card[data-category="suffix"] { --group-accent: #64748b; }
+        .similar-card-title { margin: 0 0 8px; color: var(--text-main); font-size: 15px; line-height: 1.5; }
         .similar-word-list { list-style: none; padding: 0; margin: 0; }
-        .similar-word-item { display: flex; justify-content: space-between; align-items: baseline; padding: 12px 0; }
-        .similar-word-item:last-child { border-bottom: none !important; }
-        .similar-en { font-weight: 600; font-size: 1.1rem; display: block; color: var(--text-main); }
-        .similar-cn { font-size: 0.95rem; color: var(--text-sub); display: block; margin-top: 4px; }
-        .similar-phonetic { font-size: 0.85rem; color: #94a3b8; font-weight: normal; text-align: right; flex-shrink: 0; }
+        .similar-word-item + .similar-word-item { border-top: 1px solid #eef0f3; }
+        .similar-word-button { display: block; width: 100%; border: 0; border-radius: 6px; padding: 13px 4px; background: transparent; text-align: left; color: var(--text-main); font: inherit; overflow-wrap: anywhere; }
+        .similar-word-button:disabled { opacity: 1; color: var(--text-main); -webkit-text-fill-color: currentColor; cursor: default; }
+        .mode-hidden .similar-word-button { cursor: pointer; }
+        .mode-hidden .similar-word-button:hover { background: #f8fafc; }
+        .similar-word-button:focus-visible, .similar-group-toggle:focus-visible, #similarHeader button:focus-visible { outline: 2px solid var(--primary-blue); outline-offset: 3px; }
+        .similar-en { font-weight: 650; font-size: 18px; display: block; line-height: 1.4; }
+        .similar-pos { font-size: 12px; font-weight: 400; color: var(--text-sub); margin-left: 7px; }
+        .similar-phonetic { display: block; margin-top: 3px; font-size: 13px; line-height: 1.5; color: var(--text-sub); font-family: 'Lucida Sans Unicode', sans-serif; }
+        .similar-answer { display: block; margin-top: 7px; }
+        .similar-cn { display: block; font-size: 14px; line-height: 1.7; }
+        .similar-example { display: block; margin-top: 6px; color: #475569; font-size: 13px; line-height: 1.6; }
+        .similar-example-cn { display: block; color: var(--text-sub); font-size: 12px; line-height: 1.6; }
+        .similar-reveal-hint { display: block; margin-top: 7px; color: var(--primary-blue); font-size: 12px; line-height: 1.7; }
+        .similar-note { margin: 10px 0 0; padding: 10px 12px; background: #f8fafc; border-radius: 6px; color: #475569; font-size: 12px; line-height: 1.8; }
+        .similar-note strong { color: var(--text-main); }
+        .similar-group-toggle { margin-top: 10px; padding: 9px 0; width: 100%; border: 1px solid var(--border-color); border-radius: 6px; background: white; color: var(--primary-blue); font: inherit; font-size: 12px; cursor: pointer; }
+        .similar-card [hidden] { display: none; }
+        @media (max-width: 600px) {
+            body.app-similar .content-area { padding: 16px; }
+            #similarHeader { padding: 14px 16px; flex-wrap: wrap; }
+            #similarHeader .similar-heading { flex-basis: 100%; }
+            #similarContainer { gap: 14px; }
+            .similar-card { padding: 16px; }
+        }
+
+        /* Personal word notebook */
+        body.app-notebook .main-content { min-width: 0; }
+        #notebookHeader { padding: 16px 30px; }
+        .notebook-heading h1 { margin: 0 0 4px; font-size: 20px; color: var(--text-main); }
+        .notebook-heading p { margin: 0; color: var(--text-sub); font-size: 13px; line-height: 1.6; }
+        #notebookCount { font-size: 12px; font-weight: 400; color: var(--text-sub); margin-left: 8px; }
+        #notebookContainer { width: 100%; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr)); align-items: start; gap: 20px; padding-bottom: 40px; }
+        .notebook-card { min-width: 0; background: white; border: 1px solid var(--border-color); border-radius: 12px; box-shadow: 0 1px 3px rgba(15,23,42,0.04); overflow: hidden; }
+        .notebook-card-header { padding: 18px 18px 14px; border-bottom: 1px solid #f1f5f9; }
+        .notebook-term-row { display: flex; align-items: center; flex-wrap: wrap; gap: 8px; }
+        .notebook-term { margin: 0; color: #0f172a; font-size: 23px; line-height: 1.3; letter-spacing: -0.3px; overflow-wrap: anywhere; }
+        .notebook-pos { color: var(--text-sub); font-size: 12px; }
+        .notebook-type { padding: 2px 6px; border-radius: 4px; background: #f1f5f9; color: #475569; font-size: 10px; }
+        .notebook-card[data-entry-type="pattern"] .notebook-term { font-size: 20px; }
+        .notebook-term-row .notebook-speak { margin-left: auto; }
+        .notebook-pronunciation { display: flex; flex-wrap: wrap; align-items: center; gap: 7px; margin-top: 7px; color: #64748b; font-size: 13px; }
+        .notebook-accent { font-size: 10px; color: #2563eb; background: #eff6ff; border-radius: 4px; padding: 2px 5px; }
+        .notebook-ipa, .notebook-sense-ipa { font-family: 'Lucida Sans Unicode', sans-serif; }
+        .notebook-speak { display: inline-flex; align-items: center; justify-content: center; gap: 5px; min-width: 32px; min-height: 32px; padding: 4px 7px; color: #2563eb; background: transparent; border: 1px solid #dbeafe; border-radius: 7px; cursor: pointer; font: inherit; font-size: 11px; }
+        .notebook-speak:hover { background: #eff6ff; }
+        .notebook-speak:focus-visible, .notebook-retry:focus-visible, .notebook-details-button:focus-visible, .notebook-dialog-close:focus-visible { outline: 2px solid var(--primary-blue); outline-offset: -3px; }
+        .notebook-summary { margin: 10px 0 0; font-size: 14px; font-weight: 600; line-height: 1.7; color: #334155; }
+        .notebook-preview { padding: 0 18px 16px; }
+        .notebook-structure { margin: 0; padding: 9px 11px; border-radius: 6px; background: #eff6ff; color: #1d4ed8; font-size: 13px; line-height: 1.8; overflow-wrap: anywhere; }
+        .notebook-usage { margin: 0; padding-left: 18px; color: #475569; font-size: 12px; line-height: 1.8; }
+        .notebook-usage li + li { margin-top: 5px; }
+        .notebook-tip { padding: 10px 12px; margin: 0 0 16px; background: #fffcf5; border-radius: 6px; color: #78716c; font-size: 12px; line-height: 1.7; }
+        .notebook-tip strong { color: #92400e; }
+        .notebook-details-button { display: flex; align-items: center; justify-content: space-between; gap: 8px; width: 100%; padding: 12px 18px; border: 0; border-top: 1px solid #eef2f6; background: white; color: #2563eb; text-align: left; font: inherit; font-size: 12px; line-height: 1.6; cursor: pointer; }
+        .notebook-details-button:hover { background: #f8fafc; }
+        .notebook-sense-count { color: #64748b; font-size: 11px; }
+        .notebook-details-body { padding: 18px 24px 24px; }
+        .notebook-dialog { box-sizing: border-box; width: min(680px, calc(100% - 32px)); max-width: none; max-height: calc(100vh - 32px); max-height: calc(100dvh - 32px); margin: auto; padding: 0; border: 1px solid #e2e8f0; border-radius: 16px; background: white; color: var(--text-main); box-shadow: 0 24px 80px rgba(15,23,42,0.25); overflow: auto; overscroll-behavior: contain; }
+        .notebook-dialog::backdrop { background: rgba(15,23,42,0.48); }
+        .notebook-dialog-bar { display: flex; align-items: center; justify-content: space-between; gap: 12px; position: sticky; top: 0; z-index: 1; padding: 10px 20px; border-bottom: 1px solid #eef2f6; background: white; color: #64748b; font-size: 12px; }
+        .notebook-dialog-close { display: inline-flex; align-items: center; gap: 7px; padding: 7px 10px; border: 1px solid #e2e8f0; border-radius: 7px; background: white; color: #475569; font: inherit; cursor: pointer; }
+        .notebook-dialog-close:hover { background: #f1f5f9; }
+        .notebook-dialog-close kbd { font: inherit; font-size: 10px; color: #94a3b8; }
+        .notebook-dialog .notebook-card-header { padding: 20px 24px; }
+        .notebook-dialog .notebook-term { font-size: 28px; }
+        .notebook-sense { min-width: 0; }
+        .notebook-sense + .notebook-sense { border-top: 1px solid #e2e8f0; margin-top: 20px; padding-top: 18px; }
+        .notebook-sense-heading { display: flex; align-items: baseline; flex-wrap: wrap; gap: 6px; }
+        .notebook-sense-number { color: #3b82f6; font-size: 11px; font-weight: 600; }
+        .notebook-sense h3 { margin: 0; font-size: 15px; line-height: 1.6; color: #1e293b; }
+        .notebook-grammar { font-size: 11px; color: #64748b; }
+        .notebook-sense-ipa { display: block; margin-top: 5px; color: #64748b; font-size: 12px; }
+        .notebook-definition { margin: 6px 0 12px; color: #64748b; font-size: 12px; line-height: 1.8; }
+        .notebook-section-label { margin: 13px 0 7px; color: #64748b; font-size: 10px; font-weight: 600; letter-spacing: 0.5px; text-transform: uppercase; }
+        .notebook-phrases { list-style: none; margin: 0; padding: 0; }
+        .notebook-phrases li + li { margin-top: 7px; }
+        .notebook-phrase-en { display: block; font-size: 13px; font-weight: 500; color: #334155; line-height: 1.6; overflow-wrap: anywhere; }
+        .notebook-phrase-cn { display: block; color: #64748b; font-size: 12px; line-height: 1.6; }
+        .notebook-sentence { margin: 0; padding: 10px 11px; background: #f8fafc; border-left: 2px solid #bfdbfe; border-radius: 0 6px 6px 0; }
+        .notebook-sentence p { margin: 0; font-size: 13px; line-height: 1.7; color: #334155; }
+        .notebook-sentence .notebook-sentence-cn { margin-top: 5px; font-size: 12px; color: #64748b; }
+        .notebook-sentence .notebook-speak { float: right; margin: 0 0 3px 6px; min-width: 28px; min-height: 28px; padding: 3px; }
+        .notebook-sentence::after { content: ''; display: table; clear: both; }
+        .notebook-relations { display: flex; flex-wrap: wrap; gap: 6px; }
+        .notebook-relation { padding: 4px 7px; border: 1px solid #e2e8f0; border-radius: 5px; color: #475569; background: white; font-size: 11px; line-height: 1.6; }
+        .notebook-relation span { color: #64748b; margin-left: 5px; }
+        .notebook-relation-note { margin: 6px 0 0; font-size: 11px; line-height: 1.7; color: #64748b; }
+        @media (max-width: 600px) {
+            body.app-notebook .content-area { padding: 16px; }
+            #notebookHeader { padding: 14px 16px; }
+            #notebookContainer { gap: 14px; }
+        }
 
         /* Dialogue Styles */
         .scenario-card { background: white; border-radius: 12px; padding: 24px; margin-bottom: 30px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); display: flex; flex-wrap: wrap; gap: 30px; align-items: flex-start; }
@@ -224,7 +306,7 @@
     <div class="sidebar" id="sidebar">
         <div class="logo">
             <div class="logo-group">
-                <img src="img/learn.png" alt="Logo" class="logo-img">
+                <img src="img/learn-v3-soft-book.png" alt="Logo" class="logo-img">
                 <span class="logo-text">English Learning</span>
             </div>
             <div class="sidebar-toggle" onclick="toggleSidebar()" title="折叠/展开侧边栏">
@@ -247,6 +329,10 @@
             <div class="nav-item" id="nav-ielts" onclick="switchAppMode('ielts')" title="IELTS">
                 <span class="nav-icon"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg></span>
                 <span class="nav-text">IELTS</span>
+            </div>
+            <div class="nav-item" id="nav-notebook" onclick="switchAppMode('notebook')" title="Word Notebook">
+                <span class="nav-icon"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 3h14a2 2 0 0 1 2 2v16H6a2 2 0 0 1-2-2V3z"></path><path d="M4 17h16M8 7h8M8 11h5"></path></svg></span>
+                <span class="nav-text">Word Notebook</span>
             </div>
         </div>
     </div>
@@ -280,11 +366,16 @@
         </div>
 
         <!-- Similar Words Header -->
-        <div class="header" id="similarHeader" style="display: none; justify-content: flex-end;">
-            <div class="btn-toggle-view" onclick="toggleMode()" title="切换显示/隐藏详情">
+        <div class="header" id="similarHeader" style="display: none;">
+            <div class="similar-heading">
+                <h1>Similar Words <span id="similarCount" style="font-size:12px; font-weight:400; color:var(--text-sub);"></span></h1>
+                <p class="similar-description" id="similarDescription">把相似的词放在一起，比较拼写、含义和用法。</p>
+            </div>
+            <button type="button" class="btn-toggle-view" onclick="toggleMode()" aria-pressed="false" title="进入逐词自测">
                 <!-- Default Open Eye SVG -->
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
-            </div>
+                <span>逐词自测</span>
+            </button>
         </div>
 
         <!-- IELTS Header -->
@@ -305,6 +396,13 @@
             </div>
         </div>
 
+        <div class="header" id="notebookHeader" style="display: none;">
+            <div class="notebook-heading">
+                <h1>Word Notebook<span id="notebookCount"></span></h1>
+                <p>Words and expressions worth keeping, with context worth remembering.</p>
+            </div>
+        </div>
+
         <div class="content-area">
             <!-- Software Words View -->
             <div class="card-grid" id="cardContainer"></div>
@@ -320,8 +418,17 @@
                 <div class="card-grid" id="ieltsContainer"></div>
                 <div class="ielts-pager" id="ieltsPager"></div>
             </div>
+            <div id="notebookContainer" style="display: none;"></div>
         </div>
     </div>
+
+    <dialog id="notebookDialog" class="notebook-dialog" aria-labelledby="notebook-dialog-title">
+        <div class="notebook-dialog-bar">
+            <span>Entry details</span>
+            <button type="button" class="notebook-dialog-close" aria-label="Close details" autofocus>Close <kbd aria-hidden="true">Esc</kbd></button>
+        </div>
+        <div id="notebookDialogContent"></div>
+    </dialog>
 
     <script>
         // Software Words State
@@ -333,6 +440,14 @@
 
         // Similar Words State
         let similarWordsData = null;
+        const revealedSimilarWords = new Set();
+        const similarCategories = [
+            { id: 'spelling', label: '拼写接近' },
+            { id: 'meaning', label: '工作用词' },
+            { id: 'concept', label: '专业概念' },
+            { id: 'family', label: '同词根 · 不同词性' },
+            { id: 'suffix', label: '相似词缀' }
+        ];
 
         // Dialogue State
         let dialogueBooks = [];
@@ -340,10 +455,36 @@
         let currentDialogueData = [];
 
         let currentAppMode = 'software';
+        let notebookData = null;
+        let notebookLoadPromise = null;
+        let notebookDialogTrigger = null;
 
         document.addEventListener('DOMContentLoaded', () => {
             loadMenu(); // Initialize App
             initIeltsEvents();
+            document.getElementById('notebookContainer').addEventListener('click', event => {
+                const audio = event.target.closest('[data-say]');
+                if (audio) speak(audio.dataset.say);
+                if (event.target.closest('.notebook-retry')) loadNotebook();
+                const detailsButton = event.target.closest('.notebook-details-button');
+                if (detailsButton) openNotebookDetails(detailsButton);
+            });
+            const notebookDialog = document.getElementById('notebookDialog');
+            notebookDialog.querySelector('.notebook-dialog-close').addEventListener('click', () => notebookDialog.close());
+            notebookDialog.addEventListener('cancel', event => {
+                event.preventDefault();
+                notebookDialog.close();
+            });
+            notebookDialog.addEventListener('close', () => {
+                if (notebookDialog.open) return;
+                document.getElementById('notebookDialogContent').replaceChildren();
+                if (notebookDialogTrigger && notebookDialogTrigger.isConnected) notebookDialogTrigger.focus({ preventScroll: true });
+                notebookDialogTrigger = null;
+            });
+            notebookDialog.addEventListener('click', event => {
+                const audio = event.target.closest('[data-say]');
+                if (audio) speak(audio.dataset.say);
+            });
             // 窄屏(手机)默认收起侧边栏
             if (window.innerWidth < 768) {
                 document.getElementById('sidebar').classList.add('collapsed');
@@ -359,7 +500,11 @@
         // --- App Mode Switching ---
 
         function switchAppMode(mode) {
+            const notebookDialog = document.getElementById('notebookDialog');
+            if (notebookDialog.open) notebookDialog.close();
             currentAppMode = mode;
+            document.body.classList.toggle('app-similar', mode === 'similar');
+            document.body.classList.toggle('app-notebook', mode === 'notebook');
             
             // Update Sidebar UI
             document.querySelectorAll('.nav-item').forEach(el => el.classList.remove('active'));
@@ -376,6 +521,8 @@
             const dialogueContainer = document.getElementById('dialogueContainer');
             const similarContainer = document.getElementById('similarContainer');
             const ieltsWrap = document.getElementById('ieltsWrap');
+            const notebookHeader = document.getElementById('notebookHeader');
+            const notebookContainer = document.getElementById('notebookContainer');
 
             // Reset displays
             topBookList.style.display = 'none';
@@ -388,6 +535,8 @@
             dialogueContainer.style.display = 'none';
             similarContainer.style.display = 'none';
             ieltsWrap.style.display = 'none';
+            notebookHeader.style.display = 'none';
+            notebookContainer.style.display = 'none';
 
             if (mode === 'software') {
                 topBookList.style.display = 'flex';
@@ -407,6 +556,10 @@
                 if (!ieltsData) {
                     loadIelts();
                 }
+            } else if (mode === 'notebook') {
+                notebookHeader.style.display = 'flex';
+                notebookContainer.style.display = 'grid';
+                if (!notebookData) loadNotebook();
             } else {
                 similarHeader.style.display = 'flex';
                 similarContainer.style.display = 'grid';
@@ -417,6 +570,100 @@
                 }
             }
             updateViewModeUI();
+        }
+
+        // Notebook entries follow JSON array order; insert new entries at the beginning.
+        async function loadNotebook() {
+            if (notebookLoadPromise) return notebookLoadPromise;
+            const container = document.getElementById('notebookContainer');
+            container.innerHTML = '<p class="empty-state" role="status">Opening your notebook…</p>';
+            notebookLoadPromise = (async () => {
+                try {
+                    const response = await fetch('notebook/words.json');
+                    if (!response.ok) throw new Error('Failed to load notebook');
+                    const data = await response.json();
+                    renderNotebook(data);
+                    notebookData = data;
+                } catch (error) {
+                    console.error(error);
+                    container.innerHTML = '<div class="empty-state" role="alert">Could not load your notebook. Please try again.<br><button type="button" class="notebook-retry notebook-speak" style="margin-top:12px;">Retry</button></div>';
+                } finally {
+                    notebookLoadPromise = null;
+                }
+            })();
+            return notebookLoadPromise;
+        }
+
+        function openNotebookDetails(button) {
+            const dialog = document.getElementById('notebookDialog');
+            if (dialog.open) return;
+            const template = button.closest('.notebook-card').querySelector('.notebook-detail-template');
+            const header = button.closest('.notebook-card').querySelector('.notebook-card-header').cloneNode(true);
+            header.querySelector('.notebook-term').id = 'notebook-dialog-title';
+            notebookDialogTrigger = button;
+            document.getElementById('notebookDialogContent').replaceChildren(header, template.content.cloneNode(true));
+            dialog.showModal();
+            dialog.scrollTop = 0;
+        }
+
+        function renderNotebook(entries) {
+            const container = document.getElementById('notebookContainer');
+            document.getElementById('notebookCount').textContent = `${entries.length} ${entries.length === 1 ? 'entry' : 'entries'}`;
+            if (!entries.length) {
+                container.innerHTML = '<p class="empty-state">Your notebook is empty. Start with a word worth keeping.</p>';
+                return;
+            }
+            const audioIcon = '<svg aria-hidden="true" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M11 5 6 9H3v6h3l5 4V5zM15 8a6 6 0 0 1 0 8M18 5a10 10 0 0 1 0 14"></path></svg>';
+            const audioButton = (text, label) => `<button type="button" class="notebook-speak" data-say="${escHtml(text)}" aria-label="${escHtml(label)}" title="${escHtml(label)}">${audioIcon}</button>`;
+            const relations = words => words.length ? words.map(word => `<span class="notebook-relation"><span lang="en" style="color:inherit; margin:0;">${escHtml(word.en)}</span><span>${escHtml(word.cn)}</span></span>`).join('') : '<span class="notebook-relation-note">No common direct equivalent.</span>';
+            const phrases = items => `<ul class="notebook-phrases">${items.map(phrase => `<li><span class="notebook-phrase-en" lang="en">${escHtml(phrase.en)}</span><span class="notebook-phrase-cn">${escHtml(phrase.cn)}</span></li>`).join('')}</ul>`;
+            const sentence = item => `<blockquote class="notebook-sentence">${audioButton(item.en, 'Play sentence')}<p lang="en">${escHtml(item.en)}</p><p class="notebook-sentence-cn">${escHtml(item.cn)}</p></blockquote>`;
+            const isExpression = entry => entry.type === 'phrase' || entry.type === 'pattern';
+            container.innerHTML = entries.map((entry, index) => `
+                <article class="notebook-card" data-entry-type="${isExpression(entry) ? entry.type : 'word'}" aria-labelledby="notebook-term-${index}">
+                    <header class="notebook-card-header">
+                        <div class="notebook-term-row">
+                            <h2 class="notebook-term" id="notebook-term-${index}" lang="en">${escHtml(entry.word)}</h2>
+                            <span class="notebook-pos">${escHtml(entry.pos)}</span>
+                            ${isExpression(entry) ? `<span class="notebook-type">${entry.type === 'pattern' ? 'Pattern' : 'Phrase'}</span>` : ''}
+                            ${audioButton(entry.pronunciationText || entry.word, 'Play US pronunciation')}
+                        </div>
+                        <div class="notebook-pronunciation"><span class="notebook-accent">US</span><span class="notebook-ipa">${escHtml(entry.phoneticUs)}</span></div>
+                        <p class="notebook-summary">${escHtml(entry.summary)}</p>
+                    </header>
+                    <div class="notebook-preview">
+                        <h3 class="notebook-section-label">${isExpression(entry) ? 'Structure' : 'Phrase'}</h3>
+                        ${isExpression(entry) ? `<p class="notebook-structure" lang="en">${escHtml(entry.senses[0].structure)}</p>` : phrases(entry.senses[0].phrases.slice(0, 1))}
+                        <h3 class="notebook-section-label">Example</h3>
+                        ${sentence(entry.senses[0].sentence)}
+                    </div>
+                    <button type="button" class="notebook-details-button" aria-haspopup="dialog" aria-controls="notebookDialog" aria-label="More details about ${escHtml(entry.word)}"><span>More details</span><span class="notebook-sense-count">${entry.senses.length} ${entry.senses.length === 1 ? 'sense' : 'senses'}</span></button>
+                    <template class="notebook-detail-template">
+                        <div class="notebook-details-body">
+                            ${entry.note ? `<p class="notebook-tip"><strong>Usage note · </strong>${escHtml(entry.note)}</p>` : ''}
+                            ${entry.senses.map((sense, senseIndex) => `
+                                <section class="notebook-sense" aria-labelledby="notebook-sense-${index}-${senseIndex}">
+                                    <div class="notebook-sense-heading"><span class="notebook-sense-number">${String(senseIndex + 1).padStart(2, '0')}</span><h3 id="notebook-sense-${index}-${senseIndex}">${escHtml(sense.meaning)}</h3><span class="notebook-grammar">${escHtml(sense.grammar)}</span></div>
+                                    ${sense.phoneticUs ? `<span class="notebook-sense-ipa">US ${escHtml(sense.phoneticUs)}</span>` : ''}
+                                    <p class="notebook-definition">${escHtml(sense.definition)}</p>
+                                    ${sense.structure ? `<h4 class="notebook-section-label">Structure</h4><p class="notebook-structure" lang="en">${escHtml(sense.structure)}</p>` : ''}
+                                    <h4 class="notebook-section-label">${isExpression(entry) ? 'Common uses' : 'Phrases'}</h4>${phrases(sense.phrases)}
+                                    <h4 class="notebook-section-label">Example</h4>${sentence(sense.sentence)}
+                                    ${sense.usageNotes && sense.usageNotes.length ? `<h4 class="notebook-section-label">Usage</h4><ul class="notebook-usage">${sense.usageNotes.map(note => `<li>${escHtml(note)}</li>`).join('')}</ul>` : ''}
+                                    ${isExpression(entry) ? `
+                                        ${sense.relatedExpressions && sense.relatedExpressions.length ? `<h4 class="notebook-section-label">Related expressions</h4><div class="notebook-relations">${relations(sense.relatedExpressions)}</div>${sense.relatedNote ? `<p class="notebook-relation-note">${escHtml(sense.relatedNote)}</p>` : ''}` : ''}
+                                    ` : `
+                                    <h4 class="notebook-section-label">Synonyms</h4>
+                                    <div class="notebook-relations">${relations(sense.synonyms || [])}</div>
+                                    ${sense.synonymNote ? `<p class="notebook-relation-note">${escHtml(sense.synonymNote)}</p>` : ''}
+                                    <h4 class="notebook-section-label">Antonyms / contrasts</h4>
+                                    <div class="notebook-relations">${relations(sense.antonyms || [])}</div>
+                                    ${sense.antonymNote ? `<p class="notebook-relation-note">${escHtml(sense.antonymNote)}</p>` : ''}
+                                    `}
+                                </section>`).join('')}
+                        </div>
+                    </template>
+                </article>`).join('');
         }
 
         // --- Similar Words Logic ---
@@ -442,33 +689,82 @@
         function renderSimilarWords() {
             const container = document.getElementById('similarContainer');
             container.innerHTML = '';
-
-            similarWordsData.forEach((group, index) => {
-                const card = document.createElement('div');
-                card.id = `similar-card-${index}`;
-                card.className = `similar-card ${group.theme}`;
-                card.onclick = () => toggleSimilarCardDetails(index);
-                if (isModeHidden && revealedCards.has(`similar-${index}`)) {
-                    card.classList.add('card-revealed');
-                }
-                
-                let wordsHtml = group.words.map(w => `
-                    <li class="similar-word-item">
-                        <div style="flex: 1; padding-right: 10px;">
-                            <span class="similar-en">${w.en}</span>
-                            <span class="similar-cn">${w.cn}</span>
-                        </div>
-                        ${w.phonetic ? `<span class="similar-phonetic">${w.phonetic}</span>` : ''}
-                    </li>
-                `).join('');
-
-                card.innerHTML = `
-                    <ul class="similar-word-list">
-                        ${wordsHtml}
-                    </ul>
-                `;
-                container.appendChild(card);
+            similarCategories.forEach(category => {
+                const groups = similarWordsData.map((group, index) => ({ group, index }))
+                    .filter(({ group }) => group.category === category.id);
+                if (!groups.length) return;
+                const heading = document.createElement('div');
+                heading.className = 'similar-category';
+                heading.innerHTML = `<h2>${escHtml(category.label)}</h2><span>${groups.length} 组</span>`;
+                container.appendChild(heading);
+                groups.forEach(({ group, index }) => {
+                    const card = document.createElement('article');
+                    card.id = `similar-card-${index}`;
+                    card.className = 'similar-card';
+                    card.dataset.category = category.id;
+                    card.setAttribute('aria-labelledby', `similar-title-${index}`);
+                    card.innerHTML = `
+                        <h3 class="similar-card-title" id="similar-title-${index}">${escHtml(group.title)}</h3>
+                        <ul class="similar-word-list">
+                            ${group.words.map((w, wordIndex) => `
+                                <li class="similar-word-item">
+                                    <button type="button" class="similar-word-button" onclick="toggleSimilarWord(${index}, ${wordIndex})" aria-controls="similar-answer-${index}-${wordIndex}" disabled>
+                                        <span class="similar-en">${escHtml(w.en)}${w.pos ? `<span class="similar-pos">${escHtml(w.pos)}</span>` : ''}</span>
+                                        ${w.phonetic ? `<span class="similar-phonetic">${escHtml(w.phonetic)}</span>` : ''}
+                                        <span class="similar-reveal-hint" hidden>点击显示释义</span>
+                                        <span class="similar-answer" id="similar-answer-${index}-${wordIndex}">
+                                            <span class="similar-cn">${escHtml(w.cn)}</span>
+                                            ${w.example ? `<span class="similar-example" lang="en">${escHtml(w.example)}</span>` : ''}
+                                            ${w.exampleCn ? `<span class="similar-example-cn">${escHtml(w.exampleCn)}</span>` : ''}
+                                        </span>
+                                    </button>
+                                </li>`).join('')}
+                        </ul>
+                        <p class="similar-note"><strong>辨析提示 · </strong>${escHtml(group.note)}</p>
+                        <button type="button" class="similar-group-toggle" onclick="toggleSimilarGroup(${index})" hidden>显示整组释义</button>`;
+                    container.appendChild(card);
+                    updateSimilarGroup(index);
+                });
             });
+            const words = similarWordsData.flatMap(group => group.words);
+            const uniqueCount = new Set(words.map(w => w.en.toLowerCase())).size;
+            document.getElementById('similarCount').textContent = `${similarWordsData.length} 组 · ${uniqueCount} 个词`;
+        }
+
+        function updateSimilarGroup(index) {
+            const card = document.getElementById(`similar-card-${index}`);
+            if (!card) return;
+            const buttons = card.querySelectorAll('.similar-word-button');
+            let allRevealed = true;
+            buttons.forEach((button, wordIndex) => {
+                const revealed = !isModeHidden || revealedSimilarWords.has(`${index}:${wordIndex}`);
+                allRevealed = allRevealed && revealed;
+                button.disabled = !isModeHidden;
+                button.setAttribute('aria-expanded', String(revealed));
+                button.querySelector('.similar-answer').hidden = !revealed;
+                button.querySelector('.similar-reveal-hint').hidden = !isModeHidden;
+                button.querySelector('.similar-reveal-hint').textContent = revealed ? '点击收起释义' : '点击显示释义';
+            });
+            card.querySelector('.similar-note').hidden = !allRevealed;
+            const groupButton = card.querySelector('.similar-group-toggle');
+            groupButton.hidden = !isModeHidden;
+            groupButton.textContent = allRevealed ? '收起整组释义' : '显示整组释义';
+            groupButton.setAttribute('aria-expanded', String(allRevealed));
+        }
+
+        function toggleSimilarWord(index, wordIndex) {
+            if (!isModeHidden) return;
+            const key = `${index}:${wordIndex}`;
+            revealedSimilarWords.has(key) ? revealedSimilarWords.delete(key) : revealedSimilarWords.add(key);
+            updateSimilarGroup(index);
+        }
+
+        function toggleSimilarGroup(index) {
+            if (!isModeHidden) return;
+            const keys = similarWordsData[index].words.map((_, wordIndex) => `${index}:${wordIndex}`);
+            const allRevealed = keys.every(key => revealedSimilarWords.has(key));
+            keys.forEach(key => allRevealed ? revealedSimilarWords.delete(key) : revealedSimilarWords.add(key));
+            updateSimilarGroup(index);
         }
 
 
@@ -497,6 +793,8 @@
             }
             
             document.querySelectorAll('.card-revealed').forEach(el => el.classList.remove('card-revealed'));
+            revealedSimilarWords.clear();
+            if (similarWordsData) similarWordsData.forEach((_, index) => updateSimilarGroup(index));
         }
 
         function updateViewModeUI() {
@@ -506,7 +804,15 @@
 
             btns.forEach(btn => {
                 btn.innerHTML = isModeHidden ? closedEye : openEye;
+                if (btn.closest('#similarHeader')) {
+                    btn.innerHTML += `<span>${isModeHidden ? '退出自测' : '逐词自测'}</span>`;
+                    btn.setAttribute('aria-pressed', String(isModeHidden));
+                    btn.title = isModeHidden ? '退出自测，显示全部释义' : '进入逐词自测';
+                }
             });
+            document.getElementById('similarDescription').textContent = isModeHidden
+                ? '先回忆含义，再点击单词逐个揭示；音标始终可见。'
+                : '把相似的词放在一起，比较拼写、含义和用法。';
         }
 
         function toggleCardDetails(id) {
@@ -529,18 +835,6 @@
                     revealedCards.add(`scenario-${index}`);
                 } else {
                     revealedCards.delete(`scenario-${index}`);
-                }
-            }
-        }
-
-        function toggleSimilarCardDetails(index) {
-            const cardElement = document.getElementById(`similar-card-${index}`);
-            if (cardElement) {
-                cardElement.classList.toggle('card-revealed');
-                if (cardElement.classList.contains('card-revealed')) {
-                    revealedCards.add(`similar-${index}`);
-                } else {
-                    revealedCards.delete(`similar-${index}`);
                 }
             }
         }

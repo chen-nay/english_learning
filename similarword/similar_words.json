@@ -1,176 +1,1412 @@
 [
   {
-    "theme": "theme-blue",
+    "category": "spelling",
+    "title": "adapt / adopt",
+    "note": "adapt 强调调整以适应；adopt 强调开始采用，或收养。",
     "words": [
       {
-        "en": "Remarkable",
-        "phonetic": "/rɪˈmɑːrkəbl/",
-        "cn": "非凡的，值得注意的"
+        "en": "adapt",
+        "phonetic": "/əˈdæpt/",
+        "pos": "v.",
+        "cn": "适应；改编；调整",
+        "example": "adapt to a new environment",
+        "exampleCn": "适应新环境"
       },
       {
-        "en": "Incredible",
-        "phonetic": "/ɪnˈkredəbl/",
-        "cn": "难以置信的，极好的"
-      },
-      {
-        "en": "Reasonable",
-        "phonetic": "/ˈriːznəbl/",
-        "cn": "合理的 (如合理的默认值)"
-      },
-      {
-        "en": "Considerable",
-        "phonetic": "/kənˈsɪdərəbl/",
-        "cn": "相当大的，可观的 (指数量或程度)"
+        "en": "adopt",
+        "phonetic": "/əˈdɑːpt/",
+        "pos": "v.",
+        "cn": "采用；收养",
+        "example": "adopt a new approach",
+        "exampleCn": "采用一种新方法"
       }
     ]
   },
   {
-    "theme": "theme-blue",
+    "category": "spelling",
+    "title": "affect / effect",
+    "note": "常见用法是 affect 作动词，effect 作名词。effect 也可作动词，表示促成，如 effect change。",
     "words": [
       {
-        "en": "Scalable",
-        "phonetic": "/ˈskeɪləbl/",
-        "cn": "可扩展的"
+        "en": "affect",
+        "phonetic": "/əˈfekt/",
+        "pos": "v.",
+        "cn": "影响",
+        "example": "The change may affect performance.",
+        "exampleCn": "这一变更可能影响性能。"
       },
       {
-        "en": "Maintainable",
+        "en": "effect",
+        "phonetic": "/ɪˈfekt/",
+        "pos": "n. / v.",
+        "cn": "影响，效果；促成",
+        "example": "The change had no effect on performance.",
+        "exampleCn": "这一变更对性能没有影响。"
+      }
+    ]
+  },
+  {
+    "category": "spelling",
+    "title": "access / assess",
+    "note": "access 是接近或使用某物；assess 是评价其情况。注意中间的 cc 和 ss。",
+    "words": [
+      {
+        "en": "access",
+        "phonetic": "/ˈækses/",
+        "pos": "n. / v.",
+        "cn": "访问；使用权",
+        "example": "access the database",
+        "exampleCn": "访问数据库"
+      },
+      {
+        "en": "assess",
+        "phonetic": "/əˈses/",
+        "pos": "v.",
+        "cn": "评估；评价",
+        "example": "assess the risks",
+        "exampleCn": "评估风险"
+      }
+    ]
+  },
+  {
+    "category": "spelling",
+    "title": "complement / compliment",
+    "note": "complement 强调补充后更完整；compliment 表达称赞。两者的常见读音相同。",
+    "words": [
+      {
+        "en": "complement",
+        "phonetic": "/ˈkɑːmplɪment/",
+        "pos": "n. / v.",
+        "cn": "补充；使相得益彰",
+        "example": "These tools complement each other.",
+        "exampleCn": "这些工具相互补充。"
+      },
+      {
+        "en": "compliment",
+        "phonetic": "/ˈkɑːmplɪment/",
+        "pos": "n. / v.",
+        "cn": "赞美；称赞",
+        "example": "She complimented the team on its work.",
+        "exampleCn": "她称赞了团队的工作。"
+      }
+    ]
+  },
+  {
+    "category": "spelling",
+    "title": "principal / principle",
+    "note": "principal 可以表示主要的，也可指校长或本金；principle 表示原则或原理。两者的常见读音相同。",
+    "words": [
+      {
+        "en": "principal",
+        "phonetic": "/ˈprɪnsəpəl/",
+        "pos": "adj. / n.",
+        "cn": "主要的；校长；本金",
+        "example": "the principal reason",
+        "exampleCn": "主要原因"
+      },
+      {
+        "en": "principle",
+        "phonetic": "/ˈprɪnsəpəl/",
+        "pos": "n.",
+        "cn": "原则；原理",
+        "example": "a design principle",
+        "exampleCn": "一条设计原则"
+      }
+    ]
+  },
+  {
+    "category": "spelling",
+    "title": "accept / except",
+    "note": "accept 表示接受；except 常用于排除某一项。",
+    "words": [
+      {
+        "en": "accept",
+        "phonetic": "/əkˈsept/",
+        "pos": "v.",
+        "cn": "接受；认可",
+        "example": "accept an invitation",
+        "exampleCn": "接受邀请"
+      },
+      {
+        "en": "except",
+        "phonetic": "/ɪkˈsept/",
+        "pos": "prep. / conj.",
+        "cn": "除……之外；只是",
+        "example": "All tests passed except one.",
+        "exampleCn": "除一个测试外，其余测试均通过了。"
+      }
+    ]
+  },
+  {
+    "category": "spelling",
+    "title": "loose / lose",
+    "note": "loose 常作形容词，表示松的；lose 是动词，表示失去或输掉。注意 loose 的结尾读 /s/，lose 读 /z/。",
+    "words": [
+      {
+        "en": "loose",
+        "phonetic": "/luːs/",
+        "pos": "adj.",
+        "cn": "松的；不紧的",
+        "example": "a loose connection",
+        "exampleCn": "松动的连接"
+      },
+      {
+        "en": "lose",
+        "phonetic": "/luːz/",
+        "pos": "v.",
+        "cn": "失去；丢失；输掉",
+        "example": "Do not lose your changes.",
+        "exampleCn": "不要丢失你的修改。"
+      }
+    ]
+  },
+  {
+    "category": "spelling",
+    "title": "quite / quiet",
+    "note": "quite 是程度副词；quiet 描述安静。quiet 通常有两个音节，注意字母顺序和读音。",
+    "words": [
+      {
+        "en": "quite",
+        "phonetic": "/kwaɪt/",
+        "pos": "adv.",
+        "cn": "相当；很；完全（视语境而定）",
+        "example": "The setup is quite simple.",
+        "exampleCn": "设置过程相当简单。"
+      },
+      {
+        "en": "quiet",
+        "phonetic": "/ˈkwaɪət/",
+        "pos": "adj.",
+        "cn": "安静的；轻声的",
+        "example": "Please find a quiet room.",
+        "exampleCn": "请找一个安静的房间。"
+      }
+    ]
+  },
+  {
+    "category": "spelling",
+    "title": "personal / personnel",
+    "note": "personal 与个人有关；personnel 指一个组织的工作人员。注意 personnel 的重音在最后一个音节。",
+    "words": [
+      {
+        "en": "personal",
+        "phonetic": "/ˈpɜːrsənəl/",
+        "pos": "adj.",
+        "cn": "个人的；私人的",
+        "example": "personal information",
+        "exampleCn": "个人信息"
+      },
+      {
+        "en": "personnel",
+        "phonetic": "/ˌpɜːrsəˈnel/",
+        "pos": "n.",
+        "cn": "员工；工作人员（集合用法）",
+        "example": "Only authorized personnel may enter.",
+        "exampleCn": "只有获授权的工作人员可以进入。"
+      }
+    ]
+  },
+  {
+    "category": "spelling",
+    "title": "later / latter / latest",
+    "note": "later 表示之后或更晚；latter 指前面提到的两者中的后者；latest 表示最新的。",
+    "words": [
+      {
+        "en": "later",
+        "phonetic": "/ˈleɪtər/",
+        "pos": "adv. / adj.",
+        "cn": "稍后；更晚的",
+        "example": "We can discuss this later.",
+        "exampleCn": "我们可以稍后讨论这件事。"
+      },
+      {
+        "en": "latter",
+        "phonetic": "/ˈlætər/",
+        "pos": "adj. / n.",
+        "cn": "后者的；后者",
+        "example": "Of the two options, I prefer the latter.",
+        "exampleCn": "这两个选项中，我更喜欢后者。"
+      },
+      {
+        "en": "latest",
+        "phonetic": "/ˈleɪtɪst/",
+        "pos": "adj.",
+        "cn": "最新的；最近的",
+        "example": "Install the latest version.",
+        "exampleCn": "安装最新版本。"
+      }
+    ]
+  },
+  {
+    "category": "spelling",
+    "title": "stationary / stationery",
+    "note": "stationary 表示静止不动；stationery 指纸、笔等文具。两者的常见读音相同。",
+    "words": [
+      {
+        "en": "stationary",
+        "phonetic": "/ˈsteɪʃəneri/",
+        "pos": "adj.",
+        "cn": "静止的；固定不动的",
+        "example": "The vehicle remained stationary.",
+        "exampleCn": "车辆保持静止。"
+      },
+      {
+        "en": "stationery",
+        "phonetic": "/ˈsteɪʃəneri/",
+        "pos": "n.",
+        "cn": "文具；信纸",
+        "example": "order office stationery",
+        "exampleCn": "订购办公文具"
+      }
+    ]
+  },
+  {
+    "category": "spelling",
+    "title": "precede / proceed",
+    "note": "precede 表示在前、先于；proceed 表示继续向前或进行下一步。注意 proceed with 和 proceed to 的搭配。",
+    "words": [
+      {
+        "en": "precede",
+        "phonetic": "/prɪˈsiːd/",
+        "pos": "v.",
+        "cn": "先于；在……之前发生",
+        "example": "A code review should precede the release.",
+        "exampleCn": "发布之前应该进行代码审查。"
+      },
+      {
+        "en": "proceed",
+        "phonetic": "/prəˈsiːd/",
+        "pos": "v.",
+        "cn": "继续进行；接着做",
+        "example": "Proceed to the next step.",
+        "exampleCn": "继续下一步。"
+      }
+    ]
+  },
+  {
+    "category": "spelling",
+    "title": "deprecate / depreciate",
+    "note": "软件中的 deprecate 表示不再推荐使用，通常提示未来可能移除；depreciate 表示价值下降。被弃用不等于已经删除。",
+    "words": [
+      {
+        "en": "deprecate",
+        "phonetic": "/ˈdeprəkeɪt/",
+        "pos": "v.",
+        "cn": "不赞成；在软件中宣布弃用",
+        "example": "The library will deprecate this method.",
+        "exampleCn": "该库将把这个方法标记为弃用。"
+      },
+      {
+        "en": "depreciate",
+        "phonetic": "/dɪˈpriːʃieɪt/",
+        "pos": "v.",
+        "cn": "贬值；折旧",
+        "example": "Equipment may depreciate over time.",
+        "exampleCn": "设备可能随时间推移而贬值。"
+      }
+    ]
+  },
+  {
+    "category": "meaning",
+    "title": "implement / execute",
+    "note": "在开发语境中，implement 常指把设计做出来；execute 常指运行代码或执行指令。execute 也可表示实施计划。",
+    "words": [
+      {
+        "en": "implement",
+        "phonetic": "/ˈɪmplɪment/",
+        "pos": "v.",
+        "cn": "实现；实施",
+        "example": "implement an interface",
+        "exampleCn": "实现一个接口"
+      },
+      {
+        "en": "execute",
+        "phonetic": "/ˈeksɪkjuːt/",
+        "pos": "v.",
+        "cn": "执行；运行",
+        "example": "execute a query",
+        "exampleCn": "执行一条查询"
+      }
+    ]
+  },
+  {
+    "category": "meaning",
+    "title": "configure / customize",
+    "note": "configure 强调设置参数、使系统可用；customize 强调根据特定需求调整。实际操作中两者可能重叠。",
+    "words": [
+      {
+        "en": "configure",
+        "phonetic": "/kənˈfɪɡjər/",
+        "pos": "v.",
+        "cn": "配置；设置",
+        "example": "configure the database connection",
+        "exampleCn": "配置数据库连接"
+      },
+      {
+        "en": "customize",
+        "phonetic": "/ˈkʌstəmaɪz/",
+        "pos": "v.",
+        "cn": "定制；自定义",
+        "example": "customize the dashboard layout",
+        "exampleCn": "自定义仪表盘布局"
+      }
+    ]
+  },
+  {
+    "category": "meaning",
+    "title": "ensure / assure",
+    "note": "ensure 常接要确保的结果；assure 常接需要得到保证的人，如 assure someone that…。",
+    "words": [
+      {
+        "en": "ensure",
+        "phonetic": "/ɪnˈʃʊr/",
+        "pos": "v.",
+        "cn": "确保；保证某事发生",
+        "example": "ensure data consistency",
+        "exampleCn": "确保数据一致性"
+      },
+      {
+        "en": "assure",
+        "phonetic": "/əˈʃʊr/",
+        "pos": "v.",
+        "cn": "向某人保证；使确信",
+        "example": "I assure you that the data is safe.",
+        "exampleCn": "我向你保证数据是安全的。"
+      }
+    ]
+  },
+  {
+    "category": "meaning",
+    "title": "verify / validate",
+    "note": "verify 常强调核实正确性；validate 常强调确认有效或符合要求。在软件测试中，具体区分取决于采用的标准和语境。",
+    "words": [
+      {
+        "en": "verify",
+        "phonetic": "/ˈverɪfaɪ/",
+        "pos": "v.",
+        "cn": "核实；查证",
+        "example": "verify the checksum",
+        "exampleCn": "核对校验和"
+      },
+      {
+        "en": "validate",
+        "phonetic": "/ˈvælɪdeɪt/",
+        "pos": "v.",
+        "cn": "验证有效性；确认符合要求",
+        "example": "validate user input",
+        "exampleCn": "验证用户输入是否合法"
+      }
+    ]
+  },
+  {
+    "category": "meaning",
+    "title": "efficient / effective",
+    "note": "efficient 关注时间、精力或资源的利用效率；effective 关注是否达到预期效果。一个方案可能有效，但成本很高。",
+    "words": [
+      {
+        "en": "efficient",
+        "phonetic": "/ɪˈfɪʃənt/",
+        "pos": "adj.",
+        "cn": "高效的；节省资源的",
+        "example": "a memory-efficient algorithm",
+        "exampleCn": "内存利用高效的算法"
+      },
+      {
+        "en": "effective",
+        "phonetic": "/ɪˈfektɪv/",
+        "pos": "adj.",
+        "cn": "有效的；能达到目的的",
+        "example": "an effective solution",
+        "exampleCn": "一个有效的解决方案"
+      }
+    ]
+  },
+  {
+    "category": "meaning",
+    "title": "resolve / solve",
+    "note": "solve 常搭配 problem、puzzle、equation；resolve 常搭配 issue、conflict。在开发语境中 resolve 还可表示解析名称或依赖。",
+    "words": [
+      {
+        "en": "resolve",
+        "phonetic": "/rɪˈzɑːlv/",
+        "pos": "v.",
+        "cn": "解决；消除；解析",
+        "example": "resolve a merge conflict",
+        "exampleCn": "解决合并冲突"
+      },
+      {
+        "en": "solve",
+        "phonetic": "/sɑːlv/",
+        "pos": "v.",
+        "cn": "解决；解答",
+        "example": "solve a problem",
+        "exampleCn": "解决一个问题"
+      }
+    ]
+  },
+  {
+    "category": "meaning",
+    "title": "require / request",
+    "note": "require 表示需要或要求，常涉及必要条件；request 表示提出请求，不保证对方一定同意。",
+    "words": [
+      {
+        "en": "require",
+        "phonetic": "/rɪˈkwaɪər/",
+        "pos": "v.",
+        "cn": "需要；要求",
+        "example": "This feature requires an internet connection.",
+        "exampleCn": "该功能需要网络连接。"
+      },
+      {
+        "en": "request",
+        "phonetic": "/rɪˈkwest/",
+        "pos": "v. / n.",
+        "cn": "请求；一项请求",
+        "example": "request access to the repository",
+        "exampleCn": "申请访问仓库"
+      }
+    ]
+  },
+  {
+    "category": "meaning",
+    "title": "prevent / avoid",
+    "note": "prevent 强调阻止事情发生，常用 prevent something 或 prevent someone from doing；avoid 强调避开，后面可接名词或动名词。",
+    "words": [
+      {
+        "en": "prevent",
+        "phonetic": "/prɪˈvent/",
+        "pos": "v.",
+        "cn": "阻止；预防",
+        "example": "prevent duplicate submissions",
+        "exampleCn": "防止重复提交"
+      },
+      {
+        "en": "avoid",
+        "phonetic": "/əˈvɔɪd/",
+        "pos": "v.",
+        "cn": "避免；避开",
+        "example": "avoid blocking the main thread",
+        "exampleCn": "避免阻塞主线程"
+      }
+    ]
+  },
+  {
+    "category": "meaning",
+    "title": "imply / infer",
+    "note": "imply 是说话者或信息间接表达某种含义；infer 是读者或听者根据线索作出推断。注意推断的方向。",
+    "words": [
+      {
+        "en": "imply",
+        "phonetic": "/ɪmˈplaɪ/",
+        "pos": "v.",
+        "cn": "暗示；意味着",
+        "example": "A timeout does not imply data loss.",
+        "exampleCn": "超时并不意味着数据丢失。"
+      },
+      {
+        "en": "infer",
+        "phonetic": "/ɪnˈfɜːr/",
+        "pos": "v.",
+        "cn": "推断；推论",
+        "example": "infer the cause from the logs",
+        "exampleCn": "从日志中推断原因"
+      }
+    ]
+  },
+  {
+    "category": "meaning",
+    "title": "estimate / evaluate",
+    "note": "estimate 常指估算数量、时间或成本；evaluate 强调根据标准评价质量、价值或效果。两者都可出现在方案讨论中。",
+    "words": [
+      {
+        "en": "estimate",
+        "phonetic": "/ˈestɪmeɪt/",
+        "pos": "v.",
+        "cn": "估计；估算",
+        "example": "estimate the development effort",
+        "exampleCn": "估算开发工作量"
+      },
+      {
+        "en": "evaluate",
+        "phonetic": "/ɪˈvæljueɪt/",
+        "pos": "v.",
+        "cn": "评价；评估",
+        "example": "evaluate the proposed design",
+        "exampleCn": "评估提出的设计方案"
+      }
+    ]
+  },
+  {
+    "category": "meaning",
+    "title": "propose / recommend",
+    "note": "propose 强调提出供考虑的方案；recommend 强调认为某个选择值得采用。recommend 后可接动名词或 that 从句。",
+    "words": [
+      {
+        "en": "propose",
+        "phonetic": "/prəˈpoʊz/",
+        "pos": "v.",
+        "cn": "提出；提议",
+        "example": "propose an alternative design",
+        "exampleCn": "提出另一种设计方案"
+      },
+      {
+        "en": "recommend",
+        "phonetic": "/ˌrekəˈmend/",
+        "pos": "v.",
+        "cn": "推荐；建议",
+        "example": "We recommend using a connection pool.",
+        "exampleCn": "我们建议使用连接池。"
+      }
+    ]
+  },
+  {
+    "category": "concept",
+    "title": "authentication / authorization",
+    "note": "authentication 回答“你是谁”；authorization 回答“你可以做什么”。通过身份验证不代表拥有所有权限。",
+    "words": [
+      {
+        "en": "authentication",
+        "phonetic": "/ɔːˌθentɪˈkeɪʃən/",
+        "pos": "n.",
+        "cn": "身份验证",
+        "example": "User authentication requires a password.",
+        "exampleCn": "用户身份验证需要密码。"
+      },
+      {
+        "en": "authorization",
+        "phonetic": "/ˌɔːθərəˈzeɪʃən/",
+        "pos": "n.",
+        "cn": "授权；权限判定",
+        "example": "Authorization determines which files you can read.",
+        "exampleCn": "授权决定你可以读取哪些文件。"
+      }
+    ]
+  },
+  {
+    "category": "concept",
+    "title": "encryption / hashing",
+    "note": "encryption 的目标是保密，可用相应密钥解密；密码学 hashing 生成摘要，设计目标包括难以从摘要恢复原文。",
+    "words": [
+      {
+        "en": "encryption",
+        "phonetic": "/ɪnˈkrɪpʃən/",
+        "pos": "n.",
+        "cn": "加密",
+        "example": "Protect the message with encryption.",
+        "exampleCn": "通过加密保护消息。"
+      },
+      {
+        "en": "hashing",
+        "phonetic": "/ˈhæʃɪŋ/",
+        "pos": "n.",
+        "cn": "哈希；散列计算",
+        "example": "Use password hashing to store passwords securely.",
+        "exampleCn": "使用密码哈希来安全地存储密码。"
+      }
+    ]
+  },
+  {
+    "category": "concept",
+    "title": "concurrency / parallelism",
+    "note": "concurrency 强调多个任务在重叠的时间段推进，可以交替进行；parallelism 强调多个任务在同一时刻执行。",
+    "words": [
+      {
+        "en": "concurrency",
+        "phonetic": "/kənˈkɜːrənsi/",
+        "pos": "n.",
+        "cn": "并发",
+        "example": "Concurrency lets the server handle many requests.",
+        "exampleCn": "并发使服务器能够处理多个请求。"
+      },
+      {
+        "en": "parallelism",
+        "phonetic": "/ˈpærəlelɪzəm/",
+        "pos": "n.",
+        "cn": "并行",
+        "example": "Parallelism uses multiple cores to run tasks at once.",
+        "exampleCn": "并行利用多个核心同时执行任务。"
+      }
+    ]
+  },
+  {
+    "category": "concept",
+    "title": "latency / throughput",
+    "note": "latency 衡量一次操作需要多久；throughput 衡量单位时间处理多少。低延迟与高吞吐是不同指标。",
+    "words": [
+      {
+        "en": "latency",
+        "phonetic": "/ˈleɪtənsi/",
+        "pos": "n.",
+        "cn": "延迟",
+        "example": "reduce network latency",
+        "exampleCn": "降低网络延迟"
+      },
+      {
+        "en": "throughput",
+        "phonetic": "/ˈθruːpʊt/",
+        "pos": "n.",
+        "cn": "吞吐量",
+        "example": "increase request throughput",
+        "exampleCn": "提高请求吞吐量"
+      }
+    ]
+  },
+  {
+    "category": "concept",
+    "title": "synchronous / asynchronous",
+    "note": "在常见调用语境中，synchronous 调用返回时操作已完成；asynchronous 调用允许先返回，再通过约定机制提供结果。异步不等于多线程或并行。",
+    "words": [
+      {
+        "en": "synchronous",
+        "phonetic": "/ˈsɪŋkrənəs/",
+        "pos": "adj.",
+        "cn": "同步的",
+        "example": "a synchronous file read",
+        "exampleCn": "一次同步文件读取"
+      },
+      {
+        "en": "asynchronous",
+        "phonetic": "/eɪˈsɪŋkrənəs/",
+        "pos": "adj.",
+        "cn": "异步的",
+        "example": "an asynchronous network request",
+        "exampleCn": "一次异步网络请求"
+      }
+    ]
+  },
+  {
+    "category": "concept",
+    "title": "stateless / stateful",
+    "note": "描述服务时，stateless 通常指处理请求不依赖服务实例保留的客户端会话状态；stateful 则维护并使用这类状态。无状态服务仍可以访问数据库。",
+    "words": [
+      {
+        "en": "stateless",
+        "phonetic": "/ˈsteɪtləs/",
+        "pos": "adj.",
+        "cn": "无状态的",
+        "example": "a stateless service",
+        "exampleCn": "一个无状态服务"
+      },
+      {
+        "en": "stateful",
+        "phonetic": "/ˈsteɪtfəl/",
+        "pos": "adj.",
+        "cn": "有状态的",
+        "example": "a stateful session",
+        "exampleCn": "一个有状态的会话"
+      }
+    ]
+  },
+  {
+    "category": "concept",
+    "title": "persistent / transient",
+    "note": "persistent 强调持续存在，在存储语境中常指可持久保存；transient 强调临时存在。并非所有出现 persistent 的地方都表示写入磁盘。",
+    "words": [
+      {
+        "en": "persistent",
+        "phonetic": "/pərˈsɪstənt/",
+        "pos": "adj.",
+        "cn": "持续的；持久的",
+        "example": "persistent storage",
+        "exampleCn": "持久化存储"
+      },
+      {
+        "en": "transient",
+        "phonetic": "/ˈtrænʃənt/",
+        "pos": "adj.",
+        "cn": "短暂的；临时的",
+        "example": "a transient network error",
+        "exampleCn": "一次暂时性的网络错误"
+      }
+    ]
+  },
+  {
+    "category": "concept",
+    "title": "serialization / deserialization",
+    "note": "serialization 将对象或数据结构转换为适合存储或传输的格式；deserialization 将这种表示还原为相应的数据结构。序列化本身不提供加密保护。",
+    "words": [
+      {
+        "en": "serialization",
+        "phonetic": "/ˌsɪriələˈzeɪʃən/",
+        "pos": "n.",
+        "cn": "序列化",
+        "example": "JSON serialization",
+        "exampleCn": "JSON 序列化"
+      },
+      {
+        "en": "deserialization",
+        "phonetic": "/ˌdiːsɪriələˈzeɪʃən/",
+        "pos": "n.",
+        "cn": "反序列化",
+        "example": "deserialization of a JSON document",
+        "exampleCn": "将 JSON 文档反序列化"
+      }
+    ]
+  },
+  {
+    "category": "concept",
+    "title": "encoding / encryption",
+    "note": "encoding 按约定规则转换数据表示，重点是表示或传输；encryption 通过密码算法保护机密性。Base64 是编码，不能用来保密。",
+    "words": [
+      {
+        "en": "encoding",
+        "phonetic": "/ɪnˈkoʊdɪŋ/",
+        "pos": "n.",
+        "cn": "编码",
+        "example": "UTF-8 character encoding",
+        "exampleCn": "UTF-8 字符编码"
+      },
+      {
+        "en": "encryption",
+        "phonetic": "/ɪnˈkrɪpʃən/",
+        "pos": "n.",
+        "cn": "加密",
+        "example": "Encrypt sensitive data before transmission.",
+        "exampleCn": "传输前对敏感数据进行加密。"
+      }
+    ]
+  },
+  {
+    "category": "concept",
+    "title": "idempotent / deterministic",
+    "note": "idempotent 关注重复操作对目标状态的预期效果是否与操作一次相同；deterministic 关注相同输入及条件是否产生相同结果。幂等操作的每次响应仍可能不同。",
+    "words": [
+      {
+        "en": "idempotent",
+        "phonetic": "/ˌaɪdəmˈpoʊtənt/",
+        "pos": "adj.",
+        "cn": "幂等的",
+        "example": "Setting a flag to true is idempotent.",
+        "exampleCn": "把一个标志位设为 true 是幂等操作。"
+      },
+      {
+        "en": "deterministic",
+        "phonetic": "/dɪˌtɜːrmɪˈnɪstɪk/",
+        "pos": "adj.",
+        "cn": "确定性的",
+        "example": "Multiplying an integer by two is deterministic.",
+        "exampleCn": "把一个整数乘以二是确定性的运算。"
+      }
+    ]
+  },
+  {
+    "category": "family",
+    "title": "maintain → maintenance → maintainable",
+    "note": "maintain 是动作，maintenance 是维护这件事，maintainable 描述是否容易维护。注意 maintenance 的拼写变化。",
+    "words": [
+      {
+        "en": "maintain",
+        "phonetic": "/meɪnˈteɪn/",
+        "pos": "v.",
+        "cn": "维护；维持",
+        "example": "maintain the codebase",
+        "exampleCn": "维护代码库"
+      },
+      {
+        "en": "maintenance",
+        "phonetic": "/ˈmeɪntənəns/",
+        "pos": "n.",
+        "cn": "维护；保养",
+        "example": "reduce maintenance costs",
+        "exampleCn": "降低维护成本"
+      },
+      {
+        "en": "maintainable",
         "phonetic": "/meɪnˈteɪnəbl/",
-        "cn": "可维护的 (代码清晰、易于修改)"
+        "pos": "adj.",
+        "cn": "可维护的；易于维护的",
+        "example": "write maintainable code",
+        "exampleCn": "编写易于维护的代码"
+      }
+    ]
+  },
+  {
+    "category": "family",
+    "title": "compile → compilation → compiler",
+    "note": "compile 是编译动作，compilation 是编译过程或结果，compiler 是执行编译的工具。",
+    "words": [
+      {
+        "en": "compile",
+        "phonetic": "/kəmˈpaɪl/",
+        "pos": "v.",
+        "cn": "编译；汇编",
+        "example": "compile the source code",
+        "exampleCn": "编译源代码"
       },
       {
-        "en": "Configurable",
+        "en": "compilation",
+        "phonetic": "/ˌkɑːmpɪˈleɪʃən/",
+        "pos": "n.",
+        "cn": "编译；汇编",
+        "example": "Compilation failed.",
+        "exampleCn": "编译失败了。"
+      },
+      {
+        "en": "compiler",
+        "phonetic": "/kəmˈpaɪlər/",
+        "pos": "n.",
+        "cn": "编译器",
+        "example": "a compiler warning",
+        "exampleCn": "一条编译器警告"
+      }
+    ]
+  },
+  {
+    "category": "family",
+    "title": "configure → configuration → configurable",
+    "note": "configure 是配置动作，configuration 指配置设置或配置过程，configurable 表示支持配置。",
+    "words": [
+      {
+        "en": "configure",
+        "phonetic": "/kənˈfɪɡjər/",
+        "pos": "v.",
+        "cn": "配置；设置",
+        "example": "configure a service",
+        "exampleCn": "配置一个服务"
+      },
+      {
+        "en": "configuration",
+        "phonetic": "/kənˌfɪɡjəˈreɪʃən/",
+        "pos": "n.",
+        "cn": "配置；配置信息",
+        "example": "a configuration file",
+        "exampleCn": "一个配置文件"
+      },
+      {
+        "en": "configurable",
         "phonetic": "/kənˈfɪɡjərəbl/",
-        "cn": "可配置的 (非硬编码，可通过参数调整)"
+        "pos": "adj.",
+        "cn": "可配置的",
+        "example": "a configurable timeout",
+        "exampleCn": "可配置的超时时间"
+      }
+    ]
+  },
+  {
+    "category": "family",
+    "title": "deploy → deployment → deployable",
+    "note": "deploy 是部署动作，deployment 指部署过程或一次部署，deployable 表示具备部署条件。",
+    "words": [
+      {
+        "en": "deploy",
+        "phonetic": "/dɪˈplɔɪ/",
+        "pos": "v.",
+        "cn": "部署",
+        "example": "deploy the application",
+        "exampleCn": "部署应用程序"
       },
       {
-        "en": "Reusable",
-        "phonetic": "/riːˈjuːzəbl/",
-        "cn": "可重用的 (如组件、工具类)"
+        "en": "deployment",
+        "phonetic": "/dɪˈplɔɪmənt/",
+        "pos": "n.",
+        "cn": "部署；一次部署",
+        "example": "automate the deployment",
+        "exampleCn": "自动化部署流程"
       },
       {
-        "en": "Immutable",
-        "phonetic": "/ɪˈmjuːtəbl/",
-        "cn": "不可变的 (并发编程核心概念，对象一旦创建不可修改)"
-      },
-      {
-        "en": "Nullable",
-        "phonetic": "/ˈnʌləbl/",
-        "cn": "可为空的 (数据库字段或变量允许为null)"
-      },
-      {
-        "en": "Serializable",
-        "phonetic": "/ˌsɪriəˈlaɪzəbl/",
-        "cn": "可序列化的 (对象转字节流，Java常用接口)"
-      },
-      {
-        "en": "Testable",
-        "phonetic": "/ˈtestəbl/",
-        "cn": "可测试的 (逻辑解耦，便于写单元测试)"
-      },
-      {
-        "en": "Deployable",
+        "en": "deployable",
         "phonetic": "/dɪˈplɔɪəbl/",
-        "cn": "可部署的 (指构建好的软件包/制品)"
+        "pos": "adj.",
+        "cn": "可部署的",
+        "example": "a deployable package",
+        "exampleCn": "一个可部署的软件包"
       }
     ]
   },
   {
-    "theme": "theme-green",
+    "category": "family",
+    "title": "persist → persistence → persistent",
+    "note": "persist 是持续存在或坚持的动作；persistence 是持续性或持久化；persistent 是描述持续或持久特征的形容词。",
     "words": [
       {
-        "en": "Reliability",
-        "phonetic": "",
-        "cn": "可靠性，稳定性"
+        "en": "persist",
+        "phonetic": "/pərˈsɪst/",
+        "pos": "v.",
+        "cn": "持续存在；坚持；持久保存",
+        "example": "persist the settings to a file",
+        "exampleCn": "将设置持久保存到文件中"
       },
       {
-        "en": "Maintainability",
-        "phonetic": "/meɪnˌteɪnəˈbɪləti/",
-        "cn": "可维护性 (代码易于修改和维护)"
+        "en": "persistence",
+        "phonetic": "/pərˈsɪstəns/",
+        "pos": "n.",
+        "cn": "坚持；持续性；持久化",
+        "example": "a data persistence layer",
+        "exampleCn": "一个数据持久化层"
       },
       {
-        "en": "Compatibility",
-        "phonetic": "/kəmˌpætəˈbɪləti/",
-        "cn": "兼容性 (版本或系统之间)"
+        "en": "persistent",
+        "phonetic": "/pərˈsɪstənt/",
+        "pos": "adj.",
+        "cn": "持续的；持久的",
+        "example": "persistent data",
+        "exampleCn": "持久化的数据"
+      }
+    ]
+  },
+  {
+    "category": "family",
+    "title": "respond → response → responsive",
+    "note": "respond 是回应的动作；response 是回应或响应本身；responsive 表示反应迅速，也可描述能适配屏幕的页面设计。",
+    "words": [
+      {
+        "en": "respond",
+        "phonetic": "/rɪˈspɑːnd/",
+        "pos": "v.",
+        "cn": "回应；响应",
+        "example": "respond to a request",
+        "exampleCn": "响应一个请求"
       },
       {
-        "en": "Stability",
+        "en": "response",
+        "phonetic": "/rɪˈspɑːns/",
+        "pos": "n.",
+        "cn": "回应；响应",
+        "example": "an HTTP response",
+        "exampleCn": "一个 HTTP 响应"
+      },
+      {
+        "en": "responsive",
+        "phonetic": "/rɪˈspɑːnsɪv/",
+        "pos": "adj.",
+        "cn": "反应迅速的；响应式的",
+        "example": "a responsive layout",
+        "exampleCn": "响应式布局"
+      }
+    ]
+  },
+  {
+    "category": "family",
+    "title": "extend → extension → extensible",
+    "note": "extend 是扩展的动作；extension 可指扩展功能、扩展程序或文件扩展名；extensible 表示设计上容易增加能力。",
+    "words": [
+      {
+        "en": "extend",
+        "phonetic": "/ɪkˈstend/",
+        "pos": "v.",
+        "cn": "扩展；延长",
+        "example": "extend the base class",
+        "exampleCn": "扩展基类"
+      },
+      {
+        "en": "extension",
+        "phonetic": "/ɪkˈstenʃən/",
+        "pos": "n.",
+        "cn": "扩展；扩展程序；扩展名",
+        "example": "a browser extension",
+        "exampleCn": "一个浏览器扩展程序"
+      },
+      {
+        "en": "extensible",
+        "phonetic": "/ɪkˈstensəbl/",
+        "pos": "adj.",
+        "cn": "可扩展的；易于扩充功能的",
+        "example": "an extensible plugin system",
+        "exampleCn": "一个易于扩充功能的插件系统"
+      }
+    ]
+  },
+  {
+    "category": "family",
+    "title": "depend → dependency → dependent",
+    "note": "depend 常与 on 搭配；dependency 在开发语境中常指所依赖的库或组件；dependent 作形容词时表示依赖其他事物。",
+    "words": [
+      {
+        "en": "depend",
+        "phonetic": "/dɪˈpend/",
+        "pos": "v.",
+        "cn": "依赖；取决于",
+        "example": "The result depends on the input.",
+        "exampleCn": "结果取决于输入。"
+      },
+      {
+        "en": "dependency",
+        "phonetic": "/dɪˈpendənsi/",
+        "pos": "n.",
+        "cn": "依赖；依赖项",
+        "example": "update a project dependency",
+        "exampleCn": "更新一个项目依赖项"
+      },
+      {
+        "en": "dependent",
+        "phonetic": "/dɪˈpendənt/",
+        "pos": "adj.",
+        "cn": "依赖的；取决于……的",
+        "example": "The feature is dependent on this service.",
+        "exampleCn": "这个功能依赖于该服务。"
+      }
+    ]
+  },
+  {
+    "category": "family",
+    "title": "secure → security → securely",
+    "note": "secure 可作形容词或动词；security 是名词；securely 是副词，用来修饰传输、保存等动作。",
+    "words": [
+      {
+        "en": "secure",
+        "phonetic": "/sɪˈkjʊr/",
+        "pos": "adj. / v.",
+        "cn": "安全的；使安全；保护",
+        "example": "a secure connection",
+        "exampleCn": "一个安全的连接"
+      },
+      {
+        "en": "security",
+        "phonetic": "/sɪˈkjʊrəti/",
+        "pos": "n.",
+        "cn": "安全；安全保障",
+        "example": "a security review",
+        "exampleCn": "一次安全审查"
+      },
+      {
+        "en": "securely",
+        "phonetic": "/sɪˈkjʊrli/",
+        "pos": "adv.",
+        "cn": "安全地；牢固地",
+        "example": "Store credentials securely.",
+        "exampleCn": "安全地保存凭据。"
+      }
+    ]
+  },
+  {
+    "category": "family",
+    "title": "analyze → analysis → analytical → analyst",
+    "note": "analyze 是动词；analysis 指分析过程或结果；analytical 描述分析性的思维或方法；analyst 指从事分析的人。analyze 是美式拼写。",
+    "words": [
+      {
+        "en": "analyze",
+        "phonetic": "/ˈænəlaɪz/",
+        "pos": "v.",
+        "cn": "分析",
+        "example": "analyze the logs",
+        "exampleCn": "分析日志"
+      },
+      {
+        "en": "analysis",
+        "phonetic": "/əˈnæləsɪs/",
+        "pos": "n.",
+        "cn": "分析",
+        "example": "a root cause analysis",
+        "exampleCn": "一次根本原因分析"
+      },
+      {
+        "en": "analytical",
+        "phonetic": "/ˌænəˈlɪtɪkəl/",
+        "pos": "adj.",
+        "cn": "分析的；善于分析的",
+        "example": "analytical skills",
+        "exampleCn": "分析能力"
+      },
+      {
+        "en": "analyst",
+        "phonetic": "/ˈænəlɪst/",
+        "pos": "n.",
+        "cn": "分析师；分析人员",
+        "example": "a business analyst",
+        "exampleCn": "一名业务分析师"
+      }
+    ]
+  },
+  {
+    "category": "suffix",
+    "title": "常见评价词 · -able / -ible",
+    "note": "词尾相似，但含义各有侧重：remarkable 强调值得注意，incredible 表示难以置信或极好，reasonable 强调合理，considerable 强调数量或程度大。",
+    "words": [
+      {
+        "en": "remarkable",
+        "phonetic": "/rɪˈmɑːrkəbl/",
+        "pos": "adj.",
+        "cn": "非凡的；值得注意的",
+        "example": "a remarkable improvement",
+        "exampleCn": "显著的改进"
+      },
+      {
+        "en": "incredible",
+        "phonetic": "/ɪnˈkredəbl/",
+        "pos": "adj.",
+        "cn": "难以置信的；极好的",
+        "example": "an incredible achievement",
+        "exampleCn": "了不起的成就"
+      },
+      {
+        "en": "reasonable",
+        "phonetic": "/ˈriːznəbl/",
+        "pos": "adj.",
+        "cn": "合理的；公道的",
+        "example": "a reasonable default",
+        "exampleCn": "合理的默认值"
+      },
+      {
+        "en": "considerable",
+        "phonetic": "/kənˈsɪdərəbl/",
+        "pos": "adj.",
+        "cn": "相当大的；可观的",
+        "example": "a considerable amount of data",
+        "exampleCn": "大量的数据"
+      }
+    ]
+  },
+  {
+    "category": "suffix",
+    "title": "软件设计属性 · -able",
+    "note": "scalable 关注规模增长，maintainable 关注维护便利性，configurable 关注参数配置能力。",
+    "words": [
+      {
+        "en": "scalable",
+        "phonetic": "/ˈskeɪləbl/",
+        "pos": "adj.",
+        "cn": "可扩展的",
+        "example": "a scalable architecture",
+        "exampleCn": "可扩展的架构"
+      },
+      {
+        "en": "maintainable",
+        "phonetic": "/meɪnˈteɪnəbl/",
+        "pos": "adj.",
+        "cn": "可维护的；易于维护的",
+        "example": "maintainable code",
+        "exampleCn": "易于维护的代码"
+      },
+      {
+        "en": "configurable",
+        "phonetic": "/kənˈfɪɡjərəbl/",
+        "pos": "adj.",
+        "cn": "可配置的",
+        "example": "a configurable setting",
+        "exampleCn": "可配置的设置项"
+      }
+    ]
+  },
+  {
+    "category": "suffix",
+    "title": "对象与类型属性 · -able",
+    "note": "reusable 表示能重复使用，immutable 表示创建后不能改变，nullable 表示允许为空。具体含义取决于语言和类型约定。",
+    "words": [
+      {
+        "en": "reusable",
+        "phonetic": "/riːˈjuːzəbl/",
+        "pos": "adj.",
+        "cn": "可重用的",
+        "example": "a reusable component",
+        "exampleCn": "可重用的组件"
+      },
+      {
+        "en": "immutable",
+        "phonetic": "/ɪˈmjuːtəbl/",
+        "pos": "adj.",
+        "cn": "不可变的",
+        "example": "an immutable object",
+        "exampleCn": "不可变对象"
+      },
+      {
+        "en": "nullable",
+        "phonetic": "/ˈnʌləbl/",
+        "pos": "adj.",
+        "cn": "可为空的",
+        "example": "a nullable column",
+        "exampleCn": "可为空的列"
+      }
+    ]
+  },
+  {
+    "category": "suffix",
+    "title": "交付与验证属性 · -able",
+    "note": "serializable 关注能否序列化，testable 关注能否方便地测试，deployable 关注能否部署。",
+    "words": [
+      {
+        "en": "serializable",
+        "phonetic": "/ˌsɪriəˈlaɪzəbl/",
+        "pos": "adj.",
+        "cn": "可序列化的",
+        "example": "a serializable object",
+        "exampleCn": "可序列化的对象"
+      },
+      {
+        "en": "testable",
+        "phonetic": "/ˈtestəbl/",
+        "pos": "adj.",
+        "cn": "可测试的",
+        "example": "a testable design",
+        "exampleCn": "可测试的设计"
+      },
+      {
+        "en": "deployable",
+        "phonetic": "/dɪˈplɔɪəbl/",
+        "pos": "adj.",
+        "cn": "可部署的",
+        "example": "a deployable artifact",
+        "exampleCn": "可部署的制品"
+      }
+    ]
+  },
+  {
+    "category": "suffix",
+    "title": "运行质量 · -ity",
+    "note": "reliability 关注持续正确履行功能，stability 关注运行状态稳定，observability 关注从系统输出了解内部状态的能力。",
+    "words": [
+      {
+        "en": "reliability",
+        "phonetic": "/rɪˌlaɪəˈbɪləti/",
+        "pos": "n.",
+        "cn": "可靠性",
+        "example": "improve system reliability",
+        "exampleCn": "提高系统可靠性"
+      },
+      {
+        "en": "stability",
         "phonetic": "/stəˈbɪləti/",
-        "cn": "稳定性 (系统运行状态)"
+        "pos": "n.",
+        "cn": "稳定性",
+        "example": "system stability",
+        "exampleCn": "系统稳定性"
       },
       {
-        "en": "Flexibility",
-        "phonetic": "/ˌfleksəˈbɪləti/",
-        "cn": "灵活性 (架构易于适应变化)"
-      },
-      {
-        "en": "Vulnerability",
-        "phonetic": "/ˌvʌlnərəˈbɪləti/",
-        "cn": "漏洞，脆弱性 (安全领域核心词)"
-      },
-      {
-        "en": "Observability",
+        "en": "observability",
         "phonetic": "/əbˌzɜːrvəˈbɪləti/",
-        "cn": "可观测性 (监控、日志、链路追踪)"
+        "pos": "n.",
+        "cn": "可观测性",
+        "example": "improve service observability",
+        "exampleCn": "提高服务的可观测性"
+      }
+    ]
+  },
+  {
+    "category": "suffix",
+    "title": "演进与环境 · -ity",
+    "note": "maintainability 关注维护便利性，compatibility 关注与其他版本或系统配合的能力，portability 关注迁移到其他环境的便利性。",
+    "words": [
+      {
+        "en": "maintainability",
+        "phonetic": "/meɪnˌteɪnəˈbɪləti/",
+        "pos": "n.",
+        "cn": "可维护性",
+        "example": "improve code maintainability",
+        "exampleCn": "提高代码的可维护性"
       },
       {
-        "en": "Portability",
+        "en": "compatibility",
+        "phonetic": "/kəmˌpætəˈbɪləti/",
+        "pos": "n.",
+        "cn": "兼容性",
+        "example": "backward compatibility",
+        "exampleCn": "向后兼容性"
+      },
+      {
+        "en": "portability",
         "phonetic": "/ˌpɔːrtəˈbɪləti/",
-        "cn": "可移植性 (如Docker或Java跨平台)"
+        "pos": "n.",
+        "cn": "可移植性",
+        "example": "code portability",
+        "exampleCn": "代码的可移植性"
+      }
+    ]
+  },
+  {
+    "category": "suffix",
+    "title": "适应、使用与安全 · -ity",
+    "note": "flexibility 关注适应变化，usability 关注使用便利性，vulnerability 在安全语境中常指可被利用的弱点或漏洞。",
+    "words": [
+      {
+        "en": "flexibility",
+        "phonetic": "/ˌfleksəˈbɪləti/",
+        "pos": "n.",
+        "cn": "灵活性",
+        "example": "design flexibility",
+        "exampleCn": "设计的灵活性"
       },
       {
-        "en": "Usability",
+        "en": "vulnerability",
+        "phonetic": "/ˌvʌlnərəˈbɪləti/",
+        "pos": "n.",
+        "cn": "漏洞；脆弱性",
+        "example": "a security vulnerability",
+        "exampleCn": "一个安全漏洞"
+      },
+      {
+        "en": "usability",
         "phonetic": "/ˌjuːzəˈbɪləti/",
-        "cn": "易用性 (用户体验)"
+        "pos": "n.",
+        "cn": "易用性",
+        "example": "a usability test",
+        "exampleCn": "一次易用性测试"
       }
     ]
   },
   {
-    "theme": "theme-purple",
+    "category": "suffix",
+    "title": "开发动作 · -ize",
+    "note": "这些词都可作动词：初始化、优化、定制和可视化是不同的开发动作。注意各自的词干。",
     "words": [
       {
-        "en": "Initialize",
-        "phonetic": "",
-        "cn": "初始化"
+        "en": "initialize",
+        "phonetic": "/ɪˈnɪʃəlaɪz/",
+        "pos": "v.",
+        "cn": "初始化",
+        "example": "initialize a variable",
+        "exampleCn": "初始化变量"
       },
       {
-        "en": "Optimize",
-        "phonetic": "",
-        "cn": "优化"
+        "en": "optimize",
+        "phonetic": "/ˈɑːptɪmaɪz/",
+        "pos": "v.",
+        "cn": "优化",
+        "example": "optimize a query",
+        "exampleCn": "优化查询"
       },
       {
-        "en": "Customize",
-        "phonetic": "",
-        "cn": "定制，自定义"
+        "en": "customize",
+        "phonetic": "/ˈkʌstəmaɪz/",
+        "pos": "v.",
+        "cn": "定制；自定义",
+        "example": "customize a theme",
+        "exampleCn": "自定义主题"
       },
       {
-        "en": "Visualize",
-        "phonetic": "",
-        "cn": "可视化"
+        "en": "visualize",
+        "phonetic": "/ˈvɪʒuəlaɪz/",
+        "pos": "v.",
+        "cn": "使可视化",
+        "example": "visualize the data",
+        "exampleCn": "将数据可视化"
       }
     ]
   },
   {
-    "theme": "theme-orange",
+    "category": "suffix",
+    "title": "开发常用名词 · -tion",
+    "note": "这些词都可作名词；共同词尾有助于识别词性，实际含义仍由完整单词和语境决定。",
     "words": [
       {
-        "en": "Implementation",
-        "phonetic": "",
-        "cn": "实现，实施"
+        "en": "implementation",
+        "phonetic": "/ˌɪmplɪmenˈteɪʃən/",
+        "pos": "n.",
+        "cn": "实现；实施",
+        "example": "an implementation detail",
+        "exampleCn": "一项实现细节"
       },
       {
-        "en": "Configuration",
-        "phonetic": "",
-        "cn": "配置"
+        "en": "configuration",
+        "phonetic": "/kənˌfɪɡjəˈreɪʃən/",
+        "pos": "n.",
+        "cn": "配置；配置信息",
+        "example": "a configuration file",
+        "exampleCn": "一个配置文件"
       },
       {
-        "en": "Exception",
-        "phonetic": "",
-        "cn": "异常"
+        "en": "exception",
+        "phonetic": "/ɪkˈsepʃən/",
+        "pos": "n.",
+        "cn": "异常；例外",
+        "example": "handle an exception",
+        "exampleCn": "处理异常"
       },
       {
-        "en": "Integration",
-        "phonetic": "",
-        "cn": "集成"
+        "en": "integration",
+        "phonetic": "/ˌɪntɪˈɡreɪʃən/",
+        "pos": "n.",
+        "cn": "集成；整合",
+        "example": "continuous integration",
+        "exampleCn": "持续集成"
       }
     ]
   }

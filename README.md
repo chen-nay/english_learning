@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="img/learn.png" alt="English Learning" width="110">
+<img src="img/learn-v3-soft-book.png" alt="English Learning" width="110">
 
 # English Learning · 英语学习助手 💻🚀
 
@@ -34,12 +34,13 @@
 | --- | --- | --- |
 | 💾 **专业词汇 Software Words** | 8 大分类 · 约 620 词 | 架构设计、前后端、代码逻辑、测试调试、版本控制、流程方法、职场动词短语等。每张卡片含音标、中文释义、同义词、中英双语例句。 |
 | 💬 **场景对话 Dialogue** | 4 个场景 · 34 组对话 | 机场（值机 / 转机 / 安检…）、酒店、订餐、日常社交。聊天气泡式排版，`**加粗**` 短语高亮，右侧「Key Structures」讲解重点句型。 |
-| ⚖️ **易混词辨析 Similar Words** | 5 组对比卡 · 30 词 | 把 remarkable / incredible / reasonable、scalable / maintainable 这类形近意近词并列对比，不同色彩主题区分。 |
+| ⚖️ **易混词辨析 Similar Words** | 53 组对比卡 · 122 个不同单词 | 按拼写接近、工作用词、专业概念、同词根和相似词缀分组；每组 2–4 词，含音标、词性、双语用法和辨析提示。 |
 | 📘 **雅思核心词汇 IELTS** | 2000+ 词 | 每词含美式音标、中文释义（词性自动上色）、常用词组、中英双语例句。顶部 A–Z 字母导航 + 关键词搜索。 |
+| 📒 **Word Notebook** | 21 个条目 · 持续追加 | 统一保存单词、短语和句型。每条一张紧凑卡片，默认显示美式音标、中文释义、搭配或结构和一条例句；点击 More details 在弹窗查看完整用法。 |
 
 ## 🎯 亮点功能
 
-- **👁 自测模式**：点击右上角「小眼睛」隐藏所有释义 / 对话 / 例句，只留单词或场景标题；逐张点击卡片揭示答案，适合自我检测。四个模块通用。
+- **👁 自测模式**：专业词汇、对话和雅思模块通过右上角「小眼睛」隐藏详情，点击卡片或场景标题揭示。Similar Words 使用「逐词自测」按钮，保留英文、词性和音标，点击单词逐个显示或收起释义及用法；也可显示或收起整组，整组全部揭示后显示辨析提示。退出自测后显示全部内容，再次进入时重新隐藏。
 - **🔊 真人发音**：基于浏览器原生 **Web Speech API**，点击 🔊 朗读单词或整句例句，优先选用 `en-US` 音色。
 - **⭐ 学习进度（IELTS）**：支持「收藏」与「已掌握」标记，配合「全部 / 收藏 / 已掌握 / 未掌握」筛选与分页浏览。进度、当前页码、乱序开关全部保存在浏览器 `localStorage`。
 - **🔀 固定乱序复习（IELTS）**：使用写死的种子（mulberry32）洗牌，**任何设备、任何浏览器打开顺序都一致**，可按页码接着上次继续学。
@@ -52,7 +53,7 @@ english_learning/
 ├── index.html                 # 唯一入口：全部 HTML/CSS/JS
 ├── source.json                # 数据源清单：登记 wordbook/ 与 dialogue/ 下的文件
 ├── img/
-│   └── learn.png              # Logo / favicon
+│   └── learn-v3-soft-book.png # Logo / favicon
 ├── wordbook/                  # 专业词汇（每个分类一个 .json）
 │   ├── Architecture & Design.json
 │   ├── Backend, Database & DevOps.json
@@ -64,6 +65,9 @@ english_learning/
 │   └── order.json
 ├── similarword/
 │   └── similar_words.json     # 易混词分组
+├── notebook/
+│   ├── ADDING_ENTRIES.md       # 添加单词、短语和句型的约定
+│   └── words.json             # 个人单词本，新条目放在数组最前面
 ├── ielts/
 │   └── words.json             # 雅思词库（单文件，紧凑键名）
 ├── LICENSE
@@ -134,17 +138,21 @@ npx serve .
 
 这两个模块**不经过 `source.json`**，直接编辑对应单文件即可。
 
-**`similarword/similar_words.json`** —— 数组，每个元素是一组对比卡。`theme` 可选 `theme-blue` / `theme-green` / `theme-purple` / `theme-orange`。
+**`similarword/similar_words.json`** —— 数组，每个元素是一组对比卡。`category` 为 `spelling`（拼写）、`meaning`（工作用词）、`concept`（专业概念）、`family`（同词根）或 `suffix`（词缀），同类卡片使用相同的顶部色线。`title` 为组标题，`note` 为辨析提示。每组建议 2–5 词；同一单词可在不同的比较关系中重复出现，页面词数按不同单词统计。
 
 ```json
 {
-  "theme": "theme-blue",
+  "category": "spelling",
+  "title": "adapt / adopt",
+  "note": "adapt 强调调整以适应；adopt 强调开始采用，或收养。",
   "words": [
-    { "en": "Scalable", "phonetic": "/ˈskeɪləbl/", "cn": "可扩展的" },
-    { "en": "Maintainable", "phonetic": "/meɪnˈteɪnəbl/", "cn": "可维护的（代码清晰、易于修改）" }
+    { "en": "adapt", "phonetic": "/əˈdæpt/", "pos": "v.", "cn": "适应；改编；调整", "example": "adapt to a new environment", "exampleCn": "适应新环境" },
+    { "en": "adopt", "phonetic": "/əˈdɑːpt/", "pos": "v.", "cn": "采用；收养", "example": "adopt a new approach", "exampleCn": "采用一种新方法" }
   ]
 }
 ```
+
+专业概念中的异步、序列化和幂等性说明参考 MDN 的 [Asynchronous](https://developer.mozilla.org/en-US/docs/Glossary/Asynchronous)、[Serialization](https://developer.mozilla.org/en-US/docs/Glossary/Serialization) 和 [Idempotent](https://developer.mozilla.org/en-US/docs/Glossary/Idempotent)；词卡中的双语用法为学习示例。
 
 **`ielts/words.json`** —— 数组，紧凑键名：`w` 单词、`p` 音标、`m` 释义、`ph` 词组、`s` 例句。
 
@@ -157,6 +165,22 @@ npx serve .
   "s": [{ "en": "The sailors had to abandon the sinking ship.", "cn": "水手们不得不弃船逃生。" }]
 }
 ```
+
+### 追加 Word Notebook
+
+后续添加内容时，参考 [notebook/ADDING_ENTRIES.md](notebook/ADDING_ENTRIES.md)。
+
+用户后续提供的重点摘抄词，放到 `notebook/words.json` 数组最前面，保留之前所有词条。同一批新增内容按用户提供的顺序排列，较早的批次依次放在后面。页面直接按数组顺序展示，无需时间字段或额外排序逻辑。重复单词优先补充原卡片的义项或用法，避免创建重复卡片。无需登记 `source.json`，刷新页面后显示更新。
+
+短语和句型也添加到同一数组最前面，分别设置 `type: "phrase"` 或 `type: "pattern"`，单词默认视为 `word`。表达类卡片显示英文类型标记，计数统一使用 entries。它们的每个义项提供 `structure`（可替换结构）、`phrases`（双语常见用法）、`sentence`（双语例句）和 `usageNotes`（语法及易错提示），可选 `relatedExpressions` 和 `relatedNote` 用于有价值的近义、反向表达或结构对比，不要求 `synonyms`、`antonyms`，页面也不显示固定的近反义词栏目。原有单词的近反义词栏目继续保留。
+
+`sth` 等占位符只用于展示结构；必要时提供 `pronunciationText` 指定可自然朗读的文本，例如将 `be capable of doing sth` 读作 `be capable of doing something`。
+
+以 `oversight` 的完整词条为模板，每个词提供 `word`、`phoneticUs`（美式 IPA）、`pos`、`summary`、`note`、`senses` 和 `sources`。每个义项分别提供中文含义 `meaning`、语法说明 `grammar`、解释 `definition`、双语词组 `phrases`、双语例句 `sentence`、双语近义词 `synonyms` 和反义表达 `antonyms`。`synonymNote`、`antonymNote` 用于解释替换限制。若不同词性读音不同，可在对应义项增加 `phoneticUs`，如 recall 的名词读音。
+
+多义词的词组、例句和近反义表达必须对应各自义项。没有自然、直接的反义词时，明确写出语境对照的限制，或使用空数组和说明，不强行凑词。音标和词义核对词典，在 `sources` 中保存来源链接；双语例句可以原创。卡片按数组顺序呈现，单词和例句可使用浏览器美式语音朗读。
+
+频道名称和界面标签使用英文，学习内容保留中文释义与翻译。卡片采用自适应网格，单词默认展示 `senses[0]` 的第一个词组和例句，短语及句型默认展示第一个义项的结构和例句。点击 More details 在原生 `dialog` 弹窗中查看完整内容，原卡片大小保持不变；按 Esc 或点击 Close 关闭，焦点返回原按钮。
 
 ## 🛠 技术栈
 

@@ -1,0 +1,29 @@
+Generated with the built-in image_gen tool; transparent PNG outputs.
+
+learn-v1-book-chat.png
+Use case: logo-brand.
+Asset type: square PNG logo candidate for "English Learning", a developer-focused English vocabulary and conversation learning website with a clean white UI, primary blue #3b82f6. This raster logo must work at 24px in a sidebar and 16px as a favicon.
+Primary request: create a refined minimalist symbol combining an open book and a single speech bubble as one coherent memorable shape. The two book pages have generous bold geometry; the upper silhouette subtly becomes a conversational bubble. A confident contemporary learning-tool identity for adults.
+Style/medium: impeccable flat graphic logo, crisp smooth edges, restrained geometric construction.
+Composition/framing: one large centered isolated symbol occupying about 80 percent of a square canvas, balanced negative space, no surrounding frame or app tile.
+Color palette: saturated royal blue #3b82f6 and deep navy #1e3a8a, with only a tiny optional sky blue accent. Readable on white.
+Constraints: genuinely transparent background; no words, no letters, no numbers, no slogan, no watermark; no tiny page lines, no floating decorative objects; no gradients or shadows. Deliver a single complete logo, not a presentation board, no mockup.
+
+learn-v2-code-chat.png
+Use case: logo-brand.
+Asset type: square PNG logo candidate for "English Learning", an adult developer-focused English vocabulary and dialogue practice tool. The website uses white and light-gray surfaces and primary blue #3b82f6. Must remain distinctive at 24px and usable as favicon.
+Primary request: create a smart bold symbol where a single speech bubble contains two simple code angle brackets, expressing communication in English for programmers. The bubble is a carefully proportioned rounded shape with one clear tail, the brackets are thick and spacious, the complete mark feels unified and professionally designed.
+Style/medium: contemporary minimal flat graphic symbol with optical balance, precision, strong silhouette.
+Composition/framing: one centered isolated mark occupying 80 percent of a square canvas, balanced whitespace, no surrounding app tile or outline badge.
+Color palette: blue #3b82f6 speech bubble, white negative-space brackets, restrained deep-navy accent if necessary.
+Constraints: genuinely transparent background outside the logo; do not make the white bracket cutouts transparent. No actual words or lettering, no extra code, no tiny features, no mascot, no watermark, no gradient, no shadow. Single complete logo only, not a comparison board or mockup.
+
+learn-v3-soft-book.png
+Use case: stylized-concept.
+Asset type: square PNG brand icon candidate for an English vocabulary and conversation learning website for adult software developers, with a clean blue-and-white interface. The asset appears in a 24px sidebar, a 110px README, and a favicon.
+Primary request: a beautiful compact open-book symbol with a small speech-bubble element seamlessly rising out of its upper right page. Friendly but mature soft 3D design, sculptural thick pages with no printed page text, one bold readable silhouette. Make the icon polished, simple, visually distinct and instantly legible.
+Style/medium: soft matte ceramic-like 3D icon, gentle bevels and restrained depth, elegant contemporary productivity-app identity.
+Composition/framing: one centered isolated book-and-bubble symbol, front-facing with slight three-quarter depth, occupying 82 percent of square canvas, no floor, no background tile.
+Lighting/mood: subtle soft studio light, clean and calm, no cast shadow outside the object.
+Color palette: rich royal-blue #3b82f6 book cover, warm white page surfaces, light sky-blue speech bubble, deep blue shading.
+Constraints: genuinely transparent background, no letters, no words, no watermark, no tiny decorative objects, no detailed page lines, no scattered accessories, no character face. Render only one complete icon, not a mockup or presentation board.

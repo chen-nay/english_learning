@@ -1,0 +1,1772 @@
+[
+  {
+    "word": "elevate",
+    "phoneticUs": "/ˈel.ə.veɪt/",
+    "pos": "v.",
+    "summary": "提升；提高；抬高",
+    "note": "较正式的用词，可以指实际抬高，也可以指提升质量、地位或重要性。elevated 也可表示升高的状态。",
+    "senses": [
+      {
+        "meaning": "提升；提高",
+        "grammar": "v. [T]",
+        "definition": "使质量、地位或重要性达到更高水平。",
+        "phrases": [
+          {
+            "en": "elevate the quality",
+            "cn": "提升质量"
+          },
+          {
+            "en": "elevate someone to a position",
+            "cn": "把某人提升到某个职位"
+          },
+          {
+            "en": "elevate the discussion",
+            "cn": "提升讨论的层次"
+          }
+        ],
+        "sentence": {
+          "en": "Clear documentation can elevate the quality of a project.",
+          "cn": "清晰的文档可以提升项目质量。"
+        },
+        "synonyms": [
+          {
+            "en": "improve",
+            "cn": "改善；提高"
+          },
+          {
+            "en": "raise",
+            "cn": "提高"
+          }
+        ],
+        "antonyms": [
+          {
+            "en": "lower",
+            "cn": "降低"
+          },
+          {
+            "en": "diminish",
+            "cn": "削弱；降低"
+          }
+        ],
+        "synonymNote": "improve 主要指改善；raise 适用范围更广，具体宾语搭配不完全相同。",
+        "antonymNote": "lower 侧重降低水平；diminish 侧重减弱重要性、程度等。"
+      },
+      {
+        "meaning": "抬高；举起",
+        "grammar": "v. [T]",
+        "definition": "把物体从较低位置移到较高位置。",
+        "phrases": [
+          {
+            "en": "elevate a platform",
+            "cn": "升高平台"
+          },
+          {
+            "en": "elevate the screen",
+            "cn": "抬高屏幕"
+          }
+        ],
+        "sentence": {
+          "en": "The adjustable stand allows you to elevate the screen.",
+          "cn": "这个可调节支架可以让你抬高屏幕。"
+        },
+        "synonyms": [
+          {
+            "en": "raise",
+            "cn": "抬高"
+          },
+          {
+            "en": "lift",
+            "cn": "举起"
+          }
+        ],
+        "antonyms": [
+          {
+            "en": "lower",
+            "cn": "放低"
+          }
+        ],
+        "synonymNote": "",
+        "antonymNote": ""
+      }
+    ],
+    "sources": [
+      {
+        "label": "Cambridge",
+        "url": "https://dictionary.cambridge.org/dictionary/english/elevate"
+      }
+    ]
+  },
+  {
+    "word": "trail",
+    "phoneticUs": "/treɪl/",
+    "pos": "n. / v.",
+    "summary": "小径；踪迹，记录；落后，跟在后面",
+    "note": "注意 trail 与 trial（试验；审判）的字母顺序。开发语境中的 audit trail 指一系列可追踪操作的记录。",
+    "senses": [
+      {
+        "meaning": "小径；路线",
+        "grammar": "n. [C]",
+        "definition": "乡间、山地或森林中供步行、骑行等使用的小路或路线。",
+        "phrases": [
+          {
+            "en": "a hiking trail",
+            "cn": "徒步路线"
+          },
+          {
+            "en": "a forest trail",
+            "cn": "林间小径"
+          }
+        ],
+        "sentence": {
+          "en": "We followed a hiking trail through the forest.",
+          "cn": "我们沿着一条徒步路线穿过森林。"
+        },
+        "synonyms": [
+          {
+            "en": "path",
+            "cn": "小路"
+          },
+          {
+            "en": "track",
+            "cn": "小径；车辙路"
+          }
+        ],
+        "antonyms": [],
+        "synonymNote": "path 范围更广；track 也可指车辆或人畜形成的道路。",
+        "antonymNote": "这个义项没有常用的直接反义词。"
+      },
+      {
+        "meaning": "踪迹；一连串记录或线索",
+        "grammar": "n. [C]",
+        "definition": "某事物留下的连续痕迹，或能用于追踪活动、过程的信息。",
+        "phrases": [
+          {
+            "en": "an audit trail",
+            "cn": "审计追踪记录"
+          },
+          {
+            "en": "a paper trail",
+            "cn": "书面记录链"
+          },
+          {
+            "en": "leave a trail",
+            "cn": "留下踪迹"
+          }
+        ],
+        "sentence": {
+          "en": "The logs provide an audit trail of changes to user permissions.",
+          "cn": "日志提供了用户权限变更的审计追踪记录。"
+        },
+        "synonyms": [
+          {
+            "en": "track",
+            "cn": "踪迹"
+          },
+          {
+            "en": "record",
+            "cn": "记录"
+          }
+        ],
+        "antonyms": [],
+        "synonymNote": "record 只是记录，trail 更强调一系列痕迹或信息之间可追踪的联系。",
+        "antonymNote": "没有通用的直接反义词；不要把删除记录当作这个名词的反义词。"
+      },
+      {
+        "meaning": "落后于；跟在后面",
+        "grammar": "v. [I/T]",
+        "definition": "位置、进展或比赛成绩处在别人后面，也可表示跟随移动。",
+        "phrases": [
+          {
+            "en": "trail behind competitors",
+            "cn": "落后于竞争对手"
+          },
+          {
+            "en": "trail by ten points",
+            "cn": "落后十分"
+          }
+        ],
+        "sentence": {
+          "en": "The team was trailing by ten points at halftime.",
+          "cn": "半场结束时，这支队伍落后十分。"
+        },
+        "synonyms": [
+          {
+            "en": "lag behind",
+            "cn": "落后于"
+          },
+          {
+            "en": "follow",
+            "cn": "跟随"
+          }
+        ],
+        "antonyms": [
+          {
+            "en": "lead",
+            "cn": "领先"
+          }
+        ],
+        "synonymNote": "lag behind 强调落后；follow 在跟随移动的语境中接近。",
+        "antonymNote": "lead 主要在比赛、排名或位置先后的语境中与 trail 对照。"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Cambridge",
+        "url": "https://dictionary.cambridge.org/dictionary/english/trail"
+      }
+    ]
+  },
+  {
+    "word": "steadily",
+    "phoneticUs": "/ˈsted.əl.i/",
+    "pos": "adv.",
+    "summary": "稳步地；持续而有规律地；平稳地",
+    "note": "steadily 强调过程或趋势稳定、有规律，并不必然表示速度很慢。形容词是 steady。",
+    "senses": [
+      {
+        "meaning": "稳步地；持续而有规律地",
+        "grammar": "adv.",
+        "definition": "在一段时间内以相对稳定的方式逐渐发展或变化。",
+        "phrases": [
+          {
+            "en": "grow steadily",
+            "cn": "稳步增长"
+          },
+          {
+            "en": "decline steadily",
+            "cn": "持续下降"
+          },
+          {
+            "en": "improve steadily",
+            "cn": "稳步改善"
+          }
+        ],
+        "sentence": {
+          "en": "Response times have improved steadily over the past month.",
+          "cn": "过去一个月，响应时间一直在稳步改善。"
+        },
+        "synonyms": [
+          {
+            "en": "consistently",
+            "cn": "持续一致地"
+          },
+          {
+            "en": "gradually",
+            "cn": "逐渐地"
+          }
+        ],
+        "antonyms": [
+          {
+            "en": "erratically",
+            "cn": "不规律地"
+          },
+          {
+            "en": "inconsistently",
+            "cn": "不一致地"
+          }
+        ],
+        "synonymNote": "gradually 强调渐进，consistently 强调一致性；两者都不完全等于 steadily。",
+        "antonymNote": "这些词从变化是否稳定、有规律的角度形成对照。"
+      },
+      {
+        "meaning": "平稳地；沉着地",
+        "grammar": "adv.",
+        "definition": "动作或表现保持稳定、受控的状态。",
+        "phrases": [
+          {
+            "en": "breathe steadily",
+            "cn": "平稳地呼吸"
+          },
+          {
+            "en": "look steadily at someone",
+            "cn": "目光稳定地看着某人"
+          }
+        ],
+        "sentence": {
+          "en": "She breathed steadily before beginning the presentation.",
+          "cn": "开始演示前，她平稳地呼吸。"
+        },
+        "synonyms": [
+          {
+            "en": "calmly",
+            "cn": "平静地"
+          },
+          {
+            "en": "evenly",
+            "cn": "均匀地"
+          }
+        ],
+        "antonyms": [
+          {
+            "en": "unsteadily",
+            "cn": "不稳地"
+          }
+        ],
+        "synonymNote": "calmly 侧重情绪平静，evenly 侧重均匀，要按动作选择。",
+        "antonymNote": ""
+      }
+    ],
+    "sources": [
+      {
+        "label": "Cambridge",
+        "url": "https://dictionary.cambridge.org/dictionary/english/steadily"
+      }
+    ]
+  },
+  {
+    "word": "alight",
+    "phoneticUs": "/əˈlaɪt/",
+    "pos": "v. / adj.",
+    "summary": "下车；降落，落下；燃烧着的",
+    "note": "作“下车”或“落下”时较正式，也常见于交通提示或书面语。日常说下公交车通常用 get off the bus。",
+    "senses": [
+      {
+        "meaning": "下车；从交通工具上下来",
+        "grammar": "v. [I] · formal",
+        "definition": "从火车、公交车等交通工具上下来。",
+        "phrases": [
+          {
+            "en": "alight from a train",
+            "cn": "从火车上下来"
+          },
+          {
+            "en": "alight at the next stop",
+            "cn": "在下一站下车"
+          }
+        ],
+        "sentence": {
+          "en": "Passengers should alight at the next station.",
+          "cn": "乘客应在下一站下车。"
+        },
+        "synonyms": [
+          {
+            "en": "get off",
+            "cn": "下车"
+          },
+          {
+            "en": "disembark",
+            "cn": "离开交通工具；下船或下飞机"
+          }
+        ],
+        "antonyms": [
+          {
+            "en": "board",
+            "cn": "登上交通工具"
+          }
+        ],
+        "synonymNote": "disembark 较正式，常用于船或飞机；具体交通工具决定最自然的搭配。",
+        "antonymNote": "board 表示上车、上船或登机，在移动方向上形成对照。"
+      },
+      {
+        "meaning": "降落；落在",
+        "grammar": "v. [I] · formal",
+        "definition": "从空中落到某个表面，常描述鸟或昆虫。",
+        "phrases": [
+          {
+            "en": "alight on a branch",
+            "cn": "落在树枝上"
+          },
+          {
+            "en": "alight on a flower",
+            "cn": "落在花上"
+          }
+        ],
+        "sentence": {
+          "en": "A small bird alighted on the garden fence.",
+          "cn": "一只小鸟落在花园的围栏上。"
+        },
+        "synonyms": [
+          {
+            "en": "land",
+            "cn": "降落"
+          },
+          {
+            "en": "settle",
+            "cn": "落下；停落"
+          }
+        ],
+        "antonyms": [
+          {
+            "en": "take off",
+            "cn": "起飞"
+          }
+        ],
+        "synonymNote": "settle 在表示落下并停留的语境中接近。",
+        "antonymNote": "take off 与降落在动作方向上形成对照。"
+      },
+      {
+        "meaning": "燃烧着的；着火的",
+        "grammar": "adj. · after verb",
+        "definition": "处于燃烧状态，通常放在系动词等后面。",
+        "phrases": [
+          {
+            "en": "set something alight",
+            "cn": "点燃某物"
+          },
+          {
+            "en": "catch alight",
+            "cn": "开始着火"
+          }
+        ],
+        "sentence": {
+          "en": "The campfire was still alight when we returned.",
+          "cn": "我们回来时，营火仍在燃烧。"
+        },
+        "synonyms": [
+          {
+            "en": "burning",
+            "cn": "燃烧着的"
+          },
+          {
+            "en": "on fire",
+            "cn": "着火的"
+          }
+        ],
+        "antonyms": [
+          {
+            "en": "extinguished",
+            "cn": "已熄灭的"
+          },
+          {
+            "en": "unlit",
+            "cn": "未点燃的"
+          }
+        ],
+        "synonymNote": "alight 作形容词通常用于 be alight 等结构。",
+        "antonymNote": "extinguished 强调原本燃烧而后熄灭；unlit 强调没有点燃。"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Cambridge",
+        "url": "https://dictionary.cambridge.org/dictionary/english/alight"
+      }
+    ]
+  },
+  {
+    "word": "complaint",
+    "phoneticUs": "/kəmˈpleɪnt/",
+    "pos": "n.",
+    "summary": "投诉；抱怨；不满的意见",
+    "note": "complaint 是名词，complain 是动词。常用 make/file a complaint，或 complain about something。",
+    "senses": [
+      {
+        "meaning": "投诉；抱怨",
+        "grammar": "n. [C/U]",
+        "definition": "指出某事有问题或令人不满意的意见，也可以是正式投诉。",
+        "phrases": [
+          {
+            "en": "file a complaint",
+            "cn": "提出正式投诉"
+          },
+          {
+            "en": "a complaint about a service",
+            "cn": "对某项服务的投诉"
+          },
+          {
+            "en": "handle customer complaints",
+            "cn": "处理客户投诉"
+          }
+        ],
+        "sentence": {
+          "en": "The support team received a complaint about repeated login failures.",
+          "cn": "支持团队收到了一起关于反复登录失败的投诉。"
+        },
+        "synonyms": [
+          {
+            "en": "grievance",
+            "cn": "不满；申诉"
+          },
+          {
+            "en": "objection",
+            "cn": "异议"
+          }
+        ],
+        "antonyms": [
+          {
+            "en": "compliment",
+            "cn": "赞美"
+          },
+          {
+            "en": "praise",
+            "cn": "称赞"
+          }
+        ],
+        "synonymNote": "grievance 常涉及不公平待遇；objection 强调反对意见，不能在所有句子中替换 complaint。",
+        "antonymNote": "compliment 和 praise 是负面与正面反馈的语境对照，不是所有投诉场景中的严格反义词。"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Cambridge",
+        "url": "https://dictionary.cambridge.org/dictionary/english/complaint"
+      }
+    ]
+  },
+  {
+    "word": "blame",
+    "phoneticUs": "/bleɪm/",
+    "pos": "v. / n.",
+    "summary": "责备；归咎于；责任，责备",
+    "note": "两种常用结构：blame someone for something 和 blame something on someone。be to blame 表示应对某事负责。",
+    "senses": [
+      {
+        "meaning": "责备；把问题归咎于",
+        "grammar": "v. [T]",
+        "definition": "认为或说某人、某事应对不好的结果负责。",
+        "phrases": [
+          {
+            "en": "blame someone for a mistake",
+            "cn": "因错误而责备某人"
+          },
+          {
+            "en": "blame the failure on a configuration error",
+            "cn": "把失败归咎于配置错误"
+          },
+          {
+            "en": "be to blame",
+            "cn": "应负责任"
+          }
+        ],
+        "sentence": {
+          "en": "Do not blame the developer before checking the deployment logs.",
+          "cn": "检查部署日志之前，不要先责怪开发者。"
+        },
+        "synonyms": [
+          {
+            "en": "hold responsible",
+            "cn": "认为应负责任"
+          },
+          {
+            "en": "fault",
+            "cn": "指责；挑错"
+          }
+        ],
+        "antonyms": [
+          {
+            "en": "absolve",
+            "cn": "免除责任"
+          }
+        ],
+        "synonymNote": "hold responsible 强调责任归属；fault 常接人以及 for 引出的原因。",
+        "antonymNote": "absolve 常用 absolve someone of blame，表示免除某人的责任，结构需要相应调整。"
+      },
+      {
+        "meaning": "责任；责备",
+        "grammar": "n. [U]",
+        "definition": "针对错误或不良结果而归于某人或某事的责任或指责。",
+        "phrases": [
+          {
+            "en": "take the blame",
+            "cn": "承担责任"
+          },
+          {
+            "en": "put the blame on someone",
+            "cn": "把责任推到某人身上"
+          },
+          {
+            "en": "share the blame",
+            "cn": "共同承担责任"
+          }
+        ],
+        "sentence": {
+          "en": "The manager took the blame for the delayed release.",
+          "cn": "经理承担了发布延期的责任。"
+        },
+        "synonyms": [
+          {
+            "en": "responsibility",
+            "cn": "责任"
+          },
+          {
+            "en": "censure",
+            "cn": "谴责"
+          }
+        ],
+        "antonyms": [
+          {
+            "en": "credit",
+            "cn": "功劳；肯定"
+          }
+        ],
+        "synonymNote": "responsibility 还可指日常职责；censure 强调谴责，语气较正式。",
+        "antonymNote": "credit 与 blame 是对好结果和坏结果进行归因时的对照，不能在所有句子中直接互换。"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Cambridge",
+        "url": "https://dictionary.cambridge.org/dictionary/english/blame"
+      }
+    ]
+  },
+  {
+    "word": "familiar with",
+    "type": "phrase",
+    "phoneticUs": "/fəˈmɪl.i.jɚ wɪð/",
+    "pos": "adj. + prep.",
+    "summary": "熟悉；了解",
+    "note": "通常使用 be familiar with。with 后面接所熟悉的人、事物或领域。不要与 something is familiar to someone 混淆。",
+    "senses": [
+      {
+        "meaning": "熟悉；对……有所了解",
+        "grammar": "",
+        "definition": "因为接触、使用或了解过，而对某人、事物或领域具有一定认识。",
+        "structure": "be familiar with + noun / pronoun",
+        "phrases": [
+          {
+            "en": "be familiar with the codebase",
+            "cn": "熟悉代码库"
+          },
+          {
+            "en": "be familiar with the process",
+            "cn": "了解流程"
+          },
+          {
+            "en": "become familiar with a new tool",
+            "cn": "逐渐熟悉一个新工具"
+          }
+        ],
+        "sentence": {
+          "en": "Are you familiar with the deployment process for this service?",
+          "cn": "你熟悉这个服务的部署流程吗？"
+        },
+        "usageNotes": [
+          "be 随主语和时态变化：am/is/are/was familiar with。",
+          "人 + be familiar with + 事物：I am familiar with this tool。事物 + be familiar to + 人：This tool is familiar to me。",
+          "熟悉某事不必然表示精通，描述掌握程度时应结合上下文。"
+        ],
+        "relatedExpressions": [
+          {
+            "en": "be acquainted with",
+            "cn": "了解；熟悉"
+          },
+          {
+            "en": "be unfamiliar with",
+            "cn": "不熟悉"
+          }
+        ],
+        "relatedNote": "be acquainted with 也可表示认识某人；be unfamiliar with 是常见的反向表达。"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Cambridge",
+        "url": "https://dictionary.cambridge.org/dictionary/english/familiar"
+      }
+    ]
+  },
+  {
+    "word": "corruption",
+    "phoneticUs": "/kəˈrʌp.ʃən/",
+    "pos": "n.",
+    "summary": "腐败；贪腐；数据损坏",
+    "note": "在公共事务中常指腐败行为；在计算机语境中常指数据损坏。要结合宾语、领域和搭配判断。",
+    "senses": [
+      {
+        "meaning": "腐败；贪腐",
+        "grammar": "n. [U]",
+        "definition": "尤其指有权力的人实施不诚实、违法或滥用权力的行为。",
+        "phrases": [
+          {
+            "en": "political corruption",
+            "cn": "政治腐败"
+          },
+          {
+            "en": "fight corruption",
+            "cn": "打击腐败"
+          },
+          {
+            "en": "a corruption investigation",
+            "cn": "腐败调查"
+          }
+        ],
+        "sentence": {
+          "en": "The organization introduced independent audits to help prevent corruption.",
+          "cn": "该组织引入独立审计，以帮助预防腐败。"
+        },
+        "synonyms": [
+          {
+            "en": "dishonesty",
+            "cn": "不诚实"
+          },
+          {
+            "en": "corrupt practices",
+            "cn": "腐败行为"
+          }
+        ],
+        "antonyms": [
+          {
+            "en": "integrity",
+            "cn": "正直；廉洁"
+          },
+          {
+            "en": "honesty",
+            "cn": "诚实"
+          }
+        ],
+        "synonymNote": "dishonesty 范围更广，不一定涉及权力或利益交换。",
+        "antonymNote": "integrity 与 honesty 从行为操守方面形成对照。"
+      },
+      {
+        "meaning": "数据损坏",
+        "grammar": "n. [U] · computing",
+        "definition": "计算机中的数据发生非预期改变，导致内容错误或无法正常使用。",
+        "phrases": [
+          {
+            "en": "data corruption",
+            "cn": "数据损坏"
+          },
+          {
+            "en": "file corruption",
+            "cn": "文件损坏"
+          },
+          {
+            "en": "detect corruption",
+            "cn": "检测损坏"
+          }
+        ],
+        "sentence": {
+          "en": "The checksum helps detect data corruption during transfer.",
+          "cn": "校验和有助于检测传输过程中的数据损坏。"
+        },
+        "synonyms": [
+          {
+            "en": "damage",
+            "cn": "损坏"
+          }
+        ],
+        "antonyms": [
+          {
+            "en": "data integrity",
+            "cn": "数据完整性"
+          }
+        ],
+        "synonymNote": "damage 很宽泛，计算机数据语境中 corruption 更明确。",
+        "antonymNote": "data integrity 表示数据完整、准确等性质，是状态方面的对照，不是可直接替换的反义过程。"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Cambridge",
+        "url": "https://dictionary.cambridge.org/dictionary/english/corruption"
+      }
+    ]
+  },
+  {
+    "word": "affordability",
+    "phoneticUs": "/əˌfɔːr.dəˈbɪl.ə.t̬i/",
+    "pos": "n.",
+    "summary": "可负担性；价格可承受程度",
+    "note": "强调费用在人们的经济能力范围内，需结合价格和支付能力理解。对应的形容词是 affordable。",
+    "senses": [
+      {
+        "meaning": "可负担性；价格可承受程度",
+        "grammar": "n. [U]",
+        "definition": "某项商品或服务的价格低到目标人群能够承担的程度。",
+        "phrases": [
+          {
+            "en": "housing affordability",
+            "cn": "住房可负担性"
+          },
+          {
+            "en": "improve affordability",
+            "cn": "提高可负担性"
+          },
+          {
+            "en": "an affordability assessment",
+            "cn": "负担能力评估"
+          }
+        ],
+        "sentence": {
+          "en": "The team compared the plans based on reliability and affordability.",
+          "cn": "团队根据可靠性和可负担性比较了这些方案。"
+        },
+        "synonyms": [],
+        "antonyms": [
+          {
+            "en": "unaffordability",
+            "cn": "难以负担；不可负担性"
+          }
+        ],
+        "synonymNote": "没有常用的完全对应近义名词。low cost 只强调低成本，不一定表达相对于支付能力的可负担程度。",
+        "antonymNote": "unaffordability 表示费用超出支付能力；在实际句子中也常用 lack of affordability。"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Cambridge",
+        "url": "https://dictionary.cambridge.org/dictionary/english/affordability"
+      }
+    ]
+  },
+  {
+    "word": "be capable of doing sth",
+    "type": "pattern",
+    "phoneticUs": "/bi ˈkeɪpəbəl əv ˈduːɪŋ ˈsʌmθɪŋ/",
+    "pos": "be + adj.",
+    "summary": "有能力做某事；具备做某事的条件",
+    "note": "sth 是 something 的缩写，是可以替换的占位符。朗读时读作 something；实际造句时换成具体的动作或事物。",
+    "senses": [
+      {
+        "meaning": "有能力做某事",
+        "grammar": "",
+        "definition": "强调人、系统或事物具备完成某项任务所需的能力或条件。",
+        "structure": "be capable of + noun / doing sth",
+        "phrases": [
+          {
+            "en": "be capable of handling large files",
+            "cn": "有能力处理大文件"
+          },
+          {
+            "en": "be capable of managing a team",
+            "cn": "有能力管理团队"
+          },
+          {
+            "en": "be capable of solving complex problems",
+            "cn": "有能力解决复杂问题"
+          }
+        ],
+        "sentence": {
+          "en": "The system is capable of processing thousands of requests per second.",
+          "cn": "这个系统具备每秒处理数千个请求的能力。"
+        },
+        "usageNotes": [
+          "of 是介词，后面接名词或动名词：capable of handling，而不是 capable to handle。",
+          "be 随主语和时态变化：is capable of、are capable of、was capable of。",
+          "描述具备某种能力，不表示每一次都一定会做到。"
+        ],
+        "relatedExpressions": [
+          {
+            "en": "be able to do sth",
+            "cn": "能够做某事"
+          },
+          {
+            "en": "be incapable of doing sth",
+            "cn": "没有能力做某事"
+          }
+        ],
+        "relatedNote": "be able to 后接动词原形；be incapable of 是反向表达，仍然接名词或动名词。"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Cambridge",
+        "url": "https://dictionary.cambridge.org/dictionary/english/capable-of"
+      },
+      {
+        "label": "Cambridge",
+        "url": "https://dictionary.cambridge.org/dictionary/english/capable"
+      }
+    ],
+    "pronunciationText": "be capable of doing something"
+  },
+  {
+    "word": "add to",
+    "type": "phrase",
+    "phoneticUs": "/ˈæd tə/",
+    "pos": "v. + prep.",
+    "summary": "增加；增添；把……加入……",
+    "note": "注意 add to B 和 add A to B 两种结构：前者强调使 B 增加，后者明确说出把什么加入 B。",
+    "senses": [
+      {
+        "meaning": "使增加；增添",
+        "grammar": "",
+        "definition": "使某种数量、影响或程度进一步增加；可用于复杂性、压力、成本，也可用于价值等。",
+        "structure": "add to + noun",
+        "phrases": [
+          {
+            "en": "add to the complexity",
+            "cn": "增加复杂性"
+          },
+          {
+            "en": "add to the cost",
+            "cn": "增加成本"
+          },
+          {
+            "en": "add to the value",
+            "cn": "提升价值"
+          }
+        ],
+        "sentence": {
+          "en": "These extra checks add to the complexity of the code.",
+          "cn": "这些额外检查增加了代码的复杂性。"
+        },
+        "usageNotes": [
+          "to 后面接被增加的事物，例如 add to the workload（增加工作量）。",
+          "时态变化在 add 上：adds to、added to、adding to。"
+        ],
+        "relatedExpressions": [
+          {
+            "en": "increase",
+            "cn": "增加"
+          },
+          {
+            "en": "contribute to",
+            "cn": "促成；为……作出贡献"
+          }
+        ],
+        "relatedNote": "increase 可直接接宾语；contribute to 强调对某个结果的贡献或影响，不总等于单纯增加数量。"
+      },
+      {
+        "meaning": "把某物加入另一事物",
+        "grammar": "",
+        "definition": "把明确的内容、项目或成分添加到某个整体中。",
+        "structure": "add A to B",
+        "phrases": [
+          {
+            "en": "add a field to the request",
+            "cn": "在请求中增加一个字段"
+          },
+          {
+            "en": "add an item to the list",
+            "cn": "在列表中加入一项"
+          }
+        ],
+        "sentence": {
+          "en": "Add the new field to the request payload.",
+          "cn": "把新字段加入请求负载中。"
+        },
+        "usageNotes": [
+          "A 是被添加的内容，B 是接收该内容的整体。",
+          "表示把 A 加入 B 时，用 add A to B；不要把 to 随意换成 into。"
+        ],
+        "relatedExpressions": [],
+        "relatedNote": ""
+      }
+    ],
+    "sources": [
+      {
+        "label": "Cambridge",
+        "url": "https://dictionary.cambridge.org/dictionary/english/add-to"
+      },
+      {
+        "label": "Cambridge",
+        "url": "https://dictionary.cambridge.org/dictionary/english/add"
+      }
+    ]
+  },
+  {
+    "word": "call for",
+    "type": "phrase",
+    "phoneticUs": "/ˈkɑːl fər/",
+    "pos": "verb phrase",
+    "summary": "需要；要求；呼吁",
+    "note": "主语是情况或任务时，常表示“需要”；主语是人、机构或报告时，常表示“要求／呼吁”。",
+    "senses": [
+      {
+        "meaning": "需要；有必要采取",
+        "grammar": "",
+        "definition": "某种情况需要特定行动、品质或处理方式。",
+        "structure": "situation / task + call for + noun / doing sth",
+        "phrases": [
+          {
+            "en": "call for careful planning",
+            "cn": "需要仔细规划"
+          },
+          {
+            "en": "call for immediate action",
+            "cn": "需要立即采取行动"
+          },
+          {
+            "en": "call for reviewing the design",
+            "cn": "需要重新审查设计"
+          }
+        ],
+        "sentence": {
+          "en": "This migration calls for careful planning and testing.",
+          "cn": "这次迁移需要仔细规划和测试。"
+        },
+        "usageNotes": [
+          "与第三人称单数主语搭配时用 calls for。",
+          "for 是介词，后面通常接名词或动名词。"
+        ],
+        "relatedExpressions": [
+          {
+            "en": "require",
+            "cn": "需要；要求"
+          },
+          {
+            "en": "need",
+            "cn": "需要"
+          }
+        ],
+        "relatedNote": "call for 常强调当前情况所需要的应对方式，具体搭配与 require、need 不完全相同。"
+      },
+      {
+        "meaning": "要求；呼吁",
+        "grammar": "",
+        "definition": "公开或明确地要求某项行动发生。",
+        "structure": "call for + noun / someone to do sth",
+        "phrases": [
+          {
+            "en": "call for an independent review",
+            "cn": "要求进行独立审查"
+          },
+          {
+            "en": "call for stricter rules",
+            "cn": "呼吁制定更严格的规则"
+          }
+        ],
+        "sentence": {
+          "en": "The team called for an independent review of the incident.",
+          "cn": "团队要求对这次事件进行独立审查。"
+        },
+        "usageNotes": [
+          "call for someone to do sth 中，someone 是执行后面动作的人。",
+          "call for something 表示提出要求，本身不表示要求已经得到执行。"
+        ],
+        "relatedExpressions": [
+          {
+            "en": "demand",
+            "cn": "强烈要求"
+          },
+          {
+            "en": "appeal for",
+            "cn": "呼吁；请求"
+          }
+        ],
+        "relatedNote": "demand 往往语气更强；appeal for 更突出请求或呼吁。"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Cambridge",
+        "url": "https://dictionary.cambridge.org/dictionary/english/call-for"
+      }
+    ]
+  },
+  {
+    "word": "shift into",
+    "type": "phrase",
+    "phoneticUs": "/ʃɪft ˈɪntuː/",
+    "pos": "v. + prep.",
+    "summary": "转入某种状态或阶段；换入某个挡位",
+    "note": "into 强调进入新的状态、模式或挡位。区分“转入某个状态”和“把重点转向某事”的具体搭配。",
+    "senses": [
+      {
+        "meaning": "转入；进入某种模式",
+        "grammar": "",
+        "definition": "从当前状态转到另一种状态、工作模式或阶段。",
+        "structure": "shift into + mode / phase / state",
+        "phrases": [
+          {
+            "en": "shift into recovery mode",
+            "cn": "转入恢复模式"
+          },
+          {
+            "en": "shift into a new phase",
+            "cn": "进入新的阶段"
+          }
+        ],
+        "sentence": {
+          "en": "The team shifted into recovery mode after the outage.",
+          "cn": "发生服务中断后，团队转入了恢复模式。"
+        },
+        "usageNotes": [
+          "into 后接新进入的模式或阶段，通常是名词短语。",
+          "需要明确起点和终点时，也可以使用 shift from A to B。"
+        ],
+        "relatedExpressions": [
+          {
+            "en": "switch to",
+            "cn": "切换到"
+          },
+          {
+            "en": "move into",
+            "cn": "进入"
+          }
+        ],
+        "relatedNote": "switch to 的介词是 to；move into 与 shift into 的自然程度取决于具体搭配。"
+      },
+      {
+        "meaning": "换入某个挡位",
+        "grammar": "",
+        "definition": "驾驶车辆时，将变速装置切换到指定挡位。",
+        "structure": "shift into + gear",
+        "phrases": [
+          {
+            "en": "shift into second gear",
+            "cn": "换入二挡"
+          },
+          {
+            "en": "shift into a higher gear",
+            "cn": "换入更高挡位"
+          }
+        ],
+        "sentence": {
+          "en": "She shifted into second gear before turning the corner.",
+          "cn": "她在转弯前换入了二挡。"
+        },
+        "usageNotes": [
+          "shift 是美式英语中常见的换挡用词。",
+          "shift into a higher gear 也可以比喻加快工作节奏，要结合上下文理解。"
+        ],
+        "relatedExpressions": [],
+        "relatedNote": ""
+      }
+    ],
+    "sources": [
+      {
+        "label": "Cambridge",
+        "url": "https://dictionary.cambridge.org/dictionary/english/shift"
+      }
+    ]
+  },
+  {
+    "word": "distract from",
+    "type": "phrase",
+    "phoneticUs": "/dɪˈstrækt frəm/",
+    "pos": "verb phrase",
+    "summary": "使分心；使注意力从……转移",
+    "note": "学习时把常见的完整结构一起记住：distract someone from something / doing something。",
+    "senses": [
+      {
+        "meaning": "使某人从某事上分心",
+        "grammar": "",
+        "definition": "把某人的注意力从原本关注或正在做的事情上移开。",
+        "structure": "distract someone from + noun / doing sth",
+        "phrases": [
+          {
+            "en": "distract me from my work",
+            "cn": "让我从工作中分心"
+          },
+          {
+            "en": "distract users from the main task",
+            "cn": "让用户偏离主要任务"
+          },
+          {
+            "en": "be distracted from studying",
+            "cn": "学习时受到干扰而分心"
+          }
+        ],
+        "sentence": {
+          "en": "Frequent notifications distract me from finishing the report.",
+          "cn": "频繁的通知让我无法专心完成报告。"
+        },
+        "usageNotes": [
+          "主动句常用 distract someone from…；被动句常用 be distracted from…。",
+          "from 后接动词时使用 -ing 形式：from working / from finishing the report。",
+          "也可说 distract attention from something，表示把注意力从某事上转移开。"
+        ],
+        "relatedExpressions": [
+          {
+            "en": "divert attention from",
+            "cn": "把注意力从……转移开"
+          },
+          {
+            "en": "take attention away from",
+            "cn": "使注意力离开……"
+          }
+        ],
+        "relatedNote": "这是表达注意力转移的近义结构；替换时需要相应调整宾语和句子结构。"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Cambridge",
+        "url": "https://dictionary.cambridge.org/dictionary/english/distract"
+      }
+    ]
+  },
+  {
+    "word": "attempt to",
+    "type": "pattern",
+    "phoneticUs": "/əˈtempt tə/",
+    "pos": "v. + to-infinitive",
+    "summary": "尝试做某事；试图做某事",
+    "note": "attempt to 后面接动词原形。表示尝试了某个动作，本身不说明最后是否成功。",
+    "senses": [
+      {
+        "meaning": "尝试；试图",
+        "grammar": "",
+        "definition": "努力做某件事，尤其是可能有难度或结果不确定的事。",
+        "structure": "attempt to + base verb",
+        "phrases": [
+          {
+            "en": "attempt to reproduce a bug",
+            "cn": "尝试复现一个缺陷"
+          },
+          {
+            "en": "attempt to recover the data",
+            "cn": "尝试恢复数据"
+          },
+          {
+            "en": "attempt to resolve an issue",
+            "cn": "尝试解决一个问题"
+          }
+        ],
+        "sentence": {
+          "en": "We attempted to reproduce the bug in a test environment.",
+          "cn": "我们尝试在测试环境中复现这个缺陷。"
+        },
+        "usageNotes": [
+          "这里的 to 是不定式标记，后面接动词原形：attempt to reproduce。",
+          "attempt 随时态变化：attempts to、attempted to、is attempting to。",
+          "名词结构可以说 make an attempt to do sth 或 an attempt at doing sth；不要与当前动词结构混淆。"
+        ],
+        "relatedExpressions": [
+          {
+            "en": "try to do sth",
+            "cn": "努力尝试做某事"
+          },
+          {
+            "en": "make an effort to do sth",
+            "cn": "努力做某事"
+          }
+        ],
+        "relatedNote": "try to do 强调努力尝试；try doing 常指试用某个办法，两者的结构与侧重点不同。"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Cambridge",
+        "url": "https://dictionary.cambridge.org/dictionary/english/attempt"
+      }
+    ]
+  },
+  {
+    "word": "notably",
+    "phoneticUs": "/ˈnoʊ.t̬ə.bli/",
+    "pos": "adv.",
+    "summary": "尤其，特别是；明显地",
+    "note": "notably 既可引出突出的例子，也可强调变化或特征很明显。注意它与 notable（形容词）的词性区别。",
+    "senses": [
+      {
+        "meaning": "尤其；特别是",
+        "grammar": "adv.",
+        "definition": "从多个事物中指出特别值得注意或重要的一项。",
+        "phrases": [
+          {
+            "en": "most notably",
+            "cn": "尤其是；最值得注意的是"
+          },
+          {
+            "en": "notably in Europe",
+            "cn": "尤其在欧洲"
+          }
+        ],
+        "sentence": {
+          "en": "Several features improved, most notably the search function.",
+          "cn": "多项功能有所改进，尤其是搜索功能。"
+        },
+        "synonyms": [
+          {
+            "en": "especially",
+            "cn": "尤其"
+          },
+          {
+            "en": "particularly",
+            "cn": "特别是"
+          }
+        ],
+        "antonyms": [],
+        "synonymNote": "这里的近义表达用于突出某个例子或方面。",
+        "antonymNote": "没有常用的直接反义词；generally（总体上）改变了强调范围，并不能直接替换。"
+      },
+      {
+        "meaning": "明显地；显著地",
+        "grammar": "adv.",
+        "definition": "某种变化或特征达到了容易注意到的程度。",
+        "phrases": [
+          {
+            "en": "notably faster",
+            "cn": "明显更快"
+          },
+          {
+            "en": "notably absent",
+            "cn": "明显缺席的"
+          }
+        ],
+        "sentence": {
+          "en": "The new version is notably faster on older devices.",
+          "cn": "新版本在旧设备上的运行速度明显更快。"
+        },
+        "synonyms": [
+          {
+            "en": "noticeably",
+            "cn": "明显地"
+          },
+          {
+            "en": "markedly",
+            "cn": "显著地"
+          }
+        ],
+        "antonyms": [
+          {
+            "en": "imperceptibly",
+            "cn": "难以察觉地"
+          }
+        ],
+        "synonymNote": "",
+        "antonymNote": "imperceptibly 只在比较“是否容易察觉”的语境中形成对照。"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Cambridge",
+        "url": "https://dictionary.cambridge.org/dictionary/english/notably"
+      }
+    ]
+  },
+  {
+    "word": "pension",
+    "phoneticUs": "/ˈpen.ʃən/",
+    "pos": "n.",
+    "summary": "养老金；退休金",
+    "note": "pension 指退休等情况下定期领取的款项；retirement 指退休这一阶段或行为。它也不等于所有种类的福利或补贴。",
+    "senses": [
+      {
+        "meaning": "养老金；退休金",
+        "grammar": "n. [C]",
+        "definition": "由政府或相关机构、雇主等按制度定期支付，通常供退休人员生活使用的款项。",
+        "phrases": [
+          {
+            "en": "a pension plan",
+            "cn": "养老金计划"
+          },
+          {
+            "en": "a pension fund",
+            "cn": "养老基金"
+          },
+          {
+            "en": "receive a pension",
+            "cn": "领取养老金"
+          }
+        ],
+        "sentence": {
+          "en": "She receives a monthly pension after retiring from the company.",
+          "cn": "从公司退休后，她每月领取养老金。"
+        },
+        "synonyms": [
+          {
+            "en": "retirement benefit",
+            "cn": "退休福利；退休待遇"
+          },
+          {
+            "en": "retirement income",
+            "cn": "退休收入"
+          }
+        ],
+        "antonyms": [],
+        "synonymNote": "这两个表达范围更广：退休福利可能包括非现金待遇，退休收入也可能包括个人投资收入。",
+        "antonymNote": "没有常用的直接反义词；salary（工资）是工作收入，可作概念对照，但不是 pension 的反义词。"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Cambridge",
+        "url": "https://dictionary.cambridge.org/dictionary/english/pension"
+      }
+    ]
+  },
+  {
+    "word": "recall",
+    "phoneticUs": "/rɪˈkɑːl/",
+    "pos": "v. / n.",
+    "summary": "回想；召回；记忆力",
+    "note": "动词 recall 通常重读第二音节；名词常重读第一音节。表示回想时可以说 recall doing something。",
+    "senses": [
+      {
+        "meaning": "回想起；记起",
+        "grammar": "v. [I/T]",
+        "definition": "把以前的事情或信息重新带回记忆中。",
+        "phrases": [
+          {
+            "en": "as far as I can recall",
+            "cn": "据我回忆"
+          },
+          {
+            "en": "recall doing something",
+            "cn": "记得做过某事"
+          },
+          {
+            "en": "recall the details",
+            "cn": "回想起细节"
+          }
+        ],
+        "sentence": {
+          "en": "I recall discussing this issue during the code review.",
+          "cn": "我记得在代码审查时讨论过这个问题。"
+        },
+        "synonyms": [
+          {
+            "en": "remember",
+            "cn": "记得"
+          },
+          {
+            "en": "recollect",
+            "cn": "回忆起"
+          }
+        ],
+        "antonyms": [
+          {
+            "en": "forget",
+            "cn": "忘记"
+          }
+        ],
+        "synonymNote": "recall 和 recollect 常强调主动回想；remember 的使用范围更广。",
+        "antonymNote": ""
+      },
+      {
+        "meaning": "召回；要求返回",
+        "grammar": "v. [T]",
+        "definition": "要求已售出的产品退回，或要求某个人返回。产品召回常与安全或质量问题有关。",
+        "phrases": [
+          {
+            "en": "recall a product",
+            "cn": "召回产品"
+          },
+          {
+            "en": "recall defective batteries",
+            "cn": "召回有缺陷的电池"
+          }
+        ],
+        "sentence": {
+          "en": "The manufacturer recalled the batteries after a safety test.",
+          "cn": "制造商在一次安全测试后召回了这些电池。"
+        },
+        "synonyms": [
+          {
+            "en": "call back",
+            "cn": "叫回；召回"
+          }
+        ],
+        "antonyms": [
+          {
+            "en": "send out",
+            "cn": "派出；发出"
+          }
+        ],
+        "synonymNote": "call back 在“叫回某人”等语境中接近；表示产品召回时通常使用 recall。",
+        "antonymNote": "send out 仅在人员或物品“发出／叫回”的方向上形成对照，不是通用反义词。"
+      },
+      {
+        "meaning": "记忆力；回忆能力",
+        "grammar": "n. [U]",
+        "definition": "记起事实、细节或过去经历的能力。",
+        "phrases": [
+          {
+            "en": "total recall",
+            "cn": "完整记忆；对所有细节的记忆"
+          },
+          {
+            "en": "powers of recall",
+            "cn": "记忆能力"
+          }
+        ],
+        "sentence": {
+          "en": "Regular practice can improve your recall of new vocabulary.",
+          "cn": "经常练习有助于提高你回忆新词汇的能力。"
+        },
+        "synonyms": [
+          {
+            "en": "memory",
+            "cn": "记忆；记忆力"
+          }
+        ],
+        "antonyms": [
+          {
+            "en": "forgetfulness",
+            "cn": "健忘"
+          }
+        ],
+        "synonymNote": "memory 还可表示记忆中的事件等，范围比这个义项的 recall 更广。",
+        "antonymNote": "forgetfulness 是记忆能力方面的对照表达，具体搭配仍需调整。",
+        "phoneticUs": "/ˈriː.kɑːl/"
+      },
+      {
+        "meaning": "一次召回；召回行动",
+        "grammar": "n. [C, usually singular]",
+        "definition": "要求某类产品退回或要求相关人员返回的一次行动。",
+        "phrases": [
+          {
+            "en": "a product recall",
+            "cn": "一次产品召回"
+          },
+          {
+            "en": "issue a recall",
+            "cn": "发布召回通知"
+          }
+        ],
+        "sentence": {
+          "en": "The company issued a recall for the affected devices.",
+          "cn": "公司对受影响的设备发布了召回通知。"
+        },
+        "synonyms": [
+          {
+            "en": "withdrawal",
+            "cn": "撤回；收回"
+          }
+        ],
+        "antonyms": [],
+        "synonymNote": "withdrawal 的范围更广；product recall 特别强调要求退回已发出或已售出的产品，不能在所有语境中互换。",
+        "antonymNote": "没有常用的直接反义词。产品上市或发货属于不同环节，并非这个名词的严格反义词。",
+        "phoneticUs": "/ˈriː.kɑːl/"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Cambridge",
+        "url": "https://dictionary.cambridge.org/dictionary/english/recall"
+      }
+    ]
+  },
+  {
+    "word": "negligible",
+    "phoneticUs": "/ˈneɡ.lə.dʒə.bəl/",
+    "pos": "adj.",
+    "summary": "微不足道的；小到可以忽略的",
+    "note": "negligible 表示某事物的数量或影响很小，不等于 negligent（疏忽的；失职的）。也不一定表示数值为零。",
+    "senses": [
+      {
+        "meaning": "微不足道的；可忽略的",
+        "grammar": "adj.",
+        "definition": "数量、程度或影响很小，小到在当前语境中不重要。",
+        "phrases": [
+          {
+            "en": "a negligible difference",
+            "cn": "可忽略的差异"
+          },
+          {
+            "en": "a negligible impact",
+            "cn": "微乎其微的影响"
+          },
+          {
+            "en": "negligible overhead",
+            "cn": "可忽略的额外开销"
+          }
+        ],
+        "sentence": {
+          "en": "The extra logging adds negligible overhead in this test.",
+          "cn": "在这次测试中，额外日志带来的开销可以忽略。"
+        },
+        "synonyms": [
+          {
+            "en": "insignificant",
+            "cn": "不重要的；微小的"
+          },
+          {
+            "en": "trifling",
+            "cn": "微不足道的"
+          }
+        ],
+        "antonyms": [
+          {
+            "en": "significant",
+            "cn": "显著的；重要的"
+          },
+          {
+            "en": "substantial",
+            "cn": "大量的；可观的"
+          }
+        ],
+        "synonymNote": "insignificant 的范围较广；谈性能时 negligible 更强调小到无需重视。",
+        "antonymNote": "significant 强调值得重视，substantial 强调数量或程度大，需按原句选择。"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Cambridge",
+        "url": "https://dictionary.cambridge.org/dictionary/english/negligible"
+      }
+    ]
+  },
+  {
+    "word": "escalate",
+    "phoneticUs": "/ˈes.kə.leɪt/",
+    "pos": "v.",
+    "summary": "加剧；升级；上报处理",
+    "note": "escalate into 常描述问题发展成更严重的局面；escalate something to someone 常用于把问题交给更高层级处理。",
+    "senses": [
+      {
+        "meaning": "上报；转交更高层级处理",
+        "grammar": "v. [T]",
+        "definition": "为解决问题，让更高层级或更有权限的人员介入。",
+        "phrases": [
+          {
+            "en": "escalate an issue to a manager",
+            "cn": "将问题上报给经理"
+          },
+          {
+            "en": "escalate a support ticket",
+            "cn": "将支持工单升级处理"
+          }
+        ],
+        "sentence": {
+          "en": "Please escalate this issue to the on-call engineer.",
+          "cn": "请将这个问题升级交由值班工程师处理。"
+        },
+        "synonyms": [
+          {
+            "en": "refer upward",
+            "cn": "向上转交"
+          },
+          {
+            "en": "raise with a manager",
+            "cn": "向经理提出"
+          }
+        ],
+        "antonyms": [],
+        "synonymNote": "这些是工作语境中的近义表达，侧重点与语法结构不同。",
+        "antonymNote": "没有固定的直接反义词；resolve locally（在当前层级解决）可作处理方式的对照。"
+      },
+      {
+        "meaning": "加剧；使升级",
+        "grammar": "v. [I/T]",
+        "definition": "变得更严重、规模更大，或使某种情况进一步加剧。",
+        "phrases": [
+          {
+            "en": "escalate into a crisis",
+            "cn": "升级为危机"
+          },
+          {
+            "en": "escalating costs",
+            "cn": "不断上涨的成本"
+          }
+        ],
+        "sentence": {
+          "en": "A small disagreement can escalate into a serious conflict.",
+          "cn": "小分歧可能升级为严重冲突。"
+        },
+        "synonyms": [
+          {
+            "en": "intensify",
+            "cn": "加剧"
+          },
+          {
+            "en": "increase",
+            "cn": "增加"
+          }
+        ],
+        "antonyms": [
+          {
+            "en": "de-escalate",
+            "cn": "缓和；使降级"
+          }
+        ],
+        "synonymNote": "intensify 更强调强度增加；increase 也可描述中性的数量增长。",
+        "antonymNote": "de-escalate 尤其适用于冲突、紧张局势或严重程度的缓和。"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Cambridge",
+        "url": "https://dictionary.cambridge.org/dictionary/english/escalate"
+      }
+    ]
+  },
+  {
+    "word": "oversight",
+    "phoneticUs": "/ˈoʊ.vɚ.saɪt/",
+    "pos": "n.",
+    "summary": "疏漏；监督，监管",
+    "note": "别只记“疏漏”：在项目、审计和管理语境中，这个词也常表示“监督”。先看上下文，再判断义项。",
+    "senses": [
+      {
+        "meaning": "疏漏；疏忽造成的遗漏",
+        "grammar": "可数 / 不可数 · C/U",
+        "definition": "因为没有注意到或忘记处理某件事，而出现的无意遗漏或错误。",
+        "phrases": [
+          {
+            "en": "an oversight on my part",
+            "cn": "我这方面的一次疏漏"
+          },
+          {
+            "en": "due to an oversight",
+            "cn": "由于疏忽"
+          },
+          {
+            "en": "an administrative oversight",
+            "cn": "行政工作中的疏漏"
+          }
+        ],
+        "sentence": {
+          "en": "Missing the rollback step was an oversight on my part.",
+          "cn": "漏掉回滚步骤是我的疏漏。"
+        },
+        "synonyms": [
+          {
+            "en": "omission",
+            "cn": "遗漏"
+          },
+          {
+            "en": "slip",
+            "cn": "小失误"
+          }
+        ],
+        "synonymNote": "omission 也可以是有意省略；oversight 在这个义项中特指无意的疏漏。",
+        "antonyms": [
+          {
+            "en": "attentiveness",
+            "cn": "留心；专注"
+          },
+          {
+            "en": "attention to detail",
+            "cn": "对细节的重视"
+          }
+        ],
+        "antonymNote": "无常用的严格一对一反义词；这里列的是“疏忽遗漏”与“细心留意”的语境对照，不能直接互换。"
+      },
+      {
+        "meaning": "监督；监管",
+        "grammar": "不可数 · U · 较正式",
+        "definition": "对某项工作、活动或机构承担监督和检查的职责，确保其按要求进行。",
+        "phrases": [
+          {
+            "en": "have oversight of a project",
+            "cn": "负责监督一个项目"
+          },
+          {
+            "en": "regulatory oversight",
+            "cn": "监管机构的监督"
+          },
+          {
+            "en": "independent oversight",
+            "cn": "独立监督"
+          }
+        ],
+        "sentence": {
+          "en": "The security team has oversight of changes to access permissions.",
+          "cn": "安全团队负责监督访问权限的变更。"
+        },
+        "synonyms": [
+          {
+            "en": "supervision",
+            "cn": "监督；督导"
+          },
+          {
+            "en": "monitoring",
+            "cn": "监控；持续检查"
+          }
+        ],
+        "synonymNote": "oversight 常包含监督职责；monitoring 更侧重持续观察和检查，含义不完全相同。",
+        "antonyms": [
+          {
+            "en": "neglect",
+            "cn": "疏于照管"
+          },
+          {
+            "en": "lack of supervision",
+            "cn": "缺乏监督"
+          }
+        ],
+        "antonymNote": "这里是监督到位与疏于监督的语境对照；oversight 作为“监督”时并没有通用的直接反义词。"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Cambridge",
+        "url": "https://dictionary.cambridge.org/pronunciation/english/oversight"
+      },
+      {
+        "label": "Oxford",
+        "url": "https://www.oxfordlearnersdictionaries.com/us/definition/english/oversight"
+      },
+      {
+        "label": "Merriam-Webster",
+        "url": "https://www.merriam-webster.com/dictionary/oversight"
+      }
+    ]
+  }
+]
