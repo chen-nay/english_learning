@@ -1,5 +1,1213 @@
 [
   {
+    "word": "persuade",
+    "phoneticUs": "/pɚˈsweɪd/",
+    "pos": "v.",
+    "summary": "说服；劝服；使相信",
+    "note": "常用 persuade someone to do something。与 convince 的意义有交叉，两者都可以表示使人相信或说服人采取行动。",
+    "senses": [
+      {
+        "meaning": "说服；劝服某人做某事",
+        "grammar": "v. [T]",
+        "definition": "通过理由、劝说等使某人决定采取某项行动。",
+        "phrases": [
+          {
+            "en": "persuade someone to do something",
+            "cn": "说服某人做某事"
+          },
+          {
+            "en": "persuade the team to adopt a tool",
+            "cn": "说服团队采用一个工具"
+          }
+        ],
+        "sentence": {
+          "en": "She persuaded the team to add more automated tests.",
+          "cn": "她说服团队增加更多自动化测试。"
+        },
+        "synonyms": [
+          {
+            "en": "convince",
+            "cn": "说服"
+          },
+          {
+            "en": "talk someone into doing something",
+            "cn": "说服某人做某事"
+          }
+        ],
+        "antonyms": [
+          {
+            "en": "dissuade",
+            "cn": "劝阻"
+          },
+          {
+            "en": "talk someone out of doing something",
+            "cn": "劝某人不要做某事"
+          }
+        ],
+        "synonymNote": "talk someone into 后接名词或动名词；persuade someone to 后接动词原形。",
+        "antonymNote": "dissuade 常用 dissuade someone from doing something，注意介词和动词形式。"
+      },
+      {
+        "meaning": "使相信；使信服",
+        "grammar": "v. [T]",
+        "definition": "通过解释或证据使某人接受某个观点。",
+        "phrases": [
+          {
+            "en": "persuade someone that something is true",
+            "cn": "使某人相信某事属实"
+          },
+          {
+            "en": "persuade someone of the benefits",
+            "cn": "使某人相信其好处"
+          }
+        ],
+        "sentence": {
+          "en": "The evidence persuaded us that the new approach was safer.",
+          "cn": "这些证据使我们相信新方法更安全。"
+        },
+        "synonyms": [
+          {
+            "en": "convince",
+            "cn": "使信服"
+          }
+        ],
+        "antonyms": [],
+        "synonymNote": "persuade 也能接 that 从句或 of 短语，并非只能表示劝人行动。",
+        "antonymNote": "没有能覆盖所有信念语境的常用直接反义词。"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Cambridge",
+        "url": "https://dictionary.cambridge.org/dictionary/english/persuade"
+      }
+    ]
+  },
+  {
+    "word": "substantial",
+    "phoneticUs": "/səbˈstæn.ʃəl/",
+    "pos": "adj.",
+    "summary": "相当大的；重要的；大体上的",
+    "note": "substantial 和 considerable 都可表示数量或程度可观，很多语境中接近。注意 substantial agreement 表示大体上一致。",
+    "senses": [
+      {
+        "meaning": "相当大的；重要的",
+        "grammar": "adj.",
+        "definition": "数量、规模、价值或重要性大到值得重视。",
+        "phrases": [
+          {
+            "en": "a substantial improvement",
+            "cn": "显著的改善"
+          },
+          {
+            "en": "substantial investment",
+            "cn": "大量投资"
+          },
+          {
+            "en": "a substantial reduction",
+            "cn": "大幅减少"
+          }
+        ],
+        "sentence": {
+          "en": "Caching produced a substantial improvement in response time.",
+          "cn": "缓存使响应时间得到显著改善。"
+        },
+        "synonyms": [
+          {
+            "en": "considerable",
+            "cn": "相当大的"
+          },
+          {
+            "en": "significant",
+            "cn": "显著的；重要的"
+          }
+        ],
+        "antonyms": [
+          {
+            "en": "negligible",
+            "cn": "可忽略的"
+          },
+          {
+            "en": "insubstantial",
+            "cn": "不大的；不重要的"
+          }
+        ],
+        "synonymNote": "这些词可在数量或重要性方面接近，但并非所有搭配都能互换；significant 还可能有特定统计含义。",
+        "antonymNote": ""
+      },
+      {
+        "meaning": "大体上的；主要方面的",
+        "grammar": "adj. · before noun · formal",
+        "definition": "涉及主要内容或大部分重要方面。",
+        "phrases": [
+          {
+            "en": "substantial agreement",
+            "cn": "大体上一致"
+          },
+          {
+            "en": "in substantial agreement",
+            "cn": "在主要方面意见一致"
+          }
+        ],
+        "sentence": {
+          "en": "The reviewers were in substantial agreement about the design.",
+          "cn": "评审者对设计的主要方面意见一致。"
+        },
+        "synonyms": [
+          {
+            "en": "broad",
+            "cn": "大体上的；广泛的"
+          }
+        ],
+        "antonyms": [],
+        "synonymNote": "在 broad agreement 等固定搭配中接近，不表示 broad 可替换 substantial 的所有义项。",
+        "antonymNote": "没有通用的直接反义词；具体表达应结合被修饰的名词。"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Cambridge",
+        "url": "https://dictionary.cambridge.org/dictionary/english/substantial"
+      }
+    ]
+  },
+  {
+    "word": "considerable",
+    "phoneticUs": "/kənˈsɪd.ɚ.ə.bəl/",
+    "pos": "adj.",
+    "summary": "相当大的；可观的；重要的",
+    "note": "considerable 是形容词，considerably 是副词。注意与 considerate（体贴的）区分。",
+    "senses": [
+      {
+        "meaning": "相当大的；可观的",
+        "grammar": "adj.",
+        "definition": "数量、程度或重要性足以引起注意。",
+        "phrases": [
+          {
+            "en": "a considerable amount of time",
+            "cn": "相当多的时间"
+          },
+          {
+            "en": "considerable effort",
+            "cn": "很大的努力"
+          },
+          {
+            "en": "considerable experience",
+            "cn": "丰富的经验"
+          }
+        ],
+        "sentence": {
+          "en": "The migration required considerable time and effort.",
+          "cn": "这次迁移需要相当多的时间和精力。"
+        },
+        "synonyms": [
+          {
+            "en": "substantial",
+            "cn": "相当大的"
+          },
+          {
+            "en": "significant",
+            "cn": "显著的；重要的"
+          }
+        ],
+        "antonyms": [
+          {
+            "en": "negligible",
+            "cn": "微不足道的"
+          },
+          {
+            "en": "inconsiderable",
+            "cn": "不大的；不重要的"
+          }
+        ],
+        "synonymNote": "substantial 与 considerable 在许多数量表达中都适用，具体搭配与语气需结合上下文。",
+        "antonymNote": "inconsiderable 较正式；negligible 更强调小到无需重视。"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Cambridge",
+        "url": "https://dictionary.cambridge.org/dictionary/english/considerable"
+      }
+    ]
+  },
+  {
+    "word": "convince",
+    "phoneticUs": "/kənˈvɪns/",
+    "pos": "v.",
+    "summary": "使确信；使信服；说服",
+    "note": "常见结构是 convince someone that/of…。现代英语也使用 convince someone to do something。",
+    "senses": [
+      {
+        "meaning": "使相信；使确信",
+        "grammar": "v. [T]",
+        "definition": "通过理由或证据使某人相信某件事或某个观点。",
+        "phrases": [
+          {
+            "en": "convince someone that something is true",
+            "cn": "使某人相信某事属实"
+          },
+          {
+            "en": "convince someone of the value",
+            "cn": "使某人相信其价值"
+          }
+        ],
+        "sentence": {
+          "en": "The test results convinced us that the fix was effective.",
+          "cn": "测试结果使我们确信这个修复是有效的。"
+        },
+        "synonyms": [
+          {
+            "en": "persuade",
+            "cn": "使相信"
+          },
+          {
+            "en": "satisfy",
+            "cn": "使确信；使满意"
+          }
+        ],
+        "antonyms": [],
+        "synonymNote": "satisfy someone that… 可以表示使人确信，其他语境中 satisfy 还表示满足或使满意。",
+        "antonymNote": "没有通用的直接反义词；make someone doubt 表达使人怀疑，需要调整句子结构。"
+      },
+      {
+        "meaning": "说服某人做某事",
+        "grammar": "v. [T]",
+        "definition": "使某人接受理由，从而决定采取某项行动。",
+        "phrases": [
+          {
+            "en": "convince someone to try something",
+            "cn": "说服某人尝试某事"
+          },
+          {
+            "en": "convince the team to change the plan",
+            "cn": "说服团队改变计划"
+          }
+        ],
+        "sentence": {
+          "en": "We convinced the team to run a small pilot first.",
+          "cn": "我们说服团队先进行一次小规模试点。"
+        },
+        "synonyms": [
+          {
+            "en": "persuade",
+            "cn": "说服"
+          },
+          {
+            "en": "talk someone into doing something",
+            "cn": "说服某人做某事"
+          }
+        ],
+        "antonyms": [
+          {
+            "en": "dissuade",
+            "cn": "劝阻"
+          }
+        ],
+        "synonymNote": "convince someone to do 在现代英语中通用；不能把它简单视为语法错误。",
+        "antonymNote": "dissuade someone from doing something 与劝人采取行动形成对照。"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Cambridge",
+        "url": "https://dictionary.cambridge.org/dictionary/english/convince"
+      }
+    ]
+  },
+  {
+    "word": "purchase",
+    "phoneticUs": "/ˈpɝː.tʃəs/",
+    "pos": "v. / n.",
+    "summary": "购买；购买行为；购得的物品",
+    "note": "purchase 较正式，在商务和交易页面中常见。日常交流常用 buy。动词与名词读音相同。",
+    "senses": [
+      {
+        "meaning": "购买",
+        "grammar": "v. [T] · formal",
+        "definition": "付钱取得某个商品、服务或权利。",
+        "phrases": [
+          {
+            "en": "purchase a license",
+            "cn": "购买许可证"
+          },
+          {
+            "en": "purchase equipment",
+            "cn": "购买设备"
+          },
+          {
+            "en": "purchase online",
+            "cn": "在线购买"
+          }
+        ],
+        "sentence": {
+          "en": "The company purchased additional software licenses for the new team.",
+          "cn": "公司为新团队购买了额外的软件许可证。"
+        },
+        "synonyms": [
+          {
+            "en": "buy",
+            "cn": "购买"
+          },
+          {
+            "en": "acquire",
+            "cn": "取得；购得"
+          }
+        ],
+        "antonyms": [
+          {
+            "en": "sell",
+            "cn": "出售"
+          }
+        ],
+        "synonymNote": "acquire 范围更广，不一定通过付钱取得。",
+        "antonymNote": "sell 与 purchase 表示交易双方的相反行为。"
+      },
+      {
+        "meaning": "购买行为；购得的物品",
+        "grammar": "n. [C/U]",
+        "definition": "买东西的行为，或通过购买获得的物品。",
+        "phrases": [
+          {
+            "en": "make a purchase",
+            "cn": "进行购买"
+          },
+          {
+            "en": "proof of purchase",
+            "cn": "购买凭证"
+          },
+          {
+            "en": "a recent purchase",
+            "cn": "最近买到的物品"
+          }
+        ],
+        "sentence": {
+          "en": "Keep the receipt as proof of purchase.",
+          "cn": "请保留收据作为购买凭证。"
+        },
+        "synonyms": [
+          {
+            "en": "acquisition",
+            "cn": "购得物；购置"
+          }
+        ],
+        "antonyms": [
+          {
+            "en": "sale",
+            "cn": "出售"
+          }
+        ],
+        "synonymNote": "acquisition 也可指收购或其他取得方式；表示购得的物品时 purchase 可数。",
+        "antonymNote": "sale 只在买卖行为的对照中接近反义；“购得的物品”没有通用反义词。"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Cambridge",
+        "url": "https://dictionary.cambridge.org/dictionary/english/purchase"
+      }
+    ]
+  },
+  {
+    "word": "dense",
+    "phoneticUs": "/dens/",
+    "pos": "adj.",
+    "summary": "密集的；浓密的；密度大的",
+    "note": "dense 描述紧密聚集或高密度。副词是 densely，如 densely populated（人口稠密的）。",
+    "senses": [
+      {
+        "meaning": "密集的；浓密的",
+        "grammar": "adj.",
+        "definition": "组成部分靠得很近，往往难以穿过或看穿。",
+        "phrases": [
+          {
+            "en": "dense fog",
+            "cn": "浓雾"
+          },
+          {
+            "en": "a dense forest",
+            "cn": "茂密的森林"
+          },
+          {
+            "en": "a dense crowd",
+            "cn": "密集的人群"
+          }
+        ],
+        "sentence": {
+          "en": "Dense fog reduced visibility along the trail.",
+          "cn": "浓雾降低了沿途小径的能见度。"
+        },
+        "synonyms": [
+          {
+            "en": "thick",
+            "cn": "浓密的"
+          },
+          {
+            "en": "closely packed",
+            "cn": "紧密排列的"
+          }
+        ],
+        "antonyms": [
+          {
+            "en": "sparse",
+            "cn": "稀疏的"
+          },
+          {
+            "en": "thin",
+            "cn": "稀薄的"
+          }
+        ],
+        "synonymNote": "thick 在雾、森林等语境中接近，但也可表示物体厚度。",
+        "antonymNote": "sparse 常用于分布稀疏；thin 可用于雾或烟等较淡、较薄的状态。"
+      },
+      {
+        "meaning": "密度大的",
+        "grammar": "adj.",
+        "definition": "物质在较小空间内集中了较多质量。",
+        "phrases": [
+          {
+            "en": "a dense material",
+            "cn": "密度大的材料"
+          },
+          {
+            "en": "denser than water",
+            "cn": "密度比水大"
+          }
+        ],
+        "sentence": {
+          "en": "This material is denser than water.",
+          "cn": "这种材料的密度比水大。"
+        },
+        "synonyms": [
+          {
+            "en": "high-density",
+            "cn": "高密度的"
+          }
+        ],
+        "antonyms": [
+          {
+            "en": "low-density",
+            "cn": "低密度的"
+          }
+        ],
+        "synonymNote": "high-density 常作为复合形容词修饰名词，不能在所有句子中直接替换 dense。",
+        "antonymNote": ""
+      }
+    ],
+    "sources": [
+      {
+        "label": "Cambridge",
+        "url": "https://dictionary.cambridge.org/dictionary/english/dense"
+      }
+    ]
+  },
+  {
+    "word": "campaign",
+    "phoneticUs": "/kæmˈpeɪn/",
+    "pos": "n. / v.",
+    "summary": "有组织的活动；运动；开展活动",
+    "note": "campaign 通常是一系列围绕目标开展的活动。常见于宣传、商业、选举和公益语境，也可指军事战役。",
+    "senses": [
+      {
+        "meaning": "有组织的活动；运动",
+        "grammar": "n. [C]",
+        "definition": "为达成某个目标而有计划地开展的一系列行动。",
+        "phrases": [
+          {
+            "en": "launch a campaign",
+            "cn": "发起一项活动"
+          },
+          {
+            "en": "an advertising campaign",
+            "cn": "广告宣传活动"
+          },
+          {
+            "en": "an awareness campaign",
+            "cn": "提升认知的宣传活动"
+          }
+        ],
+        "sentence": {
+          "en": "The company launched a campaign to improve security awareness.",
+          "cn": "公司发起了一项提高安全意识的宣传活动。"
+        },
+        "synonyms": [
+          {
+            "en": "drive",
+            "cn": "有组织的活动"
+          },
+          {
+            "en": "initiative",
+            "cn": "倡议；行动计划"
+          }
+        ],
+        "antonyms": [],
+        "synonymNote": "drive 强调集中推动某个目标；initiative 可能只是某项计划，不一定包含持续活动。",
+        "antonymNote": "没有通用的直接反义词。"
+      },
+      {
+        "meaning": "开展活动；为某目标而努力",
+        "grammar": "v. [I]",
+        "definition": "组织或参加一系列行动，以促成或反对某件事。",
+        "phrases": [
+          {
+            "en": "campaign for better services",
+            "cn": "为改善服务而开展活动"
+          },
+          {
+            "en": "campaign against waste",
+            "cn": "开展反对浪费的活动"
+          }
+        ],
+        "sentence": {
+          "en": "Residents campaigned for safer walking routes.",
+          "cn": "居民为获得更安全的步行路线而开展活动。"
+        },
+        "synonyms": [
+          {
+            "en": "advocate",
+            "cn": "提倡；主张"
+          },
+          {
+            "en": "work toward",
+            "cn": "为……努力"
+          }
+        ],
+        "antonyms": [],
+        "synonymNote": "advocate 强调公开支持观点；campaign 通常包含有组织的行动。",
+        "antonymNote": "campaign for 与 campaign against 可表达相反立场，但 campaign 本身没有通用直接反义词。"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Cambridge",
+        "url": "https://dictionary.cambridge.org/dictionary/english/campaign"
+      }
+    ]
+  },
+  {
+    "word": "instigate",
+    "phoneticUs": "/ˈɪn.stə.ɡeɪt/",
+    "pos": "v.",
+    "summary": "发起；促成；引发",
+    "note": "较正式的用词，强调使一系列行动或过程开始。它可用于启动措施，也可能用于引发冲突，语气取决于宾语。",
+    "senses": [
+      {
+        "meaning": "发起；促成某事开始",
+        "grammar": "v. [T] · formal",
+        "definition": "通过行动使某项过程、事件或局面开始发生。",
+        "phrases": [
+          {
+            "en": "instigate an investigation",
+            "cn": "促成调查"
+          },
+          {
+            "en": "instigate changes",
+            "cn": "发起变革"
+          },
+          {
+            "en": "instigate a dispute",
+            "cn": "挑起争端"
+          }
+        ],
+        "sentence": {
+          "en": "The findings instigated an independent review of the process.",
+          "cn": "这些发现促成了对该流程的独立审查。"
+        },
+        "synonyms": [
+          {
+            "en": "initiate",
+            "cn": "发起"
+          },
+          {
+            "en": "set in motion",
+            "cn": "启动；使开始运作"
+          }
+        ],
+        "antonyms": [
+          {
+            "en": "prevent",
+            "cn": "阻止发生"
+          },
+          {
+            "en": "halt",
+            "cn": "使停止"
+          }
+        ],
+        "synonymNote": "initiate 通常较中性；instigate 更突出促成某事开始的作用。",
+        "antonymNote": "prevent 阻止开始或发生，halt 停止已经进行的过程，使用阶段不同。"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Cambridge",
+        "url": "https://dictionary.cambridge.org/dictionary/english/instigate"
+      }
+    ]
+  },
+  {
+    "word": "robotic",
+    "phoneticUs": "/roʊˈbɑː.t̬ɪk/",
+    "pos": "adj.",
+    "summary": "机器人的；机器人技术的；机械呆板的",
+    "note": "与 robust（稳健的；强壮的）不是同一个词。robotic 可描述机器人设备，也可形容人的表达缺少自然情感。",
+    "senses": [
+      {
+        "meaning": "机器人的；机器人技术的",
+        "grammar": "adj.",
+        "definition": "涉及机器人、机器人控制或机器人技术。",
+        "phrases": [
+          {
+            "en": "a robotic arm",
+            "cn": "机械臂"
+          },
+          {
+            "en": "robotic engineering",
+            "cn": "机器人工程"
+          },
+          {
+            "en": "robotic equipment",
+            "cn": "机器人设备"
+          }
+        ],
+        "sentence": {
+          "en": "A robotic arm moves the parts along the assembly line.",
+          "cn": "一只机械臂沿着装配线移动零件。"
+        },
+        "synonyms": [
+          {
+            "en": "robot-controlled",
+            "cn": "由机器人控制的"
+          },
+          {
+            "en": "automated",
+            "cn": "自动化的"
+          }
+        ],
+        "antonyms": [],
+        "synonymNote": "automated 范围更广，自动化设备不一定使用机器人。",
+        "antonymNote": "没有通用直接反义词；manual（手动的）只在操作方式上可形成对照。"
+      },
+      {
+        "meaning": "机械呆板的；缺乏情感的",
+        "grammar": "adj. · disapproving",
+        "definition": "人的动作、声音或回应像机器一样缺少自然变化和情感。",
+        "phrases": [
+          {
+            "en": "a robotic voice",
+            "cn": "机械呆板的声音"
+          },
+          {
+            "en": "a robotic response",
+            "cn": "机械式回应"
+          }
+        ],
+        "sentence": {
+          "en": "The scripted response sounded robotic and unfriendly.",
+          "cn": "照稿说出的回应听起来机械而不友好。"
+        },
+        "synonyms": [
+          {
+            "en": "mechanical",
+            "cn": "机械呆板的"
+          },
+          {
+            "en": "expressionless",
+            "cn": "缺乏表情的"
+          }
+        ],
+        "antonyms": [
+          {
+            "en": "expressive",
+            "cn": "富有表现力的"
+          },
+          {
+            "en": "natural",
+            "cn": "自然的"
+          }
+        ],
+        "synonymNote": "expressionless 更常描述表情或表达缺少变化。",
+        "antonymNote": "expressive 强调表现力，natural 强调自然程度，需按描述对象选择。"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Cambridge",
+        "url": "https://dictionary.cambridge.org/dictionary/english/robotic"
+      }
+    ]
+  },
+  {
+    "word": "robust",
+    "phoneticUs": "/roʊˈbʌst/",
+    "pos": "adj.",
+    "summary": "稳健的；结实耐用的；强壮的",
+    "note": "开发语境中常译作“稳健的”或“鲁棒的”，指系统在压力或异常情况下仍能良好运作。",
+    "senses": [
+      {
+        "meaning": "稳健的；不易失效的",
+        "grammar": "adj.",
+        "definition": "物体或系统结实、可靠，不容易损坏或失败。",
+        "phrases": [
+          {
+            "en": "a robust system",
+            "cn": "稳健的系统"
+          },
+          {
+            "en": "robust error handling",
+            "cn": "健全的错误处理"
+          },
+          {
+            "en": "a robust design",
+            "cn": "稳健的设计"
+          }
+        ],
+        "sentence": {
+          "en": "Robust error handling keeps the service running when a request fails.",
+          "cn": "健全的错误处理让服务在某个请求失败时仍能继续运行。"
+        },
+        "synonyms": [
+          {
+            "en": "resilient",
+            "cn": "有恢复力的"
+          },
+          {
+            "en": "sturdy",
+            "cn": "结实的"
+          }
+        ],
+        "antonyms": [
+          {
+            "en": "fragile",
+            "cn": "脆弱的"
+          },
+          {
+            "en": "brittle",
+            "cn": "易碎的；缺乏适应性的"
+          }
+        ],
+        "synonymNote": "resilient 更强调受挫后的恢复；sturdy 常描述物体结构坚固。",
+        "antonymNote": ""
+      },
+      {
+        "meaning": "强壮健康的",
+        "grammar": "adj.",
+        "definition": "人、动物或植物健康、有活力。",
+        "phrases": [
+          {
+            "en": "robust health",
+            "cn": "强健的体魄"
+          },
+          {
+            "en": "a robust plant",
+            "cn": "生长健壮的植物"
+          }
+        ],
+        "sentence": {
+          "en": "The seedlings developed into robust plants.",
+          "cn": "幼苗长成了健壮的植物。"
+        },
+        "synonyms": [
+          {
+            "en": "strong",
+            "cn": "强壮的"
+          },
+          {
+            "en": "healthy",
+            "cn": "健康的"
+          }
+        ],
+        "antonyms": [
+          {
+            "en": "frail",
+            "cn": "虚弱的"
+          },
+          {
+            "en": "weak",
+            "cn": "弱的"
+          }
+        ],
+        "synonymNote": "",
+        "antonymNote": ""
+      }
+    ],
+    "sources": [
+      {
+        "label": "Cambridge",
+        "url": "https://dictionary.cambridge.org/dictionary/english/robust"
+      }
+    ]
+  },
+  {
+    "word": "take control of",
+    "type": "phrase",
+    "phoneticUs": "/teɪk kənˈtroʊl əv/",
+    "pos": "verb phrase",
+    "summary": "控制；接管；取得对……的掌控",
+    "note": "take 强调取得控制权这一变化；be in control of 更侧重已经处于控制状态。",
+    "senses": [
+      {
+        "meaning": "取得控制；接管",
+        "grammar": "",
+        "definition": "开始掌握某事物的操作、决策或管理权。",
+        "structure": "take control of + noun / pronoun",
+        "phrases": [
+          {
+            "en": "take control of a project",
+            "cn": "接管项目"
+          },
+          {
+            "en": "take control of the situation",
+            "cn": "掌控局面"
+          },
+          {
+            "en": "take control of a system",
+            "cn": "取得系统控制权"
+          }
+        ],
+        "sentence": {
+          "en": "The backup team took control of the recovery process.",
+          "cn": "备用团队接管了恢复流程。"
+        },
+        "usageNotes": [
+          "control 在这个结构中通常不用冠词：take control of。",
+          "过去式是 took control of，过去分词是 taken control of。"
+        ],
+        "relatedExpressions": [
+          {
+            "en": "gain control of",
+            "cn": "取得控制权"
+          },
+          {
+            "en": "lose control of",
+            "cn": "失去对……的控制"
+          },
+          {
+            "en": "be in control of",
+            "cn": "处于掌控状态"
+          }
+        ],
+        "relatedNote": "gain control of 表示取得，lose control of 表示失去；be in control of 描述状态。"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Cambridge",
+        "url": "https://dictionary.cambridge.org/dictionary/english/control"
+      }
+    ]
+  },
+  {
+    "word": "adapt to rapid change",
+    "type": "phrase",
+    "phoneticUs": "/əˈdæpt tə ˈræp.ɪd tʃeɪndʒ/",
+    "pos": "verb phrase",
+    "summary": "适应快速变化",
+    "note": "adapt to 的 to 是介词。rapid change 在这里表示快速变化这一现象。",
+    "senses": [
+      {
+        "meaning": "适应快速变化",
+        "grammar": "",
+        "definition": "调整自己的做法、能力或运作方式，以适应迅速变化的条件。",
+        "structure": "adapt to + noun / doing sth",
+        "phrases": [
+          {
+            "en": "adapt to rapid change",
+            "cn": "适应快速变化"
+          },
+          {
+            "en": "adapt to changing requirements",
+            "cn": "适应不断变化的需求"
+          },
+          {
+            "en": "adapt to working remotely",
+            "cn": "适应远程工作"
+          }
+        ],
+        "sentence": {
+          "en": "Small teams must adapt to rapid change without losing focus.",
+          "cn": "小团队必须在保持专注的同时适应快速变化。"
+        },
+        "usageNotes": [
+          "to 后接名词或动名词：adapt to a new process / adapt to using a new tool。",
+          "这里的 adapt 通常不直接接表示被改变的宾语；adapt something 则可表示改动某物以适应需求。"
+        ],
+        "relatedExpressions": [
+          {
+            "en": "adjust to change",
+            "cn": "适应变化"
+          },
+          {
+            "en": "respond to change",
+            "cn": "应对变化"
+          }
+        ],
+        "relatedNote": "adjust to 强调调整以适应；respond to 强调作出回应，不必然表示已经适应。"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Cambridge",
+        "url": "https://dictionary.cambridge.org/dictionary/english/adapt"
+      }
+    ]
+  },
+  {
+    "word": "be proved to be",
+    "type": "pattern",
+    "phoneticUs": "/bi pruːvd tə bi/",
+    "pos": "passive pattern",
+    "summary": "被证明是……",
+    "note": "这个被动结构可以使用。注意与 prove to be（结果表明是……）的区别；proved 和 proven 都可作 prove 的过去分词。",
+    "senses": [
+      {
+        "meaning": "被证明具有某种性质或身份",
+        "grammar": "",
+        "definition": "通过证据、研究或检验，证明某人或事物具有某种性质。",
+        "structure": "subject + be proved to be + adjective / noun phrase",
+        "phrases": [
+          {
+            "en": "be proved to be correct",
+            "cn": "被证明是正确的"
+          },
+          {
+            "en": "be proved to be a mistake",
+            "cn": "被证明是一个错误"
+          },
+          {
+            "en": "have been proved to be effective",
+            "cn": "已被证明有效"
+          }
+        ],
+        "sentence": {
+          "en": "The original assumption was proved to be incorrect by the new evidence.",
+          "cn": "新证据证明原来的假设是不正确的。"
+        },
+        "usageNotes": [
+          "be 随时态和主语变化：is proved / was proved / has been proved。",
+          "形容词前通常不加冠词；单数可数名词通常需要限定词，如 a mistake。",
+          "prove to be 常表示事后或实践表明：The approach proved to be useful。它与明确强调证据证明的被动表达侧重点不同。"
+        ],
+        "relatedExpressions": [
+          {
+            "en": "be shown to be",
+            "cn": "被表明是……"
+          },
+          {
+            "en": "prove to be",
+            "cn": "结果表明是……"
+          }
+        ],
+        "relatedNote": "两者可有意义交叉，但 be shown to be 明确是被动形式，prove to be 常用作系动结构。"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Cambridge",
+        "url": "https://dictionary.cambridge.org/dictionary/english/prove"
+      }
+    ]
+  },
+  {
+    "word": "maintain prosperity",
+    "type": "phrase",
+    "phoneticUs": "/meɪnˈteɪn prɑːˈsper.ə.t̬i/",
+    "pos": "verb + noun",
+    "summary": "维持繁荣",
+    "note": "prosperity 在这个意思下是不可数名词，通常指经济上的成功和富足。maintain 强调延续已有状态。",
+    "senses": [
+      {
+        "meaning": "维持繁荣",
+        "grammar": "",
+        "definition": "使已经存在的繁荣或富足状态得以持续。",
+        "structure": "maintain + prosperity / a state",
+        "phrases": [
+          {
+            "en": "maintain prosperity",
+            "cn": "维持繁荣"
+          },
+          {
+            "en": "maintain long-term prosperity",
+            "cn": "维持长期繁荣"
+          },
+          {
+            "en": "maintain economic prosperity",
+            "cn": "维持经济繁荣"
+          }
+        ],
+        "sentence": {
+          "en": "The region needs new skills and investment to maintain prosperity.",
+          "cn": "该地区需要新的技能和投资来维持繁荣。"
+        },
+        "usageNotes": [
+          "prosperity 通常不加 a/an；可说 long-term prosperity、shared prosperity。",
+          "maintain 不表示从无到有地创造；强调使既有状态持续。"
+        ],
+        "relatedExpressions": [
+          {
+            "en": "sustain prosperity",
+            "cn": "维持繁荣"
+          },
+          {
+            "en": "promote prosperity",
+            "cn": "促进繁荣"
+          }
+        ],
+        "relatedNote": "sustain 与 maintain 在这里接近；promote 强调促进，不一定指维持已有状态。"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Cambridge",
+        "url": "https://dictionary.cambridge.org/dictionary/english/prosperity"
+      }
+    ]
+  },
+  {
+    "word": "account for",
+    "type": "phrase",
+    "phoneticUs": "/əˈkaʊnt fər/",
+    "pos": "verb phrase",
+    "summary": "解释；是……的原因；占……比例",
+    "note": "结合后面的内容判断：接现象或差异时常表示解释原因，接百分比或总量的一部分时常表示占比。",
+    "senses": [
+      {
+        "meaning": "解释；说明原因",
+        "grammar": "",
+        "definition": "给出某个现象的原因，或本身构成该现象的原因。",
+        "structure": "account for + event / difference / result",
+        "phrases": [
+          {
+            "en": "account for the difference",
+            "cn": "解释差异"
+          },
+          {
+            "en": "account for the delay",
+            "cn": "解释延误的原因"
+          },
+          {
+            "en": "account for missing data",
+            "cn": "说明数据缺失的原因"
+          }
+        ],
+        "sentence": {
+          "en": "A configuration error accounts for the difference in results.",
+          "cn": "一个配置错误解释了结果差异的原因。"
+        },
+        "usageNotes": [
+          "人作主语时，常指作出解释；原因作主语时，常指足以解释某个结果。",
+          "for 是介词；注意 account 随主语和时态变化。"
+        ],
+        "relatedExpressions": [
+          {
+            "en": "explain",
+            "cn": "解释"
+          },
+          {
+            "en": "be responsible for",
+            "cn": "是……的原因；对……负责"
+          }
+        ],
+        "relatedNote": "be responsible for 的含义还包括职责，不能在所有句子中直接替换。"
+      },
+      {
+        "meaning": "占据一定比例",
+        "grammar": "",
+        "definition": "构成某个总数或总量的一部分。",
+        "structure": "part + account for + percentage / share of a total",
+        "phrases": [
+          {
+            "en": "account for half of the total",
+            "cn": "占总量的一半"
+          },
+          {
+            "en": "account for 30 percent of requests",
+            "cn": "占请求量的百分之三十"
+          }
+        ],
+        "sentence": {
+          "en": "Mobile devices account for 60 percent of visits in this example.",
+          "cn": "在这个例子中，移动设备占访问量的百分之六十。"
+        },
+        "usageNotes": [
+          "表示构成部分的事物作主语；后面是占到的比例或份额。",
+          "例如 A accounts for 20 percent of B，表示 A 占 B 的百分之二十。"
+        ],
+        "relatedExpressions": [
+          {
+            "en": "make up",
+            "cn": "构成；占据"
+          },
+          {
+            "en": "constitute",
+            "cn": "构成"
+          }
+        ],
+        "relatedNote": "make up 和 constitute 在占比语境中接近，通常直接接宾语，不保留 for。"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Cambridge",
+        "url": "https://dictionary.cambridge.org/dictionary/learner-english/account-for-sth"
+      }
+    ]
+  },
+  {
+    "word": "underlying problem",
+    "type": "phrase",
+    "phoneticUs": "/ˌʌn.dɚˈlaɪ.ɪŋ ˈprɑː.bləm/",
+    "pos": "adj. + noun",
+    "summary": "深层问题；根本问题",
+    "note": "underlying 指真实存在但不一定立即显现的因素。它强调问题背后的深层情况，具体是否构成唯一根因仍需结合语境。",
+    "senses": [
+      {
+        "meaning": "深层问题；根本问题",
+        "grammar": "",
+        "definition": "表面现象之下实际存在、可能导致其他症状或问题的情况。",
+        "structure": "underlying + noun; an / the underlying problem",
+        "phrases": [
+          {
+            "en": "identify the underlying problem",
+            "cn": "识别深层问题"
+          },
+          {
+            "en": "address the underlying problem",
+            "cn": "处理根本问题"
+          },
+          {
+            "en": "an underlying cause",
+            "cn": "一个深层原因"
+          }
+        ],
+        "sentence": {
+          "en": "Restarting the service did not fix the underlying problem.",
+          "cn": "重启服务并没有解决根本问题。"
+        },
+        "usageNotes": [
+          "problem 是可数名词，单数时常用 an/the underlying problem。",
+          "underlying 通常放在名词前，如 underlying cause、underlying issue。"
+        ],
+        "relatedExpressions": [
+          {
+            "en": "root cause",
+            "cn": "根本原因"
+          },
+          {
+            "en": "underlying issue",
+            "cn": "深层问题"
+          }
+        ],
+        "relatedNote": "root cause 强调原因，problem/issue 强调问题本身；二者可能相关，但不必然完全等同。"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Cambridge",
+        "url": "https://dictionary.cambridge.org/dictionary/english/underlying"
+      }
+    ]
+  },
+  {
     "word": "elevate",
     "phoneticUs": "/ˈel.ə.veɪt/",
     "pos": "v.",
